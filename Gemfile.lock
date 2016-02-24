@@ -226,7 +226,7 @@ DEPENDENCIES
   devise (~> 3.5.2)
   devise_invitable (~> 1.5.2)
   dotenv-rails
-  factory_girl_rails
+  factory_girl_rails (~> 4.0)
   faker
   govuk_frontend_toolkit!
   jbuilder (~> 2.0)

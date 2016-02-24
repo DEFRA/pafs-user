@@ -18,6 +18,7 @@ gem 'devise',           '~> 3.5.2'
 gem 'devise_invitable', '~> 1.5.2'
 
 group :development, :test do
+  gem 'rspec-rails'
   gem 'byebug'
   gem 'pry'
 end
@@ -28,8 +29,7 @@ group :development do
 end
 
 group :test do
-  gem 'rspec-rails'
-  gem 'factory_girl_rails', require: false
+  gem 'factory_girl_rails', '~> 4.0'
   gem 'faker'
   gem 'capybara'
   gem 'database_cleaner'
