@@ -1,17 +1,15 @@
 require 'rails_helper'
 
 RSpec.describe Project, :type => :model do
-  describe "@reference_number" do
-    it "is required" do
-      project = FactoryGirl.build(:project, reference_number: nil)
-      expect(project.valid?).to be false
-      expect(project.errors).to include(:reference_number)
-    end
+  describe "attributes" do
+    subject { FactoryGirl.create(:project) }
 
-    it "is unique" do
-      project = FactoryGirl.create(:project)
-      project2 = FactoryGirl.build(:project)
-      expect(project2.valid?).to be false
+    it { is_expected.to validate_presence_of :reference_number }
+
+    it { is_expected.to validate_uniqueness_of :reference_number }
+
+    it "uses :reference_number as a URL slug" do
+      expect(subject.to_param).to eq(subject.reference_number)
     end
   end
 end
