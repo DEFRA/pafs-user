@@ -1,4 +1,6 @@
 class ProjectsController < ApplicationController
+  before_action :set_project, only: [:step, :save]
+
   def index
     # dashboard page
     # includes list of projects
@@ -8,19 +10,26 @@ class ProjectsController < ApplicationController
     @project = project_service.new_project
   end
 
-  def create
+  # GET
+  def step
+    # edit step
+
+    # we want to go to the page in the process requested in the 
+    # params[:step] part of the URL and display the appropriate form
+    render 'projects/steps/project_name'
   end
 
-  def show
+  # PATCH
+  def save
+    # submit data for the current step and continue or exit
   end
 
-  def edit
-  end
-
-  def update
-  end
 
   private
+    def set_project
+      @project = project_service.find_project(params[:id])
+    end
+
     def project_params
     end
 
