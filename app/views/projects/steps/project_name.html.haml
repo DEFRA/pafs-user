@@ -1,1 +1,8 @@
 %h1 Project Name
+%div
+  =console
+  = form_for @project, url: save_path(id: @project.to_param, step: 'step_two') do |f|
+    =hidden_field_tag :current_step, 'project_name'
+    =f.label :name
+    =f.text_field :name
+    =f.submit 'Save and Continue'

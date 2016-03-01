@@ -22,6 +22,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'byebug'
   gem 'pry'
+  gem 'guard-rspec', require: false
 end
 
 group :development do
