@@ -18,11 +18,12 @@ ActiveRecord::Schema.define(version: 20160224114015) do
 
   create_table "projects", force: :cascade do |t|
     t.string   "reference_number", null: false
+    t.integer  "version",          null: false
     t.string   "name"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
   end
 
-  add_index "projects", ["reference_number"], name: "index_projects_on_reference_number", unique: true, using: :btree
+  add_index "projects", ["reference_number", "version"], name: "index_projects_on_reference_number_and_version", unique: true, using: :btree
 
 end

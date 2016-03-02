@@ -7,6 +7,8 @@ RSpec.describe ProjectService do
       p = nil
       expect { p = subject.new_project }.to_not change{Project.count}
       expect(p).to be_a Project
+      expect(p.reference_number).to_not be_nil
+      expect(p.version).to eq(0)
     end
   end
 
@@ -15,6 +17,8 @@ RSpec.describe ProjectService do
       p = nil
       expect { p = subject.create_project }.to change{Project.count}.by(1)
       expect(p).to be_a Project
+      expect(p.reference_number).to_not be_nil
+      expect(p.version).to eq(0)
     end
   end
 
@@ -32,8 +36,7 @@ RSpec.describe ProjectService do
   describe ".generate_reference_number" do
     let(:reference_number) { subject.generate_reference_number }
     it "returns a 7 character string starting with the letter P" do
-      expect(reference_number.length).to eq(7)
-      expect(reference_number.start_with?('P')).to be true
+      expect(reference_number).to match /\AP[A-F0-9]{6}\z/
     end
   end
 end

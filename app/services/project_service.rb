@@ -26,6 +26,7 @@ private
   def initial_attributes
     {
       reference_number: generate_reference_number,
+      version: 0,
       # TODO: owner: user
     }
   end
