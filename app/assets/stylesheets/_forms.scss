@@ -1,0 +1,218 @@
+@import '_typography';
+@import '_colours';
+@import '_css3';
+@import '_shims';
+@import '_measurements';
+@import '_conditionals';
+
+// Forms
+// ==========================================================================
+
+// Fieldset is used to group more than one .form-group
+fieldset {
+  width: 100%;
+  @extend %contain-floats;
+}
+
+// Form group is used to wrap label and input pairs
+.form-group {
+  width: 100%;
+  @extend %contain-floats;
+  margin-bottom: $gutter-half;
+  @include media(tablet) {
+    margin-bottom: $gutter;
+  }
+}
+
+// Form group top is used to space elements
+.form-group-top {
+  width: 100%;
+  @extend %contain-floats;
+  margin-bottom: $gutter-half;
+  padding-top: $gutter-half;
+  @include media(tablet) {
+    margin-bottom: $gutter;
+  }
+}
+
+.form-group-related {
+  margin-bottom: 10px;
+  @include media(tablet) {
+    margin-bottom: 20px;
+  }
+}
+
+.form-group-compound {
+  margin-bottom: $gutter;
+}
+
+// Form title
+.form-title {
+  margin-bottom: $gutter;
+  @include media(tablet) {
+    margin-bottom: ($gutter*1.5);
+  }
+}
+
+
+// Labels
+
+// Form labels, or for legends styled to look like labels
+.form-label {
+  display: block;
+  color: $text-colour;
+
+  @include core-19;
+  margin-bottom: 5px;
+}
+
+// Used for paragraphs in-between form elements
+.form-block {
+  float: left;
+  width: 100%;
+  @extend %contain-floats;
+}
+
+
+// Hints
+
+// Form hints & examples are light grey and sit above a form control
+.form-hint,
+.form-optional {
+  display: block;
+  color: $secondary-text-colour;
+  margin-bottom: 5px;
+  @include media (tablet) {
+  }
+}
+
+.form-optional {
+  display: inline;
+  @include core-19;
+  color: $secondary-text-colour;
+}
+
+.form-hint {
+  display: block;
+  color: $secondary-text-colour;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+
+// Form controls
+
+// By default, form controls are 50% width for desktop,
+// and 100% width for mobile
+.form-control {
+  @include core-19;
+  width: 100%;
+  @include box-sizing(border-box);
+  padding: 4px;
+  background-color: $white;
+  border: 2px solid #6f777b;
+
+  // Disable webkit appearance and remove rounded corners
+  -webkit-appearance: none;
+  border-radius: 0;
+
+  @include media(tablet) {
+    width: 50%;
+  }
+}
+
+
+// Form control widths
+.form-control-3-4 {
+  width: 100%;
+  @include media(tablet) {
+    width: 75%;
+  }
+}
+
+.form-control-1-2 {
+  width: 100%;
+  @include media(tablet) {
+    width: 50%;
+  }
+}
+
+.form-control-1-4 {
+  width: 100%;
+  @include media(tablet) {
+    width: 50%;
+  }
+}
+
+.form-control-1-8 {
+  width: 20%;
+  padding: 4px;
+  border: 2px solid #6f777b;
+  @include ie(6) {
+    width: 25%;
+  }
+  @include media(mobile) {
+    width: 50%;
+    margin-bottom: $gutter-half;
+  }
+}
+
+
+// Used for address look-up
+.form-control-select {
+  @include core-19;
+  width: 100%;
+  @include box-sizing(border-box);
+  padding: 4px;
+  background-color: $white;
+  border: 2px solid #6f777b;
+  border-radius: 0;
+  -webkit-appearance: menulist;
+
+  @include media(tablet) {
+    width: 50%;
+  }
+}
+
+// Radio buttons
+.form-radio {
+  display: block;
+  margin: 10px 0;
+}
+.form-radio input {
+  vertical-align: middle;
+  margin: -4px 5px 0 0;
+}
+
+
+// Checkboxes
+.form-checkbox {
+  display: block;
+  margin: $gutter-half 0;
+  background: $panel-colour;
+  border: 1px solid $panel-colour;
+  padding: $gutter-half;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.form-checkbox {
+  @include media(mobile) {
+    width: 50%;
+  }
+}
+.form-checkbox input {
+  vertical-align: middle;
+  margin: -2px 5px 0 0;
+}
+
+// Buttons
+.form .button {
+  @include media(mobile) {
+    width: 100%;
+  }
+}
+
+// Inline elements
+.ea-footer .inline {
+  display: inline;
+}

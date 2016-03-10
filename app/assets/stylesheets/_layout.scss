@@ -1,0 +1,130 @@
+@import '_typography';
+@import '_measurements';
+@import 'design-patterns/_alpha-beta';
+
+// Content
+// ==========================================================================
+
+#content {
+  @extend %site-width-container;
+  @extend %contain-floats;
+  @include core-19;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: $gutter;
+
+  @include media(desktop) {
+    padding-bottom: $gutter*3;
+  }
+}
+
+#global-header .header-proposition {
+  padding-top: 0.5%;
+}
+
+// Content visually hidden
+.visuallyhidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+// Phase banner
+// ==========================================================================
+
+.phase-banner  {
+  @include phase-banner(beta);
+}
+
+// Exemptions container
+// ==========================================================================
+
+.exemptions-container {
+    border: 1px solid #bfc1c3;
+    margin-top: $gutter-half;
+    margin-bottom: $gutter-half;
+    overflow: hidden;
+    padding: 15px 30px 15px;
+    position: relative;
+}
+
+.border-none {
+  border-bottom: none;
+}
+
+// Summary
+// Green box that confirms to user their registration is complete
+// ==========================================================================
+
+.complete-summary {
+  background-color: $turquoise;
+  padding-top: $gutter;
+  padding-bottom: $gutter;
+  color: $page-colour;
+  text-align: center;
+  margin-top:$gutter-half;
+  margin-bottom:$gutter*1;
+}
+
+.reference-note {
+  @include bold-19;
+  display: inline-block;
+  margin-top: $gutter;
+}
+
+.reference-number {
+  @include bold-36;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.mail-icon {
+  margin-bottom: $gutter;
+}
+
+// Address
+// ==========================================================================
+
+#find_address {
+  margin-right: $gutter-half;
+}
+
+#address_match_selection {
+  margin-top: $gutter-half;
+}
+
+// Block positioning
+// ==========================================================================
+
+.inner-block {
+  @include inner-block;
+}
+
+// EA Footer
+// ==========================================================================
+
+.ea-footer {
+  @include inner-block;
+  @include core-16;
+}
+
+.ea-footer li {
+  @include core-16;
+  margin-right:10px;
+}
+
+@include media(mobile) {
+.ea-footer{
+    display: block;
+    margin-bottom: $gutter-half;
+  }
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
+}

@@ -1,0 +1,43 @@
+@import '_typography';
+@import '_measurements';
+
+// Related positioning
+// ==========================================================
+
+.related {
+    border-top: 10px solid rgb(0, 94, 165);
+    margin-top: 3.6em;
+}
+
+.related h2 {
+ @include bold-24;
+ margin-top: $gutter-half;
+}
+
+.related .inner {
+    width: auto;
+    margin: 0 auto;
+}
+
+.related ul {
+   list-style: none outside none;
+}
+
+.related li {
+    margin-bottom: 0.75em;
+    padding-left: 0;
+}
+
+.related li a {
+    display: block;
+    line-height: 1.25em;
+    margin-bottom: 0.75em;
+    @include core-16;
+}
+
+.related li p {
+    display: block;
+    line-height: 0.25em;
+    @include core-19;
+    padding: 0;
+}

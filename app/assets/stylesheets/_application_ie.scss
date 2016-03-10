@@ -1,0 +1,20 @@
+// This file is a clone of "application.scss", but uses "@import" instead of require statements
+// so that the global variables $ie-ie, $ie-version, etc will take effect
+$is-ie: true;
+
+@import './flash_alerts';
+@import './buttons';
+@import './details';
+@import './fonts';
+@import './form_block_labels';
+@import './forms';
+@import './grid';
+@import './icons';
+@import './layout';
+@import './lists';
+@import './panels';
+@import './related';
+@import './reset';
+@import './tables';
+@import './tabs';
+@import './validation';

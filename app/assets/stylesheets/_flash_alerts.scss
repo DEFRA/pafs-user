@@ -1,0 +1,27 @@
+// Import govuk_frontend_toolkit variables/mixins
+@import 'colours';
+@import 'measurements';
+
+.front-office-core-alerts {
+  .alert {
+    color: $white;
+    margin-top: $gutter;
+    padding: $gutter;
+
+    &.alert-success {
+      background-color: $green;
+    }
+
+    &.alert-info {
+      background-color: $light-blue;
+    }
+
+    &.alert-warning {
+      background-color: $orange;
+    }
+
+    &.alert-danger {
+      background-color: $red;
+    }
+  }
+}

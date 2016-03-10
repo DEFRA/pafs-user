@@ -1,3 +1,8 @@
 DATABASE_USERNAME=user
 DATABASE_PASSWORD=password
 
+# required by DigitalServicesCore
+# User management
+# Set to true to create User TABLES on the separate User DB
+DEVISE_USER_SEPARATE_DB=false
+DEVISE_MAILER_SENDER=no-reply@example.org
