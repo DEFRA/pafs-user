@@ -345,6 +345,7 @@ DEPENDENCIES
   govuk_template (~> 0.17.0)
   guard-rspec
   haml-rails (~> 0.9)
+  high_voltage (~> 2.4.0)
   jbuilder (~> 2.0)
   jquery-rails
   pafs_core!

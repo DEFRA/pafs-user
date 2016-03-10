@@ -27,6 +27,8 @@ gem "govuk_template", "~> 0.17.0"
 # Access to some of the most common styles and scripts used by GDS
 gem "govuk_frontend_toolkit", "~> 4.8.1"
 
+# static pages
+gem 'high_voltage', '~> 2.4.0'
 
 ## EA/GovUK gems
 gem 'digital_services_core',

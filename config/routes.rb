@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  # We use high voltage to manage static content incl home page
+  # See -- config/initializers/high_voltage.rb
+  # for the home/root page
+  get "/pages/*id" => 'high_voltage/pages#show', as: :page, format: false
+
   mount PafsCore::Engine, at: "/pc"
 
   # The priority is based upon order of creation: first created -> highest priority.
