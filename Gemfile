@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.5.1'
+# rake 11 can break stuff see: http://stackoverflow.com/questions/35893584/nomethoderror-undefined-method-last-comment-after-upgrading-to-rake-11/35893941
+gem 'rake', '< 11.0'
 gem 'sass-rails', '~> 5.0'
 gem 'haml-rails', '~> 0.9'
 gem 'uglifier', '>= 1.3.0'
@@ -14,9 +16,25 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'pg'
 gem 'dotenv-rails'
-gem 'govuk_frontend_toolkit', git: "https://github.com/alphagov/govuk_frontend_toolkit_gem.git", submodules: true
-gem 'devise',           '~> 3.5.2'
-gem 'devise_invitable', '~> 1.5.2'
+# gem 'govuk_frontend_toolkit', git: "https://github.com/alphagov/govuk_frontend_toolkit_gem.git", submodules: true
+# gem 'devise',           '~> 3.5.2'
+# gem 'devise_invitable', '~> 1.5.2'
+
+# Provided by GDS - Template gives us a master layout into which
+# we can inject our content using yield and content_for
+gem "govuk_template", "~> 0.17.0"
+
+# Access to some of the most common styles and scripts used by GDS
+gem "govuk_frontend_toolkit", "~> 4.8.1"
+
+
+## EA/GovUK gems
+gem 'digital_services_core',
+    git: 'https://github.com/EnvironmentAgency/digital-services-core',
+    branch: 'develop'
+
+# shared PAFS code
+gem 'pafs_core', path: '../pafs_core'
 
 group :development, :test do
   gem 'rspec-rails'
@@ -36,6 +54,9 @@ group :test do
   gem 'faker'
   gem 'capybara'
   gem 'database_cleaner'
+  # required for DigitalServicesCore :-(
+  gem 'sinatra'
+  gem 'ffaker'
 end
 
 # Use ActiveModel has_secure_password
