@@ -1,0 +1,58 @@
+<% content_for(:head) do %>
+  <!--[if gt IE 8]><!--><%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %><!--<![endif]-->
+  <!--[if IE 6]><%= stylesheet_link_tag "application-ie6" %><![endif]-->
+  <!--[if IE 7]><%= stylesheet_link_tag "application-ie7" %><![endif]-->
+  <!--[if IE 8]><%= stylesheet_link_tag "application-ie8" %><![endif]-->
+  <meta name="format-detection" content="telephone=no" />
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= render 'digital_services_core/shared/head' %>
+<% end %>
+
+<% set_page_title t(:global_proposition_header) %>
+
+<% content_for :header_class, 'with-proposition' %>
+<% content_for :proposition_header do %>
+  <div class="header-proposition">
+    <div class="content">
+      <span id="proposition-name"><%= t(:global_proposition_header) %></span>
+    </div>
+  </div>
+<% end %>
+
+<%
+if Rails.env.development? && ENV["ADD_STATE_JUMPER_TOOLBAR"] == "true"
+  content_for :after_header, render(partial: "shared/tools/state_renderer")
+end
+%>
+
+<% content_for(:content) do %>
+  <main id="content" role="main">
+    <%= render "shared/phase_banner" %>
+    <%= render "shared/flash_alerts" %>
+    <%= yield %>
+  </main>
+<% end %>
+
+<% content_for :body_end do %>
+  <%# TODO: Move this funtionality to the digital_services_core gem %>
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=<%= ENV['DSC_FRONTEND_GOOGLE_TAGMANAGER_ID'] %>"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','<%= ENV['DSC_FRONTEND_GOOGLE_TAGMANAGER_ID'] %>');</script>
+<% end if ENV['DSC_FRONTEND_GOOGLE_TAGMANAGER_ID'].present? %>
+
+<% content_for :footer_top do %>
+  <div class="ea-footer">
+    <p><%= t('global.footer_support_text') %> <%= link_to t("global.helpline_telephone_number"), "tel:#{t "global.helpline_telephone_number_uri" }" %></p>
+    <ul>
+      <li class="inline"><%= link_to(t('global.footer_privacy_link'), main_app.page_path('privacy'), target: '_blank') %></li>
+      <li class="inline"><%= link_to(t('global.footer_cookies_link'), main_app.page_path('cookies'), target: '_blank') %></li>
+    </ul>
+  </div>
+<% end %>
+
+<%-# LAST: RENDER main GDS template -%>
+<%= render template: "layouts/govuk_template" %>

@@ -11,10 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160224114015) do
+ActiveRecord::Schema.define(version: 20160309103821) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "pafs_core_projects", force: :cascade do |t|
+    t.string   "reference_number", null: false
+    t.integer  "version",          null: false
+    t.string   "name"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  add_index "pafs_core_projects", ["reference_number", "version"], name: "index_pafs_core_projects_on_reference_number_and_version", unique: true, using: :btree
 
   create_table "projects", force: :cascade do |t|
     t.string   "reference_number", null: false

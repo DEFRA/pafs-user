@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  resources :projects
+  # We use high voltage to manage static content incl home page
+  # See -- config/initializers/high_voltage.rb
+  # for the home/root page
+  get "/pages/*id" => 'high_voltage/pages#show', as: :page, format: false
 
-  get 'projects/:id/:step' => 'projects#step', as: :step
-  patch 'projects/:id/:step' => 'projects#save', as: :save
+  mount PafsCore::Engine, at: "/pc"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

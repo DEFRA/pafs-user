@@ -1,5 +1,5 @@
 .env
 config/secrets.yml
-.bundle/*
-/log
-/tmp
+.bundle/
+log/*.log
+tmp/
