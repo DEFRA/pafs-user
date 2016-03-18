@@ -1,0 +1,15 @@
+<div class="user-bar font-xsmall">
+  <div id="dashboard-link-container">
+    <%= link_to t('dashboard_link'), pafs_core.projects_path %>
+  </div>
+  <div id="user-info-container">
+    <ul>
+      <li>
+        <div class="text-secondary">Signed in as: <strong class="bold-xsmall">Peter Bonetti</strong></div>
+      </li>
+      <li>
+        <%= link_to t('logout_link'), '#', method: :delete %>
+      </li>
+    </ul>
+  </div>
+</div>
