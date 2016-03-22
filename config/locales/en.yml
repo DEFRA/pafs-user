@@ -20,6 +20,12 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  date:
+    formats:
+      long: "%d %B %Y"
   global_proposition_header: Project Application and Funding Service
   dashboard_link: Go to my dashboard
   logout_link: Sign out
+  pages:
+    start:
+      start_now: Start now

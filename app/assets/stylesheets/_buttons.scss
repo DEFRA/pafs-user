@@ -1,3 +1,4 @@
+@import '_helpers';
 @import '_typography';
 @import 'design-patterns/_buttons';
 
@@ -152,16 +153,20 @@
 
 
 // Start now buttons
+.button-start,
 .button-get-started {
   @include bold-24;
+  background-image: file-url("icon-pointer.png");
   background-repeat: no-repeat;
   background-position: 100% 50%;
-  padding: em(7) em(41) em(4) em(16);
+  padding: pem(7) pem(41) pem(4) pem(16);
 
   @include device-pixel-ratio {
+    background-image: file-url("icon-pointer-2x.png");
     background-size: 30px 19px;
   }
 
   @include ie(6) {
+    background-image: file-url("icon-pointer-2x.png");
   }
 }
