@@ -3,3 +3,5 @@ config/secrets.yml
 .bundle/
 log/*.log
 tmp/
+# migrations from pafs_core
+db/migrate/*.pafs_core.rb

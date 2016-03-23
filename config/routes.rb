@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
+  devise_for :users
+  devise_for :users
   # We use high voltage to manage static content incl home page
   # See -- config/initializers/high_voltage.rb
   # for the home/root page
-  get "/pages/*id" => 'high_voltage/pages#show', as: :page, format: false
+#  get "/pages/*id" => 'high_voltage/pages#show', as: :page, format: false
+
+  # devise_for :users
 
   mount PafsCore::Engine, at: "/pc"
 

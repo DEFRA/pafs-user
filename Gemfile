@@ -18,8 +18,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'pg'
 gem 'dotenv-rails'
 # gem 'govuk_frontend_toolkit', git: "https://github.com/alphagov/govuk_frontend_toolkit_gem.git", submodules: true
-# gem 'devise',           '~> 3.5.2'
-# gem 'devise_invitable', '~> 1.5.2'
+gem 'devise',           '~> 3.5.2'
+gem 'devise_invitable', '~> 1.5.2'
 
 # Provided by GDS - Template gives us a master layout into which
 # we can inject our content using yield and content_for
@@ -32,9 +32,9 @@ gem "govuk_frontend_toolkit", "~> 4.8.1"
 gem 'high_voltage', '~> 2.4.0'
 
 ## EA/GovUK gems
-gem 'digital_services_core',
-    git: 'https://github.com/EnvironmentAgency/digital-services-core',
-    branch: 'develop'
+# gem 'digital_services_core',
+#     git: 'https://github.com/EnvironmentAgency/digital-services-core',
+#     branch: 'develop'
 
 # shared PAFS code
 gem 'pafs_core', path: '../pafs_core'
@@ -58,8 +58,8 @@ group :test do
   gem 'capybara'
   gem 'database_cleaner'
   # required for DigitalServicesCore :-(
-  gem 'sinatra'
-  gem 'ffaker'
+  # gem 'sinatra'
+  # gem 'ffaker'
 end
 
 # Use ActiveModel has_secure_password

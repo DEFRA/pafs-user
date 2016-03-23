@@ -1,25 +1,3 @@
-GIT
-  remote: https://github.com/EnvironmentAgency/digital-services-core
-  revision: 18f326575498cba4af352b107793703c954e2899
-  branch: develop
-  specs:
-    digital_services_core (0.0.1)
-      coffee-rails
-      countries (~> 1.2.1)
-      devise (~> 3.5.2)
-      dotenv-rails (~> 2.1.0)
-      high_voltage (~> 2.4.0)
-      paper_trail (~> 4.1.0)
-      phonelib (~> 0.5)
-      rails (~> 4.2)
-      rest-client (~> 2.0.0.rc)
-      rolify (~> 5.0.0)
-      sass-rails
-      state_machines-activerecord (~> 0.2)
-      thor (~> 0.19.1)
-      uk_postcode (~> 2.1.0)
-      validates_email_format_of (~> 1.6.3)
-
 PATH
   remote: ../pafs_core
   specs:
@@ -87,10 +65,6 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.1)
-    countries (1.2.5)
-      currencies (~> 0.4.2)
-      i18n_data (~> 0.7.0)
-    currencies (0.4.2)
     database_cleaner (1.5.1)
     debug_inspector (0.0.2)
     devise (3.5.6)
@@ -100,9 +74,10 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    devise_invitable (1.5.5)
+      actionmailer (>= 3.2.6, < 5)
+      devise (>= 3.2.0)
     diff-lcs (1.2.5)
-    domain_name (0.5.20160309)
-      unf (>= 0.0.5, < 1.0.0)
     dotenv (2.1.0)
     dotenv-rails (2.1.0)
       dotenv (= 2.1.0)
@@ -116,7 +91,6 @@ GEM
       railties (>= 3.0.0)
     faker (1.6.3)
       i18n (~> 0.5)
-    ffaker (2.2.0)
     ffi (1.9.10)
     font-awesome-sass (4.5.0)
       sass (>= 3.2)
@@ -156,10 +130,7 @@ GEM
       haml (~> 4.0.0)
       nokogiri (~> 1.6.0)
       ruby_parser (~> 3.5)
-    http-cookie (1.0.2)
-      domain_name (~> 0.5)
     i18n (0.7.0)
-    i18n_data (0.7.0)
     jbuilder (2.4.1)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
@@ -183,26 +154,18 @@ GEM
     minitest (5.8.4)
     multi_json (1.11.2)
     nenv (0.3.0)
-    netrc (0.11.0)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     notiffany (0.0.8)
       nenv (~> 0.1)
       shellany (~> 0.0)
     orm_adapter (0.5.0)
-    paper_trail (4.1.0)
-      activerecord (>= 3.0, < 6.0)
-      activesupport (>= 3.0, < 6.0)
-      request_store (~> 1.1)
     pg (0.18.4)
-    phonelib (0.5.6)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
     rack (1.6.4)
-    rack-protection (1.5.3)
-      rack
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.5.1)
@@ -236,14 +199,8 @@ GEM
     rdoc (4.2.2)
       json (~> 1.4)
     ref (2.0.0)
-    request_store (1.3.0)
-    responders (2.1.1)
+    responders (2.1.2)
       railties (>= 4.2.0, < 5.1)
-    rest-client (2.0.0.rc2)
-      http-cookie (>= 1.0.2, < 2.0)
-      mime-types (>= 1.16, < 3.0)
-      netrc (~> 0.8)
-    rolify (5.0.0)
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
       rspec-expectations (~> 3.4.0)
@@ -281,10 +238,6 @@ GEM
     shellany (0.0.1)
     shoulda-matchers (3.1.1)
       activesupport (>= 4.0.0)
-    sinatra (1.4.7)
-      rack (~> 1.5)
-      rack-protection (~> 1.4)
-      tilt (>= 1.3, < 3)
     slop (3.6.0)
     spring (1.6.4)
     sprockets (3.5.2)
@@ -294,13 +247,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    state_machines (0.4.0)
-    state_machines-activemodel (0.3.0)
-      activemodel (~> 4.1)
-      state_machines (>= 0.4.0)
-    state_machines-activerecord (0.3.0)
-      activerecord (~> 4.1)
-      state_machines-activemodel (>= 0.3.0)
     therubyracer (0.12.2)
       libv8 (~> 3.16.14.0)
       ref
@@ -314,12 +260,6 @@ GEM
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    uk_postcode (2.1.0)
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.7.2)
-    validates_email_format_of (1.6.3)
-      i18n
     warden (1.2.6)
       rack (>= 1.0)
     web-console (2.3.0)
@@ -338,11 +278,11 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.1.0)
   database_cleaner
-  digital_services_core!
+  devise (~> 3.5.2)
+  devise_invitable (~> 1.5.2)
   dotenv-rails
   factory_girl_rails (~> 4.0)
   faker
-  ffaker
   font-awesome-sass (~> 4.5.0)
   govuk_frontend_toolkit (~> 4.8.1)
   govuk_template (~> 0.17.0)
@@ -360,7 +300,6 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   shoulda-matchers (~> 3.1)
-  sinatra
   spring
   therubyracer
   turbolinks
