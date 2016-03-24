@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160323145225) do
+ActiveRecord::Schema.define(version: 20160323153424) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20160323145225) do
     t.string   "organisation",     default: "",    null: false
     t.string   "job_title"
     t.string   "telephone_number"
-    t.string   "reference_number"
+    t.string   "slug"
     t.boolean  "terms_accepted",   default: false, null: false
     t.boolean  "provisioned",      default: false, null: false
     t.datetime "created_at",                       null: false
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20160323145225) do
   end
 
   add_index "pafs_core_account_requests", ["email"], name: "index_pafs_core_account_requests_on_email", unique: true, using: :btree
-  add_index "pafs_core_account_requests", ["reference_number"], name: "index_pafs_core_account_requests_on_reference_number", unique: true, using: :btree
+  add_index "pafs_core_account_requests", ["slug"], name: "index_pafs_core_account_requests_on_slug", unique: true, using: :btree
 
   create_table "pafs_core_area_projects", force: :cascade do |t|
     t.integer  "area_id",                    null: false
@@ -63,16 +63,6 @@ ActiveRecord::Schema.define(version: 20160323145225) do
   end
 
   add_index "pafs_core_projects", ["reference_number", "version"], name: "index_pafs_core_projects_on_reference_number_and_version", unique: true, using: :btree
-
-  create_table "projects", force: :cascade do |t|
-    t.string   "reference_number", null: false
-    t.integer  "version",          null: false
-    t.string   "name"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
-  end
-
-  add_index "projects", ["reference_number", "version"], name: "index_projects_on_reference_number_and_version", unique: true, using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
