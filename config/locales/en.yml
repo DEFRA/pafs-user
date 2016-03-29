@@ -27,6 +27,9 @@ en:
   dashboard_link: Go to my dashboard
   logout_link: Sign out
   request_an_account_link: request an account
+  resend_unlock_instructions_link: resend unlock instructions
+  reset_your_password_link: reset your password
+  support_telephone_number: "02030 254 771"
   pages:
     start:
       start_now: Start now
