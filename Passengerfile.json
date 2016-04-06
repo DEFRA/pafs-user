@@ -1,3 +1,0 @@
-{
-  "nginx_config_template": "./config/passenger_nginx.conf.erb"
-}
