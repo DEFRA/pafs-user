@@ -2,7 +2,7 @@ SHARED_ROOT =  File.expand_path("../../../../shared", __FILE__)
 
 worker_processes 3
 timeout 15
-preload_app true
+#preload_app true
 
 stderr_path "#{SHARED_ROOT}/log/unicorn.stderr.log"
 stdout_path "#{SHARED_ROOT}/log/unicorn.stdout.log"
