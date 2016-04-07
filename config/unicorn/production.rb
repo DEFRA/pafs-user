@@ -4,8 +4,8 @@ worker_processes 3
 timeout 15
 preload_app true
 
-stderr_path "#{shared_dir}/log/unicorn.stderr.log"
-stdout_path "#{shared_dir}/log/unicorn.stdout.log"
+stderr_path "#{SHARED_ROOT}/log/unicorn.stderr.log"
+stdout_path "#{SHARED_ROOT}/log/unicorn.stdout.log"
 
 before_fork do |server, worker|
   Signal.trap 'TERM' do
