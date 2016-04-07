@@ -3,7 +3,9 @@ SHARED_ROOT =  File.expand_path("../../../../shared", __FILE__)
 worker_processes 3
 timeout 15
 preload_app true
-pid "#{SHARED_ROOT}/tmp/pids/unicorn.pid"
+
+stderr_path "#{shared_dir}/log/unicorn.stderr.log"
+stdout_path "#{shared_dir}/log/unicorn.stdout.log"
 
 before_fork do |server, worker|
   Signal.trap 'TERM' do
@@ -23,3 +25,4 @@ after_fork do |server, worker|
   defined?(ActiveRecord::Base) and
     ActiveRecord::Base.establish_connection
 end
+
