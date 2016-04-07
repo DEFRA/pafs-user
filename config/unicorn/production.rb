@@ -1,6 +1,9 @@
+APP_ROOT =  File.expand_path("../..", __FILE__)
+
 worker_processes Integer(ENV["WEB_CONCURRENCY"] || 3)
 timeout 15
 preload_app true
+pid "#{APP_ROOT}/tmp/pids/unicorn.pid"
 
 before_fork do |server, worker|
   Signal.trap 'TERM' do
