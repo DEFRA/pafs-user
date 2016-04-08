@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160404122433) do
+ActiveRecord::Schema.define(version: 20160406092928) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,13 +55,32 @@ ActiveRecord::Schema.define(version: 20160404122433) do
   add_index "pafs_core_areas", ["name"], name: "index_pafs_core_areas_on_name", using: :btree
 
   create_table "pafs_core_projects", force: :cascade do |t|
-    t.string   "reference_number",                        null: false
-    t.integer  "version",                                 null: false
+    t.string   "reference_number",                               null: false
+    t.integer  "version",                                        null: false
     t.string   "name"
-    t.datetime "created_at",                              null: false
-    t.datetime "updated_at",                              null: false
+    t.datetime "created_at",                                     null: false
+    t.datetime "updated_at",                                     null: false
     t.integer  "project_end_financial_year"
-    t.string   "slug",                       default: "", null: false
+    t.string   "slug",                              default: "", null: false
+    t.integer  "start_outline_business_case_month"
+    t.integer  "start_outline_business_case_year"
+    t.integer  "award_contract_month"
+    t.integer  "award_contract_year"
+    t.integer  "start_construction_month"
+    t.integer  "start_construction_year"
+    t.integer  "ready_for_service_month"
+    t.integer  "ready_for_service_year"
+    t.boolean  "fcerm_gia"
+    t.boolean  "local_levy"
+    t.boolean  "internal_drainage_boards"
+    t.boolean  "public_contributions"
+    t.string   "public_contributor_names"
+    t.boolean  "private_contributions"
+    t.string   "private_contributor_names"
+    t.boolean  "other_ea_contributions"
+    t.string   "other_ea_contributor_names"
+    t.boolean  "growth_funding"
+    t.boolean  "not_yet_identified"
   end
 
   add_index "pafs_core_projects", ["reference_number", "version"], name: "index_pafs_core_projects_on_reference_number_and_version", unique: true, using: :btree
