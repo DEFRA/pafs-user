@@ -32,6 +32,8 @@ gem "govuk_frontend_toolkit", "~> 4.8.1"
 
 # static pages
 gem 'high_voltage', '~> 2.4.0'
+gem 'passenger', '~> 5.0.25', require: false
+gem 'whenever', :require => false
 
 ## EA/GovUK gems
 # gem 'digital_services_core',
@@ -39,7 +41,9 @@ gem 'high_voltage', '~> 2.4.0'
 #     branch: 'develop'
 
 # shared PAFS code
-gem 'pafs_core', path: '../pafs_core'
+gem 'pafs_core',
+  git: 'https://eb017cd7b2c2647bc1c4c8ca0e1d06d1acbdbaa4:x-oauth-basic@github.com/EnvironmentAgency/pafs_core',
+  branch: 'develop'
 
 group :development, :test do
   gem 'rspec-rails'
@@ -64,11 +68,12 @@ group :test do
   # gem 'ffaker'
 end
 
+group :production do
+  gem 'rails_12factor'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
-# Use Unicorn as the app server
-# gem 'unicorn'
 
 # Use Capistrano for deployment
 #gem 'capistrano-rails', group: :development
