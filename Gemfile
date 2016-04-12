@@ -68,8 +68,9 @@ group :test do
   # gem 'ffaker'
 end
 
-group :production do
+group :production, :edge, :qa, :staging do
   gem 'rails_12factor'
+  gem 'airbrake', '~> 5.0'
 end
 
 # Use ActiveModel has_secure_password

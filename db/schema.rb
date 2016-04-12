@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160406092928) do
+ActiveRecord::Schema.define(version: 20160407111349) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -81,6 +81,9 @@ ActiveRecord::Schema.define(version: 20160406092928) do
     t.string   "other_ea_contributor_names"
     t.boolean  "growth_funding"
     t.boolean  "not_yet_identified"
+    t.boolean  "could_start_early"
+    t.integer  "earliest_start_month"
+    t.integer  "earliest_start_year"
   end
 
   add_index "pafs_core_projects", ["reference_number", "version"], name: "index_pafs_core_projects_on_reference_number_and_version", unique: true, using: :btree

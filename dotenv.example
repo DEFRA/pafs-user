@@ -6,3 +6,7 @@ DATABASE_PASSWORD=password
 # Set to true to create User TABLES on the separate User DB
 DEVISE_USER_SEPARATE_DB=false
 DEVISE_MAILER_SENDER=no-reply@example.org
+
+# Airbrake
+AIRBRAKE_HOST=https://errbit.server.here
+AIRBRAKE_PROJECT_KEY=errbit_project_key_here
