@@ -1,3 +1,3 @@
 every :reboot do
-  command "bundle exec passenger start"
+  command "cd ~/pafs-user/current && bundle exec passenger start"
 end
