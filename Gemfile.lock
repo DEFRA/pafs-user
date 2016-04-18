@@ -1,6 +1,6 @@
 GIT
-  remote: https://eb017cd7b2c2647bc1c4c8ca0e1d06d1acbdbaa4:x-oauth-basic@github.com/EnvironmentAgency/pafs_core
-  revision: 6fb5a1c344fc94b86e27f5971a7f1e1df25a89c1
+  remote: https://github.com/EnvironmentAgency/pafs_core
+  revision: 33fd9e8c63091e7200cf61df6758c5376b208542
   branch: develop
   specs:
     pafs_core (0.0.1)

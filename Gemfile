@@ -42,7 +42,7 @@ gem 'whenever', :require => false
 
 # shared PAFS code
 gem 'pafs_core',
-  git: 'https://eb017cd7b2c2647bc1c4c8ca0e1d06d1acbdbaa4:x-oauth-basic@github.com/EnvironmentAgency/pafs_core',
+  git: 'https://github.com/EnvironmentAgency/pafs_core',
   branch: 'develop'
 
 group :development, :test do
