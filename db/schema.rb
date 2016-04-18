@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160407111349) do
+ActiveRecord::Schema.define(version: 20160414090037) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -84,6 +84,12 @@ ActiveRecord::Schema.define(version: 20160407111349) do
     t.boolean  "could_start_early"
     t.integer  "earliest_start_month"
     t.integer  "earliest_start_year"
+    t.boolean  "fluvial_flooding"
+    t.boolean  "tidal_flooding"
+    t.boolean  "groundwater_flooding"
+    t.boolean  "surface_water_flooding"
+    t.boolean  "coastal_erosion"
+    t.string   "main_risk"
   end
 
   add_index "pafs_core_projects", ["reference_number", "version"], name: "index_pafs_core_projects_on_reference_number_and_version", unique: true, using: :btree
