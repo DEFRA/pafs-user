@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/EnvironmentAgency/pafs_core
-  revision: 8b4506a162375a50a83d10fc45d9dd5ae62e7e5d
+  revision: e4a3b8c23b4bcffb5b61a5ec63269bdfc28245aa
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -148,6 +148,10 @@ GEM
       railties (>= 3.1.0)
       turbolinks
     json (1.8.3)
+    launchy (2.4.3)
+      addressable (~> 2.3)
+    letter_opener (1.4.1)
+      launchy (~> 2.2)
     libv8 (3.16.14.13)
     listen (3.0.6)
       rb-fsevent (>= 0.9.3)
@@ -313,6 +317,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
+  letter_opener
   pafs_core (~> 0.0)!
   passenger (~> 5.0.25)
   pg
