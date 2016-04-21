@@ -111,6 +111,11 @@
 .ea-footer {
   @include inner-block;
   @include core-16;
+
+  .revision {
+    margin-top: 0.5em;
+    color: $grey-2;
+  }
 }
 
 .ea-footer li {
