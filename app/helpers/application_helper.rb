@@ -16,11 +16,6 @@ module ApplicationHelper
   end
 
   def revision_hash
-    f = Rails.root.join('REVISION')
-    if File.exists? f
-      render file: f
-    else
-      %x(git rev-parse --short HEAD)
-    end
+    Rails.application.config.x.revision
   end
 end

@@ -1,0 +1,82 @@
+# Use this file to configure the Overcommit hooks you wish to use. This will
+# extend the default configuration defined in:
+# https://github.com/brigade/overcommit/blob/master/config/default.yml
+#
+# At the topmost level of this YAML file is a key representing type of hook
+# being run (e.g. pre_commit, commit-msg, etc.). Within each type you can
+# customize each hook, such as whether to only run it on certain files (via
+# `include`), whether to only display output if it fails (via `quiet`), etc.
+#
+# For a complete list of hooks, see:
+# https://github.com/brigade/overcommit/tree/master/lib/overcommit/hook
+#
+# For a complete list of options that you can use to customize hooks, see:
+# https://github.com/brigade/overcommit#configuration
+#
+
+gemfile: '.overcommit_gems.rb'
+
+PreCommit:
+  Brakeman:
+    enabled: true
+    on_warn: fail
+
+  RuboCop:
+    enabled: true
+    flags: ['--format=emacs', '--force-exclusion', '--display-cop-names', '--rails']
+    on_warn: fail # Treat all warnings as failures
+    include:
+      - '**/*.gemspec'
+      - '**/*.rake'
+      - '**/*.rb'
+      - '**/Gemfile'
+      - '**/Rakefile'
+      - '**/bin/*'
+      - '**/config.ru'
+
+  CoffeeLint:
+    enabled: true
+
+  JsHint:
+    enabled: false
+    exclude:
+      - '**/vendor/assets/javascripts/**/*.js'
+      - '**/app/assets/javascripts/details.polyfill.js'
+
+  ScssLint:
+    enabled: true
+
+  YamlSyntax:
+    enabled: true
+
+  TrailingWhitespace:
+    enabled: true
+    exclude:
+      - '**/db/structure.sql' # Ignore trailing whitespace in generated files
+      - '**/*.md'
+      - '**/*.markdown'
+      - '**/spec/fixtures/attachments/**/*'
+      - '**/spec/cassettes/**/*'
+
+  RailsSchemaUpToDate:
+    enabled: false
+
+  HardTabs:
+    enabled: true
+    exclude:
+      - '**/vendor/assets/javascripts/**/*.js'
+      - '**/spec/fixtures/attachments/**/*'
+
+  I18nMissing:
+    enabled: true
+    description: 'Checking for missing locale snippets'
+
+  I18nUnused:
+    enabled: true
+    description: 'Checking for unused locale snippets'
+
+  RspecFocusCheck:
+    enabled: true
+    description: 'Checking for "focus:" left in specs'
+    include:
+      - '**/spec/**/*_spec.rb'

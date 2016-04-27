@@ -64,6 +64,7 @@ group :test do
   gem 'faker'
   gem 'capybara'
   gem 'database_cleaner'
+  gem 'simplecov', require: false
   # required for DigitalServicesCore :-(
   # gem 'sinatra'
   # gem 'ffaker'

@@ -6,3 +6,5 @@ tmp/
 # migrations from pafs_core
 db/migrate/*.pafs_core.rb
 public/assets
+coverage
+.DS_Store
