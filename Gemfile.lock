@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/EnvironmentAgency/pafs_core
-  revision: b1e375d952f891584e68fa67ec3bcf9738ac6cf2
+  revision: 70c9097fbde198caff057f395c1e770a730296f5
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -69,6 +69,8 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    childprocess (0.5.9)
+      ffi (~> 1.0, >= 1.0.11)
     chronic (0.10.2)
     clamav-client (3.0.0)
     coderay (1.1.1)
@@ -147,6 +149,7 @@ GEM
       nokogiri (~> 1.6.0)
       ruby_parser (~> 3.5)
     i18n (0.7.0)
+    iniparse (1.4.2)
     jbuilder (2.4.1)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
@@ -188,6 +191,9 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     orm_adapter (0.5.0)
+    overcommit (0.33.0)
+      childprocess (~> 0.5.8)
+      iniparse (~> 1.4)
     passenger (5.0.25)
       rack
       rake (>= 0.8.1)
@@ -336,6 +342,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   letter_opener
+  overcommit
   pafs_core (~> 0.0)!
   passenger (~> 5.0.25)
   pg
