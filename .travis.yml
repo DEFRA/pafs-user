@@ -3,6 +3,10 @@ cache: bundler
 
 rvm:
 - 2.3.0
+
+env:
+  - DEVISE_MAILER_SENDER=no-reply@example.org
+
 before_script:
   - RAILS_ENV=test bundle exec rake pafs_core:install:migrations
   - RAILS_ENV=test bundle exec rake db:migrate
