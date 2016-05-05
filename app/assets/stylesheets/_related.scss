@@ -1,43 +1,44 @@
-@import '_typography';
-@import '_measurements';
+@import 'typography';
+@import 'measurements';
+@import 'colours';
 
 // Related positioning
 // ==========================================================
 
 .related {
-    border-top: 10px solid rgb(0, 94, 165);
-    margin-top: 3.6em;
-}
+  border-top: 10px solid $link-colour;
+  margin-top: 3.6em;
 
-.related h2 {
- @include bold-24;
- margin-top: $gutter-half;
-}
+  h2 {
+    @include bold-24;
+    margin-top: $gutter-half;
+  }
 
-.related .inner {
-    width: auto;
+  .inner {
     margin: 0 auto;
-}
+    width: auto;
+  }
 
-.related ul {
-   list-style: none outside none;
-}
+  ul {
+    list-style: none outside none;
+  }
 
-.related li {
+  li {
     margin-bottom: 0.75em;
     padding-left: 0;
-}
 
-.related li a {
-    display: block;
-    line-height: 1.25em;
-    margin-bottom: 0.75em;
-    @include core-16;
-}
+    a {
+      @include core-16;
+      display: block;
+      line-height: 1.25em;
+      margin-bottom: 0.75em;
+    }
 
-.related li p {
-    display: block;
-    line-height: 0.25em;
-    @include core-19;
-    padding: 0;
+    p {
+      @include core-19;
+      display: block;
+      line-height: 0.25em;
+      padding: 0;
+    }
+  }
 }

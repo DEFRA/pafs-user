@@ -1,0 +1,17 @@
+linters:
+  IdSelector:
+    enabled: false
+
+  Shorthand:
+    enabled: false
+
+  LeadingZero:
+    style: include_zero
+    enabled: true
+
+  SingleLinePerSelector:
+    enabled: false
+
+  BorderZero:
+    enabled: true
+    convention: none # or "zero"

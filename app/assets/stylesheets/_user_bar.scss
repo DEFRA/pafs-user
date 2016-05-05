@@ -1,19 +1,19 @@
-@import '_typography';
-@import '_colours';
+@import 'typography';
+@import 'colours';
 
 .user-bar {
   @include core-16;
-  padding-bottom: 0.5em;
   border-bottom: 1px solid $grey-2;
   margin-top: 0.5em;
+  padding-bottom: 0.5em;
 
   strong {
     color: $black;
   }
 
   #dashboard-link-container {
-    margin-top: 0.5em;
     float: left;
+    margin-top: 0.5em;
     vertical-align: baseline;
   }
 

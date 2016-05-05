@@ -1,6 +1,6 @@
-@import '_colours';
-@import '_measurements';
-@import '_conditionals';
+@import 'colours';
+@import 'measurements';
+@import 'conditionals';
 
 // Large hit area
 // Radio buttons & checkboxes
@@ -8,32 +8,30 @@
 
 // By default, block labels stack vertically
 .block-label {
-  display: block;
-  float: none;
-  clear: left;
-  position: relative;
-
   background: $panel-colour;
   border: 1px solid $panel-colour;
-  padding: (18px $gutter $gutter-half $gutter*1.5);
-  margin-top: 10px;
-  margin-bottom: 10px;
-
+  clear: left;
   cursor: pointer; // Encourage clicking on block labels
+  display: block;
+  float: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: (18px $gutter $gutter-half $gutter * 1.5);
+  position: relative;
 
   @include media(tablet) {
     float: left;
-    margin-top: 5px;
     margin-bottom: 5px;
+    margin-top: 5px;
     // width: 25%; - Test : check that text within labels will wrap
   }
 
   // Absolutely position inputs within label, to allow text to wrap
   input {
+    cursor: pointer;
+    left: $gutter-half;
     position: absolute;
     top: 18px;
-    left: $gutter-half;
-    cursor: pointer;
   }
 
   // Change border on hover
@@ -50,35 +48,31 @@
 
 // Selected and focused states
 
-// Add selected state
-.js-enabled label.selected {
-  background: $white;
-  border-color: $black;
-}
-
 // Add focus to block labels
-.js-enabled label.focused {
-  outline: 3px solid $yellow;
-}
+.js-enabled {
+  .focused {
+    outline: 3px solid $yellow;
 
-// Remove focus from radio/checkboxes
-.js-enabled .focused input:focus {
-  outline: none;
-}
+    // Remove focus from radio/checkboxes
+    input:focus {
+      outline: none;
+    }
+  }
 
-// Only if JavaScript is enabled
-// Add focus styles to block labels
-.js-enabled .add-focus {
-  outline: 3px solid $yellow;
-}
+  // Only if JavaScript is enabled
+  // Add focus styles to block labels
+  .add-focus {
+    outline: 3px solid $yellow;
+  }
 
-// Remove focus styles from radio and checkbox inputs
-.js-enabled .block-label input:focus {
-  outline: none;
-}
+  // Remove focus styles from radio and checkbox inputs
+  .block-label input:focus {
+    outline: none;
+  }
 
-// Add selected state to block labels
-.js-enabled .selected {
-  background: $white;
-  border-color: $black;
+  // Add selected state to block labels
+  .selected {
+    background: $white;
+    border-color: $black;
+  }
 }

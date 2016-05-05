@@ -1,8 +1,8 @@
-@import '_helpers';
-@import '_typography';
-@import '_colours';
-@import '_shims';
-@import '_measurements';
+@import 'helpers';
+@import 'typography';
+@import 'colours';
+@import 'shims';
+@import 'measurements';
 
 // Headings
 // ==========================================================================
@@ -10,66 +10,62 @@
 .heading-xlarge {
   @include bold-48();
 
-  margin-top: pem(15, 32);
   margin-bottom: pem(30, 32);
+  margin-top: pem(15, 32);
 
   @include media(tablet) {
-    margin-top: pem(30, 48);
     margin-bottom: pem(60, 48);
+    margin-top: pem(30, 48);
   }
 
   .heading-secondary {
     @include heading-27();
 
-    display: block;
     color: $secondary-text-colour;
+    display: block;
   }
-
 }
 
 .heading-large {
   @include bold-36();
 
-  margin-top: pem(25, 24);
   margin-bottom: pem(10, 24);
+  margin-top: pem(25, 24);
 
   @include media(tablet) {
-    margin-top: pem(45, 36);
     margin-bottom: pem(20, 36);
+    margin-top: pem(45, 36);
   }
 
   .heading-secondary {
     @include heading-24();
 
-    display: block;
     color: $secondary-text-colour;
+    display: block;
   }
-
 }
 
 .heading-medium {
   @include bold-24();
 
-  margin-top: pem(25, 20);
   margin-bottom: pem(10, 20);
+  margin-top: pem(25, 20);
 
   @include media(tablet) {
-    margin-top: pem(45, 24);
     margin-bottom: pem(20, 24);
+    margin-top: pem(45, 24);
   }
-
 }
 
 .heading-small {
   @include bold-19();
 
-  margin-top: pem(10, 16);
   margin-bottom: pem(5, 16);
+  margin-top: pem(10, 16);
 
   @include media(tablet) {
     margin-top: pem(20, 19);
   }
-
 }
 
 .heading-with-border {
@@ -78,7 +74,7 @@
 }
 
 .margin-top {
-  margin-top: $gutter *2;
+  margin-top: $gutter * 2;
 }
 
 // Bold font sizes
@@ -86,9 +82,11 @@
 .bold-medium {
   @include bold-24();
 }
+
 .bold-small {
   @include bold-19();
 }
+
 .bold-xsmall {
   @include bold-16();
 }
@@ -96,23 +94,22 @@
 // Text
 
 p {
-  margin-top: pem(5, 16);
   margin-bottom: pem(20, 16);
+  margin-top: pem(5, 16);
 
   @include media(tablet) {
-    margin-top: pem(5);
     margin-bottom: pem(20);
+    margin-top: pem(5);
   }
-
 }
 
 .text-above-heading {
- @include heading-24();
-  display: block;
+  @include heading-24();
   color: $secondary-text-colour;
-  padding-top: $gutter-half;
-  padding-bottom: 6px;
+  display: block;
   margin-top: $gutter;
+  padding-bottom: 6px;
+  padding-top: $gutter-half;
 }
 
 // Lede, or intro text
@@ -125,7 +122,8 @@ p {
 // Less than 75 characters per line of text
 .text {
   max-width: 30em;
-    @include ie-lte(6) {
+
+  @include ie-lte(6) {
     width: 645px;
   }
 }
@@ -163,8 +161,8 @@ p {
 
 // High-light text
 .highlight {
-  color: #0076c0;
   @include heading-27;
+  color: $light-blue;
 }
 
 
@@ -172,15 +170,37 @@ p {
 
 .back-link {
   @include inline-block;
-  position: relative;
 
   @include core-16;
 
-  margin-top: $gutter-half;
-  margin-bottom: $gutter;
-  padding-left: 14px;
-
+  border-bottom: 1px solid $black;
   color: $black;
+  margin-bottom: $gutter;
+  margin-top: $gutter-half;
+  padding-left: 14px;
+  position: relative;
+  text-decoration: none;
+
+  // Fallback
+  // IE8 doesn't support rgba and only supports the single colon syntax for :before
+  // IE7 doesn't support pseudo-elements, let's fallback to an image instead.
+  // Ref: http://caniuse.com/#search=%3Abefore, http://caniuse.com/#search=rgba
+  @include ie-lte(8) {
+    background: image-url('icon-arrow-left.png') no-repeat 0 2px;
+    border-bottom: 1px solidi $grey-2;
+    color: $grey-2;
+    display: inline-block;
+    font-family: 'nta', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-left: 14px;
+    position: relative;
+    text-decoration: none;
+    text-transform: none;
+  }
 
   &:link,
   &:visited,
@@ -189,77 +209,52 @@ p {
     color: $black;
   }
 
-  text-decoration: none;
-  border-bottom: 1px solid $black;
-
   //Back arrow - left pointing black arrow
   &::before {
+    border-bottom: 5px solid transparent;
+    border-right: 6px solid $grey-2;
+    border-top: 5px solid transparent;
+
     content: '';
     display: block;
-    width: 0;
     height: 0;
-
-    border-top: 5px solid transparent;
-    border-right: 6px solid #0b0c0c;
-    border-bottom: 5px solid transparent;
-
-    position: absolute;
     left: 0;
-    top: 50%;
     margin-top: -6px;
+    position: absolute;
+    top: 50%;
+    width: 0;
   }
 
   // Improve arrow shape in Firefox
   @-moz-document url-prefix() {
     &::before {
-      border-top: 5px dotted rgba(255, 0, 0, 0);
-      border-bottom: 5px dotted rgba(255, 0, 0, 0);
+      border-bottom: 5px dotted $red;
+      border-top: 5px dotted $red;
     }
   }
-
-  // Fallback
-  // IE8 doesn't support rgba and only supports the single colon syntax for :before
-  // IE7 doesn't support pseudo-elements, let's fallback to an image instead.
-  // Ref: http://caniuse.com/#search=%3Abefore, http://caniuse.com/#search=rgba
-   @include ie-lte(8) {
-      background: image-url('icon-arrow-left.png') no-repeat 0 2px;
-      border-bottom:#0b0c0c 1px solid;
-      color:#0b0c0c;
-      display:inline-block;
-      font-family:"nta", Arial, sans-serif;
-      font-size:16px;
-      font-weight:400;
-      line-height:1.25;
-      margin-bottom:15px;
-      margin-top:15px;
-      padding-left:14px;
-      position:relative;
-      text-decoration:none;
-      text-transform:none;
-    }
-
-  }
+}
 
 // Code styles
 pre,
 code {
-  font-size: 13px;
-  line-height: 19px;
-  color: $black;
   background-color: $highlight-colour;
   border: 1px solid $border-colour;
+  color: $black;
+  font-size: 13px;
+  line-height: 19px;
   padding: 3px 7px;
 }
 
 // Horizontal rule style
 hr {
-  display: block;
   background: $border-colour;
-  border: 0;
+  border: none;
+  display: block;
   height: 1px;
-  margin-top: $gutter;
   margin-bottom: $gutter;
+  margin-top: $gutter;
   padding: 0;
+
   @include ie-lte(7) {
     color: $border-colour;
   }

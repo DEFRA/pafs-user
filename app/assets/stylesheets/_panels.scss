@@ -1,6 +1,6 @@
-@import '_colours';
-@import '_shims';
-@import '_measurements';
+@import 'colours';
+@import 'shims';
+@import 'measurements';
 
 // Panels
 // ==========================================================================
@@ -8,23 +8,22 @@
 // Indented panels with a grey left hand border
 .panel-indent {
   @extend %contain-floats;
-  clear: both;
   border-left: 4px solid $border-colour;
-
+  clear: both;
+  margin: ($gutter $gutter-half $gutter * 1.5 0);
   padding: 10px 0 10px $gutter-half;
-  margin: ($gutter $gutter-half $gutter*1.5 0);
-}
 
-.panel-indent legend {
-  margin-top: 0;
-}
+  legend {
+    margin-top: 0;
+  }
 
-// Remove bottom margin on last paragraph
-.panel-indent p:only-child,
-.panel-indent p:last-child {
-  margin-bottom: 0;
-}
+  // Remove bottom margin on last paragraph
+  p:only-child,
+  p:last-child {
+    margin-bottom: 0;
+  }
 
-.panel-indent .form-group:last-child {
-  margin-bottom: 0;
+  .form-group:last-child {
+    margin-bottom: 0;
+  }
 }

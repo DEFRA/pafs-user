@@ -73,6 +73,8 @@ GEM
       ffi (~> 1.0, >= 1.0.11)
     chronic (0.10.2)
     clamav-client (3.0.0)
+    codeclimate-test-reporter (0.5.0)
+      simplecov (>= 0.7.1, < 1.0.0)
     coderay (1.1.1)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
@@ -115,7 +117,7 @@ GEM
     formatador (0.2.5)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
-    govuk_frontend_toolkit (4.8.2)
+    govuk_frontend_toolkit (4.10.0)
       rails (>= 3.1.0)
       sass (>= 3.2.0)
     govuk_template (0.17.0)
@@ -325,6 +327,7 @@ DEPENDENCIES
   airbrake (~> 5.0)
   byebug
   capybara
+  codeclimate-test-reporter
   coffee-rails (~> 4.1.0)
   database_cleaner
   devise (~> 3.5.2)
@@ -333,7 +336,7 @@ DEPENDENCIES
   factory_girl_rails (~> 4.0)
   faker
   font-awesome-sass (~> 4.5.0)
-  govuk_frontend_toolkit (~> 4.8.1)
+  govuk_frontend_toolkit (~> 4.10.0)
   govuk_template (~> 0.17.0)
   guard-rspec
   haml-rails (~> 0.9)

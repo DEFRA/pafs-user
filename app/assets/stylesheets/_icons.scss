@@ -1,33 +1,33 @@
 // Icons
 // ==========================================================================
-@import '_measurements';
-@import '_device-pixels';
+@import 'measurements';
+@import 'device-pixels';
 
 .icon {
   background-position: 0 0;
   background-repeat: no-repeat;
+
+  h1 {
+    display: inline;
+  }
 }
 
 .icon-important,
 .icon-mail,
 .icon-tick {
-  display:inline;
+  display: inline;
+  height: 34px;
   margin-right: 5px;
+  width: 34px;
+
   @include device-pixel-ratio() {
     background-size: 100%;
   }
-  width: 34px;
-  height: 34px;
 }
 
 .icon-important img,
 .icon-mail img,
 .icon-tick img {
-  width: 34px;
   height: 34px;
+  width: 34px;
 }
-
-.icon h1 {
-  display: inline;
-}
-

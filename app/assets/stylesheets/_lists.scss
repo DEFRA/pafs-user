@@ -1,4 +1,4 @@
-@import '_shims';
+@import 'shims';
 
 // Lists
 // ==========================================================================
@@ -19,6 +19,7 @@ ol {
 .list-number {
   list-style-type: decimal;
   padding-left: 20px;
+
   @include ie-lte(7) {
     padding-left: 28px;
   }
@@ -26,31 +27,11 @@ ol {
 
 .list-bullet,
 .list-number {
-  margin-top: 5px;
   margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 .list-bullet li,
 .list-number li {
   margin-bottom: 5px;
-}
-
-/* A simple toolbar for navigating states in DEV only - NOT FOR PRODUCTION */
-#dev_tool_bar ul
-{
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-align: center;
-}
-
-#dev_tool_bar ul li { display: inline; }
-
-#dev_tool_bar ul li a
-{
-  font-size: 10px;
-  text-decoration: none;
-  padding: .2em 1em;
-  color: #fff;
-  background-color: #036;
 }
