@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.org/EnvironmentAgency/pafs-user.svg?branch=develop)](https://travis-ci.org/EnvironmentAgency/pafs-user)
+[![Code Climate](https://codeclimate.com/github/EnvironmentAgency/pafs-user/badges/gpa.svg)](https://codeclimate.com/github/EnvironmentAgency/pafs-user)
+[![Test Coverage](https://codeclimate.com/github/EnvironmentAgency/pafs-user/badges/coverage.svg)](https://codeclimate.com/github/EnvironmentAgency/pafs-user/coverage)
+[![security](https://hakiri.io/github/EnvironmentAgency/pafs-user/develop.svg)](https://hakiri.io/github/EnvironmentAgency/pafs-user/develop)
+
 # Project Application and Funding Service
 
 The Project Application and Funding Service (PAFS) is used by regional management authorities to apply for funding for flood and coastal risk management projects.
