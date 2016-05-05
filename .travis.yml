@@ -12,6 +12,8 @@ before_script:
   - cp $TRAVIS_BUILD_DIR/dotenv.travis $TRAVIS_BUILD_DIR/.env
   - cp $TRAVIS_BUILD_DIR/config/database.travis.yml $TRAVIS_BUILD_DIR/config/database.yml
   - bundle exec rake pafs_core:install:migrations
+  - git config --global user.name "Travis Test"  # for overcommit
+  - git config --global user.email travis@example.com  # for overcommit
   - BUNDLE_GEMFILE=.overcommit_gems.rb bundle install
   - BUNDLE_GEMFILE=.overcommit_gems.rb bundle exec overcommit --sign
   - BUNDLE_GEMFILE=.overcommit_gems.rb bundle exec overcommit --sign pre-commit
