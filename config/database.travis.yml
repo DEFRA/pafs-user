@@ -1,3 +1,4 @@
 test:
   adapter: postgresql
   database: pafs_test
+  username: postgres
