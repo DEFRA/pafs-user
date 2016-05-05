@@ -7,7 +7,7 @@ rvm:
 env:
   RAILS_ENV=test
   DEVISE_MAILER_SENDER=no-reply@example.org
-  SECRET_KEY_BASE="$(bundle exec rake secret)"
+  SECRET_KEY_BASE=d2f5fb09a9b95e74af0c86eae84961c4440a483487e3237097c69ddfb9f4aa3bd482c352074cfcff369df51dddbb40e01932fa89585ba7e421ff3e5d62e23338
 
 before_script:
   - psql -c "CREATE DATABASE pafs_test WITH ENCODING 'UTF8';" -U postgres
