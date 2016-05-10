@@ -26,7 +26,6 @@ gem "devise_invitable", "~> 1.5.2"
 # Provided by GDS - Template gives us a master layout into which
 # we can inject our content using yield and content_for
 gem "govuk_template", "~> 0.17.0"
-
 # Access to some of the most common styles and scripts used by GDS
 gem "govuk_frontend_toolkit", "~> 4.10.0"
 

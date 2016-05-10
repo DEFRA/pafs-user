@@ -14,5 +14,6 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require turbolinks
+//= require govuk_toolkit
 //= require pafs_core/application
 //= require_tree .
