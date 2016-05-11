@@ -32,4 +32,12 @@ en:
   support_telephone_number: "02030 254 771"
   pages:
     start:
+      partnership_funding_guidance_link: partnership funding guidance
+      partnership_funding_guidance_link_target: "https://www.gov.uk/government/publications/calculate-grant-in-aid-funding-flood-risk-management-authorities"
+      multi_coloured_manual_link: multi-coloured manual
+      multi_coloured_manual_link_target: "http://www.mcm-online.co.uk/public/"
       start_now: Start now
+  activerecord:
+    attributes:
+      user:
+        email: Email address

@@ -8,9 +8,9 @@
 
 <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
   <details>
-    <summary>Forgot your password?</summary>
+    <summary>I have forgotten my password</summary>
     <div class="panel-indent">
-      <p>If you don't know the password confirmed to you by email when your account was set up, you can <%= link_to t("reset_your_password_link"), new_password_path(resource_name) %></p>
+      <p>If you don't know the password confirmed to you by email when your account was created, you can <%= link_to t("reset_your_password_link"), new_password_path(resource_name) %></p>
     </div>
   </details>
 <% end -%>
@@ -19,15 +19,15 @@
 <%#   <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %>
 <%# <% end -%>
 
-<%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
-  <details>
-    <summary>Didn't receive unlock instructions?</summary>
-    <div class="panel-indent">
-      <p>If your account is locked and you have not received an email containing unlock instructions you can <%= link_to t("resend_unlock_instructions_link"), new_unlock_path(resource_name) %></p>
-    </div>
-  </details>
-<% end -%>
-
+<%# <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+<%#   <details>
+<%#     <summary>Didn't receive unlock instructions?</summary>
+<%#     <div class="panel-indent">
+<%#       <p>If your account is locked and you have not received an email containing unlock instructions you can <%= link_to t("resend_unlock_instructions_link"), new_unlock_path(resource_name) %></p>
+<%#     </div>
+<%#   </details>
+<%# <% end -%>
+<%#
 <%# <%- if devise_mapping.omniauthable? %>
 <%#   <%- resource_class.omniauth_providers.each do |provider| %>
 <%#     <%= link_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider) %>
