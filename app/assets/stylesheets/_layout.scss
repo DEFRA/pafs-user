@@ -1,6 +1,8 @@
+@import 'helpers';
 @import 'typography';
 @import 'measurements';
 @import 'design-patterns/alpha-beta';
+@import 'design-patterns/buttons';
 
 // Content
 // ==========================================================================
@@ -107,4 +109,23 @@
 
 .white-space-nowrap {
   white-space: nowrap;
+}
+
+// Start now buttons
+.button-start,
+.button-get-started {
+  @include bold-24;
+  background-image: file-url('icon-pointer.png');
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  padding: pem(7) pem(41) pem(4) pem(16);
+
+  @include device-pixel-ratio {
+    background-image: file-url('icon-pointer-2x.png');
+    background-size: 30px 19px;
+  }
+
+  @include ie(6) {
+    background-image: file-url('icon-pointer-2x.png');
+  }
 }
