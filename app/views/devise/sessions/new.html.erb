@@ -6,14 +6,9 @@
     <%= f.label :email, class: 'form-label-bold' %>
     <%= f.email_field :email, autocomplete: "off", autofocus: true, tabindex: 10, class: 'form-control' %>
   </div>
-  <div class="form-group">
-    <details>
-      <summary>I have forgotten which email address to use</summary>
-      <div class="panel-indent">
-        <p>If you don't know the email address used to set up your account, contact the Environment Agency on <%= t("support_telephone_number") %>.</p>
-      </div>
-    </details>
-  </div>
+
+  <%= render "shared/forgotten_email" %>
+
   <div class="form-group">
     <%= f.label :password, class: 'form-label-bold' %>
     <%= f.password_field :password, autocomplete: "off", tabindex: 20,  class: 'form-control' %>
@@ -29,11 +24,11 @@
 
   <div class="option-group">
 
-    <%= render "devise/shared/links" %>
+    <%= render "shared/forgotten_password" %>
 
     <details>
       <summary>I don't have an account</summary>
-      <div class="panel-indent">
+      <div class="panel">
         <p>If you don't have an account, you can <%= link_to t("request_an_account_link"), pafs_core.new_account_request_path %> if you work for:</p>
         <ul class="list-bullet">
           <li>a risk management authority</li>
