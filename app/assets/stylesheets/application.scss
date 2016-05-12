@@ -2,6 +2,7 @@
 /* IMPORTANT If you add stylesheets to this file, ensure that also add them to _application_ie.scss
  *           using an "@import" instead of "require" statement
  *
+ *= require ./variables
  *= require ./_elements
  *= require pafs_core/application
  *= require ./_devise

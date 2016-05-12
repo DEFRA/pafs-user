@@ -23,17 +23,18 @@
   padding-top: 0.5%;
 }
 
+// this is in elements/_helpers.scss
 // Content visually hidden
-.visuallyhidden {
-  border: none;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
+// .visuallyhidden {
+//   border: none;
+//   clip: rect(0 0 0 0);
+//   height: 1px;
+//   margin: -1px;
+//   overflow: hidden;
+//   padding: 0;
+//   position: absolute;
+//   width: 1px;
+// }
 
 // Phase banner
 // ==========================================================================
