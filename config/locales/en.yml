@@ -22,8 +22,12 @@
 en:
   date:
     formats:
+      default: "%d/%m/%Y"
       long: "%d %B %Y"
-  global_proposition_header: Project Application and Funding Service
+  time:
+    formats:
+      default: "%d/%m/%Y"
+  global_proposition_header: FCERM project funding service
   dashboard_link: Go to my dashboard
   logout_link: Sign out
   request_an_account_link: request an account
