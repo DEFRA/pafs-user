@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/EnvironmentAgency/pafs_core
-  revision: 21446e9a7eabe2e4493b890cdaae96a6a711c81e
+  revision: 5448d8425fd0f4ec7c5a359bfbf00733cddf0bf2
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -72,7 +72,7 @@ GEM
     childprocess (0.5.9)
       ffi (~> 1.0, >= 1.0.11)
     chronic (0.10.2)
-    clamav-client (3.0.0)
+    clamav-client (3.1.0)
     codeclimate-test-reporter (0.5.0)
       simplecov (>= 0.7.1, < 1.0.0)
     coderay (1.1.1)
@@ -188,7 +188,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0221)
     mini_portile2 (2.0.0)
-    minitest (5.8.4)
+    minitest (5.9.0)
     multi_json (1.11.3)
     nenv (0.3.0)
     nokogiri (1.6.7.2)
