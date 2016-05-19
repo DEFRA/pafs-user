@@ -5,7 +5,7 @@ gem "rails", "~> 4.2.5.1"
 # rake 11 can break stuff see: http://stackoverflow.com/questions/35893584/nomethoderror-undefined-method-last-comment-after-upgrading-to-rake-11/35893941
 gem "rake", "< 11.0"
 gem "sass-rails", "~> 5.0"
-gem "haml-rails", "~> 0.9"
+# gem "haml-rails", "~> 0.9"
 gem "uglifier", ">= 1.3.0"
 gem "coffee-rails", "~> 4.1.0"
 gem "therubyracer", platforms: :ruby
@@ -30,6 +30,10 @@ gem "govuk_template", "~> 0.17.0"
 gem "govuk_frontend_toolkit", "~> 4.10.0"
 
 gem "govuk_elements_rails"
+# gem "govuk_elements_form_builder", git: "https://github.com/ministryofjustice/govuk_elements_form_builder.git"
+# gem "govuk_elements_form_builder",
+#   git: "https://github.com/tonyheadford/govuk_elements_form_builder.git",
+#   branch: "develop"
 
 # static pages
 gem "high_voltage", "~> 2.4.0"
