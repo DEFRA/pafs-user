@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
-  devise_for :users
+  # use our own passwords controller
+  devise_for :users, controllers: { passwords: "passwords" }
+
   # We use high voltage to manage static content incl home page
   # See -- config/initializers/high_voltage.rb
   # for the home/root page
 #  get "/pages/*id" => 'high_voltage/pages#show', as: :page, format: false
-
-  # devise_for :users
+  get "/password/reset" => "reset_password#reset", as: :after_password_reset
 
   mount PafsCore::Engine, at: "/pc"
 
