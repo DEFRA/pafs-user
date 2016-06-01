@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160512141810) do
+ActiveRecord::Schema.define(version: 20160601100310) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 20160512141810) do
     t.string   "area_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "sub_type"
   end
 
   add_index "pafs_core_areas", ["name"], name: "index_pafs_core_areas_on_name", using: :btree
@@ -97,6 +98,10 @@ ActiveRecord::Schema.define(version: 20160512141810) do
     t.datetime "funding_calculator_updated_at"
     t.datetime "submitted_at"
     t.string   "environmental_type"
+    t.integer  "flood_protection_before"
+    t.integer  "flood_protection_after"
+    t.integer  "coastal_protection_before"
+    t.integer  "coastal_protection_after"
   end
 
   add_index "pafs_core_projects", ["reference_number", "version"], name: "index_pafs_core_projects_on_reference_number_and_version", unique: true, using: :btree
@@ -111,6 +116,17 @@ ActiveRecord::Schema.define(version: 20160512141810) do
   end
 
   add_index "pafs_core_reference_counters", ["rfcc_code"], name: "index_pafs_core_reference_counters_on_rfcc_code", unique: true, using: :btree
+
+  create_table "user_areas", force: :cascade do |t|
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.integer  "user_id",                    null: false
+    t.integer  "area_id",                    null: false
+    t.boolean  "primary",    default: false
+  end
+
+  add_index "user_areas", ["area_id"], name: "index_user_areas_on_area_id", using: :btree
+  add_index "user_areas", ["user_id"], name: "index_user_areas_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
