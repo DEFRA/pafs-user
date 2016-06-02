@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160601100310) do
+ActiveRecord::Schema.define(version: 20160602121500) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -117,7 +117,7 @@ ActiveRecord::Schema.define(version: 20160601100310) do
 
   add_index "pafs_core_reference_counters", ["rfcc_code"], name: "index_pafs_core_reference_counters_on_rfcc_code", unique: true, using: :btree
 
-  create_table "user_areas", force: :cascade do |t|
+  create_table "pafs_core_user_areas", force: :cascade do |t|
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
     t.integer  "user_id",                    null: false
@@ -125,8 +125,8 @@ ActiveRecord::Schema.define(version: 20160601100310) do
     t.boolean  "primary",    default: false
   end
 
-  add_index "user_areas", ["area_id"], name: "index_user_areas_on_area_id", using: :btree
-  add_index "user_areas", ["user_id"], name: "index_user_areas_on_user_id", using: :btree
+  add_index "pafs_core_user_areas", ["area_id"], name: "index_pafs_core_user_areas_on_area_id", using: :btree
+  add_index "pafs_core_user_areas", ["user_id"], name: "index_pafs_core_user_areas_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
