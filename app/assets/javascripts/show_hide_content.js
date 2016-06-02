@@ -48,6 +48,9 @@ function ShowHideContent() {
 
         });
 
+        if($radio.is(":checked")) {
+          $radio.click();
+        }
       } else {
         // If the data-target attribute is undefined for a radio button,
         // hide visible data-target content for radio buttons in the same group
