@@ -12,7 +12,7 @@ namespace :users do
                              first_name: row["first_name"],
                              last_name: row["last_name"]})
 
-        UserArea.create(area: area, user: user, primary: true)
+        PafsCore::UserArea.create(area: area, user: user, primary: true)
         puts "#{user.email} invited"
       else
         row["error"] = "No area found"
