@@ -1,0 +1,292 @@
+parent area,name,sub type,type
+England,Northumberland Durham and Tees,,EA Area
+England,Cumbria and Lancashire,,EA Area
+England,Yorkshire,,EA Area
+England,Derbyshire Nottinghamshire and Leicestershire,,EA Area
+England,Lincolnshire and Northamptonshire,,EA Area
+England,Greater Manchester Merseyside and Cheshire,,EA Area
+England,Staffordshire Warwickshire and West Midlands,,EA Area
+England,Shropshire Herefordshire Worcestershire and Gloucestershire,,EA Area
+England,Wessex,,EA Area
+England,Devon and Cornwall,,EA Area
+England,Cambridgeshire and Bedfordshire,,EA Area
+England,Essex Norfolk and Suffolk,,EA Area
+England,Hertfordshire and North London,,EA Area
+England,West Thames,,EA Area
+England,Solent and South Downs,,EA Area
+England,Kent and South London,,EA Area
+,England,,Country
+Northumberland Durham and Tees,PSO Durham & Tees Valley,,PSO Area
+Northumberland Durham and Tees,PSO Tyne and Wear & Northumberland,,PSO Area
+Cumbria and Lancashire,PSO Cumbria,,PSO Area
+Cumbria and Lancashire,PSO Lancashire,,PSO Area
+Yorkshire,PSO East Yorkshire,,PSO Area
+Yorkshire,PSO North Yorkshire,,PSO Area
+Yorkshire,PSO South Yorkshire,,PSO Area
+Yorkshire,PSO West Yorkshire,,PSO Area
+Derbyshire Nottinghamshire and Leicestershire,PSO Derbyshire & Leicestershire,,PSO Area
+Derbyshire Nottinghamshire and Leicestershire,PSO Notts & Tidal Trent,,PSO Area
+Lincolnshire and Northamptonshire,PSO Coastal Lincolnshire & Northamptonshire,,PSO Area
+Lincolnshire and Northamptonshire,PSO Lincolnshire,,PSO Area
+Lincolnshire and Northamptonshire,PSO Welland & Nene,,PSO Area
+Greater Manchester Merseyside and Cheshire,PSO Cheshire & Merseyside,,PSO Area
+Greater Manchester Merseyside and Cheshire,PSO Greater Manchester,,PSO Area
+Staffordshire Warwickshire and West Midlands,"PSO Birmingham, Solihull, Coventry & Warwickshire",,PSO Area
+Staffordshire Warwickshire and West Midlands,PSO North Staffordshire & the Black Country,,PSO Area
+Shropshire Herefordshire Worcestershire and Gloucestershire,PSO Herefordshire & Gloucestershire,,PSO Area
+Shropshire Herefordshire Worcestershire and Gloucestershire,"PSO Shropshire, Worcestershire Telford & Wrekin",,PSO Area
+Wessex,PSO Dorset & Wiltshire,,PSO Area
+Wessex,PSO Somerset,,PSO Area
+Wessex,PSO West of England,,PSO Area
+Devon and Cornwall,PSO East Devon & Cornwall,,PSO Area
+Devon and Cornwall,PSO West Devon & Cornwall,,PSO Area
+Cambridgeshire and Bedfordshire,PSO Cambridge & Bedfordshire,,PSO Area
+Essex Norfolk and Suffolk,"PSO Coastal Essex, Suffolk & Norfolk",,PSO Area
+Essex Norfolk and Suffolk,PSO Essex,,PSO Area
+Essex Norfolk and Suffolk,PSO Norfolk & Suffolk,,PSO Area
+Hertfordshire and North London,PSO London East,,PSO Area
+Hertfordshire and North London,PSO London West,,PSO Area
+Hertfordshire and North London,"PSO Luton, Herts & Essex",,PSO Area
+West Thames,PSO Berkshire & Buckinghamshire,,PSO Area
+West Thames,PSO Oxfordshire,,PSO Area
+Solent and South Downs,PSO East Sussex,,PSO Area
+Solent and South Downs,PSO Hampshire & Isle of Wight,,PSO Area
+Solent and South Downs,PSO West Sussex,,PSO Area
+Kent and South London,PSO East Kent,,PSO Area
+Kent and South London,PSO SE London & North Kent,,PSO Area
+Kent and South London,PSO South West London & Mole,,PSO Area
+Kent and South London,PSO West Kent,,PSO Area
+PSO Durham & Tees Valley,Darlington Borough Council,LA,RMA
+PSO Durham & Tees Valley,Durham County Council,LA,RMA
+PSO Durham & Tees Valley,Hartlepool Borough Council,LA,RMA
+PSO Durham & Tees Valley,Middlesbrough Borough Council,LA,RMA
+PSO Durham & Tees Valley,Redcar and Cleveland Borough Council,LA,RMA
+PSO Durham & Tees Valley,Stockton-on-Tees Borough Council,LA,RMA
+PSO Tyne and Wear & Northumberland,Gateshead Council,LA,RMA
+PSO Tyne and Wear & Northumberland,Newcastle City Council,LA,RMA
+PSO Tyne and Wear & Northumberland,North Tyneside Council,LA,RMA
+PSO Tyne and Wear & Northumberland,Northumberland County Council,LA,RMA
+PSO Tyne and Wear & Northumberland,South Tyneside Council,LA,RMA
+PSO Tyne and Wear & Northumberland,Sunderland City Council,LA,RMA
+PSO Cumbria,Allerdale Borough Council,LA,RMA
+PSO Cumbria,Barrow Borough Council,LA,RMA
+PSO Cumbria,Copeland Borough Council,LA,RMA
+PSO Cumbria,Cumbria County Council,LA,RMA
+PSO Lancashire,Blackburn with Darwen Borough Council,LA,RMA
+PSO Lancashire,Blackpool Borough Council,LA,RMA
+PSO Lancashire,Lancashire County Council,LA,RMA
+PSO East Yorkshire,Beverley & North Holderness IDB,IDB,RMA
+PSO East Yorkshire,East Riding of Yorkshire Council,LA,RMA
+PSO East Yorkshire,Kingston upon Hull City Council,LA,RMA
+PSO East Yorkshire,Ouse & Derwent IDB,IDB,RMA
+PSO East Yorkshire,Rawcliffe IDB,IDB,RMA
+PSO North Yorkshire,North Yorkshire County Council,LA,RMA
+PSO North Yorkshire,Scarborough Borough Council,LA,RMA
+PSO North Yorkshire,York City Council,LA,RMA
+PSO South Yorkshire,Barnsley Metropolitan Borough Council,LA,RMA
+PSO South Yorkshire,Danvm Drainage Commissioners,IDB,RMA
+PSO South Yorkshire,Derbyshire County Council,LA,RMA
+PSO South Yorkshire,Doncaster Metropolitan Borough Council,LA,RMA
+PSO South Yorkshire,Rotherham Metropolitan Borough Council,LA,RMA
+PSO South Yorkshire,Sheffield City Council,LA,RMA
+PSO West Yorkshire,Bradford District Council,LA,RMA
+PSO West Yorkshire,Calderdale Metropolitan Borough Council,LA,RMA
+PSO West Yorkshire,Kirklees Council,LA,RMA
+PSO West Yorkshire,Leeds City Council,LA,RMA
+PSO West Yorkshire,Wakefield Council,LA,RMA
+PSO Derbyshire & Leicestershire,Leicester City Council,LA,RMA
+PSO Derbyshire & Leicestershire,Leicestershire County Council,LA,RMA
+PSO Notts & Tidal Trent,Bassetlaw District Council,LA,RMA
+PSO Notts & Tidal Trent,Bolsover District Council,LA,RMA
+PSO Notts & Tidal Trent,Doncaster East IDB,IDB,RMA
+PSO Notts & Tidal Trent,North Lincolnshire Council,LA,RMA
+PSO Notts & Tidal Trent,Nottingham City Council,LA,RMA
+PSO Notts & Tidal Trent,Nottinghamshire County Council,LA,RMA
+PSO Notts & Tidal Trent,Trent Valley IDB,IDB,RMA
+PSO Coastal Lincolnshire & Northamptonshire,Lindsey Marsh DB,IDB,RMA
+PSO Coastal Lincolnshire & Northamptonshire,North East Lincolnshire Council,LA,RMA
+PSO Coastal Lincolnshire & Northamptonshire,North East Lindsey DB,IDB,RMA
+PSO Coastal Lincolnshire & Northamptonshire,Witham First District IDB,IDB,RMA
+PSO Lincolnshire,Ancholme IDB,IDB,RMA
+PSO Lincolnshire,Black Sluice IDB,IDB,RMA
+PSO Lincolnshire,Lincolnshire County Council,LA,RMA
+PSO Lincolnshire,Upper Witham IDB,IDB,RMA
+PSO Lincolnshire,Witham Fourth District IDB,IDB,RMA
+PSO Lincolnshire,Witham Third District IDB,IDB,RMA
+PSO Welland & Nene,North Level District IDB,IDB,RMA
+PSO Welland & Nene,Northamptonshire County Council ,LA,RMA
+PSO Welland & Nene,Peterborough City Council,LA,RMA
+PSO Welland & Nene,Welland & Deepings IDB,IDB,RMA
+PSO Cheshire & Merseyside,Cheshire East Council,LA,RMA
+PSO Cheshire & Merseyside,Cheshire West and Chester Borough Council,LA,RMA
+PSO Cheshire & Merseyside,Halton Borough Council,LA,RMA
+PSO Cheshire & Merseyside,Knowsley Metropolitan Borough Council,LA,RMA
+PSO Cheshire & Merseyside,Liverpool City Council,LA,RMA
+PSO Cheshire & Merseyside,Sefton Council,LA,RMA
+PSO Cheshire & Merseyside,St Helens Council,LA,RMA
+PSO Cheshire & Merseyside,Warrington Borough Council,LA,RMA
+PSO Cheshire & Merseyside,Wirral Metropolitan Borough Council,LA,RMA
+PSO Greater Manchester,Bolton Council,LA,RMA
+PSO Greater Manchester,Bury Council,LA,RMA
+PSO Greater Manchester,Manchester City Council,LA,RMA
+PSO Greater Manchester,Oldham Council,LA,RMA
+PSO Greater Manchester,Rochdale Metropolitan Borough Council,LA,RMA
+PSO Greater Manchester,Salford City Council,LA,RMA
+PSO Greater Manchester,Stockport Metropolitan Borough Council,LA,RMA
+PSO Greater Manchester,Tameside Council,LA,RMA
+PSO Greater Manchester,Trafford Council,LA,RMA
+PSO Greater Manchester,Wigan Council,LA,RMA
+PSO Staffordshire & the Black Country,Dudley Metropolitan Borough Council,LA,RMA
+PSO Staffordshire & the Black Country,Sandwell Metropolitan District,LA,RMA
+PSO Staffordshire & the Black Country,Staffordshire County Council,LA,RMA
+PSO Staffordshire & the Black Country,Stoke on Trent City Council,LA,RMA
+"PSO Warwickshire, Birmingham, Solihull & Coventry",Birmingham City Council,LA,RMA
+"PSO Warwickshire, Birmingham, Solihull & Coventry",Coventry County Council,LA,RMA
+"PSO Warwickshire, Birmingham, Solihull & Coventry",Severn Trent Water,WC,RMA
+"PSO Warwickshire, Birmingham, Solihull & Coventry",Solihull Metropolitan Borough Council,LA,RMA
+"PSO Warwickshire, Birmingham, Solihull & Coventry",Warwickshire County Council,LA,RMA
+PSO Herefordshire & Gloucestershire,Cheltenham District (B),LA,RMA
+PSO Herefordshire & Gloucestershire,Gloucester City Council,LA,RMA
+PSO Herefordshire & Gloucestershire,Gloucestershire County Council,LA,RMA
+PSO Herefordshire & Gloucestershire,Herefordshire Council,LA,RMA
+"PSO Shropshire, Worcestershire Telford & Wrekin",Redditch,LA,RMA
+"PSO Shropshire, Worcestershire Telford & Wrekin",Shropshire Council,LA,RMA
+"PSO Shropshire, Worcestershire Telford & Wrekin",Telford and Wrekin Unitary Authority,LA,RMA
+"PSO Shropshire, Worcestershire Telford & Wrekin",Worcester City,LA,RMA
+"PSO Shropshire, Worcestershire Telford & Wrekin",Worcestershire County Council,LA,RMA
+"PSO Shropshire, Worcestershire Telford & Wrekin","Wychavon, Malvern & Worcester City",LA,RMA
+"PSO Shropshire, Worcestershire Telford & Wrekin","Wyre Forest, Redditch & Bromsgrove",LA,RMA
+PSO Dorset & Wiltshire,Borough of Poole,LA,RMA
+PSO Dorset & Wiltshire,Bournemouth Borough Council,LA,RMA
+PSO Dorset & Wiltshire,Christchurch and East Dorset Council,LA,RMA
+PSO Dorset & Wiltshire,Dorset County Council,LA,RMA
+PSO Dorset & Wiltshire,New Forest District Council,LA,RMA
+PSO Dorset & Wiltshire,North Dorset District Council,LA,RMA
+PSO Dorset & Wiltshire,Purbeck District Council,LA,RMA
+PSO Dorset & Wiltshire,West Dorset District Council,LA,RMA
+PSO Dorset & Wiltshire,Wiltshire Council,LA,RMA
+PSO Somerset,Axe Brue IDB,IDB,RMA
+PSO Somerset,Mendip District Council,LA,RMA
+PSO Somerset,Sedgemoor District Council,LA,RMA
+PSO Somerset,Somerset County Council,LA,RMA
+PSO Somerset,South Somerset District Council,LA,RMA
+PSO Somerset,Taunton Deane Borough Council,LA,RMA
+PSO Somerset,West Somerset District Council,LA,RMA
+PSO West England,Bath and North East Somerset Council,LA,RMA
+PSO West England,Bristol City Council,LA,RMA
+PSO West England,North Somerset Council,LA,RMA
+PSO West England,South Gloucestershire Council,LA,RMA
+PSO East Devon & Cornwall,Devon County Council,LA,RMA
+PSO East Devon & Cornwall,East Devon District Council,LA,RMA
+PSO East Devon & Cornwall,Exeter City Council,LA,RMA
+PSO East Devon & Cornwall,Mid Devon District Council,LA,RMA
+PSO East Devon & Cornwall,North Devon District Council,LA,RMA
+PSO East Devon & Cornwall,South Hams District Council,LA,RMA
+PSO East Devon & Cornwall,Teignbridge District Council,LA,RMA
+PSO East Devon & Cornwall,Torbay Council,LA,RMA
+PSO East Devon & Cornwall,Torridge District Council,LA,RMA
+PSO East Devon & Cornwall,West Devon Borough Council,LA,RMA
+PSO West Devon & Cornwall,Cornwall Council,LA,RMA
+PSO West Devon & Cornwall,Council of the Isles of Scilly,LA,RMA
+PSO West Devon & Cornwall,Plymouth City Council,LA,RMA
+PSO Cambridge & Bedfordshire,Anglian Water,WC,RMA
+PSO Cambridge & Bedfordshire,Bedford Borough Council,LA,RMA
+PSO Cambridge & Bedfordshire,Cambridge City Council,LA,RMA
+PSO Cambridge & Bedfordshire,Cambridgeshire County Council,LA,RMA
+PSO Cambridge & Bedfordshire,Cawdle Fen IDB,IDB,RMA
+PSO Cambridge & Bedfordshire,Central Bedfordshire Council,LA,RMA
+PSO Cambridge & Bedfordshire,King's Lynn & West Norfolk Borough Council,LA,RMA
+PSO Cambridge & Bedfordshire,King's Lynn IDB,IDB,RMA
+PSO Cambridge & Bedfordshire,Littleport & Downham IDB,IDB,RMA
+PSO Cambridge & Bedfordshire,Manea & Welney IDB,IDB,RMA
+PSO Cambridge & Bedfordshire,Middle Level Commissioners,IDB,RMA
+PSO Cambridge & Bedfordshire,Milton Keynes Council,LA,RMA
+PSO Cambridge & Bedfordshire,Norfolk County Council,LA,RMA
+PSO Cambridge & Bedfordshire,Norfolk County Council (Highways),LA,RMA
+PSO Cambridge & Bedfordshire,Ramsey Upwood & Great Raveley IDB,IDB,RMA
+PSO Cambridge & Bedfordshire,Sawtry IDB,IDB,RMA
+PSO Cambridge & Bedfordshire,Southery & District IDB,IDB,RMA
+PSO Cambridge & Bedfordshire,Southery and District ,LA,RMA
+PSO Cambridge & Bedfordshire,Stoke Ferry IDB,IDB,RMA
+PSO Cambridge & Bedfordshire,Swaffham IDB,IDB,RMA
+PSO Cambridge & Bedfordshire,Warboys Somersham & Pidley IDB,IDB,RMA
+PSO Cambridge & Bedfordshire,Water Management Alliance ,IDB,RMA
+PSO Cambridge & Bedfordshire,Waterbeach Level IDB,IDB,RMA
+"PSO Coastal Essex, Suffolk & Norfolk",Great Yarmouth Borough Council,LA,RMA
+"PSO Coastal Essex, Suffolk & Norfolk",North Norfolk District Council,LA,RMA
+"PSO Coastal Essex, Suffolk & Norfolk",Southend on Sea Borough Council,LA,RMA
+"PSO Coastal Essex, Suffolk & Norfolk",Tendring District Council,LA,RMA
+"PSO Coastal Essex, Suffolk & Norfolk",Waveney & Suffolk Coastal DC's,LA,RMA
+PSO Essex,Essex County Council,LA,RMA
+PSO Essex,Maldon District Council,LA,RMA
+PSO Essex,Thurrock Borough council,LA,RMA
+PSO Norfolk & Suffolk,Suffolk County Council,LA,RMA
+PSO London East,London Borough of Barking & Dagenham,LA,RMA
+PSO London East,London Borough of Enfield,LA,RMA
+PSO London East,London Borough of Hackney,LA,RMA
+PSO London East,London Borough of Haringey,LA,RMA
+PSO London East,London Borough of Havering,LA,RMA
+PSO London East,London Borough of Redbridge,LA,RMA
+PSO London East,London Borough of Waltham Forest,LA,RMA
+PSO London West,Buckinghamshire County Council,LA,RMA
+PSO London West,City of London,LA,RMA
+PSO London West,London Borough of Barnet,LA,RMA
+PSO London West,London Borough of Brent,LA,RMA
+PSO London West,London Borough of Camden,LA,RMA
+PSO London West,London Borough of Ealing,LA,RMA
+PSO London West,London Borough of Hammersmith and Fulham,LA,RMA
+PSO London West,London Borough of Harrow,LA,RMA
+PSO London West,London Borough of Hillingdon,LA,RMA
+PSO London West,London Borough of Hounslow,LA,RMA
+PSO London West,London Borough of Islington,LA,RMA
+PSO London West,London Borough of Westminster,LA,RMA
+PSO London West,Royal Borough of Kensington and Chelsea,LA,RMA
+"PSO Luton, Herts & Essex",Hertfordshire County Council,LA,RMA
+"PSO Luton, Herts & Essex",Luton Borough Council,LA,RMA
+PSO Berkshire & Buckinghamshire,Bracknell Forest,LA,RMA
+PSO Berkshire & Buckinghamshire,Reading Borough Council,LA,RMA
+PSO Berkshire & Buckinghamshire,Royal Borough of Windsor and Maidenhead,LA,RMA
+PSO Berkshire & Buckinghamshire,West Berkshire Council,LA,RMA
+PSO Berkshire & Buckinghamshire,Wokingham,LA,RMA
+PSO Oxfordshire,Cherwell DC,LA,RMA
+PSO Oxfordshire,Oxfordshire County Council,LA,RMA
+PSO Oxfordshire,South Oxfordshire District Council ,LA,RMA
+PSO Oxfordshire,Swindon Borough Council,LA,RMA
+PSO Oxfordshire,West Oxfordshire DC,LA,RMA
+PSO East Sussex,Brighton and Hove City Council,LA,RMA
+PSO East Sussex,East Sussex County Council,LA,RMA
+PSO East Sussex,Eastbourne Borough Council,LA,RMA
+PSO East Sussex,Hastings Borough Council,LA,RMA
+PSO East Sussex,Lewes District Council,LA,RMA
+PSO Hampshire & Isle of Wight,Eastleigh Borough,LA,RMA
+PSO Hampshire & Isle of Wight,Hampshire County Council,LA,RMA
+PSO Hampshire & Isle of Wight,Havant Borough Council,LA,RMA
+PSO Hampshire & Isle of Wight,Isle of Wight Council,LA,RMA
+PSO Hampshire & Isle of Wight,Portsmouth City Council,LA,RMA
+PSO Hampshire & Isle of Wight,Southampton City Council,LA,RMA
+PSO Hampshire & Isle of Wight,Test Valley District,LA,RMA
+PSO Hampshire & Isle of Wight,Winchester District,LA,RMA
+PSO West Sussex,Adur and Worthing Councils,LA,RMA
+PSO West Sussex,Arun District Council,LA,RMA
+PSO West Sussex,Chichester District Council,LA,RMA
+PSO West Sussex,West Sussex County Council,LA,RMA
+PSO East Kent,Ashford Borough Council,LA,RMA
+PSO East Kent,Canterbury City Council,LA,RMA
+PSO East Kent,Dover District Council,LA,RMA
+PSO East Kent,Medway Unitary,LA,RMA
+PSO East Kent,Rother District Council,LA,RMA
+PSO East Kent,Shepway District Council,LA,RMA
+PSO East Kent,Swale Borough Council,LA,RMA
+PSO East Kent,Thanet District Council,LA,RMA
+PSO SE London & North Kent,London Borough of Bexley,LA,RMA
+PSO SE London & North Kent,London Borough of Bromley,LA,RMA
+PSO SE London & North Kent,London Borough of Greenwich,LA,RMA
+PSO SE London & North Kent,London Borough of Lambeth,LA,RMA
+PSO SE London & North Kent,London Borough of Lewisham,LA,RMA
+PSO SE London & North Kent,London Borough of Southwark,LA,RMA
+PSO South West London & Mole,London Borough of Merton,LA,RMA
+PSO South West London & Mole,London Borough of Richmond upon Thames,LA,RMA
+PSO South West London & Mole,London Borough of Sutton,LA,RMA
+PSO South West London & Mole,London Borough of Wandsworth,LA,RMA
+PSO South West London & Mole,Royal Borough of Kingston upon Thames,LA,RMA
+PSO West Kent,Kent County Council,LA,RMA
