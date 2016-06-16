@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160607122717) do
+ActiveRecord::Schema.define(version: 20160609101641) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,6 +54,20 @@ ActiveRecord::Schema.define(version: 20160607122717) do
   end
 
   add_index "pafs_core_areas", ["name"], name: "index_pafs_core_areas_on_name", using: :btree
+
+  create_table "pafs_core_funding_values", force: :cascade do |t|
+    t.integer "project_id"
+    t.integer "financial_year",                                 null: false
+    t.integer "fcerm_gia",                limit: 8
+    t.integer "local_levy",               limit: 8
+    t.integer "internal_drainage_boards", limit: 8
+    t.integer "public_contributions",     limit: 8
+    t.integer "private_contributions",    limit: 8
+    t.integer "other_ea_contributions",   limit: 8
+    t.integer "growth_funding",           limit: 8
+    t.integer "not_yet_identified",       limit: 8
+    t.integer "total",                    limit: 8, default: 0, null: false
+  end
 
   create_table "pafs_core_projects", force: :cascade do |t|
     t.string   "reference_number",                               null: false
