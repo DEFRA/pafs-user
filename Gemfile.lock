@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/EnvironmentAgency/pafs_core
-  revision: 23aa70e97ffe37a69370383edb6a9e4441b91c13
+  revision: 3ea8a76a5e812070a8831ba442ddc53ee2ada070
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -51,12 +51,12 @@ GEM
       airbrake-ruby (~> 1.2)
     airbrake-ruby (1.2.2)
     arel (6.0.3)
-    aws-sdk (2.3.15)
-      aws-sdk-resources (= 2.3.15)
-    aws-sdk-core (2.3.15)
+    aws-sdk (2.3.16)
+      aws-sdk-resources (= 2.3.16)
+    aws-sdk-core (2.3.16)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.3.15)
-      aws-sdk-core (= 2.3.15)
+    aws-sdk-resources (2.3.16)
+      aws-sdk-core (= 2.3.16)
     bcrypt (3.1.11)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
