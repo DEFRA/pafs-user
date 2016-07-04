@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160623105212) do
+ActiveRecord::Schema.define(version: 20160704105852) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -86,13 +86,13 @@ ActiveRecord::Schema.define(version: 20160623105212) do
   end
 
   create_table "pafs_core_projects", force: :cascade do |t|
-    t.string   "reference_number",                                   null: false
-    t.integer  "version",                                            null: false
+    t.string   "reference_number",                                     null: false
+    t.integer  "version",                                              null: false
     t.string   "name"
-    t.datetime "created_at",                                         null: false
-    t.datetime "updated_at",                                         null: false
+    t.datetime "created_at",                                           null: false
+    t.datetime "updated_at",                                           null: false
     t.integer  "project_end_financial_year"
-    t.string   "slug",                                  default: "", null: false
+    t.string   "slug",                                  default: "",   null: false
     t.integer  "start_outline_business_case_month"
     t.integer  "start_outline_business_case_year"
     t.integer  "award_contract_month"
@@ -126,8 +126,12 @@ ActiveRecord::Schema.define(version: 20160623105212) do
     t.string   "funding_calculator_content_type"
     t.integer  "funding_calculator_file_size"
     t.datetime "funding_calculator_updated_at"
+    t.text     "project_location",                      default: [],                array: true
+    t.integer  "project_location_zoom_level",           default: 15
+    t.text     "benefit_area",                          default: "[]"
+    t.text     "benefit_area_centre",                   default: [],                array: true
+    t.integer  "benefit_area_zoom_level"
     t.datetime "submitted_at"
-    t.string   "environmental_type"
     t.integer  "flood_protection_before"
     t.integer  "flood_protection_after"
     t.integer  "coastal_protection_before"
