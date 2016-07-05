@@ -52,7 +52,7 @@ end
       <li class="inline"><%= link_to(t('global.footer_privacy_link'), main_app.page_path('privacy'), target: '_blank') %></li>
       <li class="inline"><%= link_to(t('global.footer_cookies_link'), main_app.page_path('cookies'), target: '_blank') %></li>
     </ul>
-    <div class="revision">Build: <%= revision_hash %></div>
+    <div class="revision" aria-hidden="true">Build: <%= revision_hash %></div>
   </div>
 <% end %>
 
