@@ -44,6 +44,7 @@ gem "whenever", require: false
 gem "pafs_core", "~> 0.0",
   git: "https://github.com/EnvironmentAgency/pafs_core",
   branch: "develop"
+gem "cumberland", "~> 0.0.1", path: "../cumberland"
 
 group :development, :test do
   gem "rspec-rails"
