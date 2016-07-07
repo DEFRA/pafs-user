@@ -19,17 +19,11 @@
   </div>
 <% end %>
 
-<%
-if Rails.env.development? && ENV["ADD_STATE_JUMPER_TOOLBAR"] == "true"
-  content_for :after_header, render(partial: "shared/tools/state_renderer")
-end
-%>
-
 <% content_for(:content) do %>
   <main id="content" role="main">
     <%= render "shared/phase_banner" %>
     <%= render "shared/user_bar" if user_signed_in? %>
-    <%= render "shared/flash_alerts" %>
+    <%#= render "shared/flash_alerts" %>
     <%= yield %>
   </main>
 <% end %>
