@@ -11,6 +11,8 @@ en:
               too_short: "^Password should be at least %{count} characters"
             password_confirmation:
               confirmation: "^Passwords do not match"
+            email:
+              blank: "^Enter your email address"
   devise:
     confirmations:
       confirmed: "Your email address has been successfully confirmed."

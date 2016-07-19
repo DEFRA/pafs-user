@@ -1,18 +1,17 @@
 <% migrate_devise_errors_for resource %>
 <%= pafs_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= f.error_header("Check your sign in details", "") %>
-  <h1 class="heading-large">Reset your password</h1>
-  <p>To reset your password, enter the email address you use to sign in to the FCERM project funding service.</p>
-
-  <%= f.form_group(:base) do %>
-    <%= f.error_message(:base) %>
-    <%= f.email_field :email, autofocus: true, autocomplete: "off", class: 'form-control' %>
-
-    <%= render "shared/forgotten_email" %>
-  <% end %>
-
-
-  <div class="form-group">
-    <%= f.submit "Reset password", class: 'button' %>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-large">Reset your password</h1>
+      <%= f.form_group(:base) do %>
+        <%= f.error_message(:base) %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "off", class: 'form-control form-wide' %>
+        <p>If you have forgotten the email address used to sign in, contact the Environment Agency on <%= t("support_telephone_number") %>.</p>
+      <% end %>
+      <div class="form-group">
+        <%= f.submit "Continue", class: 'button' %>
+      </div>
+    </div>
   </div>
 <% end %>
