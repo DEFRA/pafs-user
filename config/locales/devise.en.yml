@@ -1,6 +1,16 @@
 # Additional translations at https://github.com/plataformatec/devise/wiki/I18n
 
 en:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              blank: "^Enter a password"
+              too_short: "^Password should be at least %{count} characters"
+            password_confirmation:
+              confirmation: "^Passwords do not match"
   devise:
     confirmations:
       confirmed: "Your email address has been successfully confirmed."
