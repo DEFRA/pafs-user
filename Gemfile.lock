@@ -1,18 +1,19 @@
 GIT
+  remote: git://github.com/kennyevil/cumberland.git
+  revision: 8d8a0f43f27ebceef1a8b87cd4213c7fbb06a476
+  specs:
+    cumberland (0.0.1)
+      ffi-proj4 (~> 0.2)
+
+GIT
   remote: https://github.com/EnvironmentAgency/pafs_core
-  revision: 7f84f416c2e4eab53b9f69c1bb9b2c8cadb07aae
+  revision: db316154aaae8e898703ca12070b14d23fef7efb
   branch: develop
   specs:
     pafs_core (0.0.2)
       aws-sdk (~> 2)
       clamav-client (~> 3.0)
       rails (~> 4.2.5.1)
-
-PATH
-  remote: ../cumberland
-  specs:
-    cumberland (0.0.1)
-      ffi-proj4 (~> 0.2)
 
 GEM
   remote: https://rubygems.org/
