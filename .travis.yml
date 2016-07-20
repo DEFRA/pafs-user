@@ -4,6 +4,9 @@ rvm:
 - 2.3.0
 env: RAILS_ENV=test DEVISE_MAILER_SENDER=no-reply@example.org SECRET_KEY_BASE=d2f5fb09a9b95e74af0c86eae84961c4440a483487e3237097c69ddfb9f4aa3bd482c352074cfcff369df51dddbb40e01932fa89585ba7e421ff3e5d62e23338
 before_script:
+- sudo apt-get update -qq
+- sudo apt-get install -y libproj-dev
+- sudo apt-get install -y libffi-dev
 - psql -c "CREATE DATABASE pafs_test WITH ENCODING 'UTF8';" -U postgres
 - cp $TRAVIS_BUILD_DIR/dotenv.travis $TRAVIS_BUILD_DIR/.env
 - cp $TRAVIS_BUILD_DIR/config/database.travis.yml $TRAVIS_BUILD_DIR/config/database.yml

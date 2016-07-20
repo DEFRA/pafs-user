@@ -5,6 +5,9 @@
   <!--[if IE 8]><%= stylesheet_link_tag "application-ie8" %><![endif]-->
   <meta name="format-detection" content="telephone=no" />
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/ol3/3.8.2/ol.js", "data-turbolinks-track" => false %>
+  <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.12/proj4.js", "data-turbolinks-track" => false %>
+  <%= stylesheet_link_tag "http://openlayers.org/en/v3.17.1/css/ol.css", media: "all", "data-turbolinks-track" => true %>
   <%#= render 'digital_services_core/shared/head' %>
 <% end %>
 
