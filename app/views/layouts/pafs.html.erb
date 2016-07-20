@@ -22,17 +22,11 @@
   </div>
 <% end %>
 
-<%
-if Rails.env.development? && ENV["ADD_STATE_JUMPER_TOOLBAR"] == "true"
-  content_for :after_header, render(partial: "shared/tools/state_renderer")
-end
-%>
-
 <% content_for(:content) do %>
   <main id="content" role="main">
     <%= render "shared/phase_banner" %>
     <%= render "shared/user_bar" if user_signed_in? %>
-    <%= render "shared/flash_alerts" %>
+    <%#= render "shared/flash_alerts" %>
     <%= yield %>
   </main>
 <% end %>
@@ -55,7 +49,7 @@ end
       <li class="inline"><%= link_to(t('global.footer_privacy_link'), main_app.page_path('privacy'), target: '_blank') %></li>
       <li class="inline"><%= link_to(t('global.footer_cookies_link'), main_app.page_path('cookies'), target: '_blank') %></li>
     </ul>
-    <div class="revision">Build: <%= revision_hash %></div>
+    <div class="revision" aria-hidden="true">Build: <%= revision_hash %></div>
   </div>
 <% end %>
 
