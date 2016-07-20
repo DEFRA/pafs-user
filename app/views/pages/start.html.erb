@@ -1,40 +1,35 @@
-<h1 class="heading-large">Submit a proposal for flood and coastal erosion risk management (FCERM) project funding</h1>
+<h1 class="heading-large">Submit a proposal for flood and coastal erosion risk management project funding</h1>
 
-<h2 class="heading-medium">Use this service to:</h2>
-<ul class="list-bullet">
-  <li>start, review or update a proposal for flood and coastal erosion risk management (FCERM) project funding</li>
-  <li>submit or resubmit a proposal</li>
-</ul>
-
-<h3 class="heading-medium">Before you start</h3>
-<p>
-You will need a FCERM project funding account in order to use this service.
-</p>
-<p>
-If you have an account, you can start and save a project proposal but to complete and submit a project proposal you will need:
-</p>
-<p>
+<div class="form-group">
+  <h2 class="heading-medium">Use this service to:</h2>
   <ul class="list-bullet">
-    <li>to know the outcomes you expect to achieve, including the number of households benefiting</li>
-    <li>to know the amount of funding required, including expected contributions, and when this is going to be spent</li>
-    <li>an estimate of the whole life costs and benefits discounted to today's values. The <%= link_to t(".partnership_funding_guidance_link"), t(".partnership_funding_guidance_link_target"), target: "_blank" %> and <%= link_to t(".multi_coloured_manual_link"), t(".multi_coloured_manual_link_target"), rel: "external", target: "_blank" %> can help you.</li>
+    <li>create a proposal for flood and coastal erosion risk management project funding</li>
+    <li>return at any time to add more detail to existing proposals</li>
+    <li>submit or resubmit a proposal</li>
   </ul>
-</p>
-
-<h3 class="heading-medium">If you don't have an account</h3>
-<p>
-You can <%= link_to t('request_an_account_link').downcase, pafs_core.new_account_request_path %> if you work for:
-</p>
-<p>
-  <ul class="list-bullet">
-    <li>a risk management authority</li>
-    <li>partnership and strategic overview team</li>
-    <li>an area programming team</li>
-  </ul>
-</p>
+</div>
 
 <div class="form-group">
   <p>
     <%= link_to t('.start_now'), pafs_core.projects_path, class: "button button-start", role: "button" %>
   </p>
 </div>
+
+<h3 class="heading-medium">Before you start</h3>
+<p>
+You will need an account to use this service, if you don't have one, you can <%= link_to t('request_an_account_link').downcase, pafs_core.new_account_request_path %>
+</p>
+<p>
+To submit a project proposal you'll need to tell us:
+</p>
+<p>
+  <ul class="list-bullet">
+    <li>how you expect to fund the project</li>
+    <li>the amount of funding likely to be required</li>
+    <li>when the project is likely to spend funds</li>
+    <li>the number of households the project is likely to benefit</li>
+    <li>any likely environmental benefits</li>
+    <li>any other likely financial benefits</li>
+  </ul>
+  The <%= link_to t(".partnership_funding_guidance_link"), t(".partnership_funding_guidance_link_target"), target: "_blank" %> and <%= link_to t(".multi_coloured_manual_link"), t(".multi_coloured_manual_link_target"), rel: "external", target: "_blank" %> may help you.
+</p>
