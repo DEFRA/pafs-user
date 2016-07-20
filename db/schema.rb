@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160707101727) do
+ActiveRecord::Schema.define(version: 20160711102617) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -126,9 +126,9 @@ ActiveRecord::Schema.define(version: 20160707101727) do
     t.string   "funding_calculator_content_type"
     t.integer  "funding_calculator_file_size"
     t.datetime "funding_calculator_updated_at"
-    t.text     "project_location",                      default: [],                 array: true
+    t.text     "project_location",                                                   array: true
     t.integer  "project_location_zoom_level",           default: 15
-    t.text     "benefit_area",                          default: "[]"
+    t.text     "benefit_area"
     t.text     "benefit_area_centre",                   default: [],                 array: true
     t.integer  "benefit_area_zoom_level"
     t.datetime "submitted_at"
