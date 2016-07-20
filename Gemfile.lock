@@ -1,13 +1,6 @@
 GIT
-  remote: git://github.com/kennyevil/cumberland.git
-  revision: 8d8a0f43f27ebceef1a8b87cd4213c7fbb06a476
-  specs:
-    cumberland (0.0.1)
-      ffi-proj4 (~> 0.2)
-
-GIT
   remote: https://github.com/EnvironmentAgency/pafs_core
-  revision: db316154aaae8e898703ca12070b14d23fef7efb
+  revision: df526a4644245ddc23302b31213c2e6cbb3f8471
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -15,6 +8,13 @@ GIT
       clamav-client (~> 3.0)
       cumberland
       rails (~> 4.2.5.1)
+
+GIT
+  remote: https://github.com/kennyevil/cumberland
+  revision: 8d8a0f43f27ebceef1a8b87cd4213c7fbb06a476
+  specs:
+    cumberland (0.0.1)
+      ffi-proj4 (~> 0.2)
 
 GEM
   remote: https://rubygems.org/
@@ -119,7 +119,7 @@ GEM
       railties (>= 3.0.0)
     faker (1.6.3)
       i18n (~> 0.5)
-    ffi (1.9.10)
+    ffi (1.9.14)
     ffi-proj4 (0.2.0)
       ffi (>= 1.0.0)
     font-awesome-sass (4.5.0)
