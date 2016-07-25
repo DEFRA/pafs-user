@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/EnvironmentAgency/pafs_core
-  revision: ba5d66f3b8e8db0adf4eb7acc64572fe89dbcb3f
+  revision: 835cfe23a8f4dc14fb94c609f2d3affc5361f191
   branch: develop
   specs:
     pafs_core (0.0.2)
