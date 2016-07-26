@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160720101920) do
+ActiveRecord::Schema.define(version: 20160726081721) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -158,6 +158,7 @@ ActiveRecord::Schema.define(version: 20160720101920) do
     t.string   "benefit_area_content_type"
     t.integer  "benefit_area_file_size"
     t.datetime "benefit_area_file_updated_at"
+    t.boolean  "sea_flooding"
   end
 
   add_index "pafs_core_projects", ["reference_number", "version"], name: "index_pafs_core_projects_on_reference_number_and_version", unique: true, using: :btree
