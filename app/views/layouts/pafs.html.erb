@@ -9,7 +9,7 @@
   <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.12/proj4.js", "data-turbolinks-track" => false %>
   <%#= render 'digital_services_core/shared/head' %>
 <% end %>
-<% if @project %>
+<% if @project.try(:step) %>
   <% set_page_title t("#{@project.step}_step_label") %>
 <% else %>
   <% set_page_title t(:global_proposition_header) %>
