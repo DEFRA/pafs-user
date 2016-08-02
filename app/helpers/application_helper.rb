@@ -7,9 +7,9 @@ module ApplicationHelper
     stripped_title = title.gsub(/’/, %{'})
 
     if content_for? :page_title
-      content_for :page_title, "#{stripped_title} - "
+      content_for :page_title, "#{stripped_title} - Project Application and Funcing Service -"
     else
-      content_for :page_title, "#{stripped_title} - GOV.UK"
+      content_for :page_title, "#{stripped_title} - Project Application and Funcing Service - GOV.UK"
     end
 
     title
