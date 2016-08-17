@@ -1,12 +1,11 @@
 GIT
   remote: https://github.com/EnvironmentAgency/pafs_core
-  revision: 6f75381735ce2b316f93f29aaa5792608900f58e
+  revision: 8ef32db7f471f20af85a96e2ed51a4571436442c
   branch: develop
   specs:
     pafs_core (0.0.2)
       aws-sdk (~> 2)
       clamav-client (~> 3.0)
-      cumberland
       rails (~> 4.2.5.1)
 
 GIT
@@ -15,6 +14,13 @@ GIT
   specs:
     cumberland (0.0.1)
       ffi-proj4 (~> 0.2)
+
+GIT
+  remote: https://github.com/tonyheadford/dibble
+  revision: 06fe3d0811b6f601607b2b9aa61f6c3f8b4965a1
+  branch: develop
+  specs:
+    dibble (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -59,12 +65,12 @@ GEM
       airbrake-ruby (~> 1.2)
     airbrake-ruby (1.2.2)
     arel (6.0.3)
-    aws-sdk (2.5.3)
-      aws-sdk-resources (= 2.5.3)
-    aws-sdk-core (2.5.3)
+    aws-sdk (2.5.4)
+      aws-sdk-resources (= 2.5.4)
+    aws-sdk-core (2.5.4)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.5.3)
-      aws-sdk-core (= 2.5.3)
+    aws-sdk-resources (2.5.4)
+      aws-sdk-core (= 2.5.4)
     bcrypt (3.1.11)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -331,6 +337,7 @@ DEPENDENCIES
   database_cleaner
   devise (~> 3.5.2)
   devise_invitable (~> 1.5.2)
+  dibble (~> 0.1)!
   dotenv-rails
   factory_girl_rails (~> 4.0)
   faker

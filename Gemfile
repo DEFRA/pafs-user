@@ -23,6 +23,10 @@ gem "dotenv-rails"
 gem "devise",           "~> 3.5.2"
 gem "devise_invitable", "~> 1.5.2"
 
+gem "dibble", "~> 0.1",
+  git: "https://github.com/tonyheadford/dibble",
+  branch: "develop"
+
 # Provided by GDS - Template gives us a master layout into which
 # we can inject our content using yield and content_for
 gem "govuk_template", "~> 0.17.0"
