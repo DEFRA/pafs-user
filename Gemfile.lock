@@ -6,6 +6,7 @@ GIT
     pafs_core (0.0.2)
       aws-sdk (~> 2)
       clamav-client (~> 3.0)
+      cumberland
       rails (~> 4.2.5.1)
 
 GIT
@@ -14,6 +15,11 @@ GIT
   branch: develop
   specs:
     dibble (0.1.0)
+  remote: https://github.com/kennyevil/cumberland
+  revision: 8d8a0f43f27ebceef1a8b87cd4213c7fbb06a476
+  specs:
+    cumberland (0.0.1)
+      ffi-proj4 (~> 0.2)
 
 GEM
   remote: https://rubygems.org/
@@ -118,7 +124,9 @@ GEM
       railties (>= 3.0.0)
     faker (1.6.3)
       i18n (~> 0.5)
-    ffi (1.9.10)
+    ffi (1.9.14)
+    ffi-proj4 (0.2.0)
+      ffi (>= 1.0.0)
     font-awesome-sass (4.5.0)
       sass (>= 3.2)
     formatador (0.2.5)
@@ -265,8 +273,8 @@ GEM
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
     sass (3.4.22)
-    sass-rails (5.0.4)
-      railties (>= 4.0.0, < 5.0)
+    sass-rails (5.0.6)
+      railties (>= 4.0.0, < 6)
       sass (~> 3.1)
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
@@ -296,7 +304,7 @@ GEM
       ref
     thor (0.19.1)
     thread_safe (0.3.5)
-    tilt (2.0.2)
+    tilt (2.0.5)
     turbolinks (2.5.3)
       coffee-rails
     tzinfo (1.2.2)
@@ -324,6 +332,7 @@ DEPENDENCIES
   capybara
   codeclimate-test-reporter
   coffee-rails (~> 4.1.0)
+  cumberland (~> 0.0.1)!
   database_cleaner
   devise (~> 3.5.2)
   devise_invitable (~> 1.5.2)

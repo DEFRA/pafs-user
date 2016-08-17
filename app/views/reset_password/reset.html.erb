@@ -1,16 +1,16 @@
 <div class="step-container">
   <div class="grid-row">
-    <div class="govuk-box-highlight">
-      <h1 class="bold-large">Password reset email sent</h1>
-      <p>to<br>
-      <strong class="heading-medium"><%= flash[:email] %></strong>
-      </p>
-    </div>
-    <h2 class="heading-medium">What's next</h2>
-    <p>You'll receive a password reset email in a moment.</p>
-    <p>If you don't receive this email within 20 minutes, you can contact the Environment Agency on 02030 254 771.</p>
-    <div class="form-group">
-      <%= link_to "Back to start", page_path(:start), class: "button", role: "button" %>
+    <div class="column-two-thirds">
+      <div class="govuk-box-highlight">
+        <h1 class="bold-large">Password reset request sent to</h1>
+        <strong class="heading-medium"><%= flash[:email] %></strong>
+      </div>
+      <h2 class="heading-medium">What's next</h2>
+      <p>You'll receive a password reset email in a moment.</p>
+      <p>If you don't receive this email within 30 minutes, contact the Environment Agency on 02030 254 771.</p>
+      <div class="form-group">
+        <%= link_to t("continue"), page_path(:start), class: "button", role: "button" %>
+      </div>
     </div>
   </div>
 </div>

@@ -140,6 +140,11 @@ ActiveRecord::Schema.define(version: 20160817133954) do
     t.string   "funding_calculator_content_type"
     t.integer  "funding_calculator_file_size"
     t.datetime "funding_calculator_updated_at"
+    t.text     "project_location",                      default: [],                 array: true
+    t.integer  "project_location_zoom_level",           default: 15
+    t.text     "benefit_area",                          default: "[]"
+    t.text     "benefit_area_centre",                   default: [],                 array: true
+    t.integer  "benefit_area_zoom_level"
     t.datetime "submitted_at"
     t.integer  "flood_protection_before"
     t.integer  "flood_protection_after"

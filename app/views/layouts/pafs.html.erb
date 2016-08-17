@@ -5,10 +5,15 @@
   <!--[if IE 8]><%= stylesheet_link_tag "application-ie8" %><![endif]-->
   <meta name="format-detection" content="telephone=no" />
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/ol3/3.8.2/ol.js", "data-turbolinks-track" => false %>
+  <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.12/proj4.js", "data-turbolinks-track" => false %>
   <%#= render 'digital_services_core/shared/head' %>
 <% end %>
-
-<% set_page_title t(:global_proposition_header) %>
+<% if @project.try(:step) %>
+  <% set_page_title t("#{@project.step}_step_label") %>
+<% else %>
+  <% set_page_title t(:global_proposition_header) %>
+<% end %>
 
 <% content_for :header_class, 'with-proposition' %>
 <% content_for :proposition_header do %>
