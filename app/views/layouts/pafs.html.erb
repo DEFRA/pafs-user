@@ -52,8 +52,8 @@
       <li class="inline"><%= link_to(t('global.footer_cookies_link'), main_app.page_path('cookies'), target: '_blank') %></li>
     </ul>
     <div class="revision" aria-hidden="true">Build: <%= revision_hash %></div>
-    <% if user_signed_in? %>
-      <div class="revision" aria-hidden="true">Primary Area: <%= current_user.primary_area.name %> (<%= current_user.primary_area.area_type %>)</div>
+    <% if user_signed_in? && ENV["ENABLE_USER_AREAS"] %>
+      <div aria-hidden="true">Primary Area: <%= link_to "#{current_user.primary_area.name} (#{current_user.primary_area.area_type})", pafs_core.area_path(current_user.primary_area) %></div>
     <% end %>
   </div>
 <% end %>

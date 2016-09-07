@@ -10,9 +10,14 @@ namespace :users do
       if area
         user = User.invite!({email: row["email"],
                              first_name: row["first_name"],
-                             last_name: row["last_name"]})
+                             last_name: row["last_name"]}) do |u|
+                               u.skip_invitation = true
+                             end
 
         PafsCore::UserArea.create(area: area, user: user, primary: true)
+        AccountRequestMailer.account_created_email(user).deliver_now
+        user.invitation_sent_at = Time.now.utc
+
         puts "#{user.email} invited"
       else
         row["error"] = "No area found"

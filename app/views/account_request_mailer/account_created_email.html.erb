@@ -1,0 +1,5 @@
+<p>Dear <%= @name %>,</p>
+<p>We've created an account for <%= @email %></p>
+<p>Use the link below, or  copy and paste it into your browser. You can create a password that will allow you to sign into your account.</p>
+<div><%= link_to @invitation_link, @invitation_link %></div>
+<p>Ignore this email if you don't want to continue to create your account. The account will remain inactive unless you set a password.</p>
