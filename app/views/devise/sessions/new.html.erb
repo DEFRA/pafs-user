@@ -1,3 +1,4 @@
+<% content_for :page_title, make_page_title("Sign in") %>
 <%
   if flash[:alert].present?
     resource.errors.add(:base, flash[:alert])
