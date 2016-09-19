@@ -4,8 +4,8 @@
     <h1 class="heading-large">Submit a proposal for flood and coastal erosion risk management project funding</h1>
 
     <div class="form-group">
-      <p>Use this service to:</p>
-      <ul class="list-bullet">
+      <p class="list-intro">Use this service to:</p>
+      <ul class="list-bullet spaced-list">
         <li>create a proposal for flood and coastal erosion risk management project funding</li>
         <li>return at any time to add more detail to existing proposals</li>
         <li>submit a proposal or resubmit it if you've made changes</li>
@@ -20,13 +20,13 @@
 
     <h3 class="heading-medium">Before you start</h3>
     <p>
-      You will need an account to use this service, if you don't have one, you can <%= link_to t('request_an_account_link').downcase, pafs_core.new_account_request_path %>
+      You will need an account to use this service, if you don't have one, you can <%= link_to t('request_an_account_link').downcase, pafs_core.new_account_request_path %>.
     </p>
-    <p>
+    <p class="list-intro">
       To submit a proposal you'll need to tell us:
     </p>
-    <p>
-      <ul class="list-bullet">
+    <div class="form-group">
+      <ul class="list-bullet spaced-list">
         <li>how you expect to fund the project</li>
         <li>the amount of funding likely to be required</li>
         <li>when the project is likely to spend funds</li>
@@ -34,7 +34,9 @@
         <li>any likely environmental benefits</li>
         <li>any other likely financial benefits</li>
       </ul>
-      The <%= link_to t(".partnership_funding_guidance_link"), t(".partnership_funding_guidance_link_target"), target: "_blank" %> and <%= link_to t(".multi_coloured_manual_link"), t(".multi_coloured_manual_link_target"), rel: "external", target: "_blank" %> may help you.
+    </div>
+    <p>
+      The <%= link_to t(".partnership_funding_guidance_link"), t(".partnership_funding_guidance_link_target"), rel: "external", target: "_blank" %> and <%= link_to t(".multi_coloured_manual_link"), t(".multi_coloured_manual_link_target"), rel: "external", target: "_blank" %> may help you.
     </p>
   </div>
 </div>
