@@ -49,6 +49,8 @@ gem "pafs_core", "~> 0.0",
   git: "https://github.com/EnvironmentAgency/pafs_core",
   branch: "develop"
 gem "cumberland", "~> 0.0.1", git: "https://github.com/kennyevil/cumberland"
+gem "axlsx", "~>2.1.0.pre"
+gem "roo"
 
 group :development, :test do
   gem "rspec-rails"
