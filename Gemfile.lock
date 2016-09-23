@@ -1,19 +1,19 @@
 GIT
+  remote: https://github.com/EnvironmentAgency/cumberland
+  revision: aca83db766a65a84c22bd9ef8a8abe3e2555a39f
+  specs:
+    cumberland (0.0.1)
+      ffi-proj4 (~> 0.2)
+
+GIT
   remote: https://github.com/EnvironmentAgency/pafs_core
-  revision: 914726ffc129d57acc7cc4de9980bb6060b708a1
+  revision: dab47577067ef76cab174ac10f41d47e49da0879
   branch: develop
   specs:
     pafs_core (0.0.2)
       aws-sdk (~> 2)
       clamav-client (~> 3.0)
       rails (~> 4.2.5.1)
-
-GIT
-  remote: https://github.com/kennyevil/cumberland
-  revision: aca83db766a65a84c22bd9ef8a8abe3e2555a39f
-  specs:
-    cumberland (0.0.1)
-      ffi-proj4 (~> 0.2)
 
 GIT
   remote: https://github.com/tonyheadford/dibble
