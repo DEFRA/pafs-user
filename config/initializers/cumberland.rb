@@ -1,3 +1,3 @@
 require "cumberland"
 
-Cumberland.config.google_api_key = ENV["GOOGLE_API_KEY"]
+Cumberland.config.os_names_api_key = ENV["OS_NAMES_API_KEY"]

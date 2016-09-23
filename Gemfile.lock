@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/EnvironmentAgency/pafs_core
-  revision: def5d73f02bd5729e694b8075f988baa82db780b
+  revision: b5f318b05a26922ddd92ed05ea38f80ae79a5400
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/kennyevil/cumberland
-  revision: 8d8a0f43f27ebceef1a8b87cd4213c7fbb06a476
+  revision: b3b7d7b9e93094041f2fcfee7c2c35db544ad123
   specs:
     cumberland (0.0.1)
       ffi-proj4 (~> 0.2)
@@ -65,12 +65,12 @@ GEM
       airbrake-ruby (~> 1.2)
     airbrake-ruby (1.2.2)
     arel (6.0.3)
-    aws-sdk (2.6.2)
-      aws-sdk-resources (= 2.6.2)
-    aws-sdk-core (2.6.2)
+    aws-sdk (2.6.3)
+      aws-sdk-resources (= 2.6.3)
+    aws-sdk-core (2.6.3)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.6.2)
-      aws-sdk-core (= 2.6.2)
+    aws-sdk-resources (2.6.3)
+      aws-sdk-core (= 2.6.3)
     axlsx (2.1.0.pre)
       htmlentities (~> 4.3.1)
       nokogiri (>= 1.4.1)
