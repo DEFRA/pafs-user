@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/EnvironmentAgency/pafs_core
-  revision: dab47577067ef76cab174ac10f41d47e49da0879
+  revision: 3cddcca2f66ec25aa497459b5a211a401eab6d5b
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -194,7 +194,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
-    minitest (5.9.0)
+    minitest (5.9.1)
     multi_json (1.11.3)
     nenv (0.3.0)
     nokogiri (1.6.8)
