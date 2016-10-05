@@ -39,6 +39,9 @@ gem "govuk_elements_rails"
 #   git: "https://github.com/tonyheadford/govuk_elements_form_builder.git",
 #   branch: "develop"
 
+# active job backend
+gem "sucker_punch", "~> 2.0"
+
 # static pages
 gem "high_voltage", "~> 2.4.0"
 gem "passenger", "~> 5.0.25", require: false

@@ -34,4 +34,8 @@ namespace :users do
       end
     end
   end
+  desc "Clean up stale invitations and account requests"
+  task clean: :environment do
+    PafsCore::AccountRequestCleanupJob.new.perform
+  end
 end

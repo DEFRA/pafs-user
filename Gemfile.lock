@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/EnvironmentAgency/pafs_core
-  revision: eccbc1aec7f92d4bad61221ba62be29d7a08c66e
+  revision: 21e99f6d2a0693b4f941f33188bd809c004c49f4
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -307,6 +307,8 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    sucker_punch (2.0.2)
+      concurrent-ruby (~> 1.0.0)
     therubyracer (0.12.2)
       libv8 (~> 3.16.14.0)
       ref
@@ -374,6 +376,7 @@ DEPENDENCIES
   shoulda-matchers (~> 3.1)
   simplecov
   spring
+  sucker_punch (~> 2.0)
   therubyracer
   turbolinks
   uglifier (>= 1.3.0)
