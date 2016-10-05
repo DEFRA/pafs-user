@@ -1,13 +1,13 @@
 GIT
   remote: https://github.com/EnvironmentAgency/cumberland
-  revision: aca83db766a65a84c22bd9ef8a8abe3e2555a39f
+  revision: 8dbbd674b4f3b27292261a5a746773df13b78a91
   specs:
     cumberland (0.0.1)
       ffi-proj4 (~> 0.2)
 
 GIT
   remote: https://github.com/EnvironmentAgency/pafs_core
-  revision: 21e99f6d2a0693b4f941f33188bd809c004c49f4
+  revision: 1b4a9b2d354bcde0b2d4329fe9f51ca8bf0fa9fb
   branch: develop
   specs:
     pafs_core (0.0.2)
