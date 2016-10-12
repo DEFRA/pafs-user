@@ -28,6 +28,7 @@ events {
 http {
     <%= include_passenger_internal_template('http.erb', 4) %>
 
+    passenger_max_pool_size 20;
     ### BEGIN your own configuration options ###
     # This is a good place to put your own config
     # options. Note that your options must not
@@ -70,6 +71,7 @@ http {
         <%= include_passenger_internal_template('server.erb', 8, true, binding) %>
         <%= include_passenger_internal_template('rails_asset_pipeline.erb', 8, false) %>
 
+        passenger_max_request_queue_size 200;
         ### BEGIN your own configuration options ###
         # This is a good place to put your own config
         # options. Note that your options must not
