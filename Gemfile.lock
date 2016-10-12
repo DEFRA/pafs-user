@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/EnvironmentAgency/cumberland
-  revision: aca83db766a65a84c22bd9ef8a8abe3e2555a39f
+  revision: 8dbbd674b4f3b27292261a5a746773df13b78a91
   specs:
     cumberland (0.0.1)
       ffi-proj4 (~> 0.2)
