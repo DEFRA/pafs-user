@@ -1,3 +1,3 @@
-every :reboot, roles: [:app] do
-  command "cd ~/pafs-user/current && bundle exec passenger start"
+every 1.day, at: "1:00 am" do
+  rake "users:clean"
 end
