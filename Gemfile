@@ -84,6 +84,13 @@ group :production, :edge, :qa, :staging do
   gem "airbrake", "~> 5.0"
 end
 
+group :benchmark do
+  gem "benchmark-ips"
+  gem "ruby-prof"
+  gem "stackprof"
+  gem "rbtrace"
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
