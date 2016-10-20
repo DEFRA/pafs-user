@@ -5,10 +5,29 @@
   @include core-16;
   border-bottom: 1px solid $grey-2;
   margin-top: 0.5em;
-  padding-bottom: 0.5em;
+  text-align: right;
 
-  strong {
-    color: $black;
+  @include media(mobile) {
+    padding-bottom: 0.5em;
+    text-align: left;
+  }
+
+  .user-menu {
+    display: inline-block;
+
+    li {
+      display: inline;
+      float: left;
+      list-style-type: none;
+      margin-left: 1.25em;
+
+      @include media(mobile) {
+        display: block;
+        float: none;
+        margin-bottom: 0.25em;
+        margin-left: 0;
+      }
+    }
   }
 
   #dashboard-link-container {

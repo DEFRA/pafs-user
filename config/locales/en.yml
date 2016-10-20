@@ -28,7 +28,7 @@ en:
     formats:
       default: "%d/%m/%Y"
   global_proposition_header: Submit a proposal for flood and coastal erosion risk management project funding
-  dashboard_link: Go to my dashboard
+  dashboard_link: Your proposals
   logout_link: Sign out
   request_an_account_link: Request an account
   resend_unlock_instructions_link: resend unlock instructions
