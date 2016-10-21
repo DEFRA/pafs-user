@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/EnvironmentAgency/pafs_core
-  revision: 24d2fdab1905348657b5cbb6c4e4a0da13c976cb
+  revision: cf78f052ef241f7039e5e22bc3ca36916c6c301c
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -65,12 +65,12 @@ GEM
       airbrake-ruby (~> 1.2)
     airbrake-ruby (1.2.2)
     arel (6.0.3)
-    aws-sdk (2.6.11)
-      aws-sdk-resources (= 2.6.11)
-    aws-sdk-core (2.6.11)
+    aws-sdk (2.6.12)
+      aws-sdk-resources (= 2.6.12)
+    aws-sdk-core (2.6.12)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.6.11)
-      aws-sdk-core (= 2.6.11)
+    aws-sdk-resources (2.6.12)
+      aws-sdk-core (= 2.6.12)
     axlsx (2.1.0.pre)
       htmlentities (~> 4.3.1)
       nokogiri (>= 1.4.1)
