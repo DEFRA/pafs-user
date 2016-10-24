@@ -22,4 +22,11 @@ module ApplicationHelper
     resource.errors.delete(:password)
     resource.errors.delete(:password_confirmation)
   end
+
+  def show_return_to_overview?
+    ((controller_name == "projects" && action_name != "index" && action_name != "show") ||
+      (controller_name == "downloads" && action_name == "index")) &&
+      defined?(:project) &&
+      !@project.nil?
+  end
 end

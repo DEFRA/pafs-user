@@ -30,6 +30,7 @@
   <main id="content" role="main">
     <%= render "shared/phase_banner" %>
     <%= render "shared/user_bar" if user_signed_in? %>
+    <%= render "shared/return_to_overview" if show_return_to_overview? %>
     <%= yield %>
   </main>
 <% end %>
