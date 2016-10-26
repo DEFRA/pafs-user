@@ -32,7 +32,7 @@ en:
   logout_link: Sign out
   request_an_account_link: Request an account
   resend_unlock_instructions_link: resend unlock instructions
-  reset_your_password_link: I have forgotten my email address or password
+  reset_your_password_link: I have forgotten my password
   return_to_overview_link: "Return to proposal overview"
   support_telephone_number: "02030 254 771"
   pages:
