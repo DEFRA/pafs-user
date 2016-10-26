@@ -8,7 +8,6 @@
       <%= f.form_group(:base) do %>
         <%= f.error_message(:base) %>
         <%= f.email_field :email, autofocus: true, autocomplete: "off", class: 'form-control form-wide' %>
-        <p>If you have forgotten the email address used to sign in, contact the Environment Agency on <%= t("support_telephone_number") %>.</p>
       <% end %>
       <div class="form-group">
         <%= f.submit "Continue", class: 'button' %>
