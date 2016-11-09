@@ -5,4 +5,12 @@ class User < PafsCore::User
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :invitable, :database_authenticatable, #:registerable, :rememberable
          :recoverable, :trackable, :validatable, :timeoutable
+
+  def active_for_authentication?
+    !disabled?
+  end
+
+  def inactive_message
+    "You must register for an account before using this service" if disabled?
+  end
 end
