@@ -10,3 +10,6 @@ DEVISE_MAILER_SENDER=no-reply@example.org
 # Airbrake
 AIRBRAKE_HOST=https://errbit.server.here
 AIRBRAKE_PROJECT_KEY=errbit_project_key_here
+
+# set this to include the google analytics code in the template
+GOOGLE_ANALYTICS_ID=your-id-here
