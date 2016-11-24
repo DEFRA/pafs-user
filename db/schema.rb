@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161109092611) do
+ActiveRecord::Schema.define(version: 20161117100646) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -200,6 +200,13 @@ ActiveRecord::Schema.define(version: 20161109092611) do
   end
 
   add_index "pafs_core_reference_counters", ["rfcc_code"], name: "index_pafs_core_reference_counters_on_rfcc_code", unique: true, using: :btree
+
+  create_table "pafs_core_states", force: :cascade do |t|
+    t.integer  "project_id"
+    t.string   "state",      default: "draft", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "pafs_core_user_areas", force: :cascade do |t|
     t.datetime "created_at",                 null: false

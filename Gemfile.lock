@@ -7,13 +7,14 @@ GIT
 
 GIT
   remote: https://github.com/EnvironmentAgency/pafs_core
-  revision: 70a034f726fb6605e42845dc2b230e68a58e047d
+  revision: 8fd5127e0048c26458b744f93fd631325de4e9b3
   branch: develop
   specs:
     pafs_core (0.0.2)
       aws-sdk (~> 2)
       axlsx (~> 2.1.0.pre)
       axlsx_rails
+      bstard
       clamav-client (~> 3.0)
       rack-cors
       rails (~> 4.2.5.1)
@@ -69,12 +70,14 @@ GEM
       airbrake-ruby (~> 1.2)
     airbrake-ruby (1.2.2)
     arel (6.0.3)
-    aws-sdk (2.6.19)
-      aws-sdk-resources (= 2.6.19)
-    aws-sdk-core (2.6.19)
+    aws-sdk (2.6.28)
+      aws-sdk-resources (= 2.6.28)
+    aws-sdk-core (2.6.28)
+      aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.6.19)
-      aws-sdk-core (= 2.6.19)
+    aws-sdk-resources (2.6.28)
+      aws-sdk-core (= 2.6.28)
+    aws-sigv4 (1.0.0)
     axlsx (2.1.0.pre)
       htmlentities (~> 4.3.1)
       nokogiri (>= 1.4.1)
@@ -86,6 +89,7 @@ GEM
     benchmark-ips (2.7.2)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bstard (0.2.4)
     builder (3.2.2)
     byebug (8.2.2)
     capybara (2.6.2)
