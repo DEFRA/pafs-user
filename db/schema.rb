@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161117100646) do
+ActiveRecord::Schema.define(version: 20161207092241) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -186,6 +186,7 @@ ActiveRecord::Schema.define(version: 20161117100646) do
     t.float    "kilometres_of_protected_river_improved"
     t.string   "county"
     t.datetime "urgency_details_updated_at"
+    t.string   "grid_reference"
   end
 
   add_index "pafs_core_projects", ["reference_number", "version"], name: "index_pafs_core_projects_on_reference_number_and_version", unique: true, using: :btree
