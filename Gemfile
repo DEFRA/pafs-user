@@ -23,6 +23,8 @@ gem "dotenv-rails"
 gem "devise",           "~> 3.5.2"
 gem "devise_invitable", "~> 1.5.2"
 
+gem "kaminari"
+
 gem "dibble", "~> 0.1",
   git: "https://github.com/tonyheadford/dibble",
   branch: "develop"

@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/EnvironmentAgency/pafs_core
-  revision: 088e077b49de72cacaa904d9dccff773ec32b761
+  revision: 8132998a7362341de1947fd3cdb5e5481bd7c057
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -17,6 +17,7 @@ GIT
       bstard
       clamav-client (~> 3.0)
       faraday
+      kaminari
       rack-cors
       rails (~> 4.2.5.1)
       roo (~> 2.4.0)
@@ -71,13 +72,13 @@ GEM
       airbrake-ruby (~> 1.2)
     airbrake-ruby (1.2.2)
     arel (6.0.3)
-    aws-sdk (2.6.40)
-      aws-sdk-resources (= 2.6.40)
-    aws-sdk-core (2.6.40)
+    aws-sdk (2.6.41)
+      aws-sdk-resources (= 2.6.41)
+    aws-sdk-core (2.6.41)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.6.40)
-      aws-sdk-core (= 2.6.40)
+    aws-sdk-resources (2.6.41)
+      aws-sdk-core (= 2.6.41)
     aws-sigv4 (1.0.0)
     axlsx (2.1.0.pre)
       htmlentities (~> 4.3.1)
@@ -191,6 +192,9 @@ GEM
       railties (>= 3.1.0)
       turbolinks
     json (1.8.3)
+    kaminari (0.17.0)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     launchy (2.4.3)
       addressable (~> 2.3)
     letter_opener (1.4.1)
@@ -385,6 +389,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
+  kaminari
   letter_opener
   overcommit
   pafs_core (~> 0.0)!
