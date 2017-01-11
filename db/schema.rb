@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161207092241) do
+ActiveRecord::Schema.define(version: 20170104095135) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,6 +54,18 @@ ActiveRecord::Schema.define(version: 20161207092241) do
   end
 
   add_index "pafs_core_areas", ["name"], name: "index_pafs_core_areas_on_name", using: :btree
+
+  create_table "pafs_core_asite_files", force: :cascade do |t|
+    t.integer "asite_submission_id"
+    t.string  "filename",            null: false
+    t.string  "checksum",            null: false
+  end
+
+  create_table "pafs_core_asite_submissions", force: :cascade do |t|
+    t.integer  "project_id"
+    t.datetime "email_sent_at",            null: false
+    t.datetime "confirmation_received_at"
+  end
 
   create_table "pafs_core_bootstraps", force: :cascade do |t|
     t.boolean  "fcerm_gia"
