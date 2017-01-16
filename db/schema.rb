@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170104095135) do
+ActiveRecord::Schema.define(version: 20170113141913) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -63,8 +63,9 @@ ActiveRecord::Schema.define(version: 20170104095135) do
 
   create_table "pafs_core_asite_submissions", force: :cascade do |t|
     t.integer  "project_id"
-    t.datetime "email_sent_at",            null: false
+    t.datetime "email_sent_at",                                null: false
     t.datetime "confirmation_received_at"
+    t.string   "status",                   default: "created", null: false
   end
 
   create_table "pafs_core_bootstraps", force: :cascade do |t|

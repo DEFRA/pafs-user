@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/EnvironmentAgency/pafs_core
-  revision: b8a8e81b67f0b44142f59ef6bc9b8397e4301151
+  revision: 2a9fe6f8a05e420c0b07bca1fc17832fc9b0097c
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -92,7 +92,7 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bstard (0.2.4)
-    builder (3.2.2)
+    builder (3.2.3)
     byebug (8.2.2)
     capybara (2.6.2)
       addressable
@@ -143,7 +143,7 @@ GEM
       railties (>= 3.0.0)
     faker (1.6.3)
       i18n (~> 0.5)
-    faraday (0.10.1)
+    faraday (0.11.0)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.14)
     ffi-proj4 (0.2.0)
@@ -191,7 +191,7 @@ GEM
     jquery-turbolinks (2.1.0)
       railties (>= 3.1.0)
       turbolinks
-    json (1.8.3)
+    json (1.8.6)
     kaminari (1.0.0)
       activesupport (>= 4.1.0)
       kaminari-actionview (= 1.0.0)
