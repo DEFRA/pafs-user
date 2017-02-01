@@ -1,13 +1,13 @@
 GIT
-  remote: https://github.com/EnvironmentAgency/cumberland
+  remote: https://github.com/DEFRA/cumberland
   revision: 8dbbd674b4f3b27292261a5a746773df13b78a91
   specs:
     cumberland (0.0.1)
       ffi-proj4 (~> 0.2)
 
 GIT
-  remote: https://github.com/EnvironmentAgency/pafs_core
-  revision: 1016b4341fdd7ff93271854a9f06e7fc80b7e2c2
+  remote: https://github.com/DEFRA/pafs_core
+  revision: bc4d8c7ccf6bc1ac2d0098cd1f4cc68845f07c02
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -21,6 +21,7 @@ GIT
       rack-cors
       rails (~> 4.2.7.1)
       roo (~> 2.4.0)
+      rubyXL
 
 GIT
   remote: https://github.com/tonyheadford/dibble
@@ -72,13 +73,13 @@ GEM
       airbrake-ruby (~> 1.2)
     airbrake-ruby (1.2.2)
     arel (6.0.4)
-    aws-sdk (2.7.2)
-      aws-sdk-resources (= 2.7.2)
-    aws-sdk-core (2.7.2)
+    aws-sdk (2.7.3)
+      aws-sdk-resources (= 2.7.3)
+    aws-sdk-core (2.7.3)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.7.2)
-      aws-sdk-core (= 2.7.2)
+    aws-sdk-resources (2.7.3)
+      aws-sdk-core (= 2.7.3)
     aws-sigv4 (1.0.0)
     axlsx (2.1.0.pre)
       htmlentities (~> 4.3.1)
@@ -178,7 +179,7 @@ GEM
       rspec (>= 2.99.0, < 4.0)
     high_voltage (2.4.0)
     htmlentities (4.3.4)
-    i18n (0.7.0)
+    i18n (0.8.0)
     iniparse (1.4.2)
     jbuilder (2.4.1)
       activesupport (>= 3.0.0, < 5.1)
@@ -315,6 +316,9 @@ GEM
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
     ruby-prof (0.16.2)
+    rubyXL (3.3.22)
+      nokogiri (>= 1.4.4)
+      rubyzip (>= 1.1.6)
     rubyzip (1.1.7)
     sass (3.4.22)
     sass-rails (5.0.6)

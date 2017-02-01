@@ -51,9 +51,9 @@ gem "whenever", require: false
 
 # shared PAFS code
 gem "pafs_core", "~> 0.0",
-  git: "https://github.com/EnvironmentAgency/pafs_core",
+  git: "https://github.com/DEFRA/pafs_core",
   branch: "develop"
-gem "cumberland", "~> 0.0.1", git: "https://github.com/EnvironmentAgency/cumberland"
+gem "cumberland", "~> 0.0.1", git: "https://github.com/DEFRA/cumberland"
 # gem "axlsx", "~>2.1.0.pre"
 # gem "roo"
 
