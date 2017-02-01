@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/EnvironmentAgency/pafs_core
-  revision: 92de95d8f99eb012bc1376c1de1cf986824df991
+  revision: bc4d8c7ccf6bc1ac2d0098cd1f4cc68845f07c02
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -21,6 +21,7 @@ GIT
       rack-cors
       rails (~> 4.2.7.1)
       roo (~> 2.4.0)
+      rubyXL
 
 GIT
   remote: https://github.com/tonyheadford/dibble
@@ -72,13 +73,13 @@ GEM
       airbrake-ruby (~> 1.2)
     airbrake-ruby (1.2.2)
     arel (6.0.4)
-    aws-sdk (2.6.47)
-      aws-sdk-resources (= 2.6.47)
-    aws-sdk-core (2.6.47)
+    aws-sdk (2.7.3)
+      aws-sdk-resources (= 2.7.3)
+    aws-sdk-core (2.7.3)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.6.47)
-      aws-sdk-core (= 2.6.47)
+    aws-sdk-resources (2.7.3)
+      aws-sdk-core (= 2.7.3)
     aws-sigv4 (1.0.0)
     axlsx (2.1.0.pre)
       htmlentities (~> 4.3.1)
@@ -178,7 +179,7 @@ GEM
       rspec (>= 2.99.0, < 4.0)
     high_voltage (2.4.0)
     htmlentities (4.3.4)
-    i18n (0.7.0)
+    i18n (0.8.0)
     iniparse (1.4.2)
     jbuilder (2.4.1)
       activesupport (>= 3.0.0, < 5.1)
@@ -192,18 +193,18 @@ GEM
       railties (>= 3.1.0)
       turbolinks
     json (1.8.6)
-    kaminari (1.0.0)
+    kaminari (1.0.1)
       activesupport (>= 4.1.0)
-      kaminari-actionview (= 1.0.0)
-      kaminari-activerecord (= 1.0.0)
-      kaminari-core (= 1.0.0)
-    kaminari-actionview (1.0.0)
+      kaminari-actionview (= 1.0.1)
+      kaminari-activerecord (= 1.0.1)
+      kaminari-core (= 1.0.1)
+    kaminari-actionview (1.0.1)
       actionview
-      kaminari-core (= 1.0.0)
-    kaminari-activerecord (1.0.0)
+      kaminari-core (= 1.0.1)
+    kaminari-activerecord (1.0.1)
       activerecord
-      kaminari-core (= 1.0.0)
-    kaminari-core (1.0.0)
+      kaminari-core (= 1.0.1)
+    kaminari-core (1.0.1)
     launchy (2.4.3)
       addressable (~> 2.3)
     letter_opener (1.4.1)
@@ -315,6 +316,9 @@ GEM
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
     ruby-prof (0.16.2)
+    rubyXL (3.3.22)
+      nokogiri (>= 1.4.4)
+      rubyzip (>= 1.1.6)
     rubyzip (1.1.7)
     sass (3.4.22)
     sass-rails (5.0.6)
