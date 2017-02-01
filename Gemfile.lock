@@ -1,12 +1,12 @@
 GIT
-  remote: https://github.com/EnvironmentAgency/cumberland
+  remote: https://github.com/DEFRA/cumberland
   revision: 8dbbd674b4f3b27292261a5a746773df13b78a91
   specs:
     cumberland (0.0.1)
       ffi-proj4 (~> 0.2)
 
 GIT
-  remote: https://github.com/EnvironmentAgency/pafs_core
+  remote: https://github.com/DEFRA/pafs_core
   revision: bc4d8c7ccf6bc1ac2d0098cd1f4cc68845f07c02
   branch: develop
   specs:
