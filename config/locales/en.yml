@@ -20,6 +20,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  global:
+    footer_support_text: "Environment Agency (England) helpline:"
+    helpline_telephone_number: "0370 8506 506"
   date:
     formats:
       default: "%d/%m/%Y"
