@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: bc4d8c7ccf6bc1ac2d0098cd1f4cc68845f07c02
+  revision: 9d917f5781b5373fc21e3104b9a4b5d8acb197b7
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -429,4 +429,4 @@ DEPENDENCIES
   whenever
 
 BUNDLED WITH
-   1.13.7
+   1.14.3

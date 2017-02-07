@@ -52,11 +52,11 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 <% content_for :footer_top do %>
 
   <div class="ea-footer">
-    <p><%= t('global.footer_support_text') %> <%= link_to t("global.helpline_telephone_number"), "tel:#{t "global.helpline_telephone_number" }" %></p>
+    <p><%= t('global.footer_support_text') %> <%= link_to t("global.helpline_telephone_number"), "tel:#{t("global.helpline_telephone_number").delete(" ") }" %></p>
 
     <ul class="inline-list">
-      <li class="inline"><%= link_to 'Privacy', page_path('pafs_privacy_policy'), target: '_blank' %></li>
-      <li class="inline"><%= link_to 'Cookies', page_path('pafs_cookie_policy'), target: '_blank' %></li>
+      <li class="inline"><%= link_to 'Privacy', main_app.page_path('pafs_privacy_policy'), target: '_blank' %></li>
+      <li class="inline"><%= link_to 'Cookies', main_app.page_path('pafs_cookie_policy'), target: '_blank' %></li>
     </ul>
     <div class="revision" aria-hidden="true">Build: <%= revision_hash %></div>
     <% if user_signed_in? && ENV["ENABLE_USER_AREAS"] %>
