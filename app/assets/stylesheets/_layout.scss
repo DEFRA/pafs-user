@@ -93,12 +93,12 @@
 // ==========================================================================
 
 .ea-footer {
-  @include inner-block;
   @include core-16;
+  //margin-bottom: $gutter-half;
+  margin-bottom: $gutter;
 
   @include media(mobile) {
     display: block;
-    margin-bottom: $gutter-half;
   }
 
   .revision {
@@ -112,6 +112,7 @@
     margin-right: 10px;
   }
 }
+
 
 .white-space-nowrap {
   white-space: nowrap;
