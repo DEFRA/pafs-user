@@ -1,12 +1,14 @@
 # frozen_string_literal: true
 class AccountRequestMailer < ApplicationMailer
   def confirmation_email(email, name)
+    prevent_tracking
     @email = email
     @name = name
     mail(to: email, subject: "We've received your request to create an account")
   end
 
   def account_created_email(user)
+    prevent_tracking
     @email = user.email
     @name = user.full_name
     # NOTE: :raw_invitation_token is only available on the instance that generated
