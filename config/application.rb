@@ -49,5 +49,8 @@ module Pafs
 
     # active job
     config.active_job.queue_adapter = :sucker_punch
+
+    # exception handling
+    config.exceptions_app = self.routes
   end
 end
