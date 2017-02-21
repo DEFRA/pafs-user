@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   mount PafsCore::Engine, at: "/pc"
 
+  match '(errors)/:status', to: PafsCore::Engine, via: :all, constraints: { status: /\d{3}/ }
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
