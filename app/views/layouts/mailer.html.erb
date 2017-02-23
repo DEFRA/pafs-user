@@ -294,7 +294,9 @@
     </div>
   </div>
   <div class="wrapper">
-    <h1 class="summary-heading"><%= yield :heading %></h1>
+    <% if local_assigns.include?(:heading) %>
+      <h1 class="summary-heading"><%= yield :heading %></h1>
+    <% end %>
     <%= yield %>
   </div>
 </body>
