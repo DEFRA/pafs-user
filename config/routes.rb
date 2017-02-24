@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   # use our own passwords controller
   devise_for :users, controllers: { passwords: "passwords" }
 
+  resources :account_requests, only: [:show, :new, :create]
+
   # We use high voltage to manage static content incl home page
   # See -- config/initializers/high_voltage.rb
   # for the home/root page
