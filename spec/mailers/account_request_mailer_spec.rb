@@ -7,7 +7,7 @@ RSpec.describe AccountRequestMailer, type: :mailer do
       email = AccountRequestMailer.confirmation_email("neville.southall@example.com", "Big Nev")
       expect(email.to).to eq(["neville.southall@example.com"])
       expect(email.from).to eq([ENV.fetch("DEVISE_MAILER_SENDER")])
-      expect(email.body.encoded).to match("Dear Big Nev")
+      expect(email.body.encoded).to match("Hello Big Nev")
     end
   end
 
@@ -17,7 +17,7 @@ RSpec.describe AccountRequestMailer, type: :mailer do
       email = AccountRequestMailer.account_created_email(user)
       expect(email.to).to eq(["ray@example.com"])
       expect(email.from).to eq([ENV.fetch("DEVISE_MAILER_SENDER")])
-      expect(email.body.encoded).to match("Dear Ray Clemence")
+      expect(email.body.encoded).to match("Hello Ray Clemence")
     end
   end
 end

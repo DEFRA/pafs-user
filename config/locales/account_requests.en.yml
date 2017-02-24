@@ -1,0 +1,20 @@
+en:
+  activerecord:
+    attributes:
+      account_request:
+        first_name: "First name"
+        last_name: "Last name"
+        email: "Work email address"
+        telephone_number: "Telephone number"
+        organisation: "Organisation"
+        job_title: "Job title"
+  account_requests:
+    new:
+      heading: "Request an account"
+      description: "You can request an account if you work for a risk management authority or an Environment Agency team. We will use the information you provide to verify your request for an account."
+      terms_and_conditions_label: "Read our standard data notice"
+      accept_terms_and_conditions_label: "I accept the standard data notice"
+      submit_label: "Request an account"
+    show:
+      heading: "Acount request submitted"
+      email_sent_to: "we have sent an email confirmation to"

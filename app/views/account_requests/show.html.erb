@@ -1,0 +1,16 @@
+<% content_for :page_title, make_page_title("Account request confirmation") %>
+<div class="grid-row">
+  <div class="column-two-thirds">
+    <div class="confirmation-box">
+      <h1><%= t(".heading") %></h1>
+      <p><%= t(".email_sent_to") %><br/>
+        <strong class="heading-medium"><%= @account_request.email %></strong>
+      </p>
+    </div>
+    <h2 class="heading-medium">What happens next</h2>
+    <p>We will verify your account details and email you the account details. This takes up to 5 working days.</p>
+    <p>If you don't hear from us within 5 working days, contact the Environment Agency on 02030 254 771.</p>
+
+    <%= link_to t("continue"), main_app.page_path(:start), class: "button", role: "button" %>
+  </div>
+</div>
