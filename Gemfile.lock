@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 67cb18a6c31b1e24849609d22680a2261775c926
+  revision: 360c4297ef49318ec71bfbc08646b55eeef34794
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -73,13 +73,13 @@ GEM
       airbrake-ruby (~> 1.2)
     airbrake-ruby (1.2.2)
     arel (6.0.4)
-    aws-sdk (2.7.14)
-      aws-sdk-resources (= 2.7.14)
-    aws-sdk-core (2.7.14)
+    aws-sdk (2.8.0)
+      aws-sdk-resources (= 2.8.0)
+    aws-sdk-core (2.8.0)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.7.14)
-      aws-sdk-core (= 2.7.14)
+    aws-sdk-resources (2.8.0)
+      aws-sdk-core (= 2.8.0)
     aws-sigv4 (1.0.0)
     axlsx (2.1.0.pre)
       htmlentities (~> 4.3.1)
@@ -116,7 +116,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.10.0)
-    concurrent-ruby (1.0.4)
+    concurrent-ruby (1.0.5)
     database_cleaner (1.5.1)
     debug_inspector (0.0.2)
     devise (3.5.6)

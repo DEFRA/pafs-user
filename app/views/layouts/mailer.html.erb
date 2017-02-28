@@ -36,7 +36,7 @@
       margin: 0 auto;
     }
 
-    h1, h2, h3, h4, h5, h6, p, ul, ol, small {
+    h1, h2, h3, h4, h5, h6, p, ul, ol, small, dt, dd {
       color: #0B0C0C;
       font-family: sans-serif;
       margin: 15px 0;
@@ -153,6 +153,20 @@
       padding-bottom: 30px;
       font-size: 24px;
       line-height: 1.111111111;
+    }
+
+    dt, dd {
+      display: inline-block;
+      margin: 0.25em 0 ;
+    }
+
+    dt {
+      font-weight: bold;
+      width: 30%;
+    }
+
+    dd {
+      min-width: 50%;
     }
 
     .table-data {

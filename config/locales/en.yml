@@ -23,6 +23,7 @@ en:
   global:
     footer_support_text: "Environment Agency (England) helpline:"
     helpline_telephone_number: "0370 8506 506"
+    support_email: "pafs-support@environment-agency.gov.uk"
   date:
     formats:
       default: "%d/%m/%Y"

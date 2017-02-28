@@ -3,4 +3,4 @@
 <p>Use the link below, or copy and paste it into your browser, to create a password and sign in to the service.</p>
 <div><%= link_to nil, @invitation_link %></div>
 <p>This link will expire after 30 days.</p>
-<p>If you have any queries, email us at <%= mail_to "pafs-support@environment-agency.gov.uk" %></p>
+<%= render partial: "shared/email_support" %>

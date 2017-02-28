@@ -12,9 +12,7 @@ class AccountRequestsController < ApplicationController
   def create
     @account_request = PafsCore::AccountRequest.new(account_params)
     if @account_request.save
-      #TODO: send a confirmation?
-      AccountRequestMailer.confirmation_email(@account_request.email, full_name).
-        deliver_now
+      send_emails
       redirect_to @account_request
     else
       render "new"
@@ -30,5 +28,10 @@ class AccountRequestsController < ApplicationController
 
   def full_name
     "#{@account_request.first_name} #{@account_request.last_name}"
+  end
+
+  def send_emails
+    AccountRequestMailer.new_account_request(@account_request).deliver_later
+    AccountRequestMailer.confirmation_email(@account_request).deliver_later
   end
 end

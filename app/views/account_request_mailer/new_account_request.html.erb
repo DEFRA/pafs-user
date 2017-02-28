@@ -1,0 +1,19 @@
+<p>A request to create an account has been submitted.</p>
+<p>Please verify this request using the following information:</p>
+<dl>
+  <dt>First name:</dt>
+  <dd><%= @account_request.first_name %></dd>
+  <dt>Last name:</dt>
+  <dd><%= @account_request.last_name %></dd>
+  <dt>Work email address:</dt>
+  <dd><%= @account_request.email %></dd>
+  <dt>Telephone number:</dt>
+  <dd><%= @account_request.telephone_number %></dd>
+  <dt>Organisation:</dt>
+  <dd><%= @account_request.organisation %></dd>
+  <dt>Job title:</dt>
+  <dd><%= @account_request.job_title %></dd>
+</dl>
+<p>If verification is successful please create an account for this person in the Project Application and Funding Service Admin application.</p>
+<p>If unsuccessful please contact them by email and let them know they are unable to have an account.</p>
+<p>This process should be completed within 5 working days of receiving this email.</p>
