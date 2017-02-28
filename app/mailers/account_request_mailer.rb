@@ -2,11 +2,17 @@
 class AccountRequestMailer < ApplicationMailer
   include PafsCore::Email
 
-  def confirmation_email(email, name)
+  def confirmation_email(account_request)
     prevent_tracking
-    @email = email
-    @name = name
-    mail(to: email, subject: "Account requested - FCERM project funding")
+    @email = account_request.email
+    @name = account_request.full_name
+    mail(to: @email, subject: "Account requested - FCERM project funding")
+  end
+
+  def new_account_request(account_request)
+    prevent_tracking
+    @account_request = account_request
+    mail(to: I18n.t("global.support_email"), subject: "Account requested")
   end
 
   def account_created_email(user)

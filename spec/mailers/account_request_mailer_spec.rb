@@ -4,7 +4,8 @@ require "rails_helper"
 RSpec.describe AccountRequestMailer, type: :mailer do
   describe "#confirmation_email" do
     it "creates an email" do
-      email = AccountRequestMailer.confirmation_email("neville.southall@example.com", "Big Nev")
+      account_request = FactoryGirl.create(:account_request)
+      email = AccountRequestMailer.confirmation_email(account_request)
       expect(email.to).to eq(["neville.southall@example.com"])
       expect(email.from).to eq([ENV.fetch("DEVISE_MAILER_SENDER")])
       expect(email.body.encoded).to match("Hello Big Nev")

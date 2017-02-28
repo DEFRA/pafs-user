@@ -1,4 +1,4 @@
 <p>Hello <%= @name %>,</p>
 <p>We've received your request to create an account for <%= @email %>.</p>
 <p>We will now verify this request. If successful we will contact you by email when the account has been created. This will take up to 5 working days.</p>
-<p>If you have any queries, email us at <%= mail_to "pafs-support@environment-agency.gov.uk" %></p>
+<%= render partial: "shared/email_support" %>

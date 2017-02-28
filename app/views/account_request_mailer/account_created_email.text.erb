@@ -1,0 +1,11 @@
+Hello <%= @name %>,
+
+We've created an account for <%= @email %>
+
+Use the link below, or copy and paste it into your browser, to create a password and sign in to the service.
+
+<%= @invitation_link %>
+
+This link will expire after 30 days.
+
+<%= render partial: "shared/email_support" %>
