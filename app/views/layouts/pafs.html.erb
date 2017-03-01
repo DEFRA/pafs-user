@@ -5,9 +5,6 @@
   <!--[if IE 8]><%= stylesheet_link_tag "application-ie8" %><![endif]-->
   <meta name="format-detection" content="telephone=no" />
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/ol3/3.8.2/ol.js", "data-turbolinks-track" => false %>
-  <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.12/proj4.js", "data-turbolinks-track" => false %>
-  <%#= render 'digital_services_core/shared/head' %>
 <% end %>
 <% unless content_for? :page_title %>
   <% if @project.try(:step) %>
@@ -49,9 +46,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   <!-- End Google Tag Manager -->
 <% end if ENV['GOOGLE_ANALYTICS_ID'].present? %>
 
-
 <% content_for :footer_support_links do %>
-
   <div class="ea-footer">
     <p><%= t('global.footer_support_text') %> <%= link_to t("global.helpline_telephone_number"), "tel:#{t("global.helpline_telephone_number").delete(" ") }" %></p>
 
@@ -63,7 +58,6 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       <div aria-hidden="true">Primary Area: <%= link_to "#{current_user.primary_area.name} (#{current_user.primary_area.area_type})", pafs_core.area_path(current_user.primary_area) %></div>
     <% end %>
   </div>
-
 <% end %>
 
 <%-# LAST: RENDER main GDS template -%>

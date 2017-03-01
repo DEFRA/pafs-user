@@ -3,20 +3,20 @@
 <%= pafs_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
   <%= f.error_header("Check your sign in details", "") %>
   <h1 class="heading-large">Change password</h1>
+  <div class="form-hint password-instructions">Your password must contain a minimum of:
+    <ul class="list-bullet">
+      <li>8 characters</li>
+      <li>1 capital letter</li>
+      <li>1 lower-case letter</li>
+      <li>1 numeric character</li>
+    </ul>
+    and must not be a password used previously.
+  </div>
   <%= f.form_group(:base) do %>
     <%= f.error_message(:base) %>
     <%= f.hidden_field :reset_password_token %>
 
-    <%
-      opts = { label: "New password",
-               class: "form-control",
-               autofocus: true,
-               autocomplete: "off" }
-      if @minimum_password_length
-        opts[:hint] = "Should be a minimum of #{@minimum_password_length} characters in length."
-      end
-    %>
-    <%= f.password_field :password, opts %>
+    <%= f.password_field :password, autofocus: true, class: "form-control", autocomplete: "off", label: "New password" %>
     <%= f.password_field :password_confirmation, class: "form-control",
           autocomplete: "off", label: "Confirm new password" %>
   <% end %>

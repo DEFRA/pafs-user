@@ -1,13 +1,6 @@
 GIT
-  remote: https://github.com/DEFRA/cumberland
-  revision: 8dbbd674b4f3b27292261a5a746773df13b78a91
-  specs:
-    cumberland (0.0.1)
-      ffi-proj4 (~> 0.2)
-
-GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 360c4297ef49318ec71bfbc08646b55eeef34794
+  revision: 13d5fedb16991094d9c6e49cd8ab7a100b66802c
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -129,6 +122,9 @@ GEM
     devise_invitable (1.5.5)
       actionmailer (>= 3.2.6, < 5)
       devise (>= 3.2.0)
+    devise_security_extension (0.10.0)
+      devise (>= 3.0.0, < 4.0)
+      railties (>= 3.2.6, < 5.0)
     diff-lcs (1.2.5)
     docile (1.1.5)
     dotenv (2.1.1)
@@ -147,8 +143,6 @@ GEM
     faraday (0.11.0)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.14)
-    ffi-proj4 (0.2.0)
-      ffi (>= 1.0.0)
     font-awesome-sass (4.5.0)
       sass (>= 3.2)
     formatador (0.2.5)
@@ -385,10 +379,10 @@ DEPENDENCIES
   capybara
   codeclimate-test-reporter
   coffee-rails (~> 4.1.0)
-  cumberland (~> 0.0.1)!
   database_cleaner
   devise (~> 3.5.2)
   devise_invitable (~> 1.5.2)
+  devise_security_extension
   dibble (~> 0.1)!
   dotenv-rails
   factory_girl_rails (~> 4.0)

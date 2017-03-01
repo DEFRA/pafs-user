@@ -20,8 +20,10 @@ gem "sdoc", "~> 0.4.0", group: :doc
 
 gem "pg"
 gem "dotenv-rails"
+
 gem "devise",           "~> 3.5.2"
 gem "devise_invitable", "~> 1.5.2"
+gem "devise_security_extension"
 
 gem "kaminari"
 
@@ -53,7 +55,7 @@ gem "whenever", require: false
 gem "pafs_core", "~> 0.0",
   git: "https://github.com/DEFRA/pafs_core",
   branch: "develop"
-gem "cumberland", "~> 0.0.1", git: "https://github.com/DEFRA/cumberland"
+# gem "cumberland", "~> 0.0.1", git: "https://github.com/DEFRA/cumberland"
 # gem "axlsx", "~>2.1.0.pre"
 # gem "roo"
 
