@@ -8,7 +8,7 @@ en:
           attributes:
             password:
               blank: "^Enter a password"
-              too_short: "^Password should be at least %{count} characters"
+              too_short: "^Password must be at least %{count} characters"
             password_confirmation:
               confirmation: "^Passwords do not match"
             email:

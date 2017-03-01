@@ -4,7 +4,8 @@ class User < PafsCore::User
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :invitable, :database_authenticatable, #:registerable, :rememberable
-         :recoverable, :trackable, :validatable, :timeoutable
+         :recoverable, :trackable, :timeoutable, #:validatable,
+         :password_archivable, :session_limitable, :secure_validatable
 
   def active_for_authentication?
     !disabled?
