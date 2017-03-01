@@ -16,5 +16,6 @@ en:
       accept_terms_and_conditions_label: "I accept the standard data notice"
       submit_label: "Request an account"
     show:
-      heading: "Acount request submitted"
-      email_sent_to: "we have sent an email confirmation to"
+      heading: "Account request submitted"
+      email_sent_to: "We have sent an email confirmation to"
+

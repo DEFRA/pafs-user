@@ -8,9 +8,11 @@
       </p>
     </div>
     <h2 class="heading-medium">What happens next</h2>
-    <p>We will verify your account details and email you the account details. This takes up to 5 working days.</p>
-    <p>If you don't hear from us within 5 working days, contact the Environment Agency on 02030 254 771.</p>
+    <p>We will now verify this request. If successful we will contact you by email when the account has been created. This will take up to 5 working days.</p>
+    <p>If you haven't heard from us within 5 working days contact us at
+      <%= link_to t("global.support_email"), "mailto:#{t("global.support_email").delete(" ") }" %>
+      </p>
 
-    <%= link_to t("continue"), main_app.page_path(:start), class: "button", role: "button" %>
+    <%= link_to t("global.return_to_start"), main_app.page_path(:start), class: "button", role: "button" %>
   </div>
 </div>
