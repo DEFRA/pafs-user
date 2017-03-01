@@ -9,8 +9,8 @@
   <h1 class="heading-large">Sign in</h2>
   <%= f.form_group(:base) do %>
     <%= f.error_message(:base) %>
-    <%= f.email_field :email, autocomplete: "off", autofocus: true, tabindex: 10, class: 'form-control' %>
-    <%= f.password_field :password, autocomplete: "off", tabindex: 20,  class: 'form-control' %>
+    <%= f.email_field :email, autocomplete: "off", autofocus: true, class: 'form-control' %>
+    <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
   <% end %>
 
   <div class="form-group">
