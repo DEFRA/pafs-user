@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170228142205) do
+ActiveRecord::Schema.define(version: 20170303094409) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -162,6 +162,11 @@ ActiveRecord::Schema.define(version: 20170228142205) do
     t.string   "funding_calculator_content_type"
     t.integer  "funding_calculator_file_size"
     t.datetime "funding_calculator_updated_at"
+    t.text     "project_location",                                 default: [],                 array: true
+    t.integer  "project_location_zoom_level",                      default: 15
+    t.text     "benefit_area"
+    t.text     "benefit_area_centre",                                                           array: true
+    t.integer  "benefit_area_zoom_level"
     t.datetime "submitted_at"
     t.integer  "flood_protection_before"
     t.integer  "flood_protection_after"
@@ -185,11 +190,6 @@ ActiveRecord::Schema.define(version: 20170228142205) do
     t.boolean  "remove_eel_barrier"
     t.float    "fish_or_eel_amount"
     t.boolean  "funding_sources_visited",                          default: false
-    t.text     "project_location",                                 default: [],                 array: true
-    t.integer  "project_location_zoom_level",                      default: 15
-    t.text     "benefit_area"
-    t.text     "benefit_area_centre",                                                           array: true
-    t.integer  "benefit_area_zoom_level"
     t.string   "benefit_area_file_name"
     t.string   "benefit_area_content_type"
     t.integer  "benefit_area_file_size"
@@ -209,6 +209,7 @@ ActiveRecord::Schema.define(version: 20170228142205) do
     t.string   "county"
     t.datetime "urgency_details_updated_at"
     t.string   "grid_reference"
+    t.boolean  "reservoir_flooding"
   end
 
   add_index "pafs_core_projects", ["reference_number", "version"], name: "index_pafs_core_projects_on_reference_number_and_version", unique: true, using: :btree
