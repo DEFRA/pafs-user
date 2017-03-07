@@ -2,7 +2,7 @@
 <% migrate_devise_errors_for resource %>
 <%= pafs_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
   <%= f.error_header("Check your sign in details", "") %>
-  <h1 class="heading-large">Change password</h1>
+  <h1 class="heading-large">Reset password</h1>
   <div class="form-hint password-instructions">Your password must contain a minimum of:
     <ul class="list-bullet">
       <li>8 characters</li>
@@ -18,9 +18,9 @@
 
     <%= f.password_field :password, autofocus: true, class: "form-control", autocomplete: "off", label: "New password" %>
     <%= f.password_field :password_confirmation, class: "form-control",
-          autocomplete: "off", label: "Confirm new password" %>
+          autocomplete: "off", label: "Confirm password" %>
   <% end %>
   <div class="form-group">
-    <%= f.submit "Change password", class: "button" %>
+    <%= f.submit "Reset password", class: "button" %>
   </div>
 <% end %>
