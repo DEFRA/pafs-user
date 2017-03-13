@@ -10,6 +10,7 @@ before_script:
 - psql -c "CREATE DATABASE pafs_test WITH ENCODING 'UTF8';" -U postgres
 - cp $TRAVIS_BUILD_DIR/dotenv.travis $TRAVIS_BUILD_DIR/.env
 - cp $TRAVIS_BUILD_DIR/config/database.travis.yml $TRAVIS_BUILD_DIR/config/database.yml
+- cp config/secrets.yml.example config/secrets.yml
 - bundle exec rake pafs_core:install:migrations
 - bundle exec rake db:migrate
 - git config --global user.name "Travis Test"
