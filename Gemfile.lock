@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: ac5dae70ba0e7a60a89eae97d380cace0b1fd712
+  revision: adb884d660abe01fc226b53435f9a39e0d4c8e7e
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -13,6 +13,7 @@ GIT
       rails (~> 4.2.7.1)
       roo (~> 2.4.0)
       rubyXL
+      secure_headers (~> 3.6)
 
 GIT
   remote: https://github.com/tonyheadford/dibble
@@ -314,6 +315,8 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    secure_headers (3.6.2)
+      useragent
     shellany (0.0.1)
     shoulda-matchers (3.1.1)
       activesupport (>= 4.0.0)
@@ -347,6 +350,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.0)
       execjs (>= 0.3.0, < 3)
+    useragent (0.16.8)
     warden (1.2.6)
       rack (>= 1.0)
     web-console (2.3.0)
