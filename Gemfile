@@ -80,7 +80,7 @@ group :test do
   gem "capybara"
   gem "database_cleaner"
   gem "simplecov", require: false
-  gem "codeclimate-test-reporter", require: false
+  gem "codeclimate-test-reporter", "~> 0.6", require: false
 end
 
 group :production, :edge, :qa, :staging do
