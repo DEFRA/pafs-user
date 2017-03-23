@@ -85,14 +85,7 @@ end
 
 group :production, :edge, :qa, :staging do
   gem "rails_12factor"
-  # We have to fix to 5.3 because of a breaking change in 5.4. 5.4 updates
-  # its dependency on airbrake-ruby to 1.4, and it in turn now validates that
-  # both AIRBRAKE_PROJECT_KEY and AIRBRAKE_PROJECT_ID exist, and that
-  # AIRBRAKE_PROJECT_KEY is an integer.
-  # https://github.com/airbrake/airbrake-ruby/pull/87
-  # Its not catastrophic; we simply need to add AIRBRAKE_PROJECT_KEY=1 to our
-  # environments and once there we can then update this gem past version 5.3
-  gem "airbrake", "~> 5.3.0"
+  gem "airbrake", "~> 5.0"
 end
 
 group :benchmark do
