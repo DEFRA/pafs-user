@@ -14,7 +14,7 @@ Thames,England,EA Area,
 Hertfordshire and North London,England,EA Area,
 Solent and South Downs,England,EA Area,
 Kent South London and East Sussex,England,EA Area,
-Test EA Area,England,EA Area,
+EA Test Area,England,EA Area,
 PSO Cumbria,Cumbria and Lancashire,PSO Area,
 PSO Lancashire,Cumbria and Lancashire,PSO Area,
 PSO East Devon and Cornwall,Devon Cornwall and the Isles of Scilly,PSO Area,
@@ -56,7 +56,7 @@ PSO East Yorkshire,Yorkshire,PSO Area,
 PSO North Yorkshire,Yorkshire,PSO Area,
 PSO South Yorkshire,Yorkshire,PSO Area,
 PSO West Yorkshire,Yorkshire,PSO Area,
-Test PSO Area,Test EA Area,PSO Area,
+PSO Test Area,EA Test Area,PSO Area,
 Adur and Worthing Councils,PSO West Sussex,RMA,LA
 Adur District Council,PSO West Sussex,RMA,LA
 Ainsty (2008) IDB,PSO North Yorkshire,RMA,IDB
@@ -471,7 +471,6 @@ Taunton Deane Borough Council,PSO Somerset,RMA,LA
 Teignbridge District Council,PSO East Devon and Cornwall,RMA,LA
 Telford and Wrekin Borough Council,PSO Shropshire Worcestershire Telford and Wrekin,RMA,LA
 Tendring District Council,PSO Coastal Essex Suffolk and Norfolk,RMA,LA
-Test RMA Area,Test PSO Area,RMA,LA
 Test Valley Borough Council,PSO Hampshire and Isle of Wight,RMA,LA
 Tewkesbury Borough Council,PSO Herefordshire and Gloucestershire,RMA,LA
 Thames Water,PSO Oxfordshire,RMA,WC
@@ -540,3 +539,4 @@ Wycombe District Council,PSO Berkshire and Buckinghamshire,RMA,LA
 Wyre Borough Council,PSO Lancashire,RMA,LA
 Wyre Forest District Council,PSO Shropshire Worcestershire Telford and Wrekin,RMA,LA
 Yorkshire Water,PSO West Yorkshire,RMA,WC
+RMA Test Area,PSO Test Area,RMA,LA
