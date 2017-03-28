@@ -9,7 +9,7 @@ if defined?(Airbrake) #&& secrets.airbrake_host.present?
     # https://github.com/airbrake/airbrake-ruby#project_id--project_key
     c.host = ENV['AIRBRAKE_HOST']
     c.project_key = ENV['AIRBRAKE_PROJECT_KEY']
-    c.project_id = true # Errbit doesn't require a specific project_id, so setting to true
+    c.project_id = 1 # Errbit doesn't require a specific project_id, so setting to true
 
     # Configures the root directory of your project. Expects a String or a
     # Pathname, which represents the path to your project. Providing this option
