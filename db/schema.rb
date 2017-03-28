@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170314112709) do
+ActiveRecord::Schema.define(version: 20170328093853) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -120,6 +120,36 @@ ActiveRecord::Schema.define(version: 20170314112709) do
     t.integer "not_yet_identified",       limit: 8
     t.integer "total",                    limit: 8, default: 0, null: false
   end
+
+  create_table "pafs_core_program_upload_failures", force: :cascade do |t|
+    t.integer  "program_upload_item_id"
+    t.string   "field_name",             null: false
+    t.string   "messages",               null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "pafs_core_program_upload_failures", ["program_upload_item_id"], name: "idx_program_upload_failures", using: :btree
+
+  create_table "pafs_core_program_upload_items", force: :cascade do |t|
+    t.integer  "program_upload_id"
+    t.string   "reference_number",  null: false
+    t.boolean  "imported",          null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "pafs_core_program_upload_items", ["program_upload_id"], name: "idx_program_upload_items", using: :btree
+
+  create_table "pafs_core_program_uploads", force: :cascade do |t|
+    t.string   "filename",                          null: false
+    t.integer  "number_of_records",                 null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "status",            default: "new"
+  end
+
+  add_index "pafs_core_program_uploads", ["status"], name: "pafs_core_upload_status", using: :btree
 
   create_table "pafs_core_projects", force: :cascade do |t|
     t.string   "reference_number",                                                 null: false
