@@ -1,10 +1,10 @@
 <% content_for(:head) do %>
-  <!--[if gt IE 8]><!--><%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %><!--<![endif]-->
+  <!--[if gt IE 8]><!--><%= stylesheet_link_tag "application", media: "all" %><!--<![endif]-->
   <!--[if IE 6]><%= stylesheet_link_tag "application-ie6" %><![endif]-->
   <!--[if IE 7]><%= stylesheet_link_tag "application-ie7" %><![endif]-->
   <!--[if IE 8]><%= stylesheet_link_tag "application-ie8" %><![endif]-->
   <meta name="format-detection" content="telephone=no" />
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application" %>
 <% end %>
 <% unless content_for? :page_title %>
   <% if @project.try(:step) %>
