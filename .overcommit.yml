@@ -15,6 +15,7 @@
 #
 
 gemfile: '.overcommit_gems.rb'
+verify_signatures: false
 
 PreCommit:
   Brakeman:
