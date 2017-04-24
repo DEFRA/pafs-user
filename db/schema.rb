@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170403103416) do
+ActiveRecord::Schema.define(version: 20170424094432) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -142,11 +142,12 @@ ActiveRecord::Schema.define(version: 20170403103416) do
   add_index "pafs_core_program_upload_items", ["program_upload_id"], name: "idx_program_upload_items", using: :btree
 
   create_table "pafs_core_program_uploads", force: :cascade do |t|
-    t.string   "filename",                          null: false
-    t.integer  "number_of_records",                 null: false
+    t.string   "filename",                             null: false
+    t.integer  "number_of_records",                    null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "status",            default: "new"
+    t.string   "status",               default: "new"
+    t.boolean  "reset_consented_flag", default: false, null: false
   end
 
   add_index "pafs_core_program_uploads", ["status"], name: "pafs_core_upload_status", using: :btree
