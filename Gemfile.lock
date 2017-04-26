@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 60c194fa8ab9a0532291bc5430dd3d835da58c64
+  revision: 2630e963458e258c71091c8f51e901d908c9245f
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -318,7 +318,7 @@ GEM
     sdoc (0.4.2)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    secure_headers (3.6.2)
+    secure_headers (3.6.3)
       useragent
     shellany (0.0.1)
     shoulda-matchers (3.1.1)
