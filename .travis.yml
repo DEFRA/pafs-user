@@ -15,12 +15,8 @@ before_script:
 - bundle exec rake db:migrate
 - git config --global user.name "Travis Test"
 - git config --global user.email travis@example.com
-- BUNDLE_GEMFILE=.overcommit_gems.rb bundle install
-- BUNDLE_GEMFILE=.overcommit_gems.rb bundle exec overcommit --sign
-- BUNDLE_GEMFILE=.overcommit_gems.rb bundle exec overcommit --sign pre-commit
 script:
-- BUNDLE_GEMFILE=.overcommit_gems.rb bundle exec "overcommit --run" && bundle exec
-  rake spec
+- bundle exec rake spec
 notifications:
   slack:
     secure: SXYpp+HFF58LI4vULoNW9LSqKCNXPaAXsYCKHAK3tITrFvAsuVOhoaQQNOdbRQfEkqb4cG8+gtp7v4W+SUjWU3BsMTd9AP9BsBz8aICLzI30yRy51htN40lCQLnSsFRb8pYeSkHjIzHJdWhT4Zx3jFbOQiH7KfEx2xYL/YqbgGVm/LKqXszGdaAivjOU2SF9+r6yK+5Ysub4V6x3AOPJN91pO1KyzhaNWyrI9j6mbNBhMfpC8Kf9zFtjwmCeFsfqASm9xZsSum7bAQPHCT9bi2qrMn4uiewA+uE5gIVgimAVBvXII1GbY/BYn9P7IU2EzHzHoTYbX5Q0ixFpqPE+HNHuFeKbxULD8e1+Dv0Rtu5RZtxndY94q9CSDrlDbaKNPpS9lt4cWdnMp1/7F4XJ7hJsyWsKmxwK0+oA5ma9G0SdpATk5FgVL2OLdPwuUab38Tjmm1zGU8EdQw8QrgIaiLnR/8ImghmnozfB/ILYOpcR+zGopBbrCtjzNsBCq91ZdDvpm/Hcghfj1O3t3xZs9JEAGRaPOKbhIgy2EsCmJPHRdj/bTEFgrmUZi00RnlWvK8CqomkSE49ToyCawhyTUDWrXuv+ljWDF1r1LXxxkP5AnwxsczhY3K17eY/rfp16uLTi1wOxYpaQ0LyN/0WYBcaEOt60D8UySDPUKygipFo=
