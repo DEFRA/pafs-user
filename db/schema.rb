@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170424094432) do
+ActiveRecord::Schema.define(version: 20170607092837) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,6 +41,22 @@ ActiveRecord::Schema.define(version: 20170424094432) do
 
   add_index "pafs_core_account_requests", ["email"], name: "index_pafs_core_account_requests_on_email", unique: true, using: :btree
   add_index "pafs_core_account_requests", ["slug"], name: "index_pafs_core_account_requests_on_slug", unique: true, using: :btree
+
+  create_table "pafs_core_area_downloads", force: :cascade do |t|
+    t.integer  "area_id"
+    t.integer  "user_id"
+    t.datetime "requested_on"
+    t.integer  "number_of_proposals"
+    t.string   "fcerm1_filename"
+    t.string   "benefit_areas_filename"
+    t.string   "moderation_filename"
+    t.integer  "number_of_proposals_with_moderation"
+    t.string   "status",                              default: "empty", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "pafs_core_area_downloads", ["area_id"], name: "index_pafs_core_area_downloads_on_area_id", using: :btree
 
   create_table "pafs_core_area_projects", force: :cascade do |t|
     t.integer  "area_id",                    null: false
