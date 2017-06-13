@@ -43,7 +43,7 @@ gem "sucker_punch", "~> 2.0"
 
 # static pages
 gem "high_voltage", "~> 2.4.0"
-gem "passenger", "~> 5.0.25", require: false
+gem "passenger", "~> 5.1", require: false
 gem "whenever", require: false
 
 # shared PAFS code
