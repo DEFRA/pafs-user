@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: d238f5786d99b4d10445fdfdb588c8fbb72d7cc7
+  revision: 23d9c4b86b4fe5fbcb3ad212d6f40acb98ca14ea
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -135,7 +135,7 @@ GEM
       railties (>= 3.0.0)
     faker (1.7.3)
       i18n (~> 0.5)
-    faraday (0.15.1)
+    faraday (0.15.2)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.18)
     font-awesome-sass (4.5.0)
