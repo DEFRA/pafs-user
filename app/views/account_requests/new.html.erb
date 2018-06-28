@@ -12,8 +12,90 @@
         <%= f.telephone_field :telephone_number, class: "form-control form-wide" %>
         <%= f.text_field :organisation, class: "form-control form-wide" %>
         <%= f.text_field :job_title, class: "form-control form-wide" %>
+
+        <p class="heading-large">Privacy Policy</p>
+        <p>
+          Details of our Personal Information Charter can be found at <a href="https://www.gov.uk/government/organisations/environment-agency/about/personal-information-charter">https://www.gov.uk/government/organisations/environment-agency/about/personal-information-charter</a>
+        </p>
+        <div>
+          <div>
+            <details>
+              <summary class="half-indent-with-top-margin" role="button" aria-controls="show_data_collected_and_how">
+                <span class="summary">
+                  What of my data is being collected and how is it used?</ br>
+                  What is the legal basis for the processing?
+                </span>
+              </summary>
+              <div id="show_data_collected_and_how" class="panel panel-indent panel-border-narrow">
+                <p>Personal data is collected to:</p>
+                <ul class="list list-bullet">
+                  <li>Verify that you are eligible for an account</li>
+                  <li>Ensure your account is set up with the correct access permissions</li>
+                  <li>Allow us to contact you if your request is unclear</li>
+                </ul>
+                <p>
+                  Processing is necessary for the performance of a task carried out in the public interest or in the 
+                  exercise of official authority vested in the data controller to enable Risk Management Authorities 
+                  to bid for central government Grant-in-Aid funding.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary class="half-indent-with-top-margin" role="button" aria-controls="show_how_will_data_be_shared">
+                <span class="summary">
+                  Who will my data be shared with?
+                </span>
+              </summary>
+              <div id="how_will_data_be_shared" class="panel panel-indent panel-border-narrow">
+                <p>
+                  Your personal data will not be shared or disclosed to any other party outside the Environment Agency without your explicit consent.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary class="half-indent-with-top-margin" role="button" aria-controls="show_data_transferred_outside_of_eea">
+                <span class="summary">
+                  Will my data be transferred outside of the EEA? If it will, how will it be protected?
+                </span>
+              </summary>
+              <div id="data_transferred_outside_of_eeahow_will_data_be_shared" class="panel panel-indent panel-border-narrow">
+                <p>
+                  The data you provide will not be transferred outside the European Economic Area.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary class="half-indent-with-top-margin" role="button" aria-controls="show_how_long_data_will_be_held">
+                <span class="summary">
+                  How long will my data be held for?
+                </span>
+              </summary>
+              <div id="show_how_long_data_will_be_held" class="panel panel-indent panel-border-narrow">
+                <p>
+                  Your personal data will be kept by us for as long as you require access to the service
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary class="half-indent-with-top-margin" role="button" aria-controls="show_will_data_be_used_for_automated_decision_or_profiling">
+                <span class="summary">
+                  Will my data be used for automated decision-making or profiling?
+                </span>
+              </summary>
+              <div id="show_will_data_be_used_for_automated_decision_or_profiling" class="panel panel-indent panel-border-narrow">
+                <p>
+                  The information you provide is not connected with individual decision making 
+                  (making a decision solely by automated means without any human involvement) or profiling 
+                  (automated processing of personal data to evaluate certain things about an individual).
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
       </div>
+
       <%= f.submit t(".submit_label"), class: 'button' %>
     <% end %>
   </div>
 </div>
+
