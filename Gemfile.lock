@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 1e3d28ed92a7c6b8d8d8a09580b7da9e78a6cb57
+  revision: c9d0c3a3bd35cebd9cc9c533a8b65c4635caee3e
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -67,13 +67,13 @@ GEM
       airbrake-ruby (~> 1.8)
     airbrake-ruby (1.8.0)
     arel (6.0.4)
-    aws-sdk (2.11.67)
-      aws-sdk-resources (= 2.11.67)
-    aws-sdk-core (2.11.67)
+    aws-sdk (2.11.77)
+      aws-sdk-resources (= 2.11.77)
+    aws-sdk-core (2.11.77)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.67)
-      aws-sdk-core (= 2.11.67)
+    aws-sdk-resources (2.11.77)
+      aws-sdk-core (= 2.11.77)
     aws-sigv4 (1.0.2)
     bcrypt (3.1.11)
     benchmark-ips (2.7.2)
@@ -220,7 +220,7 @@ GEM
     multi_json (1.12.1)
     multipart-post (2.0.0)
     nenv (0.3.0)
-    nokogiri (1.8.2)
+    nokogiri (1.8.3)
       mini_portile2 (~> 2.3.0)
     notiffany (0.1.1)
       nenv (~> 0.1)
@@ -336,7 +336,7 @@ GEM
     slop (3.6.0)
     spring (2.0.1)
       activesupport (>= 4.2)
-    sprockets (3.7.1)
+    sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     sprockets-rails (3.2.1)
