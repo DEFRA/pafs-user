@@ -2,6 +2,7 @@
   <ul class="user-menu">
     <li>Signed in as: <%= current_user.full_name %></li>
     <li><%= link_to t("dashboard_link"), pafs_core.projects_path %></li>
+    <li><%= link_to(t("archive_dashboard_link"), pafs_core.archives_path) %></li>
     <li><%= link_to(t('logout_link'), main_app.destroy_user_session_path) %></li>
   </ul>
 </div>
