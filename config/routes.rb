@@ -10,7 +10,9 @@ Rails.application.routes.draw do
 #  get "/pages/*id" => 'high_voltage/pages#show', as: :page, format: false
   get "/password/reset" => "reset_password#reset", as: :after_password_reset
 
+
   mount PafsCore::Engine, at: "/pc"
+  mount Pafs::Api,        at: "/api"
 
   match '(errors)/:status', to: PafsCore::Engine, via: :all, constraints: { status: /\d{3}/ }
 
