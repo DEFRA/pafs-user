@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 source "https://rubygems.org"
 
-gem "rails", "~> 4.2.7.1"
+gem "rails", "~> 4.2.11"
 # rake 11 can break stuff see: http://stackoverflow.com/questions/35893584/nomethoderror-undefined-method-last-comment-after-upgrading-to-rake-11/35893941
 gem "rake", "< 11.0"
 gem "sass-rails", "~> 5.0"
@@ -16,7 +16,7 @@ gem "jquery-turbolinks"
 gem "jbuilder", "~> 2.0"
 gem "sdoc", "~> 0.4.0", group: :doc
 
-gem "pg"
+gem "pg", "~> 0.20.0"
 gem "dotenv-rails"
 
 gem "devise",           "~> 3.5.2"
