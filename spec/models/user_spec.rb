@@ -14,7 +14,7 @@ RSpec.describe User, type: :model do
   end
 
   describe "#full_name" do
-    subject { FactoryGirl.build(:user) }
+    subject { FactoryGirl.build(:account_user) }
     it "returns :first_name and :last_name" do
       expect(subject.full_name).to eq("#{subject.first_name} #{subject.last_name}")
     end
