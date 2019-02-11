@@ -2,6 +2,9 @@
   <ul class="user-menu">
     <li>Signed in as: <%= current_user.full_name %></li>
     <li><%= link_to t("dashboard_link"), pafs_core.projects_path %></li>
+    <% if rma_user? || pso_user?  %>
+    <li><%= link_to(t("download_link"), pafs_core.multi_downloads_path) %></li>
+    <% end %>
     <li><%= link_to(t("archive_dashboard_link"), pafs_core.archives_path) %></li>
     <li><%= link_to(t('logout_link'), main_app.destroy_user_session_path) %></li>
   </ul>
