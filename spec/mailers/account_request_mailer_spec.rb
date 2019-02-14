@@ -14,7 +14,7 @@ RSpec.describe AccountRequestMailer, type: :mailer do
 
   describe "#account_created_email" do
     it "creates an email" do
-      user = FactoryGirl.create(:user)
+      user = FactoryGirl.create(:account_user)
       email = AccountRequestMailer.account_created_email(user)
       expect(email.to).to eq(["ray@example.com"])
       expect(email.from).to eq([ENV.fetch("DEVISE_MAILER_SENDER")])
