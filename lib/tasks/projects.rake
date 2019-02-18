@@ -72,4 +72,80 @@ namespace :projects do
       end
     end
   end
+
+  desc "Set service into a known state"
+  task delete_all: :environment do
+    user = nil
+    storage ||= if Rails.env.development? || Rails.env.test?
+                  PafsCore::DevelopmentFileStorageService.new user
+                else
+                  PafsCore::FileStorageService.new user
+                end
+    tables = [
+      PafsCore::AccountRequest,
+      PafsCore::AreaDownload,
+      PafsCore::AreaProject,
+      PafsCore::AsiteFile,
+      PafsCore::AsiteSubmission,
+      PafsCore::Bootstrap,
+      PafsCore::CoastalErosionProtectionOutcome,
+      PafsCore::FloodProtectionOutcome,
+      PafsCore::FundingValue,
+      PafsCore::ProgramUploadFailure,
+      PafsCore::ProgramUpload,
+      PafsCore::ReferenceCounter,
+      PafsCore::State,
+    ]
+
+    # Gather projects
+    PafsCore::Project.all.each do |project|
+      storage_path = project.storage_path
+
+      # Delete generated reports
+      begin
+        project.areas.each do |area|
+          unless area.area_download.nil?
+            [
+              :fcerm1_filename,
+              :benefit_areas_filename,
+              :moderation_filename,
+              :funding_calculator_filename,
+            ].each do |attribute_name|
+              filename = area.area_download.public_send(attribute_name.to_sym)
+
+              unless filename.nil?
+                filepath = File.join(storage_path, filename)
+                storage.delete(filepath)
+              end
+              find_and_delete_file(filename, storage_path)
+            end
+          end
+        end
+
+        # Delete the associated funding calculator file
+        funding_calculator_filepath = File.join(storage_path, project.funding_calculator_file_name)
+        storage.delete(funding_calculator_filepath)
+      rescue PafsCore::FileNotFoundError
+        # As storage.delete checks the existence of a file and prepends a prefix, we handle it's exception and carry on.
+      end
+
+      project.delete
+    end
+
+    tables.each do |table|
+      table.destroy_all
+    end
+
+    Rake::Task["db:seed"].reenable
+    Rake::Task["db:seed"].invoke
+  end
+end
+
+def find_and_delete_file(attribute_name, storage_path)
+  filename = area.area_download.public_send(attribute_name.to_sym)
+
+  unless filename.nil?
+    filepath = File.join(storage_path, filename)
+    storage.delete(filepath)
+  end
 end
