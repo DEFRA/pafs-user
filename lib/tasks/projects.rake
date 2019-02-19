@@ -123,8 +123,10 @@ namespace :projects do
         end
 
         # Delete the associated funding calculator file
-        funding_calculator_filepath = File.join(storage_path, project.funding_calculator_file_name)
-        storage.delete(funding_calculator_filepath)
+        unless project.funding_calculator_file_name.nil?
+          funding_calculator_filepath = File.join(storage_path, project.funding_calculator_file_name)
+          storage.delete(funding_calculator_filepath)
+        end
       rescue PafsCore::FileNotFoundError
         # As storage.delete checks the existence of a file and prepends a prefix, we handle it's exception and carry on.
       end
