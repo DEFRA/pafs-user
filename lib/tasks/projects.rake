@@ -117,7 +117,6 @@ namespace :projects do
                 filepath = File.join(storage_path, filename)
                 storage.delete(filepath)
               end
-              find_and_delete_file(filename, storage_path)
             end
           end
         end
@@ -140,14 +139,5 @@ namespace :projects do
 
     Rake::Task["db:seed"].reenable
     Rake::Task["db:seed"].invoke
-  end
-end
-
-def find_and_delete_file(attribute_name, storage_path)
-  filename = area.area_download.public_send(attribute_name.to_sym)
-
-  unless filename.nil?
-    filepath = File.join(storage_path, filename)
-    storage.delete(filepath)
   end
 end
