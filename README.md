@@ -52,19 +52,25 @@ Run the following to download the app dependencies ([rubygems](https://www.ruby-
     cd <pafs-project-directory>
     gem install bundler
     bundle install
+    
+#### .env configuration file
+
+The project uses the [dotenv](https://github.com/bkeepers/dotenv) gem which allows enviroment variables to be loaded from a ```.env``` configuration file in the project root.
+
+Duplicate ```./dotenv.example``` and rename the copy as ```./.env```. Open it and update SECRET_KEY_BASE and settings for database, email etc. - Secret Key base can be anything
+    
 
 #### Databases _(local)_
 
 There are several databases per environment, therefore, ensure you run the following:
 
-    bundle exec rake db:create:all
-    bundle exec rake db:migrate db:seed
+    bundle exec rake pafs_core:install:migrations
+    bundle exec rake db:migrate
+    
+    
 
-#### .env configuration file
-
-The project uses the [dotenv](https://github.com/bkeepers/dotenv) gem which allows enviroment variables to be loaded from a ```.env``` configuration file in the project root.
-
-Duplicate ```./dotenv.example``` and rename the copy as ```./.env```. Open it and update SECRET_KEY_BASE and settings for database, email etc.
+    //bundle exec rake db:create:all
+    //bundle exec rake db:migrate db:seed
 
 #### Start the service _(local)_
 
