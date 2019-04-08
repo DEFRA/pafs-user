@@ -66,11 +66,11 @@ There are several databases per environment, therefore, ensure you run the follo
 
     bundle exec rake pafs_core:install:migrations
     bundle exec rake db:migrate
+    bundle config local.pafs_core /path/to/local/pafs_core
+    bundle
     
-    
-
-    //bundle exec rake db:create:all
-    //bundle exec rake db:migrate db:seed
+    OLD bundle exec rake db:create:all
+    OLD bundle exec rake db:migrate db:seed
 
 #### Start the service _(local)_
 
