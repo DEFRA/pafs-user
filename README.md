@@ -64,12 +64,13 @@ Duplicate ```./dotenv.example``` and rename the copy as ```./.env```. Open it an
 
 There are several databases per environment, therefore, ensure you run the following:
 
+    bundle exec rake db:create:all
     bundle exec rake pafs_core:install:migrations
     bundle exec rake db:migrate
     bundle config local.pafs_core /path/to/local/pafs_core
     bundle
     
-    OLD bundle exec rake db:create:all
+
     OLD bundle exec rake db:migrate db:seed
 
 #### Start the service _(local)_
