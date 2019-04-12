@@ -19,9 +19,9 @@ gem "sdoc", "~> 0.4.0", group: :doc
 gem "pg", "~> 0.20.0"
 gem "dotenv-rails"
 
-gem "devise",           "~> 3.5.2"
-gem "devise_invitable", "~> 1.5.2"
-gem "devise_security_extension"
+gem "devise",           "~> 4.6.1"
+gem "devise_invitable", "~> 1.7.5"
+gem 'devise_security_extension', github: 'phatworx/devise_security_extension'
 
 gem "kaminari"
 
