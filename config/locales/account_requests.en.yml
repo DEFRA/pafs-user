@@ -1,13 +1,4 @@
 en:
-  activerecord:
-    attributes:
-      account_request:
-        first_name: "First name"
-        last_name: "Last name"
-        email: "Work email address"
-        telephone_number: "Telephone number"
-        organisation: "Organisation"
-        job_title: "Job title"
   account_requests:
     new:
       heading: "Request an account"
