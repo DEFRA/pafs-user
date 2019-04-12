@@ -101,12 +101,10 @@ case any development email will seem to be sent to your global git config email 
 
 #### Setting an known state for our environments
 
-There are times when we require our environments to be cleared of
-projects and put into a known state. For these occassions we have the
-following task: `bundle exec projects:delete_all`.
+There are times when we require our environments to be cleared of projects and put into a known state.
+This is typical when we require that the service has no proposals, or their associated data.
 
-Please note that this will drop all projects, along with any associated
-data. It will however leave users and their areas intact.
+The following command (`bundle exec projects:delete_all`) will remove all proposals from the service, leaving the existing users and their associated area's intact.
 
 ## Quality
 
