@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 source "https://rubygems.org"
 
 gem "rails", "~> 4.2.11.1"
@@ -21,7 +22,9 @@ gem "dotenv-rails"
 
 gem "devise",           "~> 4.6.1"
 gem "devise_invitable", "~> 1.7.5"
-gem 'devise_security_extension', github: 'phatworx/devise_security_extension'
+gem "devise_security_extension",
+  git: "https://github.com/phatworx/devise_security_extension",
+  branch: "master"
 
 gem "kaminari"
 
