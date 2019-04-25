@@ -99,6 +99,13 @@ Start mailcatcher with `$ mailcatcher` and navigate to
 Note that [mail_safe](https://github.com/myronmarston/mail_safe) maybe also be running in which
 case any development email will seem to be sent to your global git config email address.
 
+#### Setting an known state for our environments
+
+There are times when we require our environments to be cleared of projects and put into a known state.
+This is typical when we require that the service has no proposals, or their associated data.
+
+The following command (`bundle exec projects:delete_all`) will remove all proposals from the service, leaving the existing users and their associated area's intact.
+
 ## Quality
 
 We use tools like [rubocop](https://github.com/bbatsov/rubocop), [brakeman](https://github.com/presidentbeef/brakeman), and [i18n-tasks](https://github.com/glebm/i18n-tasks) to help maintain quality, reusable code. Rather than running them manually we automate it via a git pre-commit hook, utilizing the [overcommit](https://github.com/brigade/overcommit) gem.
