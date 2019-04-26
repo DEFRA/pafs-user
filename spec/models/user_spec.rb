@@ -4,7 +4,7 @@ require "rails_helper"
 
 RSpec.describe User, type: :model do
   describe "attributes" do
-    subject { FactoryGirl.create(:user) }
+    subject { FactoryBot.create(:user) }
 
     it { is_expected.to validate_presence_of :first_name }
 
@@ -12,7 +12,7 @@ RSpec.describe User, type: :model do
   end
 
   describe "#full_name" do
-    subject { FactoryGirl.build(:user) }
+    subject { FactoryBot.build(:user) }
     it "returns :first_name and :last_name" do
       expect(subject.full_name).to eq("#{subject.first_name} #{subject.last_name}")
     end
