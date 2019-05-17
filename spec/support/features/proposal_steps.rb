@@ -12,6 +12,10 @@ module Features
       'Environmental without households' => 'env_without_households'
     }
 
+    def view_a_project(project)
+      visit "/pc/projects/#{project.to_param}"
+    end
+
     def bootstrap_a_new_proposal(type:, name:, year:)
       go_to_new_proposal_page
       enter_the_proposal_name(name)
