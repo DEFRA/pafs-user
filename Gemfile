@@ -76,6 +76,7 @@ group :test do
   gem "database_cleaner"
   gem "simplecov", require: false
   gem "codeclimate-test-reporter", "~> 0.6", require: false
+  gem "climate_control"
 end
 
 group :production, :edge, :qa, :staging do
