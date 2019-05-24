@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-
 FLAG_DISABLED_SPECS = [
   { user_type: :rma, project_area: :pso_area, project_state: :draft,    can_change_state: true, can_edit: true },
   { user_type: :rma, project_area: :rma_area, project_state: :draft,    can_change_state: true, can_edit: true },
@@ -99,8 +98,10 @@ RSpec.feature 'Viewing a project', type: :feature do
 
   context 'with FORCE_PSO_TO_POL set' do
     FLAG_ENABLED_SPECS.each do |spec|
-      before do
-        allow(ENV).to receive(:fetch).with('FORCE_PSO_TO_POL', false).and_return(true)
+      around do |example|
+        with_modified_env FORCE_PSO_TO_POL: '1' do
+          example.run
+        end
       end
 
       run_spec_configuration(spec)
