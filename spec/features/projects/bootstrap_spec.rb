@@ -56,7 +56,7 @@ RSpec.feature 'Creating a project', type: :feature do
         login_as(user)
 
         expect(page).not_to have_text('Create a new proposal')
-        expect(page).to have_text('To create a new proposal please go to PoL')
+        expect(page).to have_text('To create a new proposal please go to')
       end
     end
   end
