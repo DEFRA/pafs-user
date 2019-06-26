@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 860d98697d3550b2c4d6e15804093c8e3615eca6
+  revision: 26e8aac5b121772495f507bb5bd01223d11009c3
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -76,13 +76,13 @@ GEM
     airbrake-ruby (1.8.0)
     arel (6.0.4)
     aws-eventstream (1.0.3)
-    aws-sdk (2.11.299)
-      aws-sdk-resources (= 2.11.299)
-    aws-sdk-core (2.11.299)
+    aws-sdk (2.11.302)
+      aws-sdk-resources (= 2.11.302)
+    aws-sdk-core (2.11.302)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.299)
-      aws-sdk-core (= 2.11.299)
+    aws-sdk-resources (2.11.302)
+      aws-sdk-core (= 2.11.302)
     aws-sigv4 (1.1.0)
       aws-eventstream (~> 1.0, >= 1.0.2)
     bcrypt (3.1.12)
