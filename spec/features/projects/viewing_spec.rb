@@ -57,7 +57,7 @@ def run_spec_configuration(spec)
       if spec[:can_change_state]
         if spec[:project_state] == :archived
           scenario 'I cannot submit the project' do
-            expect(page).not_to have_selector('a', text: 'Submit')
+            expect(page).not_to have_selector('a', text: 'Mark as submitted')
           end
 
           scenario 'I can un-archive the project' do
@@ -65,7 +65,7 @@ def run_spec_configuration(spec)
           end
         else
           scenario 'I can submit the project' do
-            expect(page).to have_selector('a', text: 'Submit')
+            expect(page).to have_selector('a', text: 'Mark as submitted')
           end
 
           scenario 'I can archive the project' do
@@ -74,7 +74,7 @@ def run_spec_configuration(spec)
         end
       else
         scenario 'I cannot submit the project' do
-          expect(page).not_to have_selector('a', text: 'Submit')
+          expect(page).not_to have_selector('a', text: 'Mark as submitted')
         end
 
         scenario 'I cannot un-archive the project' do
