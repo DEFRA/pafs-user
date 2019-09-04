@@ -1,25 +1,33 @@
 # frozen_string_literal: true
 
 FLAG_DISABLED_SPECS = [
-  { user_type: :rma, project_area: :pso_area, project_state: :draft,    can_change_state: true, can_edit: true },
-  { user_type: :rma, project_area: :rma_area, project_state: :draft,    can_change_state: true, can_edit: true },
-  { user_type: :rma, project_area: :pso_area, project_state: :archived, can_change_state: true, can_edit: false},
-  { user_type: :rma, project_area: :rma_area, project_state: :archived, can_change_state: true, can_edit: false },
-  { user_type: :pso, project_area: :pso_area, project_state: :draft,    can_change_state: true, can_edit: true },
-  { user_type: :pso, project_area: :rma_area, project_state: :draft,    can_change_state: true, can_edit: true },
-  { user_type: :pso, project_area: :pso_area, project_state: :archived, can_change_state: true, can_edit: false },
-  { user_type: :pso, project_area: :rma_area, project_state: :archived, can_change_state: true, can_edit: false },
+  { user_type: :rma, project_area: :pso_area, project_state: :draft,     can_change_state: true,  can_edit: true },
+  { user_type: :rma, project_area: :rma_area, project_state: :draft,     can_change_state: true,  can_edit: true },
+  { user_type: :rma, project_area: :pso_area, project_state: :submitted, can_change_state: false, can_edit: false},
+  { user_type: :rma, project_area: :rma_area, project_state: :submitted, can_change_state: false, can_edit: false },
+  { user_type: :rma, project_area: :pso_area, project_state: :archived,  can_change_state: true,  can_edit: false},
+  { user_type: :rma, project_area: :rma_area, project_state: :archived,  can_change_state: true,  can_edit: false },
+  { user_type: :pso, project_area: :pso_area, project_state: :draft,     can_change_state: true,  can_edit: true },
+  { user_type: :pso, project_area: :rma_area, project_state: :draft,     can_change_state: true,  can_edit: true },
+  { user_type: :pso, project_area: :pso_area, project_state: :submitted, can_change_state: true,  can_edit: false },
+  { user_type: :pso, project_area: :rma_area, project_state: :submitted, can_change_state: true,  can_edit: false },
+  { user_type: :pso, project_area: :pso_area, project_state: :archived,  can_change_state: true,  can_edit: false },
+  { user_type: :pso, project_area: :rma_area, project_state: :archived,  can_change_state: true,  can_edit: false },
 ]
 
 FLAG_ENABLED_SPECS = [
-  { user_type: :rma, project_area: :pso_area, project_state: :draft,    can_change_state: false, can_edit: false },
-  { user_type: :rma, project_area: :rma_area, project_state: :draft,    can_change_state: true,  can_edit: true },
-  { user_type: :rma, project_area: :pso_area, project_state: :archived, can_change_state: false, can_edit: false },
-  { user_type: :rma, project_area: :rma_area, project_state: :archived, can_change_state: true,  can_edit: false },
-  { user_type: :pso, project_area: :pso_area, project_state: :draft,    can_change_state: false, can_edit: false },
-  { user_type: :pso, project_area: :rma_area, project_state: :draft,    can_change_state: true,  can_edit: true },
-  { user_type: :pso, project_area: :pso_area, project_state: :archived, can_change_state: false, can_edit: false },
-  { user_type: :pso, project_area: :rma_area, project_state: :archived, can_change_state: true,  can_edit: false },
+  { user_type: :rma, project_area: :pso_area, project_state: :draft,     can_change_state: false, can_edit: false },
+  { user_type: :rma, project_area: :rma_area, project_state: :draft,     can_change_state: true,  can_edit: true },
+  { user_type: :rma, project_area: :pso_area, project_state: :submitted, can_change_state: false, can_edit: false},
+  { user_type: :rma, project_area: :rma_area, project_state: :submitted, can_change_state: false, can_edit: false },
+  { user_type: :rma, project_area: :pso_area, project_state: :archived,  can_change_state: false, can_edit: false },
+  { user_type: :rma, project_area: :rma_area, project_state: :archived,  can_change_state: true,  can_edit: false },
+  { user_type: :pso, project_area: :pso_area, project_state: :draft,     can_change_state: false, can_edit: false },
+  { user_type: :pso, project_area: :rma_area, project_state: :draft,     can_change_state: true,  can_edit: true },
+  { user_type: :pso, project_area: :pso_area, project_state: :submitted, can_change_state: false, can_edit: false },
+  { user_type: :pso, project_area: :rma_area, project_state: :submitted, can_change_state: false,  can_edit: false },
+  { user_type: :pso, project_area: :pso_area, project_state: :archived,  can_change_state: false, can_edit: false },
+  { user_type: :pso, project_area: :rma_area, project_state: :archived,  can_change_state: true,  can_edit: false },
 ]
 
 def run_spec_configuration(spec)
@@ -63,13 +71,21 @@ def run_spec_configuration(spec)
           scenario 'I can un-archive the project' do
             expect(page).to have_selector('a', text: 'Revert to draft')
           end
-        else
+        end
+
+        if spec[:project_state] == :draft
           scenario 'I can submit the project' do
             expect(page).to have_selector('a', text: 'Submit')
           end
 
           scenario 'I can archive the project' do
             expect(page).to have_selector('.project-overview-head a', text: 'Archive')
+          end
+        end
+
+        if spec[:project_state] == :submitted
+          scenario 'I can revert the project to draft' do
+            expect(page).to have_selector('a', text: 'Revert to draft')
           end
         end
       else
@@ -83,6 +99,10 @@ def run_spec_configuration(spec)
 
         scenario 'I cannot archive the project' do
           expect(page).not_to have_selector('.project-overview-head a', text: 'Archive')
+        end
+
+        scenario 'I cannot revert the project to draft' do
+          expect(page).not_to have_selector('a', text: 'Revert to draft')
         end
       end
     end
