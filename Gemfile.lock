@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 1301eb6ec0156270dfd2738583a72a38939350d7
+  revision: 48b08ab2bfd73012563476856a4bb22da5c8d258
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -76,13 +76,13 @@ GEM
     airbrake-ruby (1.8.0)
     arel (6.0.4)
     aws-eventstream (1.0.3)
-    aws-sdk (2.11.373)
-      aws-sdk-resources (= 2.11.373)
-    aws-sdk-core (2.11.373)
+    aws-sdk (2.11.396)
+      aws-sdk-resources (= 2.11.396)
+    aws-sdk-core (2.11.396)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.373)
-      aws-sdk-core (= 2.11.373)
+    aws-sdk-resources (2.11.396)
+      aws-sdk-core (= 2.11.396)
     aws-sigv4 (1.1.0)
       aws-eventstream (~> 1.0, >= 1.0.2)
     bcrypt (3.1.12)
@@ -116,7 +116,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
-    crass (1.0.4)
+    crass (1.0.5)
     database_cleaner (1.7.0)
     debug_inspector (0.0.3)
     devise (4.6.2)
@@ -211,7 +211,7 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
-    loofah (2.3.0)
+    loofah (2.3.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     lumberjack (1.0.13)
@@ -220,12 +220,12 @@ GEM
     method_source (0.9.2)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
-    minitest (5.12.2)
+    minitest (5.13.0)
     msgpack (1.2.10)
     multi_json (1.13.1)
     multipart-post (2.1.1)
     nenv (0.3.0)
-    nokogiri (1.10.4)
+    nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
     notiffany (0.1.1)
       nenv (~> 0.1)
