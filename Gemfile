@@ -20,7 +20,7 @@ gem "sdoc", "~> 0.4.0", group: :doc
 gem "pg", "~> 0.20.0"
 gem "dotenv-rails"
 
-gem "devise",           "~> 4.6.1"
+gem "devise",           "~> 4.7.1"
 gem "devise_invitable", "~> 1.7.5"
 gem "devise_security_extension",
   git: "https://github.com/phatworx/devise_security_extension",
