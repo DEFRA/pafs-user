@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: e8436a934dc55916daa852915c586f0be844b60e
+  revision: 919cea469f4860c20113d560720ab972581caf16
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -76,13 +76,13 @@ GEM
     airbrake-ruby (1.8.0)
     arel (6.0.4)
     aws-eventstream (1.0.3)
-    aws-sdk (2.11.423)
-      aws-sdk-resources (= 2.11.423)
-    aws-sdk-core (2.11.423)
+    aws-sdk (2.11.436)
+      aws-sdk-resources (= 2.11.436)
+    aws-sdk-core (2.11.436)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.423)
-      aws-sdk-core (= 2.11.423)
+    aws-sdk-resources (2.11.436)
+      aws-sdk-core (= 2.11.436)
     aws-sigv4 (1.1.0)
       aws-eventstream (~> 1.0, >= 1.0.2)
     bcrypt (3.1.13)
@@ -116,7 +116,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
-    crass (1.0.5)
+    crass (1.0.6)
     database_cleaner (1.7.0)
     debug_inspector (0.0.3)
     devise (4.7.1)
@@ -220,7 +220,7 @@ GEM
     method_source (0.9.2)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
-    minitest (5.13.0)
+    minitest (5.14.0)
     msgpack (1.2.10)
     multi_json (1.13.1)
     multipart-post (2.1.1)
@@ -335,7 +335,7 @@ GEM
     sdoc (0.4.2)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    secure_headers (3.7.3)
+    secure_headers (3.9.0)
       useragent
     shellany (0.0.1)
     shoulda-matchers (3.1.3)
