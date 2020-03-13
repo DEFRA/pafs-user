@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 gem "rails", "~> 4.2.11.1"
 # rake 11 can break stuff see: http://stackoverflow.com/questions/35893584/nomethoderror-undefined-method-last-comment-after-upgrading-to-rake-11/35893941
-gem "rake", "< 11.0"
+gem "rake", "< 13.0"
 gem "sass-rails", "~> 5.0"
 gem "uglifier", ">= 1.3.0"
 gem "coffee-rails", "~> 4.1.0"
