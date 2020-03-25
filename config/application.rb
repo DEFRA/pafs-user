@@ -44,9 +44,6 @@ module Pafs
 
     config.action_view.field_error_proc = Proc.new { |t, i| t }
 
-    # Do not swallow errors in after_commit/after_rollback callbacks.
-    config.active_record.raise_in_transactional_callbacks = true
-
     # active job
     config.active_job.queue_adapter = :sucker_punch
 
