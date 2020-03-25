@@ -2,12 +2,11 @@
 
 source "https://rubygems.org"
 
-gem "rails", "~> 4.2.11.1"
-# rake 11 can break stuff see: http://stackoverflow.com/questions/35893584/nomethoderror-undefined-method-last-comment-after-upgrading-to-rake-11/35893941
-gem "rake", "< 11.0"
-gem "sass-rails", "~> 5.0"
-gem "uglifier", ">= 1.3.0"
-gem "coffee-rails", "~> 4.1.0"
+gem "rails", ">= 5.1.0", "< 5.2"
+gem "rake"
+gem "sass-rails"
+gem "uglifier"
+gem "coffee-rails"
 gem "therubyracer", platforms: :ruby
 
 gem "font-awesome-sass", "~> 4.5.0"
@@ -21,7 +20,7 @@ gem "pg", "~> 0.20.0"
 gem "dotenv-rails"
 
 gem "devise",           "~> 4.7.1"
-gem "devise_invitable", "~> 1.7.5"
+gem "devise_invitable", "~> 2.0"
 gem "devise_security_extension",
   git: "https://github.com/phatworx/devise_security_extension",
   branch: "master"
@@ -34,9 +33,9 @@ gem "dibble", "~> 0.1",
 
 # Provided by GDS - Template gives us a master layout into which
 # we can inject our content using yield and content_for
-gem "govuk_template", "~> 0.17.0"
+gem "govuk_template"
 # Access to some of the most common styles and scripts used by GDS
-gem "govuk_frontend_toolkit", "~> 4.10.0"
+gem "govuk_frontend_toolkit"
 # A gem wrapper around http://github.com/alphagov/govuk_elements that pulls
 # stylesheet and javascript files into a Rails app.
 gem "govuk_elements_rails"
@@ -52,7 +51,7 @@ gem "whenever", require: false
 # shared PAFS code
 gem "pafs_core", "~> 0.0",
   git: "https://github.com/DEFRA/pafs_core",
-  branch: 'develop'
+  branch: 'PM-587'
 
 group :development, :test do
   gem "rspec-rails"
@@ -62,20 +61,20 @@ group :development, :test do
 end
 
 group :development do
-  gem "web-console", "~> 2.0"
+  gem "web-console"
   gem "letter_opener"
   gem "spring"
   gem "overcommit"
 end
 
 group :test do
-  gem "factory_bot_rails", "~> 4.0"
-  gem "shoulda-matchers", "~> 3.1"
+  gem "factory_bot_rails"
+  gem "shoulda-matchers"
   gem "faker"
   gem "capybara"
   gem "database_cleaner"
   gem "simplecov", require: false
-  gem "codeclimate-test-reporter", "~> 0.6", require: false
+  gem "codeclimate-test-reporter", require: false
   gem "climate_control"
 end
 
