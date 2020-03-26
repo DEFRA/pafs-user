@@ -44,7 +44,7 @@ gem "govuk_elements_rails"
 gem "sucker_punch", "~> 2.0"
 
 # static pages
-gem "high_voltage", "~> 2.4.0"
+gem "high_voltage"
 gem "passenger", "~> 5.1", require: false
 gem "whenever", require: false
 

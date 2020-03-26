@@ -409,7 +409,7 @@ DEPENDENCIES
   govuk_frontend_toolkit
   govuk_template
   guard-rspec
-  high_voltage (~> 2.4.0)
+  high_voltage
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
