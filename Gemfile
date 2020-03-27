@@ -51,7 +51,7 @@ gem "whenever", require: false
 # shared PAFS code
 gem "pafs_core", "~> 0.0",
   git: "https://github.com/DEFRA/pafs_core",
-  branch: 'PM-587'
+  branch: 'integration'
 
 group :development, :test do
   gem "rspec-rails"
