@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gem "rails", ">= 5.1.0", "< 5.2"
+gem "rails", ">= 5.2.0", "< 6"
 gem "rake"
 gem "sass-rails"
 gem "uglifier"
@@ -13,8 +13,8 @@ gem "font-awesome-sass", "~> 4.5.0"
 gem "jquery-rails"
 gem "jquery-turbolinks"
 
-gem "jbuilder", "~> 2.0"
-gem "sdoc", "~> 0.4.0", group: :doc
+gem "jbuilder"
+gem "sdoc"
 
 gem "pg", "~> 0.20.0"
 gem "dotenv-rails"
