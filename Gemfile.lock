@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: d10ee9799ab87d2940480e6e7bc124993cc06d23
+  revision: 545b760515abc8a08ce1e4ff9413ebaa283bf1b0
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -83,10 +83,10 @@ GEM
     airbrake-ruby (1.8.0)
     arel (9.0.0)
     aws-eventstream (1.0.3)
-    aws-partitions (1.290.0)
+    aws-partitions (1.291.0)
     aws-sdk (3.0.1)
       aws-sdk-resources (~> 3)
-    aws-sdk-accessanalyzer (1.3.0)
+    aws-sdk-accessanalyzer (1.4.0)
       aws-sdk-core (~> 3, >= 3.71.0)
       aws-sigv4 (~> 1.1)
     aws-sdk-acm (1.29.0)
