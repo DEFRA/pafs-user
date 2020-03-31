@@ -20,8 +20,7 @@ before_script:
   - cp $TRAVIS_BUILD_DIR/dotenv.travis $TRAVIS_BUILD_DIR/.env
   - cp $TRAVIS_BUILD_DIR/config/database.travis.yml $TRAVIS_BUILD_DIR/config/database.yml
   - cp config/secrets.yml.example config/secrets.yml
-  - bundle exec rake pafs_core:install:migrations
-  - bundle exec rake db:migrate
+  - bundle exec rake db:schema:load RAILS_ENV=test
   - git config --global user.name "Travis Test"
   - git config --global user.email travis@example.com
 
