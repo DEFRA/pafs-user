@@ -44,7 +44,7 @@
 // ==========================================================================
 
 .phase-banner {
-  @include phase-banner(beta);
+  @include phase-banner;
 }
 
 .border-none {
@@ -82,12 +82,6 @@
   margin-bottom: $gutter;
 }
 
-// Block positioning
-// ==========================================================================
-
-.inner-block {
-  @include inner-block;
-}
 
 // EA Footer
 // ==========================================================================
