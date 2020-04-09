@@ -9,8 +9,8 @@ FLAG_DISABLED_SPECS = [
   { user_type: :rma, project_area: :rma_area, project_state: :archived,  can_change_state: true,  can_edit: false },
   { user_type: :pso, project_area: :pso_area, project_state: :draft,     can_change_state: true,  can_edit: true },
   { user_type: :pso, project_area: :rma_area, project_state: :draft,     can_change_state: true,  can_edit: true },
-  { user_type: :pso, project_area: :pso_area, project_state: :submitted, can_change_state: true,  can_edit: false },
-  { user_type: :pso, project_area: :rma_area, project_state: :submitted, can_change_state: true,  can_edit: false },
+  { user_type: :pso, project_area: :pso_area, project_state: :submitted, can_change_state: false,  can_edit: false },
+  { user_type: :pso, project_area: :rma_area, project_state: :submitted, can_change_state: false,  can_edit: false },
   { user_type: :pso, project_area: :pso_area, project_state: :archived,  can_change_state: true,  can_edit: false },
   { user_type: :pso, project_area: :rma_area, project_state: :archived,  can_change_state: true,  can_edit: false },
 ]
