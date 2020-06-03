@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Devise.setup do |config|
   # ==> Security Extension
   # Configure security extension for devise
@@ -6,16 +8,20 @@ Devise.setup do |config|
   # config.expire_password_after = false
 
   # Need 1 char of A-Z, a-z and 0-9
-  config.password_regex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/
+  config.password_complexity = { digit: 1, lower: 1, upper: 1 }
 
   # How many passwords to keep in archive
   config.password_archiving_count = 5
 
-  # Deny old password (true, false, count)
+  # Deny old passwords (true, false, number_of_old_passwords_to_check)
+  # Examples:
+  # config.deny_old_passwords = false # allow old passwords
+  # config.deny_old_passwords = true # will deny all the old passwords
+  # config.deny_old_passwords = 3 # will deny new passwords that matches with the last 3 passwords
   config.deny_old_passwords = true
 
   # enable email validation for :secure_validatable. (true, false, validation_options)
-  # dependency: need an email validator like rails_email_validator
+  # dependency: see https://github.com/devise-security/devise-security/blob/master/README.md#e-mail-validation
   config.email_validation = false
 
   # captcha integration for recover form

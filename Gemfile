@@ -2,9 +2,9 @@
 
 source "https://rubygems.org"
 
-gem "rails", ">= 5.2.0", "< 6"
+gem "rails", ">= 6.0", "< 6.1"
 gem "rake"
-gem "sass-rails"
+gem 'sass-rails', '~> 5.0'
 gem "uglifier"
 gem "coffee-rails"
 gem "therubyracer", platforms: :ruby
@@ -21,9 +21,7 @@ gem "dotenv-rails"
 
 gem "devise",           "~> 4.7.1"
 gem "devise_invitable", "~> 2.0"
-gem "devise_security_extension",
-  git: "https://github.com/phatworx/devise_security_extension",
-  branch: "master"
+gem "devise-security"
 
 gem "kaminari"
 
@@ -31,14 +29,10 @@ gem "dibble", "~> 0.1",
   git: "https://github.com/tonyheadford/dibble",
   branch: "develop"
 
-# Provided by GDS - Template gives us a master layout into which
-# we can inject our content using yield and content_for
-gem "govuk_template"
-# Access to some of the most common styles and scripts used by GDS
-gem "govuk_frontend_toolkit"
-# A gem wrapper around http://github.com/alphagov/govuk_elements that pulls
-# stylesheet and javascript files into a Rails app.
+gem "govuk_frontend_toolkit", "~> 9.0.0"
+gem "govuk_template", "0.26.0"
 gem "govuk_elements_rails"
+gem "govuk_publishing_components"
 
 # active job backend
 gem "sucker_punch", "~> 2.0"
@@ -51,7 +45,7 @@ gem "whenever", require: false
 # shared PAFS code
 gem "pafs_core", "~> 0.0",
   git: "https://github.com/DEFRA/pafs_core",
-  branch: 'develop'
+  branch: 'PM-604'
 
 group :development, :test do
   gem "rspec-rails"
@@ -80,7 +74,7 @@ end
 
 group :production, :edge, :qa, :staging do
   gem "rails_12factor"
-  gem "airbrake", "~> 5.0"
+  gem "airbrake", require: false
 end
 
 group :benchmark do

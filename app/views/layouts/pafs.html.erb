@@ -4,7 +4,6 @@
   <!--[if IE 7]><%= stylesheet_link_tag "application-ie7" %><![endif]-->
   <!--[if IE 8]><%= stylesheet_link_tag "application-ie8" %><![endif]-->
   <meta name="format-detection" content="telephone=no" />
-  <%= javascript_include_tag "application" %>
 <% end %>
 <% unless content_for? :page_title %>
   <% if @project.try(:step) %>
@@ -13,6 +12,9 @@
     <% content_for :page_title, make_page_title(t(:global_proposition_header)) %>
   <% end %>
 <% end %>
+
+<% content_for :body_start do %><%= render "shared/cookie_message" %><% end %>
+<% content_for :cookie_message do %><% end %>
 
 <% content_for :header_class, 'with-proposition' %>
 <% content_for :proposition_header do %>
@@ -33,18 +35,8 @@
 <% end %>
 
 <% content_for :body_end do %>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<%= ENV['GOOGLE_ANALYTICS_ID'] %>"
-                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','<%= ENV['GOOGLE_ANALYTICS_ID'] %>');</script>
-  <!-- End Google Tag Manager -->
-<% end if ENV['GOOGLE_ANALYTICS_ID'].present? %>
+  <%= javascript_include_tag "application" %>
+<% end %>
 
 <% content_for :footer_support_links do %>
   <div class="ea-footer">
@@ -52,7 +44,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 
     <ul class="inline-list">
       <li class="inline"><%= link_to 'Privacy', main_app.page_path('pafs_privacy_policy'), target: '_blank' %></li>
-      <li class="inline"><%= link_to 'Cookies', main_app.page_path('pafs_cookie_policy'), target: '_blank' %></li>
+      <li class="inline"><%= link_to 'Cookies', cookies_path,  target: '_blank' %></li>
     </ul>
     <% if user_signed_in? && ENV["ENABLE_USER_AREAS"] %>
       <div aria-hidden="true">Primary Area: <%= link_to "#{current_user.primary_area.name} (#{current_user.primary_area.area_type})", pafs_core.area_path(current_user.primary_area) %></div>
