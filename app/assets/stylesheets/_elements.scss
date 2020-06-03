@@ -12,6 +12,11 @@
 @import 'design-patterns/buttons';
 @import 'design-patterns/breadcrumbs';
 
+// GOV.UK Publishing components
+@import 'govuk_publishing_components/govuk_frontend_support';
+@import 'govuk_publishing_components/component_support';
+@import 'govuk_publishing_components/_all_components';
+
 // GOV.UK elements (alphagov/govuk_elements)
 
 // Helper functions and classes
@@ -44,3 +49,8 @@
 @import "elements/phase-banner";
 @import "elements/components";
 @import "elements/shame";
+
+
+html, body {
+  font-size: inherit !important;
+}
