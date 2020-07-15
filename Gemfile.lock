@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: e8b32b756905349481d4a4b892b676785960f412
+  revision: 0914e3442ffd0bf3450c64e486546ca6b35d7ddf
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -465,7 +465,7 @@ GEM
       chronic (>= 0.6.3)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.3.1)
+    zeitwerk (2.4.0)
 
 PLATFORMS
   ruby
