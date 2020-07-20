@@ -74,7 +74,7 @@ end
 
 group :production, :edge, :qa, :staging do
   gem "rails_12factor"
-  gem "airbrake"
+  gem "airbrake", "~> 5"
 end
 
 group :benchmark do
