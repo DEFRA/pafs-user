@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 580f6d946801d06815459b6f647774b465a99b77
+  revision: 9c202d2ff0a962a7800c610fd5122ae1fb62613c
   branch: fix/airbrake
   specs:
     pafs_core (0.0.2)
