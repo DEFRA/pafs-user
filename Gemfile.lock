@@ -86,9 +86,10 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    airbrake (5.8.1)
-      airbrake-ruby (~> 1.8)
-    airbrake-ruby (1.8.0)
+    airbrake (8.3.2)
+      airbrake-ruby (~> 4.1)
+    airbrake-ruby (4.15.0)
+      rbtree3 (~> 0.5)
     aws-eventstream (1.1.0)
     aws-partitions (1.341.0)
     aws-sdk-core (3.103.0)
@@ -351,6 +352,7 @@ GEM
       ffi (>= 1.0.6)
       msgpack (>= 0.4.3)
       optimist (>= 3.0.0)
+    rbtree3 (0.6.0)
     rdoc (6.2.1)
     ref (2.0.0)
     regexp_parser (1.7.1)
@@ -469,7 +471,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  airbrake (~> 5)
+  airbrake (~> 8)
   benchmark-ips
   byebug
   capybara

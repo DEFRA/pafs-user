@@ -72,9 +72,9 @@ group :test do
   gem "climate_control"
 end
 
+gem "airbrake", "~> 8"
 group :production, :edge, :qa, :staging do
   gem "rails_12factor"
-  gem "airbrake", "~> 5"
 end
 
 group :benchmark do
