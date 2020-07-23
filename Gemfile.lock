@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 0914e3442ffd0bf3450c64e486546ca6b35d7ddf
+  revision: 4e138312a9960a9afb19eb5a465ab5cabff36bc5
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -91,8 +91,8 @@ GEM
     airbrake-ruby (4.15.0)
       rbtree3 (~> 0.5)
     aws-eventstream (1.1.0)
-    aws-partitions (1.341.0)
-    aws-sdk-core (3.103.0)
+    aws-partitions (1.344.0)
+    aws-sdk-core (3.104.2)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.239.0)
       aws-sigv4 (~> 1.1)
@@ -100,8 +100,8 @@ GEM
     aws-sdk-kms (1.36.0)
       aws-sdk-core (~> 3, >= 3.99.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.74.0)
-      aws-sdk-core (~> 3, >= 3.102.1)
+    aws-sdk-s3 (1.75.0)
+      aws-sdk-core (~> 3, >= 3.104.1)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.1)
     aws-sigv4 (1.2.1)
@@ -222,7 +222,7 @@ GEM
     http-accept (1.7.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    i18n (1.8.3)
+    i18n (1.8.4)
       concurrent-ruby (~> 1.0)
     iniparse (1.5.0)
     jbuilder (2.10.0)
