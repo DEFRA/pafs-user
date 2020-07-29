@@ -8,3 +8,5 @@ PafsCore.configure do |config|
   config.airbrake_project_key = ENV["AIRBRAKE_PROJECT_KEY"]
   config.airbrake_blocklist = [/password/i, /authorization/i]
 end
+
+PafsCore.start_airbrake
