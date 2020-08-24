@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 78c03c2c2297d44c9f3d2087a2dc269d18515423
+  revision: 0717e20cfb88c0b04ff99a7d1413675c41be658b
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -87,13 +87,13 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    airbrake (10.0.5)
-      airbrake-ruby (~> 4.13)
-    airbrake-ruby (4.15.0)
+    airbrake (11.0.0)
+      airbrake-ruby (~> 5.0)
+    airbrake-ruby (5.0.2)
       rbtree3 (~> 0.5)
     aws-eventstream (1.1.0)
-    aws-partitions (1.353.0)
-    aws-sdk-core (3.104.3)
+    aws-partitions (1.358.0)
+    aws-sdk-core (3.104.4)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.239.0)
       aws-sigv4 (~> 1.1)
@@ -101,11 +101,11 @@ GEM
     aws-sdk-kms (1.36.0)
       aws-sdk-core (~> 3, >= 3.99.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.76.0)
-      aws-sdk-core (~> 3, >= 3.104.1)
+    aws-sdk-s3 (1.78.0)
+      aws-sdk-core (~> 3, >= 3.104.3)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.1)
-    aws-sigv4 (1.2.1)
+    aws-sigv4 (1.2.2)
       aws-eventstream (~> 1, >= 1.0.2)
     bcrypt (3.1.13)
     benchmark-ips (2.8.2)
