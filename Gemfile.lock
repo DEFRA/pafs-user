@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 0717e20cfb88c0b04ff99a7d1413675c41be658b
+  revision: dc11874d894a72968d32c8829dd0de356f07c9e3
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -92,16 +92,16 @@ GEM
     airbrake-ruby (5.0.2)
       rbtree3 (~> 0.5)
     aws-eventstream (1.1.0)
-    aws-partitions (1.358.0)
-    aws-sdk-core (3.104.4)
+    aws-partitions (1.360.0)
+    aws-sdk-core (3.105.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.239.0)
       aws-sigv4 (~> 1.1)
       jmespath (~> 1.0)
-    aws-sdk-kms (1.36.0)
+    aws-sdk-kms (1.37.0)
       aws-sdk-core (~> 3, >= 3.99.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.78.0)
+    aws-sdk-s3 (1.79.1)
       aws-sdk-core (~> 3, >= 3.104.3)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.1)
@@ -267,7 +267,7 @@ GEM
       activesupport (>= 4.0)
       logstash-event (~> 1.2.0)
       request_store
-    loofah (2.6.0)
+    loofah (2.7.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     lumberjack (1.2.6)
