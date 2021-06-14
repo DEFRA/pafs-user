@@ -148,6 +148,21 @@ To execute the unit tests simply enter:
 As this point we have no acceptance tests but when we do they can be executed using:
 
     cucumber
+    
+### Production debugging
+
+#### Rails console
+To launch a rails console on a deployed server, the environment variables might need to be loaded from a different directory
+
+For example:
+`. ../../.exportedenv && RAILS_ENV=production bundle exec rails console`
+
+#### Logging
+Currently (15 Jun 2021), no logs are written to the `production.log`. This should be fixed.
+
+#### File upload errors
+When the file upload fails, the user sees a 'cookies' error. This might come from an `InvalidAuthenticityToken`, which might also come from a Clam AV error.
+It's worth checking that the Clam AV service is running: https://github.com/franckverrot/clamav-client#ping--boolean
 
 ## Contributing to this project
 
