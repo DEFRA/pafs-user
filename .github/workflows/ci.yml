@@ -7,7 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SECRET_KEY_BASE: somescarylongvaluefullofnumbersandlettersi
-      DEVISE_MAILER_SENDER: nbothupperandlowercase
       DATABASE_USERNAME: username
       DATABASE_PASSWORD: password
       DEVISE_USER_SEPARATE_DB: false
