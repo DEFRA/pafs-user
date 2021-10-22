@@ -30,3 +30,11 @@ jobs:
 
       - name: Set up databases
         run: |
+          psql -c "CREATE DATABASE pafs_test WITH ENCODING 'UTF8';" -U postgres
+          bundle exec rake db:schema:load RAILS_ENV=test
+          git config --global user.name "Travis Test"
+          git config --global user.email travis@example.com
+      
+      - name: Run tests
+        run: |
+          bundle exec rspec
