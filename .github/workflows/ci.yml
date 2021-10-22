@@ -26,8 +26,7 @@ jobs:
           POSTGRES_DB: pafs_test
           POSTGRES_USER: postgress
           POSTGRES_PASSWORD: postgress
-        ports:
-          - 5432:5432
+          POSTGRES_PORT: ${{ job.services.postgres.ports[5432] }}
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
 
     steps:
@@ -49,8 +48,11 @@ jobs:
       
       - name: Run tests
         run: |
-          sudo service --status-all
-          cp config/database.yml.github-actions config/database.yml
-          psql -c "CREATE DATABASE pafs_test WITH ENCODING 'UTF8';"
-          bundle exec rake db:seed RAILS_ENV=test
+          psql -c "CREATE DATABASE pafs_test WITH ENCODING 'UTF8';" -U postgres
+          cp $TRAVIS_BUILD_DIR/dotenv.travis $TRAVIS_BUILD_DIR/.env
+          cp $TRAVIS_BUILD_DIR/config/database.travis.yml $TRAVIS_BUILD_DIR/config/database.yml
+          cp config/secrets.yml.example config/secrets.yml
+          bundle exec rake db:schema:load RAILS_ENV=test
+          git config --global user.name "Travis Test"
+          git config --global user.email travis@example.com
           bundle exec rspec
