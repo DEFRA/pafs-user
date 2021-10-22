@@ -8,7 +8,7 @@ jobs:
     
     services:
       postgres:
-        image: postgres
+        image: postgres:9.5
         env:
           POSTGRES_PASSWORD: postgres
         options: >-
@@ -29,6 +29,7 @@ jobs:
           sudo apt-get install -y libpq-dev
           sudo apt-get install -y libproj-dev
           sudo apt-get install -y libffi-dev
+          sudo apt-get install postgresql-9.5
           sudo gem install bundler
 
       - name: Install Ruby
@@ -36,20 +37,6 @@ jobs:
         with:
           bundler-cache: true
       
-      - name: Start PostgreSQL on Ubuntu
-        run: |
-          sudo systemctl start postgresql.service
-          pg_isready
-      - name: Create scheduler user
-        run: |
-          sudo -u postgres psql --command="CREATE USER scheduler PASSWORD 'somestrong'" --command="\du"
-      - name: Create timetable database
-        run: |
-          sudo -u postgres createdb --owner=scheduler timetable
-          PGPASSWORD=somestrong psql --username=scheduler --host=localhost --list timetable
-
-
-
       - name: Connect to postgreSQL
         run: |
           psql -c "CREATE DATABASE pafs_test WITH ENCODING 'UTF8';" -U postgres
