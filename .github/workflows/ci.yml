@@ -7,8 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SECRET_KEY_BASE: somescarylongvaluefullofnumbersandlettersi
-      DATABASE_USERNAME: username
-      DATABASE_PASSWORD: password
+      DATABASE_USERNAME: postgress
+      DATABASE_PASSWORD: postgress
       DEVISE_USER_SEPARATE_DB: false
       DEVISE_MAILER_SENDER: no-reply@example.org
       AIRBRAKE_HOST: https://errbit.server.here
@@ -23,9 +23,9 @@ jobs:
       postgres:
         image: postgres:latest
         env:
-          POSTGRES_DB: postgres
-          POSTGRES_PASSWORD: password
-          POSTGRES_USER: username
+          POSTGRES_DB: pafs_test
+          POSTGRES_PASSWORD: postgress
+          POSTGRES_USER: postgress
         ports:
           - 5432:5432
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
@@ -37,6 +37,7 @@ jobs:
       - name: Install application dependencies
         run: |
           sudo apt-get update -qq
+          sudo apt-get install -y libpq-dev
           sudo apt-get install -y libproj-dev
           sudo apt-get install -y libffi-dev
           sudo gem install bundler
@@ -48,7 +49,7 @@ jobs:
       
       - name: Run tests
         run: |
-          sudo service postgresql start
+          cp config/database.yml config/database.yml
           psql -c "CREATE DATABASE pafs_test WITH ENCODING 'UTF8';"
           bundle exec rake db:seed RAILS_ENV=test
           bundle exec rspec
