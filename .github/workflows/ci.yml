@@ -1,0 +1,42 @@
+name: CI
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      DEVISE_MAILER_SENDER: no-reply@example.com
+      POSTGRES_HOST: localhost
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_USERNAME: postgres
+      SECRET_KEY_BASE: somescarylongvaluefullofnumbersandlettersi
+
+    services:
+      postgres:
+        image: postgres:9.5-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: pafs_test
+        ports:
+          - 5432:5432
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Test setup
+        run: |
+          bundle exec rake db:schema:load RAILS_ENV=test
+
+      - name: Run tests
+        run: |
+          bundle exec rspec
