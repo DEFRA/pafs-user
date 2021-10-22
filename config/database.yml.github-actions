@@ -1,8 +1,0 @@
-test:
-  adapter: postgresql
-  host: localhost
-  encoding: unicode
-  database: pafs_test
-  pool: 5
-  username: <%= ENV["DATABASE_USERNAME"] %>
-  password: <%= ENV["DATABASE_PASSWORD"] %>

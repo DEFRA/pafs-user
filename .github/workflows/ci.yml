@@ -33,10 +33,10 @@ jobs:
         with:
           bundler-cache: true
 
-      - name: Database migrations
+      - name: Test setup
         run: |
           bundle exec rake db:schema:load RAILS_ENV=test
 
-      - name: Run unit tests
+      - name: Run tests
         run: |
           bundle exec rspec
