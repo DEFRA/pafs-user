@@ -8,9 +8,19 @@ jobs:
     
     services:
       postgres:
-        image: postgres
-        ports: 
+        image: postgres:latest
+        env:
+          POSTGRES_DB: pafs_test
+          POSTGRES_PASSWORD: password
+          POSTGRES_PORT: 5432
+          POSTGRES_USER: postgres
+        ports:
           - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
     
     steps:
       - name: Checkout repository
@@ -34,6 +44,8 @@ jobs:
           bundle exec rake db:schema:load RAILS_ENV=test
           git config --global user.name "Travis Test"
           git config --global user.email travis@example.com
+        env:
+          PGPASSWORD: password
       
       - name: Run tests
         run: |
