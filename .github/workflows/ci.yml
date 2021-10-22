@@ -42,3 +42,6 @@ jobs:
       - name: Run unit tests
         run: |
           bundle exec rspec
+        env:
+          SECRET_KEY_BASE: somescarylongvaluefullofnumbersandlettersi
+          POSTGRES_PASSWORD: postgres
