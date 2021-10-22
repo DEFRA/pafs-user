@@ -5,17 +5,19 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    
     services:
       postgres:
-        image: postgres:10.8
+        image: postgres
         env:
-          POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
-          POSTGRES_DB: postgres
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
         ports:
-        - 5432/tcp
-        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+          - 5432:5432
 
     steps:
       - name: Checkout repository
@@ -34,10 +36,14 @@ jobs:
         with:
           bundler-cache: true
       
-      - name: Run tests
+      - name: Connect to postgreSQL
         run: |
           psql -c "CREATE DATABASE pafs_test WITH ENCODING 'UTF8';" -U postgres
-        
+
         env:
           POSTGRES_HOST: localhost
-          POSTGRES_PORT: ${{ job.services.postgres.ports[5432] }}
+          POSTGRES_PORT: 5432
+
+      - name: Run tests
+        run: |
+          bundle exec rspec
