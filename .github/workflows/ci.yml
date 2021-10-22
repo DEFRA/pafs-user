@@ -5,28 +5,16 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      SECRET_KEY_BASE: somescarylongvaluefullofnumbersandlettersi
-      DATABASE_USERNAME: postgress
-      DATABASE_PASSWORD: postgress
-      DEVISE_USER_SEPARATE_DB: false
-      DEVISE_MAILER_SENDER: no-reply@example.org
-      AIRBRAKE_HOST: https://errbit.server.here
-      AIRBRAKE_PROJECT_KEY: errbit_project_key_here
-      GOOGLE_ANALYTICS_ID: your-id-here
-      EMAIL_USERNAME: george.schena@defra.gov.uk
-      EMAIL_PASSWORD: bob
-      EMAIL_HOST: localhost
-      EMAIL_PORT: 1025
 
     services:
       postgres:
-        image: postgres:latest
+        image: postgres:10.8
         env:
-          POSTGRES_DB: pafs_test
-          POSTGRES_USER: postgress
-          POSTGRES_PASSWORD: postgress
-          POSTGRES_PORT: ${{ job.services.postgres.ports[5432] }}
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+        ports:
+        - 5432/tcp
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
 
     steps:
@@ -49,10 +37,7 @@ jobs:
       - name: Run tests
         run: |
           psql -c "CREATE DATABASE pafs_test WITH ENCODING 'UTF8';" -U postgres
-          cp $TRAVIS_BUILD_DIR/dotenv.travis $TRAVIS_BUILD_DIR/.env
-          cp $TRAVIS_BUILD_DIR/config/database.travis.yml $TRAVIS_BUILD_DIR/config/database.yml
-          cp config/secrets.yml.example config/secrets.yml
-          bundle exec rake db:schema:load RAILS_ENV=test
-          git config --global user.name "Travis Test"
-          git config --global user.email travis@example.com
-          bundle exec rspec
+        
+        env:
+          POSTGRES_HOST: localhost
+          POSTGRES_PORT: ${{ job.services.postgres.ports[5432] }}
