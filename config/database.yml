@@ -24,6 +24,8 @@ development:
 test:
   <<: *default
   database: pafs_test
+  username: postgres
+  password: postgres
 
 acceptance:
   <<: *default
