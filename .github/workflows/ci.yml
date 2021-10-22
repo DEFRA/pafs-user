@@ -35,6 +35,8 @@ jobs:
       - name: Database migrations
         run: |
           RAILS_ENV=test bundle exec rake db:migrate
+        env:
+          SECRET_KEY_BASE: somescarylongvaluefullofnumbersandlettersi
 
       - name: Run unit tests
         run: |
