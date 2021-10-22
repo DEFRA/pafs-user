@@ -49,7 +49,7 @@ jobs:
       
       - name: Run tests
         run: |
-          cp config/database.yml config/database.yml
+          cp config/database.yml.github-actions config/database.yml
           psql -c "CREATE DATABASE pafs_test WITH ENCODING 'UTF8';"
           bundle exec rake db:seed RAILS_ENV=test
           bundle exec rspec
