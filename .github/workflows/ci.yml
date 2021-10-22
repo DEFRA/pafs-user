@@ -11,6 +11,7 @@ jobs:
       POSTGRES_PASSWORD: postgres
       POSTGRES_PORT: 5432
       POSTGRES_USERNAME: postgres
+      SECRET_KEY_BASE: somescarylongvaluefullofnumbersandlettersi
 
     services:
       postgres:
@@ -35,13 +36,7 @@ jobs:
       - name: Database migrations
         run: |
           bundle exec rake db:schema:load RAILS_ENV=test
-        env:
-          SECRET_KEY_BASE: somescarylongvaluefullofnumbersandlettersi
-          POSTGRES_PASSWORD: postgres
 
       - name: Run unit tests
         run: |
           bundle exec rspec
-        env:
-          SECRET_KEY_BASE: somescarylongvaluefullofnumbersandlettersi
-          POSTGRES_PASSWORD: postgres
