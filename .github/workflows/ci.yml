@@ -24,8 +24,8 @@ jobs:
         image: postgres:latest
         env:
           POSTGRES_DB: pafs_test
-          DATABASE_PASSWORD: postgress
-          DATABASE_USERNAME: postgress
+          POSTGRES_USER: postgress
+          POSTGRES_PASSWORD: postgress
         ports:
           - 5432:5432
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
@@ -53,7 +53,3 @@ jobs:
           psql -c "CREATE DATABASE pafs_test WITH ENCODING 'UTF8';"
           bundle exec rake db:seed RAILS_ENV=test
           bundle exec rspec
-        env:
-          RAILS_ENV: test
-          DATABASE_USERNAME: postgres
-          DATABASE_PASSWORD: postgres
