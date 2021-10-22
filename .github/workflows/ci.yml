@@ -36,6 +36,20 @@ jobs:
         with:
           bundler-cache: true
       
+      - name: Start PostgreSQL on Ubuntu
+        run: |
+          sudo systemctl start postgresql.service
+          pg_isready
+      - name: Create scheduler user
+        run: |
+          sudo -u postgres psql --command="CREATE USER scheduler PASSWORD 'somestrong'" --command="\du"
+      - name: Create timetable database
+        run: |
+          sudo -u postgres createdb --owner=scheduler timetable
+          PGPASSWORD=somestrong psql --username=scheduler --host=localhost --list timetable
+
+
+
       - name: Connect to postgreSQL
         run: |
           psql -c "CREATE DATABASE pafs_test WITH ENCODING 'UTF8';" -U postgres
