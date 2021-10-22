@@ -48,4 +48,5 @@ jobs:
       
       - name: Run tests
         run: |
+          psql -c "CREATE DATABASE pafs_test WITH ENCODING 'UTF8';"
           bundle exec rspec
