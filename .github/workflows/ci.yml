@@ -5,22 +5,31 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      SECRET_KEY_BASE: somescarylongvaluefullofnumbersandlettersi
+      DEVISE_MAILER_SENDER: nbothupperandlowercase
+      DATABASE_USERNAME: username
+      DATABASE_PASSWORD: password
+      DEVISE_USER_SEPARATE_DB: false
+      DEVISE_MAILER_SENDER: no-reply@example.org
+      AIRBRAKE_HOST: https://errbit.server.here
+      AIRBRAKE_PROJECT_KEY: errbit_project_key_here
+      GOOGLE_ANALYTICS_ID: your-id-here
+      EMAIL_USERNAME: george.schena@defra.gov.uk
+      EMAIL_PASSWORD: bob
+      EMAIL_HOST: localhost
+      EMAIL_PORT: 1025
 
     services:
       postgres:
         image: postgres:latest
         env:
           POSTGRES_DB: postgres
-          POSTGRES_PASSWORD: postgres_password
-          POSTGRES_PORT: 5432
-          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: password
+          POSTGRES_USER: username
         ports:
           - 5432:5432
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
 
     steps:
       - name: Checkout repository
@@ -37,14 +46,6 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-
-      - name: Set up databases
-        run: |
-          sudo service postgresql start
-          psql -c "CREATE DATABASE pafs_test WITH ENCODING 'UTF8';" -U postgres
-          bundle exec rake db:schema:load RAILS_ENV=test
-        env:
-          PGPASSWORD: postgres_password
       
       - name: Run tests
         run: |
