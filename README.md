@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/DEFRA/pafs-user.svg?branch=develop)](https://travis-ci.org/DEFRA/pafs-user)
+[![CI](https://github.com/DEFRA/pafs-user/actions/workflows/ci.yml/badge.svg)]((https://github.com/DEFRA/pafs-user/actions/workflows/ci.yml))
 [![Code Climate](https://codeclimate.com/github/DEFRA/pafs-user/badges/gpa.svg)](https://codeclimate.com/github/DEFRA/pafs-user)
 [![Test Coverage](https://codeclimate.com/github/DEFRA/pafs-user/badges/coverage.svg)](https://codeclimate.com/github/DEFRA/pafs-user/coverage)
 [![security](https://hakiri.io/github/DEFRA/pafs-user/develop.svg)](https://hakiri.io/github/DEFRA/pafs-user/develop)
