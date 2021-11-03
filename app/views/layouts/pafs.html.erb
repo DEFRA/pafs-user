@@ -28,7 +28,9 @@
 <% content_for(:content) do %>
   <main id="content" role="main">
     <%= render "shared/phase_banner" %>
-    <%= render "shared/user_bar" if user_signed_in? %>
+    <% unless request.path == "/cookies" || request.path == "/pages/pafs_privacy_policy"%>
+      <%= render "shared/user_bar" if user_signed_in? %>
+    <% end %>
     <%= render "shared/return_to_overview" if show_return_to_overview? %>
     <%= yield %>
   </main>
