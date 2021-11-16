@@ -9,6 +9,12 @@ module ApplicationHelper
     Rails.application.config.x.revision
   end
 
+  def is_policy_page(supplied_path)
+    if supplied_path == "/cookies" || supplied_path == "/pages/pafs_privacy_policy"
+      false
+    end
+  end
+ 
   def migrate_devise_errors_for(resource)
     # move flash messages and resource.errors to :base
     resource.errors.add(:base, flash[:alert]) if flash[:alert].present?
