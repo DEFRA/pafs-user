@@ -10,9 +10,9 @@ module ApplicationHelper
   end
 
   def is_policy_page(supplied_path)
-    policy_paths = [cookies_path, main_app.page_path('pafs_privacy_policy')]
-
-    policy_paths.each { |path| return false if supplied_path == path }
+    if supplied_path == cookies_path || supplied_path == main_app.page_path('pafs_privacy_policy')
+      false
+    end
   end
  
   def migrate_devise_errors_for(resource)
