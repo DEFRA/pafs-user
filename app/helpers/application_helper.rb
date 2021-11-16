@@ -9,8 +9,10 @@ module ApplicationHelper
     Rails.application.config.x.revision
   end
 
-  def is_policy_page(supplied_path)
-    if supplied_path == cookies_path || supplied_path == main_app.page_path('pafs_privacy_policy')
+  def is_not_policy_page?(supplied_path)
+    if supplied_path != cookies_path && supplied_path != main_app.page_path('pafs_privacy_policy')
+      true
+    else
       false
     end
   end
