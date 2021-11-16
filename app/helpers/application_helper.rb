@@ -10,7 +10,7 @@ module ApplicationHelper
   end
 
   def is_policy_page(supplied_path)
-    if supplied_path == "/cookies" || supplied_path == "/pages/pafs_privacy_policy"
+    if supplied_path == cookies_path || supplied_path == main_app.page_path('pafs_privacy_policy')
       false
     end
   end
