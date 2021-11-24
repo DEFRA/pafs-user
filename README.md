@@ -90,11 +90,20 @@ You can use mailcatcher to trap and view outgoing email.
 
 Make sure you have the following in your `.env` or `.env.development` file:
 
+    SECRET_KEY_BASE=''
+    DATABASE_USERNAME=''
+    DATABASE_PASSWORD=''
+    DEVISE_USER_SEPARATE_DB=''
+    DEVISE_MAILER_SENDER=''
+    AIRBRAKE_HOST=''
+    AIRBRAKE_PROJECT_KEY=''
+    GOOGLE_ANALYTICS_ID=''
     EMAIL_USERNAME=''
     EMAIL_PASSWORD=''
     EMAIL_APP_DOMAIN=''
-    EMAIL_HOST='localhost'
-    EMAIL_PORT='1025'
+    EMAIL_HOST=''
+    EMAIL_PORT=''
+    ENABLE_USER_AREAS=''
 
 Start mailcatcher with `$ mailcatcher` and navigate to
 [http://127.0.0.1:1080](http://127.0.0.1:1080) in your browser.
