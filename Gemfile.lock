@@ -178,7 +178,7 @@ GEM
       faraday-net_http (~> 2.0)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (2.0.3)
-    ffi (1.15.4)
+    ffi (1.15.5)
     font-awesome-sass (4.5.0)
       sass (>= 3.2)
     formatador (0.2.5)
@@ -203,9 +203,8 @@ GEM
       govuk_frontend_toolkit (>= 6.0.2)
       rails (>= 4.1.0)
       sass (>= 3.2.0)
-    govuk_frontend_toolkit (9.0.0)
+    govuk_frontend_toolkit (9.0.1)
       railties (>= 3.1.0)
-      sass (>= 3.2.0)
     govuk_publishing_components (21.59.0)
       gds-api-adapters
       govuk_app_config
@@ -362,7 +361,7 @@ GEM
       thor (>= 0.20.3, < 2.0)
     raindrops (0.20.0)
     rake (13.0.6)
-    rb-fsevent (0.11.0)
+    rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rbtrace (0.4.14)
