@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 49c97836353291685b40659ecd1fdde50842861b
+  revision: 3d772461bcaead7e3336a34d7a13e85e1ea52f28
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -178,7 +178,7 @@ GEM
       faraday-net_http (~> 2.0)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (2.0.3)
-    ffi (1.15.4)
+    ffi (1.15.5)
     font-awesome-sass (4.5.0)
       sass (>= 3.2)
     formatador (0.2.5)
@@ -362,7 +362,7 @@ GEM
       thor (>= 0.20.3, < 2.0)
     raindrops (0.20.0)
     rake (13.0.6)
-    rb-fsevent (0.11.0)
+    rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rbtrace (0.4.14)
