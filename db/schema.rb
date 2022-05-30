@@ -2,15 +2,15 @@
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
 #
-# Note that this schema.rb definition is the authoritative source for your
-# database schema. If you need to create the application database on another
-# system, you should be using db:schema:load, not running all the migrations
-# from scratch. The latter is a flawed and unsustainable approach (the more migrations
-# you'll amass, the slower it'll run and the greater likelihood for issues).
+# This file is the source Rails uses to define your schema when running `rails
+# db:schema:load`. When creating a new database, `rails db:schema:load` tends to
+# be faster and is potentially less error prone than running all of your
+# migrations from scratch. Old migrations may fail to apply correctly if those
+# migrations use external dependencies or application code.
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_09_151323) do
+ActiveRecord::Schema.define(version: 2022_05_20_165225) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
@@ -275,6 +275,23 @@ ActiveRecord::Schema.define(version: 2020_03_09_151323) do
     t.string "confidence_secured_partnership_funding"
     t.bigint "carbon_cost_build"
     t.bigint "carbon_cost_operation"
+    t.boolean "natural_flood_risk_measures_included"
+    t.boolean "river_restoration"
+    t.boolean "floodplain_restoration"
+    t.boolean "leaky_barriers"
+    t.boolean "offline_flood_storage_areas"
+    t.boolean "cross_slope_woodland"
+    t.boolean "catchment_woodland"
+    t.boolean "riparian_woodland"
+    t.boolean "floodplain_woodland"
+    t.boolean "soil_and_land_management"
+    t.boolean "land_and_headwater_drainage_management"
+    t.boolean "runoff_pathway_management"
+    t.boolean "saltmarsh_mudflats_and_managed_realignment"
+    t.boolean "sand_dunes"
+    t.boolean "beach_nourishment"
+    t.string "other_flood_measures"
+    t.float "natural_flood_risk_measures_cost"
     t.index ["reference_number", "version"], name: "index_pafs_core_projects_on_reference_number_and_version", unique: true
     t.index ["slug"], name: "index_pafs_core_projects_on_slug", unique: true
     t.index ["submitted_to_pol"], name: "index_pafs_core_projects_on_submitted_to_pol"
