@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_05_20_165225) do
+ActiveRecord::Schema.define(version: 2022_06_06_105448) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
@@ -292,6 +292,7 @@ ActiveRecord::Schema.define(version: 2022_05_20_165225) do
     t.boolean "beach_nourishment"
     t.string "other_flood_measures"
     t.float "natural_flood_risk_measures_cost"
+    t.boolean "other_flood_measures_selected"
     t.index ["reference_number", "version"], name: "index_pafs_core_projects_on_reference_number_and_version", unique: true
     t.index ["slug"], name: "index_pafs_core_projects_on_slug", unique: true
     t.index ["submitted_to_pol"], name: "index_pafs_core_projects_on_submitted_to_pol"
