@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: cd3bc7267def07b32d058d72430ecbb5b078b8e2
+  revision: d35a1a2c64c765ebd06d27f30d306b8acc2f230e
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -346,7 +346,7 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.4.2)
+    rails-html-sanitizer (1.4.3)
       loofah (~> 2.3)
     rails_12factor (0.0.3)
       rails_serve_static_assets
