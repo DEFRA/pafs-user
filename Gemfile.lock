@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: d35a1a2c64c765ebd06d27f30d306b8acc2f230e
+  revision: 82e6fd1cf2f12a874fb12b8aa8307c4cc16e8716
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -289,7 +289,7 @@ GEM
     mime-types-data (3.2020.0512)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
-    minitest (5.15.0)
+    minitest (5.16.0)
     msgpack (1.4.2)
     nenv (0.3.0)
     netrc (0.11.0)
@@ -491,7 +491,7 @@ GEM
       chronic (>= 0.6.3)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.5.4)
+    zeitwerk (2.6.0)
 
 PLATFORMS
   ruby
