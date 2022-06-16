@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: d35a1a2c64c765ebd06d27f30d306b8acc2f230e
-  branch: develop
+  revision: 5b936e2e0bfa84b6bc33220c90bad1f8b1f0bf0a
+  branch: main
   specs:
     pafs_core (0.0.2)
       aws-sdk-s3 (~> 1.67)
@@ -89,7 +89,7 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     airbrake (13.0.2)
       airbrake-ruby (~> 6.0)
-    airbrake-ruby (6.1.0)
+    airbrake-ruby (6.1.1)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
     aws-partitions (1.598.0)
@@ -289,7 +289,7 @@ GEM
     mime-types-data (3.2020.0512)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
-    minitest (5.15.0)
+    minitest (5.16.0)
     msgpack (1.4.2)
     nenv (0.3.0)
     netrc (0.11.0)
@@ -491,7 +491,7 @@ GEM
       chronic (>= 0.6.3)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.5.4)
+    zeitwerk (2.6.0)
 
 PLATFORMS
   ruby
