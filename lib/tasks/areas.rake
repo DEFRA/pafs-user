@@ -8,4 +8,11 @@ namespace :areas do
 
     PafsCore::AreaImporter.new.import(areas_csv)
   end
+
+  desc "Import New Areas"
+  task import_new_areas: :environment do
+    new_areas_csv_folder = Rails.root.join("lib/fixtures/new_areas")
+
+    PafsCore::AreaImporter.new.import_new_areas(new_areas_csv_folder)
+  end
 end
