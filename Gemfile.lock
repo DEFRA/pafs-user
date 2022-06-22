@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 5b936e2e0bfa84b6bc33220c90bad1f8b1f0bf0a
+  revision: 9c626a34abeed3f94a0be2af651978620b9c59c7
   branch: main
   specs:
     pafs_core (0.0.2)
@@ -92,8 +92,8 @@ GEM
     airbrake-ruby (6.1.1)
       rbtree3 (~> 0.5)
     aws-eventstream (1.2.0)
-    aws-partitions (1.598.0)
-    aws-sdk-core (3.131.1)
+    aws-partitions (1.600.0)
+    aws-sdk-core (3.131.2)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
       aws-sigv4 (~> 1.1)
@@ -289,7 +289,7 @@ GEM
     mime-types-data (3.2020.0512)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
-    minitest (5.16.0)
+    minitest (5.16.1)
     msgpack (1.4.2)
     nenv (0.3.0)
     netrc (0.11.0)
