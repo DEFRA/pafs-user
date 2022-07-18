@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_11_112507) do
+ActiveRecord::Schema.define(version: 2022_07_14_112834) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
@@ -112,12 +112,23 @@ ActiveRecord::Schema.define(version: 2022_06_11_112507) do
     t.integer "households_protected_from_loss_in_20_percent_most_deprived"
   end
 
+  create_table "pafs_core_flood_protection2040_outcomes", force: :cascade do |t|
+    t.integer "project_id"
+    t.integer "financial_year", null: false
+    t.integer "households_at_reduced_risk"
+    t.integer "moved_from_very_significant_and_significant_to_moderate_or_low"
+    t.integer "households_protected_from_loss_in_20_percent_most_deprived"
+    t.integer "non_residential_properties"
+  end
+
   create_table "pafs_core_flood_protection_outcomes", force: :cascade do |t|
     t.integer "project_id"
     t.integer "financial_year", null: false
     t.integer "households_at_reduced_risk"
     t.integer "moved_from_very_significant_and_significant_to_moderate_or_low"
     t.integer "households_protected_from_loss_in_20_percent_most_deprived"
+    t.integer "households_protected_through_plp_measures"
+    t.integer "non_residential_properties"
   end
 
   create_table "pafs_core_funding_contributors", id: :serial, force: :cascade do |t|
@@ -316,6 +327,7 @@ ActiveRecord::Schema.define(version: 2022_06_11_112507) do
     t.float "kilometres_of_watercourse_enhanced_or_created_partial"
     t.boolean "create_habitat_watercourse"
     t.float "kilometres_of_watercourse_enhanced_or_created_single"
+    t.boolean "no_properties_affected_by_flooding_2040", default: false, null: false
     t.index ["reference_number", "version"], name: "index_pafs_core_projects_on_reference_number_and_version", unique: true
     t.index ["slug"], name: "index_pafs_core_projects_on_slug", unique: true
     t.index ["submitted_to_pol"], name: "index_pafs_core_projects_on_submitted_to_pol"
