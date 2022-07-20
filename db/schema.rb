@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_14_112834) do
+ActiveRecord::Schema.define(version: 2022_07_19_120343) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
@@ -110,6 +110,7 @@ ActiveRecord::Schema.define(version: 2022_07_14_112834) do
     t.integer "households_at_reduced_risk"
     t.integer "households_protected_from_loss_in_next_20_years"
     t.integer "households_protected_from_loss_in_20_percent_most_deprived"
+    t.integer "non_residential_properties"
   end
 
   create_table "pafs_core_flood_protection2040_outcomes", force: :cascade do |t|
