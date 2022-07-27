@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 1eb1e036214ea40dacebf52f12283f85763b48c6
+  revision: 7a0e19c23f5a312744da9540bb6c0c6d566fb5a2
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -111,7 +111,7 @@ GEM
     async-pool (0.3.10)
       async (>= 1.25)
     aws-eventstream (1.2.0)
-    aws-partitions (1.608.0)
+    aws-partitions (1.610.0)
     aws-sdk-core (3.131.3)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
@@ -328,7 +328,7 @@ GEM
     nenv (0.3.0)
     netrc (0.11.0)
     nio4r (2.5.8)
-    nokogiri (1.13.7)
+    nokogiri (1.13.8)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     notiffany (0.1.3)
