@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: d11281181920f4f037864e3dab74f6953d929e0b
+  revision: 9a0765715fea767341c00ee28f9ecf663ac3551e
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -111,8 +111,8 @@ GEM
     async-pool (0.3.10)
       async (>= 1.25)
     aws-eventstream (1.2.0)
-    aws-partitions (1.613.0)
-    aws-sdk-core (3.131.5)
+    aws-partitions (1.614.0)
+    aws-sdk-core (3.131.6)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
       aws-sigv4 (~> 1.1)
@@ -186,7 +186,7 @@ GEM
     dotenv-rails (2.7.6)
       dotenv (= 2.7.6)
       railties (>= 3.2)
-    erubi (1.10.0)
+    erubi (1.11.0)
     execjs (2.7.0)
     factory_bot (6.2.0)
       activesupport (>= 5.0.0)
@@ -475,7 +475,7 @@ GEM
       faraday (>= 0.17.3, < 3)
     sdoc (1.1.0)
       rdoc (>= 5.0)
-    secure_headers (6.3.4)
+    secure_headers (6.4.0)
     sentry-rails (5.3.1)
       railties (>= 5.0)
       sentry-ruby-core (~> 5.3.1)
