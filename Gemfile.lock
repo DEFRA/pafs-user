@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 0cfc2f9d236a8ec61bb658bb90b2c2695920eee2
+  revision: e2475530d3b1264b945bf55d38c6148414701d0a
   branch: develop
   specs:
     pafs_core (0.0.2)
@@ -111,7 +111,7 @@ GEM
     async-pool (0.3.10)
       async (>= 1.25)
     aws-eventstream (1.2.0)
-    aws-partitions (1.616.0)
+    aws-partitions (1.619.0)
     aws-sdk-core (3.132.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
@@ -195,7 +195,7 @@ GEM
       railties (>= 5.0.0)
     faker (2.21.0)
       i18n (>= 1.8.11, < 2)
-    faraday (2.5.1)
+    faraday (2.5.2)
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-http-cache (2.4.0)
@@ -322,7 +322,7 @@ GEM
     mime-types-data (3.2020.0512)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
-    minitest (5.16.2)
+    minitest (5.16.3)
     msgpack (1.4.2)
     multi_json (1.15.0)
     nenv (0.3.0)
