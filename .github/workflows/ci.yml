@@ -36,7 +36,9 @@ jobs:
       - name: Test setup
         run: |
           bundle exec rake db:schema:load RAILS_ENV=test
+          bundle exec rake db:migrate --trace RAILS_ENV=test
 
       - name: Run tests
         run: |
+          bundle exec rake db:migrate --trace RAILS_ENV=test
           bundle exec rspec
