@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 94321458280afc1be8b9370c39418f4a396aef48
+  revision: ac00cac31810793086aba239e877a3f1e621f627
   branch: chore/downgrade-faraday
   specs:
     pafs_core (0.0.2)
