@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 9c626a34abeed3f94a0be2af651978620b9c59c7
-  branch: main
+  revision: bf4ff6471c4569dd8db452ac0419914cfb9d3d10
+  branch: chore/downgrade-faraday
   specs:
     pafs_core (0.0.2)
       aws-sdk-s3 (~> 1.67)
