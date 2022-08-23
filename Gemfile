@@ -45,7 +45,7 @@ gem "whenever", require: false
 # shared PAFS code
 gem "pafs_core", "~> 0.0",
   git: "https://github.com/DEFRA/pafs_core",
-  branch: 'chore/downgrade-faraday'
+  branch: "main"
 
 gem "github_changelog_generator", require: false
 
