@@ -31,11 +31,11 @@ jobs:
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
         with:
-          bundler-cache: false
+          bundler-cache: true
 
       - name: Test setup
         run: |
-          bundle exec rake db:migrate --trace RAILS_ENV=test
+          bundle exec rake db:schema:load RAILS_ENV=test
 
       - name: Run tests
         run: |
