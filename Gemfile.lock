@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: ac00cac31810793086aba239e877a3f1e621f627
+  revision: bf4ff6471c4569dd8db452ac0419914cfb9d3d10
   branch: chore/downgrade-faraday
   specs:
     pafs_core (0.0.2)
@@ -111,8 +111,8 @@ GEM
     async-pool (0.3.10)
       async (>= 1.25)
     aws-eventstream (1.2.0)
-    aws-partitions (1.620.0)
-    aws-sdk-core (3.132.0)
+    aws-partitions (1.621.0)
+    aws-sdk-core (3.133.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
       aws-sigv4 (~> 1.1)
