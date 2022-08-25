@@ -37,7 +37,7 @@ module Pafs
     # load files from nested directories
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}').to_s]
     # add any locale files from pafs_core
-    config.i18n.load_path += Dir["#{%x[bundle show pafs_core].chomp}/config/locales/**/*.yml"]
+    config.i18n.load_path += Dir["#{%x[bundle info pafs_core].chomp}/config/locales/**/*.yml"]
 
     config.action_view.field_error_proc = Proc.new { |t, i| t }
 
