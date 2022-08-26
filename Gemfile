@@ -7,7 +7,7 @@ gem "rake"
 gem 'sass-rails', '~> 5.0'
 gem "uglifier"
 gem "coffee-rails"
-gem "therubyracer", platforms: :ruby
+gem "mini_racer"
 
 gem "font-awesome-sass", "~> 4.5.0"
 gem "jquery-rails"
