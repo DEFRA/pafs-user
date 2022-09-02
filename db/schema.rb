@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_06_105448) do
+ActiveRecord::Schema.define(version: 2022_07_19_120343) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
@@ -110,6 +110,16 @@ ActiveRecord::Schema.define(version: 2022_06_06_105448) do
     t.integer "households_at_reduced_risk"
     t.integer "households_protected_from_loss_in_next_20_years"
     t.integer "households_protected_from_loss_in_20_percent_most_deprived"
+    t.integer "non_residential_properties"
+  end
+
+  create_table "pafs_core_flood_protection2040_outcomes", force: :cascade do |t|
+    t.integer "project_id"
+    t.integer "financial_year", null: false
+    t.integer "households_at_reduced_risk"
+    t.integer "moved_from_very_significant_and_significant_to_moderate_or_low"
+    t.integer "households_protected_from_loss_in_20_percent_most_deprived"
+    t.integer "non_residential_properties"
   end
 
   create_table "pafs_core_flood_protection_outcomes", force: :cascade do |t|
@@ -118,6 +128,8 @@ ActiveRecord::Schema.define(version: 2022_06_06_105448) do
     t.integer "households_at_reduced_risk"
     t.integer "moved_from_very_significant_and_significant_to_moderate_or_low"
     t.integer "households_protected_from_loss_in_20_percent_most_deprived"
+    t.integer "households_protected_through_plp_measures"
+    t.integer "non_residential_properties"
   end
 
   create_table "pafs_core_funding_contributors", id: :serial, force: :cascade do |t|
@@ -293,6 +305,30 @@ ActiveRecord::Schema.define(version: 2022_06_06_105448) do
     t.string "other_flood_measures"
     t.float "natural_flood_risk_measures_cost"
     t.boolean "other_flood_measures_selected"
+    t.boolean "environmental_benefits"
+    t.boolean "intertidal_habitat"
+    t.float "hectares_of_intertidal_habitat_created_or_enhanced"
+    t.boolean "woodland"
+    t.float "hectares_of_woodland_habitat_created_or_enhanced"
+    t.boolean "wet_woodland"
+    t.float "hectares_of_wet_woodland_habitat_created_or_enhanced"
+    t.boolean "wetland_or_wet_grassland"
+    t.float "hectares_of_wetland_or_wet_grassland_created_or_enhanced"
+    t.boolean "grassland"
+    t.float "hectares_of_grassland_habitat_created_or_enhanced"
+    t.boolean "heathland"
+    t.float "hectares_of_heathland_created_or_enhanced"
+    t.boolean "ponds_lakes"
+    t.float "hectares_of_pond_or_lake_habitat_created_or_enhanced"
+    t.boolean "arable_land"
+    t.float "hectares_of_arable_land_lake_habitat_created_or_enhanced"
+    t.boolean "comprehensive_restoration"
+    t.float "kilometres_of_watercourse_enhanced_or_created_comprehensive"
+    t.boolean "partial_restoration"
+    t.float "kilometres_of_watercourse_enhanced_or_created_partial"
+    t.boolean "create_habitat_watercourse"
+    t.float "kilometres_of_watercourse_enhanced_or_created_single"
+    t.boolean "no_properties_affected_by_flooding_2040", default: false, null: false
     t.index ["reference_number", "version"], name: "index_pafs_core_projects_on_reference_number_and_version", unique: true
     t.index ["slug"], name: "index_pafs_core_projects_on_slug", unique: true
     t.index ["submitted_to_pol"], name: "index_pafs_core_projects_on_submitted_to_pol"
