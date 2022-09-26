@@ -7,7 +7,7 @@ gem "rake"
 gem 'sass-rails', '~> 5.0'
 gem "uglifier"
 gem "coffee-rails"
-gem "therubyracer", platforms: :ruby
+gem 'mini_racer', '~> 0.4.0'
 
 gem "font-awesome-sass", "~> 4.5.0"
 gem "jquery-rails"
@@ -46,6 +46,8 @@ gem "whenever", require: false
 gem "pafs_core", "~> 0.0",
   git: "https://github.com/DEFRA/pafs_core",
   branch: 'main'
+
+gem "github_changelog_generator", require: false
 
 gem "github_changelog_generator", require: false
 
