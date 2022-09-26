@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 680f066689c1e9d9aa125f94471e07ae9b5247f8
+  revision: edc0d718b5e9281927bf21b5cc5470b228324199
   branch: main
   specs:
     pafs_core (0.0.2)
@@ -87,9 +87,9 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
-    airbrake (13.0.2)
+    airbrake (13.0.3)
       airbrake-ruby (~> 6.0)
-    airbrake-ruby (6.1.2)
+    airbrake-ruby (6.2.0)
       rbtree3 (~> 0.5)
     async (1.30.3)
       console (~> 1.10)
@@ -111,8 +111,8 @@ GEM
     async-pool (0.3.10)
       async (>= 1.25)
     aws-eventstream (1.2.0)
-    aws-partitions (1.625.0)
-    aws-sdk-core (3.139.0)
+    aws-partitions (1.636.0)
+    aws-sdk-core (3.154.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
       aws-sigv4 (~> 1.1)
@@ -308,7 +308,7 @@ GEM
     logstasher (2.1.5)
       activesupport (>= 5.2)
       request_store
-    loofah (2.18.0)
+    loofah (2.19.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     lumberjack (1.2.6)
