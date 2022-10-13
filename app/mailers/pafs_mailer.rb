@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class PafsMailer < Devise::Mailer
   include PafsCore::Email
   add_template_helper(PafsCore::EmailHelper)

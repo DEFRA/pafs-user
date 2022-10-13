@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class AccountRequestMailer < ApplicationMailer
   include PafsCore::Email
 
@@ -23,7 +24,8 @@ class AccountRequestMailer < ApplicationMailer
     # the token and is not persisted in the DB, so the user passed in needs to be
     # the instance created by #invite!
     @invitation_link = accept_user_invitation_url(
-      invitation_token: user.raw_invitation_token)
+      invitation_token: user.raw_invitation_token
+    )
     mail(to: user.email, subject: "Account created - FCERM project funding")
   end
 end

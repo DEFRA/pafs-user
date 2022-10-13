@@ -15,7 +15,7 @@ jobs:
 
     services:
       postgres:
-        image: postgres:9.5-alpine
+        image: postgres
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
@@ -26,17 +26,37 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
 
-      - name: Test setup
+      # Run linting first. No point running the tests if there is a linting issue
+      - name: Run lint check
         run: |
-          bundle exec rake db:schema:load RAILS_ENV=test
+          bundle exec rubocop --format progress --format json --out rubocop-result.json
 
+      - name: Database setup
+        run: |
+          RAILS_ENV=test bundle exec rake db:create --trace --trace
+          RAILS_ENV=test bundle exec rake db:schema:load --trace --trace
+
+      # This includes an extra run step. The sonarcloud analysis will be run in a docker container with the current
+      # folder mounted as `/github/workspace`. The problem is when the .resultset.json file is generated it will
+      # reference the code in the current folder. So to enable sonarcloud to matchup code coverage with the files we use
+      # sed to update the references in .resultset.json
+      # https://community.sonarsource.com/t/code-coverage-doesnt-work-with-github-action/16747/6
       - name: Run tests
         run: |
           bundle exec rspec
+          sed -i 's/\/home\/runner\/work\/pafs-admin\/pafs-admin\//\/github\/workspace\//g' coverage/.resultset.json
+        env:
+          POL_FAILURE_NOTIFICATION_EMAIL: foo
+
+      - name: Analyze with SonarCloud
+        uses: sonarsource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This is provided automatically by GitHub
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }} # This needs to be set in your repo; settings -> secrets

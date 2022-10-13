@@ -1,11 +1,13 @@
 # frozen_string_literal: true
+
 require "csv"
+# rubocop:disable Metrics/BlockLength
 namespace :projects do
   desc "Load placeholders for existing projects"
   task import: :environment do
     success = []
     errors = []
-    projects = CSV.read(Rails.root.join("tmp", "projects.csv"),
+    projects = CSV.read(Rails.root.join("tmp/projects.csv"),
                         headers: true).to_a.uniq
 
     projects.each do |row|
@@ -16,7 +18,7 @@ namespace :projects do
       if project_name.present? && project_number.present? && rma.present?
         # validate project_number
         # if project_number =~ /\A[A-Z]{2,3}\d{3}[A-Z]?\/\d{3}[A-Z]?\/\d{3,4}[A-Z]\z/
-        if project_number =~ /\A(AC|AE|AN|NO|NW|SN|SO|SW|TH|TR|WX|YO)[A-Z]\d{3}[A-Z]\/\d{3}A\/\d{3}A\z/
+        if project_number =~ %r{\A(AC|AE|AN|NO|NW|SN|SO|SW|TH|TR|WX|YO)[A-Z]\d{3}[A-Z]/\d{3}A/\d{3}A\z}
 
           # check rma exists
           rma_area = PafsCore::Area.find_by(name: rma)
@@ -57,7 +59,7 @@ namespace :projects do
 
     unless errors.empty?
       errors.unshift(["Project name", "Project number", "rma", "error"])
-      CSV.open(Rails.root.join("tmp", "project_import_errors.csv"), "wb") do |csv|
+      CSV.open(Rails.root.join("tmp/project_import_errors.csv"), "wb") do |csv|
         errors.each do |error|
           csv << error
         end
@@ -65,7 +67,7 @@ namespace :projects do
     end
     unless success.empty?
       success.unshift(["Project name", "Project number", "rma"])
-      CSV.open(Rails.root.join("tmp", "project_import_success.csv"), "wb") do |csv|
+      CSV.open(Rails.root.join("tmp/project_import_success.csv"), "wb") do |csv|
         success.each do |r|
           csv << r
         end
@@ -94,7 +96,7 @@ namespace :projects do
       PafsCore::ProgramUploadFailure,
       PafsCore::ProgramUpload,
       PafsCore::ReferenceCounter,
-      PafsCore::State,
+      PafsCore::State
     ]
 
     # Gather projects
@@ -104,19 +106,19 @@ namespace :projects do
       # Delete generated reports
       begin
         project.areas.each do |area|
-          unless area.area_download.nil?
-            [
-              :fcerm1_filename,
-              :benefit_areas_filename,
-              :moderation_filename,
-              :funding_calculator_filename,
-            ].each do |attribute_name|
-              filename = area.area_download.public_send(attribute_name.to_sym)
+          next if area.area_download.nil?
 
-              unless filename.nil?
-                filepath = File.join(storage_path, filename)
-                storage.delete(filepath)
-              end
+          %i[
+            fcerm1_filename
+            benefit_areas_filename
+            moderation_filename
+            funding_calculator_filename
+          ].each do |attribute_name|
+            filename = area.area_download.public_send(attribute_name.to_sym)
+
+            unless filename.nil?
+              filepath = File.join(storage_path, filename)
+              storage.delete(filepath)
             end
           end
         end
@@ -133,11 +135,10 @@ namespace :projects do
       project.delete
     end
 
-    tables.each do |table|
-      table.destroy_all
-    end
+    tables.map(&:destroy_all)
 
     Rake::Task["db:seed"].reenable
     Rake::Task["db:seed"].invoke
   end
 end
+# rubocop:enable Metrics/BlockLength

@@ -1,64 +1,63 @@
 # frozen_string_literal: true
 
-RSpec.feature 'Creating a project', type: :feature do
-  context 'without PSO_CANNOT_CREATE_PROJECTS set' do
-    context 'as an rma user' do
+RSpec.describe "Creating a project", type: :feature do
+  context "without PSO_CANNOT_CREATE_PROJECTS set" do
+    context "with an rma user" do
       let(:user) { create(:account_user, :rma) }
 
-      scenario 'it lets me bootstrap a project' do
+      it "lets me bootstrap a project" do
         login_as(user)
         bootstrap_a_new_proposal(
-          type: 'DEF',
-          name: 'A new project',
-          year: Time.now.year + 2
+          type: "DEF",
+          name: "A new project",
+          year: Time.zone.now.year + 2
         )
       end
     end
 
-    context 'as a pso user' do
+    context "with a pso user" do
       let(:user) { create(:account_user, :pso) }
 
-      scenario 'it lets me bootstrap a project' do
+      it "ets me bootstrap a project" do
         login_as(user)
         bootstrap_a_new_proposal(
-          type: 'DEF',
-          name: 'A new project',
-          year: Time.now.year + 2
+          type: "DEF",
+          name: "A new project",
+          year: Time.zone.now.year + 2
         )
       end
     end
   end
 
-  context 'with PSO_CANNOT_CREATE_PROJECTS set' do
+  context "with PSO_CANNOT_CREATE_PROJECTS set" do
     around do |example|
-      with_modified_env PSO_CANNOT_CREATE_PROJECTS: '1' do
+      with_modified_env PSO_CANNOT_CREATE_PROJECTS: "1" do
         example.run
       end
     end
 
-    context 'as an rma user' do
+    context "with an rma user" do
       let(:user) { create(:account_user, :rma) }
 
-      scenario 'it lets me bootstrap a project' do
+      it "lets me bootstrap a project" do
         login_as(user)
         bootstrap_a_new_proposal(
-          type: 'DEF',
-          name: 'A new project',
-          year: Time.now.year + 2
+          type: "DEF",
+          name: "A new project",
+          year: Time.zone.now.year + 2
         )
       end
     end
 
-    context 'as a pso user' do
+    context "with a pso user" do
       let(:user) { create(:account_user, :pso) }
 
-      scenario 'it doesn\'t let me bootstrap a project' do
+      it "doesn't let me bootstrap a project" do
         login_as(user)
 
-        expect(page).not_to have_text('Create a new proposal')
-        expect(page).to have_text('To create a new EA-Led proposal please go to')
+        expect(page).not_to have_text("Create a new proposal")
+        expect(page).to have_text("To create a new EA-Led proposal please go to")
       end
     end
   end
 end
-

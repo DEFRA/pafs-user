@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class PasswordsController < Devise::PasswordsController
   # POST override the create method to prevent giving clues
   # to whether the email address exists / is registered

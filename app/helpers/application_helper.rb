@@ -1,5 +1,6 @@
 # Play nice with Ruby 3 (and rubocop)
 # frozen_string_literal: true
+
 module ApplicationHelper
   def make_page_title(title)
     "#{title} - #{t(:global_proposition_header)} - GOV.UK"
@@ -9,14 +10,14 @@ module ApplicationHelper
     Rails.application.config.x.revision
   end
 
-  def is_not_policy_page?(supplied_path)
-    if supplied_path != cookies_path && supplied_path != main_app.page_path('pafs_privacy_policy')
+  def not_policy_page?(supplied_path)
+    if supplied_path != cookies_path && supplied_path != main_app.page_path("pafs_privacy_policy")
       true
     else
       false
     end
   end
- 
+
   def migrate_devise_errors_for(resource)
     # move flash messages and resource.errors to :base
     resource.errors.add(:base, flash[:alert]) if flash[:alert].present?

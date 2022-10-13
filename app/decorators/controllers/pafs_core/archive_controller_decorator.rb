@@ -1,5 +1,6 @@
 # Play nice with Ruby 3 (and rubocop)
 # frozen_string_literal: true
+
 PafsCore::ArchivesController.class_eval do
   helper ::ApplicationHelper
   layout ->(_) { "pafs" }

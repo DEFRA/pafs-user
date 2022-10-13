@@ -1,13 +1,15 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   # use our own passwords controller
   devise_for :users, controllers: { passwords: "passwords" }
 
-  resources :account_requests, only: [:show, :new, :create]
+  resources :account_requests, only: %i[show new create]
 
   # We use high voltage to manage static content incl home page
   # See -- config/initializers/high_voltage.rb
   # for the home/root page
-#  get "/pages/*id" => 'high_voltage/pages#show', as: :page, format: false
+  #  get "/pages/*id" => 'high_voltage/pages#show', as: :page, format: false
   get "/password/reset" => "reset_password#reset", as: :after_password_reset
 
   mount GovukPublishingComponents::Engine, at: "/component-guide" if Rails.env.development?
@@ -15,14 +17,14 @@ Rails.application.routes.draw do
 
   get "/cookies", to: "pafs_core/pages#cookies"
 
-  match '(errors)/:status', to: PafsCore::Engine, via: :all, constraints: { status: /\d{3}/ }
+  match "(errors)/:status", to: PafsCore::Engine, via: :all, constraints: { status: /\d{3}/ }
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  root to: 'pafs_core/projects#index'
+  root to: "pafs_core/projects#index"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

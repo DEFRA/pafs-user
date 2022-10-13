@@ -91,6 +91,7 @@ GEM
       airbrake-ruby (~> 6.0)
     airbrake-ruby (6.2.0)
       rbtree3 (~> 0.5)
+    ast (2.4.2)
     async (1.30.3)
       console (~> 1.10)
       nio4r (~> 2.3)
@@ -141,12 +142,9 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
-    childprocess (4.1.0)
     chronic (0.10.2)
     clamav-client (3.2.0)
     climate_control (1.2.0)
-    codeclimate-test-reporter (1.0.7)
-      simplecov
     coderay (1.1.3)
     coffee-rails (5.0.0)
       coffee-script (>= 2.2.0)
@@ -167,6 +165,8 @@ GEM
     database_cleaner-core (2.0.1)
     defra_ruby_alert (2.1.1)
       airbrake
+    defra_ruby_style (0.2.2)
+      rubocop (~> 0.82)
     devise (4.7.3)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -269,7 +269,6 @@ GEM
       domain_name (~> 0.5)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
-    iniparse (1.5.0)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
@@ -342,10 +341,9 @@ GEM
       sawyer (~> 0.9)
     optimist (3.0.1)
     orm_adapter (0.5.0)
-    overcommit (0.59.1)
-      childprocess (>= 0.6.3, < 5)
-      iniparse (~> 1.4)
-      rexml (~> 3.2)
+    parallel (1.22.1)
+    parser (3.1.2.1)
+      ast (~> 2.4.1)
     passenger (5.3.7)
       rack
       rake (>= 0.8.1)
@@ -454,7 +452,26 @@ GEM
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
     rspec-support (3.11.0)
+    rubocop (0.93.1)
+      parallel (~> 1.10)
+      parser (>= 2.7.1.5)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8)
+      rexml
+      rubocop-ast (>= 0.6.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 2.0)
+    rubocop-ast (1.21.0)
+      parser (>= 3.1.1.0)
+    rubocop-rails (2.9.1)
+      activesupport (>= 4.2.0)
+      rack (>= 1.1)
+      rubocop (>= 0.90.0, < 2.0)
+    rubocop-rspec (1.44.1)
+      rubocop (~> 0.87)
+      rubocop-ast (>= 0.7.1)
     ruby-prof (1.4.3)
+    ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
     rubyXL (3.4.25)
       nokogiri (>= 1.10.8)
@@ -521,6 +538,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.7)
+    unicode-display_width (1.8.0)
     unicorn (6.1.0)
       kgio (~> 2.6)
       raindrops (~> 0.7)
@@ -549,9 +567,9 @@ DEPENDENCIES
   byebug
   capybara
   climate_control
-  codeclimate-test-reporter
   coffee-rails
   database_cleaner
+  defra_ruby_style (~> 0.2)
   devise (~> 4.7.1)
   devise-security
   devise_invitable (~> 2.0)
@@ -573,7 +591,6 @@ DEPENDENCIES
   kaminari
   letter_opener
   mini_racer (~> 0.4.0)
-  overcommit
   pafs_core (~> 0.0)!
   passenger (~> 5.1)
   pg (~> 0.20.0)
@@ -583,6 +600,9 @@ DEPENDENCIES
   rake
   rbtrace
   rspec-rails
+  rubocop (~> 0.93)
+  rubocop-rails
+  rubocop-rspec
   ruby-prof
   sass-rails (~> 5.0)
   sdoc

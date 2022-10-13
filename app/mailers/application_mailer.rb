@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class ApplicationMailer < ActionMailer::Base
   include PafsCore::Email
   add_template_helper(PafsCore::EmailHelper)

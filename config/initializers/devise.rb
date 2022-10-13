@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
@@ -6,24 +8,24 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` on Rails 4+ applications as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '1cc33b7928462a3b0f822afccceca58c9d5ece9782c4528e455e87a237a7666221e540365d1aad26faa6d494a952acd93181d83f9e3f57195caf863fac7176e9'
+  # config.secret_key = '1cc33b7928462a3b0f822...'
   # config.secret_key = ENV.fetch('SECRET_KEY_BASE')
-  config.secret_key = ENV.fetch('DEVISE_SECRET_KEY', ENV.fetch('SECRET_KEY_BASE'))
+  config.secret_key = ENV.fetch("DEVISE_SECRET_KEY", ENV.fetch("SECRET_KEY_BASE"))
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = ENV.fetch('DEVISE_MAILER_SENDER')
+  config.mailer_sender = ENV.fetch("DEVISE_MAILER_SENDER")
 
   # Configure the class responsible to send e-mails.
-  config.mailer = 'PafsMailer'
+  config.mailer = "PafsMailer"
 
   # ==> ORM configuration
   # Load and configure the ORM. Supports :active_record (default) and
   # :mongoid (bson_ext recommended) by default. Other ORMs may be
   # available as additional gems.
-  require 'devise/orm/active_record'
+  require "devise/orm/active_record"
 
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating a user. The default is
@@ -101,7 +103,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = '4c17d63e9e71d5194943039f69e1854670adc9f91392bdbfa894414bebe86adf608aef9969618a062906a05a39761bd6dda4c17ddc010a4a9c179a22657120eb'
+  # config.pepper = '4c17d63e9e71d519494303...'
 
   # Send a notification email when the user's password is changed
   # config.send_password_change_notification = false
@@ -206,11 +208,7 @@ Devise.setup do |config|
   # The time you want to timeout the user session without activity. After this
   # time the user will be asked for credentials again. Default is 30 minutes.
   # config.timeout_in = 30.minutes
-  if Rails.env.development?
-    config.timeout_in = 7.days
-  else
-    config.timeout_in = 30.minutes
-  end
+  config.timeout_in = Rails.env.development? ? 7.days : 30.minutes
 
   # ==> Configuration for :lockable
   # Defines which strategy will be used to lock an account.

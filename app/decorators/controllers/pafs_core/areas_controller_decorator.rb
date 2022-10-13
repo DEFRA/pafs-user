@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 PafsCore::AreasController.class_eval do
   helper ::ApplicationHelper
   layout ->(_) { "pafs" }

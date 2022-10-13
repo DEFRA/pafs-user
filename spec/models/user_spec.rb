@@ -1,5 +1,6 @@
 # Play nice with Ruby 3 (and rubocop)
 # frozen_string_literal: true
+
 require "rails_helper"
 
 RSpec.describe User, type: :model do
@@ -12,9 +13,10 @@ RSpec.describe User, type: :model do
   end
 
   describe "#full_name" do
-    subject { FactoryBot.build(:user) }
+    subject(:user_subject) { FactoryBot.build(:user) }
+
     it "returns :first_name and :last_name" do
-      expect(subject.full_name).to eq("#{subject.first_name} #{subject.last_name}")
+      expect(user_subject.full_name).to eq("#{user_subject.first_name} #{user_subject.last_name}")
     end
   end
 end
