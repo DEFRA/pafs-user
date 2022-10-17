@@ -1,4 +1,6 @@
-require_relative 'boot'
+# frozen_string_literal: true
+
+require_relative "boot"
 
 require "rails"
 # Pick the frameworks you want:
@@ -24,28 +26,28 @@ module Pafs
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.0
 
-    config.autoload_paths << Rails.root.join('lib')
+    config.autoload_paths << Rails.root.join("lib")
 
     # load decorators
     config.to_prepare do
-      Dir.glob(File.join(Rails.root, "app/decorators", "**/*_decorator*.rb")).each do |c|
+      Dir.glob(Rails.root.join("app/decorators/**/*_decorator*.rb")).each do |c|
         require_dependency(c)
       end
     end
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # load files from nested directories
-    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}').to_s]
+    config.i18n.load_path += Dir[Rails.root.join("config/locales/**/*.{rb,yml}").to_s]
     # add any locale files from pafs_core
-    config.i18n.load_path += Dir["#{%x[bundle show pafs_core].chomp}/config/locales/**/*.yml"]
+    config.i18n.load_path += Dir["#{`bundle show pafs_core`.chomp}/config/locales/**/*.yml"]
 
-    config.action_view.field_error_proc = Proc.new { |t, i| t }
+    config.action_view.field_error_proc = proc { |t, _i| t }
 
     # active job
     config.active_job.queue_adapter = :sucker_punch
 
     # exception handling
-    config.exceptions_app = self.routes
+    config.exceptions_app = routes
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers

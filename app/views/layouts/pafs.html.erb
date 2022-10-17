@@ -28,7 +28,7 @@
 <% content_for(:content) do %>
   <main id="content" role="main">
     <%= render "shared/phase_banner" %>
-    <% if is_not_policy_page?(request.path)%>
+    <% if not_policy_page?(request.path)%>
       <%= render "shared/user_bar" if user_signed_in? %>
     <% end %>
     <%= render "shared/return_to_overview" if show_return_to_overview? %>

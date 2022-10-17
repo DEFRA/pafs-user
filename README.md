@@ -1,7 +1,4 @@
 [![CI](https://github.com/DEFRA/pafs-user/actions/workflows/ci.yml/badge.svg)]((https://github.com/DEFRA/pafs-user/actions/workflows/ci.yml))
-[![Code Climate](https://codeclimate.com/github/DEFRA/pafs-user/badges/gpa.svg)](https://codeclimate.com/github/DEFRA/pafs-user)
-[![Test Coverage](https://codeclimate.com/github/DEFRA/pafs-user/badges/coverage.svg)](https://codeclimate.com/github/DEFRA/pafs-user/coverage)
-[![security](https://hakiri.io/github/DEFRA/pafs-user/develop.svg)](https://hakiri.io/github/DEFRA/pafs-user/develop)
 
 # Project Application and Funding Service
 
@@ -120,28 +117,7 @@ The following command (`bundle exec projects:delete_all`) will remove all propos
 
 ## Quality
 
-We use tools like [rubocop](https://github.com/bbatsov/rubocop), [brakeman](https://github.com/presidentbeef/brakeman), and [i18n-tasks](https://github.com/glebm/i18n-tasks) to help maintain quality, reusable code. Rather than running them manually we automate it via a git pre-commit hook, utilizing the [overcommit](https://github.com/brigade/overcommit) gem.
-
-    gem install overcommit
-    overcommit --install
-
-The first time the hooks run you may get a message that pre-commit plugins have been changed and that you should verify and sign the changes. To resolve this simply enter the following.
-
-    overcommit --sign pre-commit
-
-The tests will run whenever you call `git commit`. If the tests fail the commit itself will not proceed,
-so you can fix the issue and then retry. Please note **overcommit** comes with a set of default hooks, some of which are also run alongside those we have added.
-Check out the [overcommit _default.yml_](https://github.com/brigade/overcommit/blob/master/config/default.yml) for details.
-
-You can run the tests at anytime using the following.
-
-    overcommit --run
-
-### Potential Gotcha
-
-We found an issue in some cases. When run ad-hoc via ```overcommit --run``` it uses your local/rvm ruby. When it runs via the actual git pre-commit hook, it may pick up your system Ruby first.
-
-If this is an issue you may need to ensure the gem is installed in both your [rvm](https://rvm.io/) ruby and system ruby.
+We use tools like [rubocop](https://github.com/bbatsov/rubocop), [brakeman](https://github.com/presidentbeef/brakeman), and [i18n-tasks](https://github.com/glebm/i18n-tasks) to help maintain quality, reusable code. Rather than running them manually we automate it via GitHub actions.
 
 ## Tests
 

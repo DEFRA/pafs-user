@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 PafsCore::BootstrapsController.class_eval do
   helper ::ApplicationHelper
   layout ->(_) { "pafs" }

@@ -1,18 +1,21 @@
 # Play nice with Ruby 3 (and rubocop)
 # frozen_string_literal: true
+
 require "csv"
+
+# rubocop:disable Metrics/BlockLength
 namespace :users do
   desc "User invitation"
   task invite: :environment do
     errors = []
-    CSV.foreach("#{Rails.root}/tmp/users.csv", headers: true) do |row|
-      area = PafsCore::Area.find_by_name(row["area"])
+    CSV.foreach(Rails.root.join("tmp/users.csv", headers: true)) do |row|
+      area = PafsCore::Area.find_by(name: row["area"])
       if area
-        user = User.invite!({email: row["email"],
-                             first_name: row["first_name"],
-                             last_name: row["last_name"]}) do |u|
-                               u.skip_invitation = true
-                             end
+        user = User.invite!({ email: row["email"],
+                              first_name: row["first_name"],
+                              last_name: row["last_name"] }) do |u|
+          u.skip_invitation = true
+        end
 
         PafsCore::UserArea.create(area: area, user: user, primary: true)
         AccountRequestMailer.account_created_email(user).deliver_now
@@ -26,8 +29,8 @@ namespace :users do
       end
     end
 
-    if !errors.empty?
-      CSV.open("#{Rails.root}/tmp/user_creation_errors.csv", "wb", headers: true) do |csv|
+    unless errors.empty?
+      CSV.open(Rails.root.join("tmp/user_creation_errors.csv", "wb", headers: true)) do |csv|
         errors.each do |error|
           csv << error
         end
@@ -39,3 +42,4 @@ namespace :users do
     PafsCore::AccountRequestCleanupJob.new.perform
   end
 end
+# rubocop:enable Metrics/BlockLength
