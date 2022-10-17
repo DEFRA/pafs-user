@@ -201,6 +201,8 @@ GEM
     faraday-http-cache (2.4.0)
       faraday (>= 0.8)
     faraday-net_http (3.0.0)
+    faraday-retry (2.0.0)
+      faraday (~> 2.0)
     ffi (1.15.5)
     fiber-local (1.0.0)
     font-awesome-sass (4.5.0)
@@ -577,6 +579,7 @@ DEPENDENCIES
   dotenv-rails
   factory_bot_rails
   faker
+  faraday-retry
   font-awesome-sass (~> 4.5.0)
   github_changelog_generator
   govuk_elements_rails

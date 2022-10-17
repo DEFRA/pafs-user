@@ -1,0 +1,63 @@
+{
+  "users" : [
+    {
+      "first_name" : "some",
+      "last_name": "user",
+      "email" : "paf1@example.com",
+      "password": "Secret123",
+      "password_confirmation": "Secret123",
+      "admin" : true,
+      "areas": [
+        "Bristol City Council"
+      ]
+    },
+    {
+      "first_name" : "some",
+      "last_name": "user",
+      "email" : "paf2@example.com",
+      "password": "Secret123",
+      "password_confirmation": "Secret123",
+      "admin" : true,
+      "areas": [
+        "Bristol City Council",
+        "PSO West of England"
+      ]
+    },
+    {
+      "first_name" : "some",
+      "last_name": "user",
+      "email" : "paf3@example.com",
+      "password": "Secret123",
+      "password_confirmation": "Secret123",
+      "admin" : true,
+      "areas": [
+        "PSO West of England"
+      ]
+    },
+    {
+      "first_name" : "some",
+      "last_name": "user",
+      "email" : "paf4@example.com",
+      "password": "Secret123",
+      "password_confirmation": "Secret123",
+      "admin" : true,
+      "areas": [
+        "Broadland District Council",
+        "PSO Norfolk and Suffolk"
+      ]
+    },
+    {
+      "first_name" : "some",
+      "last_name": "user",
+      "email" : "paf5@example.com",
+      "password": "Secret123",
+      "password_confirmation": "Secret123",
+      "admin" : true,
+      "areas": [
+        "Buckinghamshire County Council",
+        "PSO Berkshire and Buckinghamshire"
+      ]
+    }
+  ]
+}
+  
