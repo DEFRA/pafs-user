@@ -8,7 +8,7 @@
       "password_confirmation": "Secret123",
       "admin" : true,
       "areas": [
-        "Bristol City Council"
+        { "name": "Bristol City Council", "type": "RMA" }
       ]
     },
     {
@@ -19,8 +19,7 @@
       "password_confirmation": "Secret123",
       "admin" : true,
       "areas": [
-        "Bristol City Council",
-        "PSO West of England"
+        { "name": "Bristol City Council", "type": "RMA" }
       ]
     },
     {
@@ -31,7 +30,7 @@
       "password_confirmation": "Secret123",
       "admin" : true,
       "areas": [
-        "PSO West of England"
+        { "name": "Bristol City Council", "type": "RMA" }
       ]
     },
     {
@@ -42,8 +41,7 @@
       "password_confirmation": "Secret123",
       "admin" : true,
       "areas": [
-        "Broadland District Council",
-        "PSO Norfolk and Suffolk"
+        { "name": "Bristol City Council", "type": "RMA" }
       ]
     },
     {
@@ -54,8 +52,7 @@
       "password_confirmation": "Secret123",
       "admin" : true,
       "areas": [
-        "Buckinghamshire County Council",
-        "PSO Berkshire and Buckinghamshire"
+        { "name": "Bristol City Council", "type": "RMA" }
       ]
     }
   ]

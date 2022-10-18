@@ -11,25 +11,34 @@ def create_user(first_name, last_name, email, password, admin)
   )
 end
 
+# rubocop:disable Rails/Output
 def seed_users
   seeds = JSON.parse(Rails.root.join("db/seeds/users.json").read)
   users = seeds["users"]
 
   users.each do |user|
+
+    if User.find_by(email: user["email"])
+      puts "User already exists with email: #{user['email']}, skipping"
+
+      next
+    end
+
+    puts "Creating seed user #{user['email']}"
+
     seed_user = create_user(user["first_name"],
                             user["last_name"],
                             user["email"],
                             user["password"],
                             user["admin"])
-    user["areas"].each_with_index do |area_name, index|
-      default_parent = PafsCore::Area.find_or_create_by(name: "a_parent", area_type: "Country")
-      default_parent.save!
-      area = PafsCore::Area.find_or_create_by(name: area_name, area_type: "EA Area", parent: default_parent)
-      area.save!
-      seed_user.user_areas.find_or_create_by!(area_id: area.id, primary: index.zero?)
+
+    user["areas"].each_with_index do |area, index|
+      pafs_area = PafsCore::Area.find_by(name: area["name"], area_type: area["type"])
+      seed_user.user_areas.find_or_create_by!(area_id: pafs_area.id, primary: index.zero?)
     end
   end
 end
+# rubocop:enable Rails/Output
 
 # Only seed if not running in production or we specifically require it, eg. for Heroku
 seed_users if !Rails.env.production? || ENV["ALLOW_SEED"]
