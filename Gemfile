@@ -23,6 +23,8 @@ gem "devise",           "~> 4.7.1"
 gem "devise_invitable", "~> 2.0"
 gem "devise-security"
 
+gem "faraday-retry"
+
 gem "kaminari"
 
 gem "dibble", "~> 0.1",

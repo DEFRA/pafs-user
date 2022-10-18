@@ -9,3 +9,4 @@ public/assets
 vendor/bundle
 coverage
 .DS_Store
+.byebug_history
