@@ -32,6 +32,6 @@ def seed_users
 end
 
 # Only seed if not running in production or we specifically require it, eg. for Heroku
-seed_users if !Rails.env.production? || ENV["WCR_ALLOW_SEED"]
+seed_users if !Rails.env.production? || ENV["ALLOW_SEED"]
 
 PafsCore::ReferenceCounter.seed_counters
