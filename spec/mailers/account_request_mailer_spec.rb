@@ -5,7 +5,7 @@ require "rails_helper"
 RSpec.describe AccountRequestMailer, type: :mailer do
   describe "#confirmation_email" do
     it "creates an email" do
-      account_request = FactoryBot.create(:account_request)
+      account_request = create(:account_request)
       email = described_class.confirmation_email(account_request)
       expect(email.to).to eq(["neville.southall@example.com"])
       expect(email.from).to eq([ENV.fetch("DEVISE_MAILER_SENDER")])
@@ -15,7 +15,7 @@ RSpec.describe AccountRequestMailer, type: :mailer do
 
   describe "#account_created_email" do
     it "creates an email" do
-      user = FactoryBot.create(:account_user)
+      user = create(:account_user)
       email = described_class.account_created_email(user)
       expect(email.to).to eq(["ray@example.com"])
       expect(email.from).to eq([ENV.fetch("DEVISE_MAILER_SENDER")])

@@ -85,11 +85,11 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.default_url_options = { protocol: "https", host: ENV["DEFAULT_URL_HOST"] }
+  config.action_mailer.default_url_options = { protocol: "https", host: ENV.fetch("DEFAULT_URL_HOST", nil) }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: ENV["EMAIL_HOST"],
-    port: ENV["EMAIL_PORT"]
+    address: ENV.fetch("EMAIL_HOST", nil),
+    port: ENV.fetch("EMAIL_PORT", nil)
   }
 
   # Inserts middleware to perform automatic connection switching.

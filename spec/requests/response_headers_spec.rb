@@ -23,12 +23,12 @@ RSpec.describe "Response headers", type: :request do
       puts response.headers
 
       expect(response.headers["Content-Security-Policy"]).to eq(
-        "default-src 'self'; "\
-        "font-src 'self' data:; "\
-        "image-src 'self' www.google-analytics.com; "\
-        "object-src 'self'; "\
-        "script-src 'self' 'unsafe-inline' www.googletagmanager.com www.google-analytics.com; "\
-        "style-src 'self'; "\
+        "default-src 'self'; " \
+        "font-src 'self' data:; " \
+        "image-src 'self' www.google-analytics.com; " \
+        "object-src 'self'; " \
+        "script-src 'self' 'unsafe-inline' www.googletagmanager.com www.google-analytics.com; " \
+        "style-src 'self'; " \
         "report-uri https://environmentagency.report-uri.io/r/default/csp/enforce"
       )
     end
