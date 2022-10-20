@@ -1,12 +1,7 @@
 GIT
-  remote: https://github.com/tonyheadford/dibble
-  revision: 06fe3d0811b6f601607b2b9aa61f6c3f8b4965a1
-  branch: develop
-  specs:
-    dibble (0.1.0)
-
-PATH
-  remote: ../pafs_core
+  remote: https://github.com/DEFRA/pafs_core
+  revision: 77e4033fc242a3a7d76a3c5c874410e10a3059ea
+  branch: main
   specs:
     pafs_core (0.0.2)
       aws-sdk-s3 (~> 1.67)
@@ -25,6 +20,13 @@ PATH
       roo
       rubyXL
       secure_headers
+
+GIT
+  remote: https://github.com/tonyheadford/dibble
+  revision: 06fe3d0811b6f601607b2b9aa61f6c3f8b4965a1
+  branch: develop
+  specs:
+    dibble (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -429,6 +431,8 @@ GEM
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.33.0, < 2.0)
+    rubocop-rake (0.6.0)
+      rubocop (~> 1.0)
     rubocop-rspec (2.13.2)
       rubocop (~> 1.33)
     ruby-prof (1.4.3)
@@ -559,6 +563,7 @@ DEPENDENCIES
   rspec-rails
   rubocop
   rubocop-rails
+  rubocop-rake
   rubocop-rspec
   ruby-prof
   sass-rails

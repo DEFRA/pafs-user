@@ -46,9 +46,8 @@ gem "whenever", require: false
 
 # shared PAFS code
 gem "pafs_core",
-path: "../pafs_core"
-    # git: "https://github.com/DEFRA/pafs_core",
-    # branch: "main"
+    git: "https://github.com/DEFRA/pafs_core",
+    branch: "main"
 
 gem "github_changelog_generator", require: false
 
@@ -59,6 +58,7 @@ group :development, :test do
   gem "rspec-rails"
   gem "rubocop"
   gem "rubocop-rails"
+  gem "rubocop-rake"
   gem "rubocop-rspec"
 end
 

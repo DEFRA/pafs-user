@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-Rails.application.config.x.revision = if File.exist? Rails.root.join("REVISION")
-                                        File.open(Rails.root.join("REVISION"), &:readline)
+Rails.application.config.x.revision = if Rails.root.join("REVISION").exist?
+                                        Rails.root.join("REVISION").open(&:readline)
                                       else
                                         `git rev-parse --short HEAD`
                                       end

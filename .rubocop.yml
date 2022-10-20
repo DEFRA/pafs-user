@@ -3,12 +3,15 @@ inherit_gem:
     - default.yml
 require:
   - rubocop-rails
+  - rubocop-rake
   - rubocop-rspec
 
 # TODO Resolve these legacy Rubocop offenses
 Metrics/AbcSize:
   Enabled: false
 Rails/HelperInstanceVariable:
+  Enabled: false
+Rails/I18nLocaleTexts:
   Enabled: false
 RSpec/EmptyExampleGroup:
   Enabled: false
@@ -17,6 +20,10 @@ RSpec/ExampleLength:
 RSpec/MultipleExpectations:
   Enabled: false
 RSpec/RepeatedDescription:
+  Enabled: false
+RSpec/Capybara/SpecificMatcher:
+  Enabled: false
+RSpec/NoExpectationExample:
   Enabled: false
 RSpec/RepeatedExample:
   Enabled: false
