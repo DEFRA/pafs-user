@@ -189,6 +189,7 @@ GEM
     dotenv-rails (2.8.1)
       dotenv (= 2.8.1)
       railties (>= 3.2)
+    duktape (2.6.0.0)
     erubi (1.11.0)
     execjs (2.7.0)
     factory_bot (6.2.0)
@@ -537,6 +538,7 @@ DEPENDENCIES
   devise_invitable
   dibble (~> 0.1)!
   dotenv-rails
+  duktape
   factory_bot_rails
   faker
   faraday-retry

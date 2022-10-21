@@ -4,6 +4,7 @@ source "https://rubygems.org"
 ruby "3.1.2"
 
 gem "coffee-rails"
+gem "duktape"
 gem "rails", "6.1.7"
 gem "rake"
 gem "sass-rails"
