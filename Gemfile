@@ -8,7 +8,7 @@ gem "rails", "6.1.7"
 gem "rake"
 gem "sass-rails"
 gem "uglifier"
-gem "mini_racer"
+gem "duktape"
 
 gem "font-awesome-sass", "~> 4.7.0"
 gem "jquery-rails"

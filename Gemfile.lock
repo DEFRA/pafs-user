@@ -189,6 +189,7 @@ GEM
     dotenv-rails (2.8.1)
       dotenv (= 2.8.1)
       railties (>= 3.2)
+    duktape (2.6.0.0)
     erubi (1.11.0)
     execjs (2.7.0)
     factory_bot (6.2.0)
@@ -284,7 +285,6 @@ GEM
       addressable (~> 2.7)
     letter_opener (1.8.1)
       launchy (>= 2.2, < 3)
-    libv8-node (16.10.0.0)
     logstasher (2.1.5)
       activesupport (>= 5.2)
       request_store
@@ -298,8 +298,6 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
-    mini_racer (0.6.3)
-      libv8-node (~> 16.10.0.0)
     minitest (5.16.3)
     msgpack (1.4.2)
     multi_json (1.15.0)
@@ -540,6 +538,7 @@ DEPENDENCIES
   devise_invitable
   dibble (~> 0.1)!
   dotenv-rails
+  duktape
   factory_bot_rails
   faker
   faraday-retry
@@ -555,7 +554,6 @@ DEPENDENCIES
   jquery-turbolinks
   kaminari
   letter_opener
-  mini_racer
   pafs_core!
   passenger (~> 5.1)
   pg
