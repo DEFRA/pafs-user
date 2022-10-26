@@ -12,8 +12,8 @@ Rails.application.config.assets.version = "1.0"
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 Rails.application.config.assets.precompile += %w[
-    gov.uk_logotype_crown.svg
-    application-ie6.css
-    application-ie7.css
-    application-ie8.css
-  ]
+  gov.uk_logotype_crown.svg
+  application-ie6.css
+  application-ie7.css
+  application-ie8.css
+]
