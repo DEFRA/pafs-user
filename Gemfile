@@ -34,7 +34,7 @@ gem "dibble", "~> 0.1",
 
 gem "govuk_elements_rails"
 gem "govuk_frontend_toolkit"
-gem "govuk_publishing_components"
+gem "govuk_publishing_components", "21.59.0"
 gem "govuk_template"
 
 # active job backend
