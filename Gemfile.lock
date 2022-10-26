@@ -185,8 +185,6 @@ GEM
       devise (>= 4.6)
     diff-lcs (1.5.0)
     docile (1.4.0)
-    domain_name (0.5.20190701)
-      unf (>= 0.0.5, < 1.0.0)
     dotenv (2.8.1)
     dotenv-rails (2.8.1)
       dotenv (= 2.8.1)
@@ -210,14 +208,8 @@ GEM
       faraday (~> 2.0)
     ffi (1.15.5)
     fiber-local (1.0.0)
-    font-awesome-sass (4.5.0)
-      sass (>= 3.2)
-    gds-api-adapters (84.0.0)
-      addressable
-      link_header
-      null_logger
-      plek (>= 1.9.0)
-      rest-client (~> 2.0)
+    font-awesome-sass (5.15.1)
+      sassc (>= 1.11)
     github_changelog_generator (1.16.4)
       activesupport
       async (>= 1.25.0)
@@ -229,10 +221,12 @@ GEM
       rake (>= 10.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
-    govuk_app_config (4.6.0)
+    govuk_app_config (4.10.1)
       logstasher (~> 2.1)
+      plek (~> 4)
       prometheus_exporter (~> 2.0)
-      puma (~> 5.6)
+      puma (>= 5.6, < 7.0)
+      rack-proxy (~> 0.7)
       sentry-rails (~> 5.3)
       sentry-ruby (~> 5.3)
       statsd-ruby (~> 1.5)
@@ -243,21 +237,16 @@ GEM
       sass (>= 3.2.0)
     govuk_frontend_toolkit (9.0.1)
       railties (>= 3.1.0)
-    govuk_publishing_components (21.59.0)
-      gds-api-adapters
+    govuk_publishing_components (23.15.0)
       govuk_app_config
       kramdown
       plek
       rails (>= 5.0.0.1)
-      rake
       rouge
       sprockets (< 4)
     govuk_template (0.26.0)
       rails (>= 3.1)
     high_voltage (3.1.2)
-    http-accept (1.7.0)
-    http-cookie (1.0.5)
-      domain_name (~> 0.5)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.5)
@@ -291,7 +280,6 @@ GEM
       addressable (~> 2.7)
     letter_opener (1.8.1)
       launchy (>= 2.2, < 3)
-    link_header (0.0.8)
     logstasher (2.1.5)
       activesupport (>= 5.2)
       request_store
@@ -303,9 +291,6 @@ GEM
     marcel (1.0.2)
     matrix (0.4.2)
     method_source (1.0.0)
-    mime-types (3.4.1)
-      mime-types-data (~> 3.2015)
-    mime-types-data (3.2022.0105)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
     minitest (5.16.3)
@@ -315,12 +300,10 @@ GEM
       timeout
     net-smtp (0.3.2)
       net-protocol
-    netrc (0.11.0)
     nio4r (2.5.8)
     nokogiri (1.13.9)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    null_logger (0.0.1)
     octokit (4.25.0)
       faraday (>= 1, < 3)
       sawyer (~> 0.9)
@@ -347,12 +330,14 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     public_suffix (5.0.0)
-    puma (5.6.5)
+    puma (6.0.0)
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.4)
     rack-cors (1.1.1)
       rack (>= 2.0.0)
+    rack-proxy (0.7.4)
+      rack
     rack-test (2.0.2)
       rack (>= 1.3)
     rails (6.1.7)
@@ -404,11 +389,6 @@ GEM
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
-    rest-client (2.1.0)
-      http-accept (>= 1.7.0, < 2.0)
-      http-cookie (>= 1.0.2, < 2.0)
-      mime-types (>= 1.16, < 4.0)
-      netrc (~> 0.8)
     rexml (3.2.5)
     roo (2.9.0)
       nokogiri (~> 1)
@@ -469,6 +449,8 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     sawyer (0.9.2)
       addressable (>= 2.3.5)
       faraday (>= 0.17.3, < 3)
@@ -512,9 +494,6 @@ GEM
       concurrent-ruby (~> 1.0)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.8.2)
     unicode-display_width (2.3.0)
     unicorn (6.1.0)
       kgio (~> 2.6)
@@ -555,12 +534,11 @@ DEPENDENCIES
   factory_bot_rails
   faker
   faraday-retry
-  font-awesome-sass (~> 4.5.0)
+  font-awesome-sass (~> 5.15)
   github_changelog_generator
-  govuk_app_config (= 4.6.0)
   govuk_elements_rails
   govuk_frontend_toolkit
-  govuk_publishing_components (= 21.59.0)
+  govuk_publishing_components (~> 23.0)
   govuk_template
   high_voltage
   jbuilder
@@ -582,7 +560,7 @@ DEPENDENCIES
   rubocop-rake
   rubocop-rspec
   ruby-prof
-  sass-rails (= 5.1.0)
+  sass-rails (~> 5.1)
   sdoc
   shoulda-matchers
   simplecov
