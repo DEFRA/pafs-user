@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-RSpec.describe AccountRequestMailer, type: :mailer do
+RSpec.describe AccountRequestMailer do
   describe "#confirmation_email" do
     it "creates an email" do
       account_request = create(:account_request)

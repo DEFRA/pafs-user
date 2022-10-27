@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe "Signup", type: :feature do
+RSpec.describe "Signup" do
   context "with a valid invitation" do
     let!(:user) { create(:account_user, :pso, :invited, raw_invitation_token: "INVITATION") }
 

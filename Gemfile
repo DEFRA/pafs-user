@@ -36,6 +36,10 @@ gem "govuk_frontend_toolkit"
 gem "govuk_publishing_components", "~> 23.0"
 gem "govuk_template"
 
+gem "net-imap"
+gem "net-pop"
+gem "net-smtp"
+
 # active job backend
 gem "sucker_punch", "~> 2.0"
 

@@ -111,7 +111,7 @@ def run_spec_configuration(spec)
 end
 # rubocop:enable Metrics/MethodLength
 
-RSpec.describe "Viewing a project", type: :feature do
+RSpec.describe "Viewing a project" do
   context "without FORCE_PSO_TO_POL set" do
     FLAG_DISABLED_SPECS.each do |spec|
       run_spec_configuration(spec)

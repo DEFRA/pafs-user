@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe "Creating a project", type: :feature do
+RSpec.describe "Creating a project" do
   context "without PSO_CANNOT_CREATE_PROJECTS set" do
     context "with an rma user" do
       let(:user) { create(:account_user, :rma) }
