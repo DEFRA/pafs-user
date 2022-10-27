@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe "Policy Page Traversal", type: :feature do
+RSpec.describe "Policy Page Traversal" do
   context "when a user visits the cookie or privacy policy pages" do
     let(:user) { create(:account_user, :ea) }
 

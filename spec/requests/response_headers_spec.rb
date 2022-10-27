@@ -3,7 +3,7 @@
 
 require "rails_helper"
 
-RSpec.describe "Response headers", type: :request do
+RSpec.describe "Response headers" do
   describe "Cache busting" do
     it "contains the headers needed to stop the client caching responses" do
       skip "cache busting not there now we've changed the root_path this will be devise login"

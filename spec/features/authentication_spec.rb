@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe "Authentication", type: :feature do
+RSpec.describe "Authentication" do
   context "with an invalid password" do
     let(:user) { create(:account_user, :ea) }
 
