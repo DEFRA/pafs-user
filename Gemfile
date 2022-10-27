@@ -6,11 +6,10 @@ ruby "3.1.2"
 gem "coffee-rails"
 gem "rails", "6.1.7"
 gem "rake"
-gem "sass-embedded"
-gem "sass-rails"
+gem "sass-rails", "~> 5.1"
 gem "uglifier"
 
-gem "font-awesome-sass", "~> 4.7.0"
+gem "font-awesome-sass", "~> 5.15"
 gem "jquery-rails"
 gem "jquery-turbolinks"
 
@@ -34,7 +33,7 @@ gem "dibble", "~> 0.1",
 
 gem "govuk_elements_rails"
 gem "govuk_frontend_toolkit"
-gem "govuk_publishing_components"
+gem "govuk_publishing_components", "~> 23.0"
 gem "govuk_template"
 
 # active job backend
