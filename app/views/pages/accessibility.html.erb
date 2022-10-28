@@ -1,0 +1,137 @@
+<% content_for :title, "Accessibility statement" %>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">Accessibility statement</h1>
+
+  <h2 class="govuk-heading-m">Using this website</h2>
+  <p class="govuk-body">
+    The flood and coastal erosion risk management projects and funding (FCERM) 
+    service is run by the Environment Agency.
+    We want as many people as possible to be able to use this website. For
+    example, that means you should be able to:
+  </p>
+
+  <ul class="govuk-list govuk-list--bullet">
+    <li>change colours, contrast levels and fonts</li>
+    <li>zoom in up to 200% without the text spilling off the screen</li>
+    <li>navigate most of the website using just a keyboard</li>
+    <li>navigate most of the website using speech recognition software</li>
+    <li>
+      listen to most of the website using a screen reader (including the most
+      recent versions of JAWS, NVDA and VoiceOver)
+    </li>
+  </ul>
+
+  <p class="govuk-body">We have also made the website text as simple as possible to understand.</p>
+  <p class="govuk-body">
+    <a rel="external" href="https://mcmw.abilitynet.org.uk/">AbilityNet</a> has
+    advice on making your device easier to use if you have a disability.
+  </p>
+
+  <h2 class="govuk-heading-m">How accessible this website is</h2>
+  <p class="govuk-body">We know some parts of this website are not fully accessible:</p>
+
+    <%# this is to stop SonarCloud complaining about duplication: %>
+    <% non_compliances = [
+      "On some screens, the page title tag does not match the page heading. The heading can be still read on the page 
+        but it would give the page context if announced first. [2.4.2 Page Titled - Date to fix - 01.03.2023]",
+      "Page title needs to be appended with Error: when an error is generated. The error is still read by the screen
+        reader but the user needs to navigate to it. [2.4.2 Page Titled - Date to fix - 01.03.2023]",
+      "Some field sets are missing legends The fields are still read by the screen reader but the user needs to navigate
+        to them. [2.4.6 Headings and Labels - Date to fix - 01.03.2023]",
+      "When an error is generated the specific error field does not have the focus. Although the tab key can used
+        it is confusing as a screen reader doesn't know where to move to. [2.4.7 Focus Visible - Date to fix - 01.03.2023]",
+      "Browsers cannot automatically suggest information to help a user fill in a form. This would be particularly
+        helpful when filling in a manual address.  [1.3.5 Identify Input Purpose - Date to fix - 01.03.2023]"
+    ] %>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <% non_compliances.each do |nc| %>
+        <li> <%= nc %> </li>
+      <% end %>
+    </ul>
+
+  <ul class="govuk-list govuk-list--bullet">
+  </ul>
+
+  <h2 class="govuk-heading-m">Non-accessible content</h2>
+  <p class="govuk-body">We link to some PDF documents that are not fully accessible to screen reader software [2018 regulations]</p>
+
+  <h2 class="govuk-heading-m">What to do if you cannot access parts of this website</h2>
+  <p class="govuk-body">If you need information on this website in large print or braille:</p>
+
+  <ul class="govuk-list govuk-list--bullet">
+    <li>email <a rel="external" href="mailto:enquiries@environment-agency.gov.uk">enquiries@environment-agency.gov.uk</a></li>
+    <li>call us on 03708 506 506 (Monday to Friday, 8am to 6pm)</li>
+  </ul>
+
+  <p class="govuk-body">We will consider your request and get back to you within 10 days.</p>
+
+  <h2 class="govuk-heading-m">Reporting accessibility problems with this website</h2>
+  <p class="govuk-body">
+    We are always looking to improve the accessibility of this website. If you
+    find any problems that are not listed on this page or think we are not
+    meeting the requirements of the accessibility regulations, contact:
+  </p>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>
+      email <a rel="external" href="mailto:enquiries@environment-agency.gov.uk">enquiries@environment-agency.gov.uk</a>
+    </li>
+    <li>call us on 03708 506 506 (Monday to Friday, 8am to 6pm)</li>
+  </ul>
+
+  <h2 class="govuk-heading-m">Enforcement procedure</h2>
+  <p class="govuk-body">
+    The Equality and Human Rights Commission (EHRC) is responsible for enforcing
+    the accessibility regulations. If you are not happy with how we respond to
+    your complaint,
+    <a rel="external" href="https://www.equalityadvisoryservice.com/">
+      contact the Equality Advisory and Support Service (EASS)
+    </a>.
+  </p>
+
+  <h2 class="govuk-heading-m">Contacting us by phone or visiting us in person</h2>
+  <p class="govuk-body">You can contact us by:</p>
+
+  <ul class="govuk-list govuk-list--bullet">
+    <li>phone on 03708 506 506 (Monday to Friday, 8am to 6pm)</li>
+    <li>email at <a rel="external" href="mailto:enquiries@environment-agency.gov.uk">enquiries@environment-agency.gov.uk</a></li>
+    <li>Twitter <a rel="external" href="https://www.twitter.com/envagency">@envagency</a></li>
+    <li>Facebook <a rel="external" href="https://www.facebook.com/environmentagency">@environmentagency</a></li>
+  </ul>
+
+  <p class="govuk-body">
+    If you visit our offices and need assistance or an interpreter, you should
+    contact us before you visit.
+  </p>
+  <p class="govuk-body">
+    <a rel="external" href="https://www.gov.uk/government/organisations/environment-agency/about/access-and-opening">Visiting our offices.</a>
+  </p>
+
+  <h2 class="govuk-heading-m">Technical information about this website’s accessibility</h2>
+  <p class="govuk-body">
+    The Environment Agency is committed to making its website accessible, in
+    accordance with the Public Sector Bodies (Websites and Mobile Applications)
+    (No. 2) Accessibility Regulations 2018.
+  </p>
+
+  <h2 class="govuk-heading-m">Compliance status</h2>
+  <p class="govuk-body">
+    This service is partially compliant with the Web Content Accessibility
+    Guidelines version 2.1 AA standard, due to the non-compliances listed.
+  </p>
+  <ul class="govuk-list govuk-list--bullet">
+    <% non_compliances.each do |nc| %>
+     <li> <%= nc %> </li>
+    <% end %>
+  </ul>
+
+  <h2 class="govuk-heading-m">How we tested this website</h2>
+  <p class="govuk-body">The service was last tested on 20th September 2022 and was checked for compliance with WCAG 2.1 AA.</p>
+  <p class="govuk-body">
+    It was tested by the Waste exemptions development team, and the
+    non-compliant elements will be included in the ongoing development work.
+  </p>
+  <p class="govuk-body">This statement was prepared on 30th October 2022.</p>
+</div>
