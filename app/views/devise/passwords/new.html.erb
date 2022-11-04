@@ -1,7 +1,7 @@
-<% content_for :page_title, make_page_title("Password reset") %>
+<% content_for :title, "Password reset" %>
 <% migrate_devise_errors_for resource %>
 <%= pafs_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= f.error_header("Check your sign in details", "") %>
+  <%= form_error_header(f, "Check your sign in details", "") %>
   <div class="grid-row">
     <div class="column-two-thirds">
       <h1 class="heading-large">Reset your password</h1>

@@ -26,7 +26,7 @@ module Features
     end
 
     def enter_the_proposal_name(name)
-      expect(page).to have_selector("h1", text: "What is the project's name?")
+      expect(page).to have_selector("h1", text: "What is the project’s name?")
 
       fill_in "Project name", with: name
       click_on "Save and continue"

@@ -1,7 +1,7 @@
-<% content_for :page_title, make_page_title("Set a password") %>
+<% content_for :title, "Set a password" %>
 <% migrate_devise_errors_for(resource) %>
 <%= pafs_form_for resource, :as => resource_name, :url => invitation_path(resource_name), :html => { :method => :put } do |f| %>
-  <%= f.error_header "Check your details", "The following error(s) prevented your password being set:" %>
+  <%= form_error_header(f, "Check your details", "The following error(s) prevented your password being set:") %>
   <%#= devise_error_messages! %>
   <%= f.hidden_field :invitation_token %>
 

@@ -5,13 +5,8 @@
   <!--[if IE 8]><%= stylesheet_link_tag "application-ie8" %><![endif]-->
   <meta name="format-detection" content="telephone=no" />
 <% end %>
-<% unless content_for? :page_title %>
-  <% if @project.try(:step) %>
-    <% content_for :page_title, make_page_title(t(@project.step, scope: "page_titles")) %>
-  <% else %>
-    <% content_for :page_title, make_page_title(t(:global_proposition_header)) %>
-  <% end %>
-<% end %>
+
+<% content_for :page_title, title %>
 
 <% content_for :body_start do %><%= render "shared/cookie_message" %><% end %>
 <% content_for :cookie_message do %><% end %>

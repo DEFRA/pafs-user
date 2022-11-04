@@ -18,7 +18,7 @@ RSpec.describe "Creating a project" do
     context "with a pso user" do
       let(:user) { create(:account_user, :pso) }
 
-      it "ets me bootstrap a project" do
+      it "lets me bootstrap a project" do
         login_as(user)
         bootstrap_a_new_proposal(
           type: "DEF",
