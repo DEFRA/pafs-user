@@ -433,7 +433,7 @@ GEM
       rubocop (>= 1.33.0, < 2.0)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
-    rubocop-rspec (2.14.2)
+    rubocop-rspec (2.15.0)
       rubocop (~> 1.33)
     ruby-prof (1.4.3)
     ruby-progressbar (1.11.0)
