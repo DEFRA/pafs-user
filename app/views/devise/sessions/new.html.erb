@@ -1,11 +1,11 @@
-<% content_for :page_title, make_page_title("Sign in") %>
+<% content_for :title, "Sign in" %>
 <%
   if flash[:alert].present?
     resource.errors.add(:base, flash[:alert])
   end
 %>
 <%= pafs_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <%= f.error_header("Check your sign in details", "") %>
+  <%= form_error_header(f, "Check your sign in details", "") %>
   <h1 class="heading-large">Sign in</h2>
   <%= f.form_group(:base) do %>
     <%= f.error_message(:base) %>

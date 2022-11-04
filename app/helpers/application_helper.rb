@@ -2,10 +2,6 @@
 # frozen_string_literal: true
 
 module ApplicationHelper
-  def make_page_title(title)
-    "#{title} - #{t(:global_proposition_header)} - GOV.UK"
-  end
-
   def revision_hash
     Rails.application.config.x.revision
   end
