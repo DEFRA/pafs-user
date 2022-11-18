@@ -1,18 +1,8 @@
-// @import 'typography';
-// @import 'colours';
 
 .user-bar {
   padding-top: 0px;
   padding-bottom: 0px;
-  // border-bottom: 1px solid #b1b4b6;
-  // margin-top: -8px;
-  // margin-bottom: -20px;
   text-align: right;
-
-  // @include media(mobile) {
-  //   padding-bottom: 0.5em;
-  //   text-align: left;
-  // }
 
   .user-menu {
     display: inline-block;
@@ -22,15 +12,7 @@
       float: left;
       list-style-type: none;
       margin-left: 1.25em;
-      // padding-top: -7px;
       margin-bottom: -12px;
-
-      // @include media(mobile) {
-      //   display: block;
-      //   float: none;
-      //   margin-bottom: 0.25em;
-      //   margin-left: 0;
-      // }
     }
   }
 
