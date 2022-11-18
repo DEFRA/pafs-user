@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 080651bed818916422458b4a9daa908abcbf5b2f
+  revision: 242150b0ea647da855778218ead820f9c18dce13
   branch: feature/formbuilder
   specs:
     pafs_core (0.0.2)
@@ -8,9 +8,9 @@ GIT
       bstard
       clamav-client
       defra_ruby_alert (~> 2.1)
-      defra_ruby_template
+      defra_ruby_template (~> 3)
       faraday
-      govuk_design_system_formbuilder
+      govuk_design_system_formbuilder (~> 3)
       kaminari
       net-smtp
       nokogiri
