@@ -46,10 +46,11 @@ gem "whenever", require: false
 # shared PAFS code
 gem "pafs_core",
     git: "https://github.com/DEFRA/pafs_core",
-    branch: "main"
+    branch: "feature/formbuilder"
 
 # GOV.UK styling
 gem "defra_ruby_template"
+gem "govuk_design_system_formbuilder"
 
 gem "github_changelog_generator", require: false
 

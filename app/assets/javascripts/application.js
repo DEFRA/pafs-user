@@ -14,4 +14,5 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require pafs_core/application
+//= require defra_ruby_template
 //= require_tree .
