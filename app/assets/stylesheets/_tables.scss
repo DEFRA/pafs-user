@@ -1,7 +1,7 @@
-@import 'helpers';
-@import 'typography';
-@import 'colours';
-@import 'measurements';
+// @import 'helpers';
+// @import 'typography';
+// @import 'colours';
+// @import 'measurements';
 
 // Tables
 // ==========================================================================
@@ -13,9 +13,9 @@ table {
 
   th,
   td {
-    @include core-16;
-    border-bottom: 1px solid $border-colour;
-    color: $text-colour;
+    // @include core-16;
+    // border-bottom: 1px solid $border-colour;
+    // color: $text-colour;
     padding: pem(12, 16) pem(20, 16) pem(9, 16) 0;
     text-align: left;
   }
@@ -31,7 +31,7 @@ table {
   // Use tabular numbers for numeric table cells
   .numeric {
     td {
-      @include core-16($tabular-numbers: true);
+      // @include core-16($tabular-numbers: true);
       text-align: right;
     }
   }
@@ -46,7 +46,7 @@ table {
 // }
 
 .summary-table {
-  margin-bottom: $gutter;
+  // margin-bottom: $gutter;
 
   tr, td, th {
     padding-bottom: 0.2em;

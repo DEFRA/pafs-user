@@ -1,8 +1,8 @@
-@import 'helpers';
-@import 'typography';
-@import 'measurements';
-@import 'design-patterns/alpha-beta';
-@import 'design-patterns/buttons';
+// @import 'helpers';
+// @import 'typography';
+// @import 'measurements';
+// @import 'design-patterns/alpha-beta';
+// @import 'design-patterns/buttons';
 
 .return-link {
   margin-top: 1.25em;
@@ -12,15 +12,15 @@
 // ==========================================================================
 
 #content {
-  @extend %site-width-container;
-  @extend %contain-floats;
-  @include core-19;
+  // @extend %site-width-container;
+  // @extend %contain-floats;
+  // @include core-19;
   -webkit-font-smoothing: antialiased;
-  padding-bottom: $gutter;
+  // padding-bottom: $gutter;
 
-  @include media(desktop) {
-    padding-bottom: $gutter * 3;
-  }
+  // @include media(desktop) {
+  //   // padding-bottom: $gutter * 3;
+  // }
 }
 
 #global-header .header-proposition {
@@ -44,7 +44,7 @@
 // ==========================================================================
 
 .phase-banner {
-  @include phase-banner;
+  // @include phase-banner;
 }
 
 .border-none {
@@ -56,30 +56,30 @@
 // ==========================================================================
 
 .complete-summary {
-  background-color: $turquoise;
-  color: $page-colour;
-  margin-bottom: $gutter * 1;
-  margin-top: $gutter-half;
-  padding-bottom: $gutter;
-  padding-top: $gutter;
+  // background-color: $turquoise;
+  // color: $page-colour;
+  // margin-bottom: $gutter * 1;
+  // margin-top: $gutter-half;
+  // padding-bottom: $gutter;
+  // padding-top: $gutter;
   text-align: center;
 }
 
 .reference-note {
-  @include bold-19;
+  // @include bold-19;
   display: inline-block;
-  margin-top: $gutter;
+  // margin-top: $gutter;
 }
 
 .reference-number {
-  @include bold-36;
+  // @include bold-36;
   display: block;
   margin-bottom: 10px;
   margin-top: 5px;
 }
 
 .mail-icon {
-  margin-bottom: $gutter;
+  // margin-bottom: $gutter;
 }
 
 
@@ -87,21 +87,21 @@
 // ==========================================================================
 
 .ea-footer {
-  @include core-16;
+  // @include core-16;
   //margin-bottom: $gutter-half;
-  margin-bottom: $gutter;
+  // margin-bottom: $gutter;
 
-  @include media(mobile) {
-    display: block;
-  }
+  // @include media(mobile) {
+  //   display: block;
+  // }
 
   .revision {
-    color: $grey-2;
+    // color: $grey-2;
     margin-top: 0.5em;
   }
 
   li {
-    @include core-16;
+    // @include core-16;
     display: inline;
     margin-right: 10px;
   }
@@ -121,18 +121,18 @@
 // Start now buttons
 .button-start,
 .button-get-started {
-  @include bold-24;
+  // @include bold-24;
   background-image: file-url('icon-pointer.png');
   background-position: 100% 50%;
   background-repeat: no-repeat;
   padding: pem(7) pem(41) pem(4) pem(16);
 
-  @include device-pixel-ratio {
-    background-image: file-url('icon-pointer-2x.png');
-    background-size: 30px 19px;
-  }
+  // @include device-pixel-ratio {
+  //   background-image: file-url('icon-pointer-2x.png');
+  //   background-size: 30px 19px;
+  // }
 
-  @include ie(6) {
-    background-image: file-url('icon-pointer-2x.png');
-  }
+  // @include ie(6) {
+  //   background-image: file-url('icon-pointer-2x.png');
+  // }
 }
