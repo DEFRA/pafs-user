@@ -1,0 +1,80 @@
+---
+en:
+  cookies:
+    edit:
+      title: Cookie settings
+      heading: Cookies on Register your waste exemptions
+      text_1: Cookies are files saved on your phone, tablet or computer when you visit a website.
+      text_2: We use cookies to store information about how you use the Register your waste exemptions (WEX) website, such as the pages you visit.
+      cookie_settings:
+        subheading: Cookie settings
+        text_1: We use 2 types of cookie. You can choose which cookies you're happy for us to use.
+      analytics_cookies:
+        subheading: Third party cookies that measure website use (analytics)
+        text_1: We use Google Analytics to measure how you use the website so we can improve it based on user needs. We do not allow Google to use or share the data about how you use this site.
+        text_2: 'Google Analytics sets cookies that store anonymised information about:'
+        list_item_1: how you got to the site
+        list_item_2: the pages you visit on WEX and government digital services, and how long you spend on each page
+        list_item_3: what you click on while you're visiting the site
+        radio_button_label:
+          accept: Use cookies that measure my website use
+          reject: Do not use cookies that measure my website use
+      essential_cookies:
+        subheading: Strictly necessary cookies (session)
+        text_1: These essential cookies do things like remember your progress through a form.
+        text_2: They will always be on.
+      find_out_more:
+        text: Find out more about cookies on GOV.UK
+        url: https://www.gov.uk/help/cookie-details
+      submit_button: Save and continue
+      updated:
+        success: Success
+        you_set_your_cookie_preferences: You’ve set your cookie preferences.
+  pages:
+    cookies:
+      title: Cookies
+      heading: Cookies on Register your waste exemptions
+      text_1: Cookies are files saved on your phone, table or computer when you visit a website.
+      text_2: We use cookies to store information about how you use the Register your waste exemptions (WEX) website, such as the pages you visit.
+      cookie_settings:
+        subheading: Cookie settings
+        text_1: We use 2 types of cookie. You can choose which cookies you're happy for us to use.
+      analytics_cookies:
+        subheading: Third party cookies that measure website use (analytics)
+        text_1: We use Google Analytics to measure how you use the website so we can improve it based on user needs. We do not allow Google to use or share the data about how you use this site.
+        text_2: 'Google Analytics sets cookies that store anonymised information about:'
+        list_item_1: how you got to the site
+        list_item_2: the pages you visit on WEX and government digital services, and how long you spend on each page
+        list_item_3: what you click on while you're visiting the site
+      essential_cookies:
+        subheading: Strictly necessary cookies (session)
+        text_1: These essential cookies do things like remember your progress through a form (for example a licence application).
+        text_2: They will always be on.
+      cookies_we_use:
+        name: Name
+        purpose: Purpose
+        expires: Expires
+        ga:
+          name: _ga
+          purpose: Used to identify referring sites, visitors and sessions
+          expires: 2 years
+        gid:
+          name: _gid
+          purpose: Tells us how visitors use the service, where they came from and the pages visited
+          expires: 24 hours
+        registrations_session:
+          name: _waste-exemptions-front-office_session
+          purpose: Used for session management and authentication
+          expires: When you close your browser
+        cookies_policy:
+          name: cookies_policy
+          purpose: Saves your cookie consent settings
+          expires: 1 year
+        cookies_preferences_set:
+          name: cookies_preferences_set
+          purpose: Tells us that you have seen our cookie message
+          expires: 1 year
+      change_your_cookie_settings:
+        subheading: Change your cookie settings
+        text_1: You can <a href="%{edit_path}">change your cookie settings</a> at any time
+
