@@ -8,31 +8,61 @@
 
 <% content_for :page_title, title %>
 
-<% content_for :body_start do %><%= render "shared/cookie_message" %><% end %>
-<% content_for :cookie_message do %><% end %>
-
-<% content_for :header_class, 'with-proposition' %>
-<% content_for :proposition_header do %>
-  <div class="header-proposition">
-    <div class="content">
-      <span id="proposition-name"><%= t(:global_proposition_header) %></span>
-    </div>
-  </div>
+<% content_for :cookies_banner do %>
+  <%= render partial: "cookies/banner" %>
 <% end %>
 
-<% content_for(:content) do %>
-  <main id="content" role="main">
-    <%= render "shared/phase_banner" %>
-    <% if not_policy_page?(request.path)%>
-      <%= render "shared/user_bar" if user_signed_in? %>
-    <% end %>
+<% content_for :header_content do %>
+  <%= link_to  t(:global_proposition_header), main_app.root_path, id: "proposition-name", class: "govuk-header__link govuk-header__link--service-name" %>
+<% end %>
+
+<% content_for :phase_banner do %>
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        <%= t(".beta")  %>
+      </strong>
+      <span class="govuk-phase-banner__text">
+        <%= t(
+              ".feedback",
+              link: link_to(
+                t(".feedback_link"),
+                t(".feedback_url"),
+                class: "govuk-link",
+                target: "_blank"
+              )
+            ).html_safe
+        %>
+      </span>
+    </p>
+  </div>
+  <% if not_policy_page?(request.path) && user_signed_in?%>
+    <%= render "shared/user_bar" %>
+  <% end %>
     <%= render "shared/return_to_overview" if show_return_to_overview? %>
-    <%= yield %>
-  </main>
 <% end %>
 
 <% content_for :body_end do %>
   <%= javascript_include_tag "application" %>
+<% end %>
+
+<% content_for :footer do %>
+  <span class="govuk-visually-hidden"><%= t("global.footer_support_text") %></span>
+  <p class="govuk-!-font-weight-bold">
+    <%= t("global.footer_support_text") %>
+    <%= link_to t("global.helpline_telephone_number"), "tel:#{t("global.helpline_telephone_number").delete(" ") }" %>
+  </p>
+  <ul class="govuk-footer__inline-list">
+    <li class="govuk-footer__inline-list-item">
+      <%= link_to "Privacy", main_app.page_path('pafs_privacy_policy'), class: "govuk-footer__link" %>
+    </li>
+    <li class="govuk-footer__inline-list-item">
+      <%= link_to "Cookies", cookies_path, class: "govuk-footer__link" %>
+    </li>
+    <li class="govuk-footer__inline-list-item">
+      <%= link_to "Accessibility", "/pages/accessibility", class: "govuk-footer__link" %>
+    </li>
+  </ul>
 <% end %>
 
 <% content_for :footer_support_links do %>
@@ -49,5 +79,4 @@
   </div>
 <% end %>
 
-<%-# LAST: RENDER main GDS template -%>
-<%= render template: "layouts/govuk_template" %>
+<%= render template: "layouts/defra_ruby_template" %> %>
