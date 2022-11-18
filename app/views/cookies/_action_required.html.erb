@@ -1,0 +1,29 @@
+<div class="govuk-cookie-banner__message govuk-width-container">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-cookie-banner__heading govuk-heading-m">
+        <%= t('cookies-banner.default.heading') %>
+      </h2>
+      <div class="govuk-cookie-banner__content">
+        <p><%= t('cookies-banner.default.message_1') %></p>
+        <p><%= t('cookies-banner.default.message_2') %></p>
+      </div>
+    </div>
+  </div>
+  <div class="govuk-button-group">
+    <%= button_to t('cookies-banner.button.accept_analytics'),
+        "/cookies/accept_analytics",
+        method: :post,
+        class: "govuk-button"
+    %>
+    <%= button_to t('cookies-banner.button.reject_analytics'),
+        "/cookies/reject_analytics",
+        method: :post,
+        class: "govuk-button"
+    %>
+    <%= link_to t('cookies-banner.link.view_cookies'),
+         "/fo/pages/cookies",
+        class: "govuk-link"
+    %>
+  </div>
+</div>

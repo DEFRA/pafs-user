@@ -1,0 +1,29 @@
+<div class="govuk-cookie-banner__message govuk-width-container" role="alert">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-cookie-banner__content">
+        <p>
+          <% if cookies[:cookies_policy] == "analytics_accepted" %>
+            <%= t("cookies-banner.accepted.message") %>
+          <% else %>
+            <%= t("cookies-banner.rejected.message") %>
+          <% end %>
+          <%= t(
+            "cookies-banner.link.you_can_at_any_time",
+            link: link_to(
+              t("cookies-banner.link.change_your_cookie_settings"),
+              "/cookies/edit")
+            ).html_safe
+          %>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="govuk-button-group">
+    <%= button_to t("cookies-banner.button.hide_this_message"),
+        "/cookies/hide_this_message",
+        method: :post,
+       class: "govuk-button"
+    %>
+  </div>
+</div>

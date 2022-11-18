@@ -1,0 +1,65 @@
+<% content_for :title, t(".heading") %>
+
+<%= render("waste_carriers_engine/shared/back", back_path: "/fo/pages/cookies") %>
+
+<%= form_tag "/cookies", method: :patch do %>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <% if params[:cookies_updated] %>
+        <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+          <div class="govuk-notification-banner__header">
+            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+              <%= t('.updated.success') %>
+            </h2>
+          </div>
+          <div class="govuk-notification-banner__content">
+            <p class="govuk-notification-banner__heading">
+              <%= t('.updated.you_set_your_cookie_preferences') %>
+            </p>
+          </div>
+        </div>
+      <% end %>
+      <h1 class="govuk-heading-l"><%= t('.heading') %></h1>
+      <p class="govuk-body"><%= t('.text_1') %></p>
+      <p class="govuk-body"><%= t('.text_2') %></p>
+      <h2 class="govuk-heading-m"><%= t('.cookie_settings.subheading') %></h2>
+      <p class="govuk-body"><%= t('.cookie_settings.text_1') %></p>
+      <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h2 class="govuk-heading-m"><%= t('.analytics_cookies.subheading') %></h2>
+          <p class="govuk-body"><%= t('.analytics_cookies.text_1') %></p>
+          <p class="govuk-body"><%= t('.analytics_cookies.text_2') %></p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li><%= t('.analytics_cookies.list_item_1') %></li>
+            <li><%= t('.analytics_cookies.list_item_2') %></li>
+            <li><%= t('.analytics_cookies.list_item_3') %></li>
+          </ul>
+        </legend>
+        <div class="govuk-radios">
+          <div class="govuk-radios__item">
+            <%= radio_button_tag :analytics, :accept,
+                (cookies[:cookies_policy] && cookies[:cookies_policy] == "analytics_accepted"),
+                class: "govuk-radios__input" %>
+            <%= label_tag :analytics_accept,
+                t('.analytics_cookies.radio_button_label.accept'),
+                class: "govuk-label govuk-radios__label" %>
+          </div>
+          <div class="govuk-radios__item">
+            <%= radio_button_tag :analytics, :reject,
+                !(cookies[:cookies_policy] && cookies[:cookies_policy] == "analytics_accepted"),
+                class: "govuk-radios__input" %>
+            <%= label_tag :analytics_reject,
+                t('.analytics_cookies.radio_button_label.reject'),
+                class: "govuk-label govuk-radios__label" %>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <h2 class="govuk-heading-m"><%= t('.essential_cookies.subheading') %></h2>
+    <p class="govuk-body"><%= t('.essential_cookies.text_1') %></p>
+    <p class="govuk-body"><%= t('.essential_cookies.text_2') %></p>
+    <p class="govuk-body"><%= link_to t('.find_out_more.text'), t('.find_out_more.url') %></p>
+    <%= submit_tag t('.submit_button'), class: "govuk-button" %>
+  </div>
+<% end %>
