@@ -1,7 +1,6 @@
 <% content_for :title, "Set a password" %>
 <% migrate_devise_errors_for(resource) %>
 <%= pafs_form_for resource, :as => resource_name, :url => invitation_path(resource_name), :html => { :method => :put } do |f| %>
-  <%= form_error_header(f, "Check your details", "The following error(s) prevented your password being set:") %>
   <%#= devise_error_messages! %>
   <%= f.hidden_field :invitation_token %>
 
@@ -14,11 +13,17 @@
       <li>1 numeric character</li>
     </ul>
   </div>
-  <%= f.form_group(:base) do %>
-    <%= f.error_message(:base) %>
-    <%= f.password_field :password, autofocus: true, class: "form-control", autocomplete: "off", label: "Password" %>
-    <%= f.password_field :password_confirmation, class: "form-control",
-          autocomplete: "off", label: "Confirm password" %>
+  <%= form_group(f, :base) do %>
+    <%= error_message(f.object, :base) %>
+    <%= f.govuk_password_field :password,
+                               autofocus: true,
+                               class: "form-control",
+                               autocomplete: "off",
+                               label: { text: "Password" } %>
+    <%= f.govuk_password_field :password_confirmation,
+                               class: "form-control",
+                               autocomplete: "off",
+                               label:{ text: "Confirm password" } %>
   <% end %>
 
   <div class="form-group">

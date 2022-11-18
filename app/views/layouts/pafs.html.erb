@@ -13,7 +13,7 @@
 <% end %>
 
 <% content_for :header_content do %>
-  <%= link_to  t(:global_proposition_header), main_app.root_path, id: "proposition-name", class: "govuk-header__link govuk-header__link--service-name" %>
+  <% content_tag(:span, class: "govuk-header__link--service-name") { t(:global_proposition_header) } %>
 <% end %>
 
 <% content_for :phase_banner do %>
@@ -79,4 +79,4 @@
   </div>
 <% end %>
 
-<%= render template: "layouts/defra_ruby_template" %> %>
+<%= render template: "layouts/defra_ruby_template" %>

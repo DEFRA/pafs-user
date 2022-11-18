@@ -1,7 +1,6 @@
 <% content_for :title, "Change password" %>
 <% migrate_devise_errors_for resource %>
 <%= pafs_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
-  <%= form_error_header(f, "Check your sign in details", "") %>
   <h1 class="heading-large">Reset password</h1>
   <div class="form-hint password-instructions">Your password must contain a minimum of:
     <ul class="list-bullet">
@@ -12,8 +11,8 @@
     </ul>
     and must not be a password used previously.
   </div>
-  <%= f.form_group(:base) do %>
-    <%= f.error_message(:base) %>
+  <%= form_group(f, :base) do %>
+    <%= error_message(f.object, :base) %>
     <%= f.hidden_field :reset_password_token %>
 
     <%= f.password_field :password, autofocus: true, class: "form-control", autocomplete: "off", label: "New password" %>
