@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 9c64ec5b2569d6ed168c03926c718d17b979af81
+  revision: 9bcfd7e1f1dcd48acfdddfa162a5d34ab2570d78
   branch: feature/formbuilder
   specs:
     pafs_core (0.0.2)
