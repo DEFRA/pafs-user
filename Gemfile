@@ -31,11 +31,6 @@ gem "dibble", "~> 0.1",
     git: "https://github.com/tonyheadford/dibble",
     branch: "develop"
 
-gem "govuk_elements_rails"
-gem "govuk_frontend_toolkit"
-gem "govuk_publishing_components", "~> 23.0"
-gem "govuk_template"
-
 gem "net-imap"
 gem "net-pop"
 gem "net-smtp"
@@ -53,6 +48,10 @@ gem "pafs_core",
     git: "https://github.com/DEFRA/pafs_core",
     branch: "main"
 
+# GOV.UK styling
+gem "defra_ruby_template"
+gem "govuk_design_system_formbuilder"
+
 gem "github_changelog_generator", require: false
 
 group :development, :test do
@@ -64,6 +63,7 @@ group :development, :test do
   gem "rubocop-rails"
   gem "rubocop-rake"
   gem "rubocop-rspec"
+  gem "webrick"
 end
 
 group :development do

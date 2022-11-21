@@ -2,7 +2,6 @@
 // so that the global variables $ie-ie, $ie-version, etc will take effect
 $is-ie: true;
 
-@import './elements';
 @import 'pafs_core/application';
 @import './devise';
 @import './flash_alerts';

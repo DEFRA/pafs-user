@@ -1,25 +1,21 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
+  cookies-banner:
+    default:
+      heading: Cookies on Register your waste exemptions
+      message_1: We use some essential cookies to make this service work.
+      message_2: We’d also like to use analytics cookies so we can understand how you use the service and make improvements.
+    accepted:
+      message: You’ve accepted analytics cookies.
+    rejected:
+      message: You’ve rejected analytics cookies.
+    button:
+      accept_analytics: Accept analytics cookies
+      reject_analytics: Reject analytics cookies
+      hide_this_message: Hide this message
+    link:
+      view_cookies: View cookies
+      you_can_at_any_time: You can %{link} at any time.
+      change_your_cookie_settings: change your cookie settings
   global:
     footer_support_text: "Environment Agency (England) helpline:"
     helpline_telephone_number: "0370 8506 506"
@@ -42,6 +38,13 @@ en:
   reset_your_password_link: I have forgotten my password
   return_to_overview_link: "Return to proposal overview"
   support_telephone_number: "02030 254 771"
+  layouts:
+    pafs:
+      beta: BETA
+      feedback: This is a new service – your %{link} will help us to improve it.
+      feedback_link: feedback
+      feedback_url: https://www.gov.uk/done/waste-carrier-or-broker-registration
+      support_text: 'Environment Agency (England) helpline: 03708 506 506'
   pages:
     start:
       partnership_funding_guidance_link: partnership funding guidance

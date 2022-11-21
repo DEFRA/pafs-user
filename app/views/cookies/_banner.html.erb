@@ -1,0 +1,9 @@
+<% unless cookies.present? && cookies[:cookies_preferences_set] %>
+  <div class="govuk-cookie-banner " data-nosnippet role="region" aria-label="<%= t('cookies-banner.default.heading') %>">
+    <% if cookies.present? && cookies[:cookies_policy] %>
+    <%= render partial: "cookies/action_confirmed" %>
+    <% else %>
+    <%= render partial: "cookies/action_required" %>
+    <% end %>
+  </div>
+<% end %>

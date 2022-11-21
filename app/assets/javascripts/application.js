@@ -13,9 +13,6 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
-//= require govuk_toolkit
-//= require govuk_publishing_components/dependencies
-//= require govuk_publishing_components/lib
-//= require govuk_publishing_components/components/cookie-banner
 //= require pafs_core/application
+//= require defra_ruby_template
 //= require_tree .

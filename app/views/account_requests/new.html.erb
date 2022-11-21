@@ -1,10 +1,9 @@
 <% content_for :title, "Account request" %>
-<div class="grid-row">
+<div class="govuk-grid-row">
   <div class="column-two-thirds">
     <h1 class="heading-large"><%= t(".heading") %></h1>
     <p><%= t(".description") %></p>
     <%= pafs_form_for @account_request do |f| %>
-      <%= form_error_header(f) %>
       <div class="form-group">
         <%= f.text_field :first_name, class: "form-control form-wide" %>
         <%= f.text_field :last_name, class: "form-control form-wide" %>

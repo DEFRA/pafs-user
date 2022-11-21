@@ -26,22 +26,22 @@ module Features
     end
 
     def enter_the_proposal_name(name)
-      expect(page).to have_selector("h1", text: "What is the project’s name?")
+      expect(page).to have_selector("legend", text: "What is the project’s name?")
 
-      fill_in "Project name", with: name
+      fill_in "project-name-step-name-field", with: name
       click_on "Save and continue"
     end
 
     def select_the_proposal_type(type)
-      expect(page).to have_selector("h1", text: "What type of project are you proposing?")
+      expect(page).to have_selector("legend", text: "What type of project are you proposing?")
 
       type_code = PROPOSAL_TYPE[type] || raise("unrecognised proposal type")
-      choose "project_type_step_project_type_#{type_code}"
+      choose "project-type-step-project-type-#{type_code}-field"
       click_on "Save and continue"
     end
 
     def select_the_financial_year(year)
-      expect(page).to have_selector("h1", text: "In what financial year will the project stop spending funds?")
+      expect(page).to have_selector("legend", text: "In what financial year will the project stop spending funds?")
 
       choose "April #{year} to March #{year + 1}"
       click_on "Save and continue"

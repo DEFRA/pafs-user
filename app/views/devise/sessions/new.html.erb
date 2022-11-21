@@ -4,20 +4,25 @@
     resource.errors.add(:base, flash[:alert])
   end
 %>
-<%= pafs_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <%= form_error_header(f, "Check your sign in details", "") %>
-  <h1 class="heading-large">Sign in</h2>
-  <%= f.form_group(:base) do %>
-    <%= f.error_message(:base) %>
-    <%= f.email_field :email, autocomplete: "off", autofocus: true, class: 'form-control' %>
-    <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
-  <% end %>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <%= render partial: "pafs_core/error_summary", locals: { f: f } %>
 
-  <div class="form-group">
-    <%= f.submit "Sign in", class: 'button' %>
+  <div class="govuk-grid-row govuk-body">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">Sign in</h2>
+      <div class="form-group">
+        <%= f.govuk_email_field :email, autocomplete: "off", autofocus: true, width: 'one-half', class: 'form-control', label: { text: "Email address" } %>
+        <%= f.govuk_password_field :password, autocomplete: "off", width: 'one-half', class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= f.submit "Sign in", class: 'govuk-button' %>
+      </div>
+
+      <p><%= link_to t("reset_your_password_link"), new_password_path(resource_name) %></p>
+      <p><%= link_to t("request_an_account_link"), new_account_request_path %></p>
+
+    </div>
   </div>
-
-  <p><%= link_to t("reset_your_password_link"), new_password_path(resource_name) %></p>
-  <p><%= link_to t("request_an_account_link"), new_account_request_path %></p>
-
 <% end %>
