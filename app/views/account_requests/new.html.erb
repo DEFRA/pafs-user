@@ -1,31 +1,31 @@
 <% content_for :title, "Account request" %>
-<div class="govuk-grid-row">
-  <div class="column-two-thirds">
-    <h1 class="heading-large"><%= t(".heading") %></h1>
+<div class="govuk-grid-row govuk-body">
+  <div class="govuk-column-two-thirds">
+    <h1 class="govuk-heading-l"><%= t(".heading") %></h1>
     <p><%= t(".description") %></p>
     <%= pafs_form_for @account_request do |f| %>
       <div class="form-group">
-        <%= f.text_field :first_name, class: "form-control form-wide" %>
-        <%= f.text_field :last_name, class: "form-control form-wide" %>
-        <%= f.text_field :email, class: "form-control form-wide" %>
-        <%= f.telephone_field :telephone_number, class: "form-control form-wide" %>
-        <%= f.text_field :organisation, class: "form-control form-wide" %>
-        <%= f.text_field :job_title, class: "form-control form-wide" %>
+        <%= f.govuk_text_field :first_name, width: 'one-half', label: { text: t(".first_name") } %>
+        <%= f.govuk_text_field :last_name, width: 'one-half', label: { text: t(".last_name") } %>
+        <%= f.govuk_text_field :email, width: 'one-half', label: { text: t(".email") } %>
+        <%= f.govuk_phone_field :telephone_number, width: 'one-half', label: { text: t(".telephone_number") } %>
+        <%= f.govuk_text_field :organisation, width: 'one-half', label: { text: t(".organisation") } %>
+        <%= f.govuk_text_field :job_title, width: 'one-half', label: { text: t(".job_title") } %>
 
-        <p class="heading-large">Privacy Policy</p>
+        <p class="govuk-heading-l">Privacy Policy</p>
         <p>
           Details of our Personal Information Charter can be found at <a href="https://www.gov.uk/government/organisations/environment-agency/about/personal-information-charter">https://www.gov.uk/government/organisations/environment-agency/about/personal-information-charter</a>
         </p>
         <div>
           <div>
-            <details>
-              <summary class="half-indent-with-top-margin" role="button" aria-controls="show_data_collected_and_how">
-                <span class="summary">
-                  What of my data is being collected and how is it used?</ br>
+            <details class="govuk-details" data-module="govuk-details__text">
+              <summary class="govuk-details__summary" aria-controls="show_data_collected_and_how">
+                <span class="govuk-details__summary-text">
+                  What of my data is being collected and how is it used?
                   What is the legal basis for the processing?
                 </span>
               </summary>
-              <div id="show_data_collected_and_how" class="panel panel-indent panel-border-narrow">
+              <div id="show_data_collected_and_how" class="govuk-details__text">
                 <p>Personal data is collected to:</p>
                 <ul class="list list-bullet">
                   <li>Verify that you are eligible for an account</li>
@@ -40,49 +40,49 @@
                 </p>
               </div>
             </details>
-            <details>
-              <summary class="half-indent-with-top-margin" role="button" aria-controls="show_how_will_data_be_shared">
-                <span class="summary">
+            <details class="govuk-details" data-module="govuk-details__text">
+              <summary class="govuk-details__summary" role="button" aria-controls="show_how_will_data_be_shared">
+                <span class="govuk-details__summary-text">
                   Who will my data be shared with?
                 </span>
               </summary>
-              <div id="how_will_data_be_shared" class="panel panel-indent panel-border-narrow">
+              <div id="how_will_data_be_shared" class="govuk-details__text">
                 <p>
                   Your personal data will not be shared or disclosed to any other party outside the Environment Agency without your explicit consent.
                 </p>
               </div>
             </details>
-            <details>
-              <summary class="half-indent-with-top-margin" role="button" aria-controls="show_data_transferred_outside_of_eea">
-                <span class="summary">
+            <details class="govuk-details" data-module="govuk-details__text">
+              <summary class="govuk-details__summary" role="button" aria-controls="show_data_transferred_outside_of_eea">
+                <span class="govuk-details__summary-text">
                   Will my data be transferred outside of the EEA? If it will, how will it be protected?
                 </span>
               </summary>
-              <div id="data_transferred_outside_of_eeahow_will_data_be_shared" class="panel panel-indent panel-border-narrow">
+              <div id="data_transferred_outside_of_eeahow_will_data_be_shared" class="govuk-details__text">
                 <p>
                   The data you provide will not be transferred outside the European Economic Area.
                 </p>
               </div>
             </details>
-            <details>
-              <summary class="half-indent-with-top-margin" role="button" aria-controls="show_how_long_data_will_be_held">
-                <span class="summary">
+            <details class="govuk-details" data-module="govuk-details__text">
+              <summary class="govuk-details__summary" role="button" aria-controls="show_how_long_data_will_be_held">
+                <span class="govuk-details__summary-text">
                   How long will my data be held for?
                 </span>
               </summary>
-              <div id="show_how_long_data_will_be_held" class="panel panel-indent panel-border-narrow">
+              <div id="show_how_long_data_will_be_held" class="govuk-details__text">
                 <p>
                   Your personal data will be kept by us for as long as you require access to the service
                 </p>
               </div>
             </details>
-            <details>
-              <summary class="half-indent-with-top-margin" role="button" aria-controls="show_will_data_be_used_for_automated_decision_or_profiling">
-                <span class="summary">
+            <details class="govuk-details" data-module="govuk-details__text">
+              <summary class="govuk-details__summary" role="button" aria-controls="show_will_data_be_used_for_automated_decision_or_profiling">
+                <span class="govuk-details__summary-text">
                   Will my data be used for automated decision-making or profiling?
                 </span>
               </summary>
-              <div id="show_will_data_be_used_for_automated_decision_or_profiling" class="panel panel-indent panel-border-narrow">
+              <div id="show_will_data_be_used_for_automated_decision_or_profiling" class="govuk-details__text">
                 <p>
                   The information you provide is not connected with individual decision making 
                   (making a decision solely by automated means without any human involvement) or profiling 
@@ -94,7 +94,7 @@
         </div>
       </div>
 
-      <%= f.submit t(".submit_label"), class: 'button' %>
+      <%= f.govuk_submit t(".submit_label"), class: 'button' %>
     <% end %>
   </div>
 </div>

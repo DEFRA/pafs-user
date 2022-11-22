@@ -7,7 +7,7 @@ module ApplicationHelper
   end
 
   def not_policy_page?(supplied_path)
-    supplied_path != cookies_path && supplied_path != main_app.page_path("pafs_privacy_policy")
+    supplied_path != cookies_path && supplied_path != main_app.page_path("privacy_notice")
   end
 
   def migrate_devise_errors_for(resource)
