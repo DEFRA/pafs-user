@@ -12,7 +12,6 @@ Rails.application.routes.draw do
   #  get "/pages/*id" => 'high_voltage/pages#show', as: :page, format: false
   get "/password/reset" => "reset_password#reset", as: :after_password_reset
 
-  # mount GovukPublishingComponents::Engine, at: "/component-guide" if Rails.env.development?
   mount PafsCore::Engine, at: "/pc"
 
   resource :cookies, only: %i[edit update] do

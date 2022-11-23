@@ -54,7 +54,7 @@
   </p>
   <ul class="govuk-footer__inline-list">
     <li class="govuk-footer__inline-list-item">
-      <%= link_to "Privacy", main_app.page_path('pafs_privacy_policy'), class: "govuk-footer__link" %>
+      <%= link_to "Privacy", main_app.page_path('privacy_notice'), class: "govuk-footer__link" %>
     </li>
     <li class="govuk-footer__inline-list-item">
       <%= link_to "Cookies", cookies_path, class: "govuk-footer__link" %>
@@ -70,7 +70,7 @@
     <p><%= t('global.footer_support_text') %> <%= link_to t("global.helpline_telephone_number"), "tel:#{t("global.helpline_telephone_number").delete(" ") }" %></p>
 
     <ul class="inline-list">
-      <li class="inline"><%= link_to 'Privacy', main_app.page_path('pafs_privacy_policy'), target: '_blank' %></li>
+      <li class="inline"><%= link_to 'Privacy', main_app.page_path('privacy_notice'), target: '_blank' %></li>
       <li class="inline"><%= link_to 'Cookies', cookies_path,  target: '_blank' %></li>
       <li class="inline"><%= link_to 'Accessibility', "/pages/accessibility",  target: '_blank' %></li>
     </li>
