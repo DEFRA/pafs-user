@@ -3,7 +3,7 @@
 <%= render("waste_carriers_engine/shared/back", back_path: "/fo/pages/cookies") %>
 
 <%= form_tag "/cookies", method: :patch do %>
-  <div class="govuk-grid-row">
+  <div class="govuk-grid-row grid-body">
     <div class="govuk-grid-column-two-thirds">
       <% if params[:cookies_updated] %>
         <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">

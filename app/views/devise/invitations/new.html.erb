@@ -1,12 +1,13 @@
 <h2><%= t "devise.invitations.new.header" %></h2>
 
-<%= form_for resource, :as => resource_name, :url => invitation_path(resource_name), :html => {:method => :post} do |f| %>
-  <%= devise_error_messages! %>
+<div class="govuk_grid_row govuk-body">
+  <%= form_for resource, :as => resource_name, :url => invitation_path(resource_name), :html => {:method => :post} do |f| %>
+    <%= devise_error_messages! %>
 
-<% resource.class.invite_key_fields.each do |field| -%>
-  <p><%= f.label field %><br />
-  <%= f.text_field field %></p>
-<% end -%>
+  <% resource.class.invite_key_fields.each do |field| -%>
+    <%= f.govuk_email_field field, label: { text: field }, width: 'one-half' %>
+  <% end -%>
 
-  <p><%= f.submit t("devise.invitations.new.submit_button") %></p>
-<% end %>
+    <p><%= f.govuk_submit t("devise.invitations.new.submit_button") %></p>
+  <% end %>
+</div>
