@@ -3,12 +3,12 @@
 <%= pafs_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
 
   <div class="govuk-grid-row govuk-body">
-    <div class="govuk-column-two-thirds">
+    <div class="govuk-grid-column-two-thirds">
 
       <h1 class="govuk-heading-l">Reset your password</h1>
       <div class="form-group">
-        <%= form_group(f, :base) do %>
-          <%= error_message(f.object, :base) %>
+        <%= form_group(f.object, :base, :base) do %>
+          <%= error_message(f.object, :base, :base) %>
           <%= f.govuk_email_field :email, autofocus: true, autocomplete: "off", width: 'one-half', label: { text: t("Email address") } %>
         <% end %>
 

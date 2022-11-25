@@ -13,8 +13,8 @@
       <li>1 numeric character</li>
     </ul>
   </div>
-  <%= form_group(f, :base) do %>
-    <%= error_message(f.object, :base) %>
+  <%= form_group(f.object, :base, :base) do %>
+    <%= error_message(f.object, :base, :base) %>
     <%= f.govuk_password_field :password,
                                autofocus: true,
                                class: "form-control",
