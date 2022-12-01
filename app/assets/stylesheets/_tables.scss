@@ -6,21 +6,10 @@ table {
   border-spacing: 0;
   width: 100%;
 
-  th,
-  td {
-    padding: pem(12, 16) pem(20, 16) pem(9, 16) 0;
-  }
-
   th {
     font-weight: 700;
+    text-align: left;
     .numeric {
-      text-align: right;
-    }
-  }
-
-  // Use tabular numbers for numeric table cells
-  .numeric {
-    td {
       text-align: right;
     }
   }

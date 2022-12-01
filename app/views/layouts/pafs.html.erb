@@ -39,7 +39,7 @@
   <% if not_policy_page?(request.path) && user_signed_in?%>
     <%= render "shared/user_bar" %>
   <% end %>
-    <%= render "shared/return_to_overview" if show_return_to_overview? %>
+  <%= render "shared/return_to_overview" if show_return_to_overview? %>
 <% end %>
 
 <% content_for :body_end do %>
