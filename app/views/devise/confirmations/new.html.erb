@@ -8,7 +8,11 @@
 
       <div class="field">
         <%= f.label :email %><br />
-        <%= f.govuk_email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), label: nil %>
+        <%= f.govuk_email_field :email,
+                                autofocus: true,
+                                value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email),
+                                width: 'one-half',
+                                label: nil %>
       </div>
 
       <div class="actions">

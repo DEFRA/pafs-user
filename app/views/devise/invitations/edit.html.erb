@@ -23,15 +23,17 @@
                                    autofocus: true,
                                    class: "form-control",
                                    autocomplete: "off",
+                                   width: 'one-half',
                                    label: { text: "Password" } %>
         <%= f.govuk_password_field :password_confirmation,
                                    class: "form-control",
                                    autocomplete: "off",
+                                   width: 'one-half',
                                    label:{ text: "Confirm password" } %>
       <% end %>
 
       <div class="form-group">
-        <%= f.govuk_submit t("devise.invitations.edit.submit_button"), class: 'button' %>
+        <%= f.govuk_submit t("devise.invitations.edit.submit_button") %>
       </div>
     <% end %>
 

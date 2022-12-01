@@ -8,7 +8,7 @@
 
       <div class="field">
         <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true %>
+        <%= f.govuk_email_field :email, autofocus: true, width: 'one-half', label: nil %>
       </div>
 
       <div class="field">
@@ -16,12 +16,12 @@
         <% if @minimum_password_length %>
           <em>(<%= @minimum_password_length %> characters minimum)</em>
         <% end %><br />
-        <%= f.govuk_password_field :password, autocomplete: "off", label: nil %>
+        <%= f.govuk_password_field :password, autocomplete: "off", width: 'one-half', label: nil %>
       </div>
 
       <div class="field">
         <%= f.label :password_confirmation %><br />
-        <%= f.govuk_password_field :password_confirmation, autocomplete: "off", label: nil %>
+        <%= f.govuk_password_field :password_confirmation, autocomplete: "off", width: 'one-half', label: nil %>
       </div>
 
       <div class="actions">
