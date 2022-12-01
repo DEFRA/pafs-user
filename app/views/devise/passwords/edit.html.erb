@@ -4,6 +4,7 @@
 
 <div class="govuk-grid-row govuk-body">
   <div class="govuk-grid-column-two-thirds">
+
     <%= pafs_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
       <h1 class="govuk-heading-l">Reset password</h1>
       <div class="form-hint password-instructions">Your password must contain a minimum of:
@@ -19,13 +20,15 @@
         <%= error_message(f.object, :base, :base) %>
         <%= f.hidden_field :reset_password_token %>
 
-        <%= f.password_field :password, autofocus: true, class: "form-control", autocomplete: "off", label: "New password" %>
-        <%= f.password_field :password_confirmation, class: "form-control",
-              autocomplete: "off", label: "Confirm password" %>
+        <%= f.govuk_password_field :password, autofocus: true, class: "form-control", autocomplete: "off", label: { text: "New password" } %>
+        <%= f.govuk_password_field :password_confirmation, class: "form-control",
+              autocomplete: "off", label: { text: "Confirm password" } %>
       <% end %>
+
       <div class="form-group">
-        <%= f.submit "Reset password", class: "button" %>
+        <%= f.govuk_submit "Reset password", class: "button" %>
       </div>
     <% end %>
+
   <div>
 </div>

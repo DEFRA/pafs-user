@@ -1,9 +1,11 @@
 <% content_for :title, "Password reset" %>
-<% migrate_devise_errors_for resource %>
-<%= pafs_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
 
-  <div class="govuk-grid-row govuk-body">
-    <div class="govuk-grid-column-two-thirds">
+<% migrate_devise_errors_for resource %>
+
+<div class="govuk-grid-row govuk-body">
+  <div class="govuk-grid-column-two-thirds">
+
+    <%= pafs_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
 
       <h1 class="govuk-heading-l">Reset your password</h1>
       <div class="form-group">
@@ -17,6 +19,7 @@
           <%= f.govuk_submit "Continue", class: 'button' %>
         </div>
       </div>
-    </div>
+    <% end %>
+
   </div>
-<% end %>
+</div>

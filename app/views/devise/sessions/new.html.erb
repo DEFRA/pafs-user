@@ -1,14 +1,16 @@
 <% content_for :title, "Sign in" %>
+
 <%
   if flash[:alert].present?
     resource.errors.add(:base, flash[:alert])
   end
 %>
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <%= render partial: "pafs_core/error_summary", locals: { f: f } %>
 
-  <div class="govuk-grid-row govuk-body">
-    <div class="govuk-grid-column-two-thirds">
+<div class="govuk-grid-row govuk-body">
+  <div class="govuk-grid-column-two-thirds">
+
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <%= render partial: "pafs_core/error_summary", locals: { f: f } %>
 
       <h1 class="govuk-heading-l">Sign in</h2>
       <div class="form-group">
@@ -17,12 +19,12 @@
       </div>
 
       <div class="form-group">
-        <%= f.submit "Sign in", class: 'govuk-button' %>
+        <%= f.govuk_submit "Sign in", class: 'govuk-button' %>
       </div>
 
       <p><%= link_to t("reset_your_password_link"), new_password_path(resource_name) %></p>
       <p><%= link_to t("request_an_account_link"), new_account_request_path %></p>
 
-    </div>
+    <% end %>
   </div>
-<% end %>
+</div>
