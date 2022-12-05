@@ -2,6 +2,4 @@
 
 class PagesController < ApplicationController
   layout "pafs"
-
-  def cookies; end
 end
