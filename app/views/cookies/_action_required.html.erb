@@ -22,7 +22,7 @@
         class: "govuk-button"
     %>
     <%= link_to t('cookies-banner.link.view_cookies'),
-         cookies_path,
+         Rails.application.routes.url_helpers.cookies_path,
         class: "govuk-link"
     %>
   </div>

@@ -57,7 +57,7 @@
       <%= link_to "Privacy", main_app.page_path('privacy_notice'), class: "govuk-footer__link" %>
     </li>
     <li class="govuk-footer__inline-list-item">
-      <%= link_to "Cookies", cookies_path, class: "govuk-footer__link" %>
+      <%= link_to "Cookies", Rails.application.routes.url_helpers.cookies_path, class: "govuk-footer__link" %>
     </li>
     <li class="govuk-footer__inline-list-item">
       <%= link_to "Accessibility", "/pages/accessibility", class: "govuk-footer__link" %>
@@ -71,7 +71,7 @@
 
     <ul class="inline-list">
       <li class="inline"><%= link_to 'Privacy', main_app.page_path('privacy_notice'), target: '_blank' %></li>
-      <li class="inline"><%= link_to 'Cookies', cookies_path,  target: '_blank' %></li>
+      <li class="inline"><%= link_to 'Cookies', Rails.application.routes.url_helpers.cookies_path,  target: '_blank' %></li>
       <li class="inline"><%= link_to 'Accessibility', "/pages/accessibility",  target: '_blank' %></li>
     </li>
 
