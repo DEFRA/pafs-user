@@ -22,7 +22,7 @@ Rails.application.routes.draw do
     end
   end
 
-  get "/cookies", to: "pafs_core/pages#cookies"
+  get "/cookies", to: "pages#cookies"
 
   match "(errors)/:status", to: PafsCore::Engine, via: :all, constraints: { status: /\d{3}/ }
 

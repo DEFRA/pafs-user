@@ -2,10 +2,9 @@
 en:
   cookies:
     edit:
-      title: Cookie settings
-      heading: Cookies on Project Application and Funding Service
-      text_1: Cookies are files saved on your phone, tablet or computer when you visit a website.
-      text_2: We use cookies to store information about how you use the Project Application and Funding Service website, such as the pages you visit.
+      heading: Cookie settings on Project Application and Funding Service
+      text_1: Cookies are files saved on your phone, table or computer when you visit a website.
+      text_2: We use cookies to store information about how you use the Project Application and Funding Service website.
       cookie_settings:
         subheading: Cookie settings
         text_1: We use 2 types of cookie. You can choose which cookies you're happy for us to use.
@@ -14,7 +13,7 @@ en:
         text_1: We use Google Analytics to measure how you use the website so we can improve it based on user needs. We do not allow Google to use or share the data about how you use this site.
         text_2: 'Google Analytics sets cookies that store anonymised information about:'
         list_item_1: how you got to the site
-        list_item_2: the pages you visit on WEX and government digital services, and how long you spend on each page
+        list_item_2: the pages you visit on the Project Application and Funding Service, and how long you spend on each page
         list_item_3: what you click on while you're visiting the site
         radio_button_label:
           accept: Use cookies that measure my website use
@@ -26,16 +25,16 @@ en:
       find_out_more:
         text: Find out more about cookies on GOV.UK
         url: https://www.gov.uk/help/cookie-details
-      submit_button: Save and continue
+      submit_button: Save changes
       updated:
-        success: Success
+        success: success
         you_set_your_cookie_preferences: You’ve set your cookie preferences.
+
   pages:
     cookies:
-      title: Cookies
       heading: Cookies on Project Application and Funding Service
       text_1: Cookies are files saved on your phone, table or computer when you visit a website.
-      text_2: We use cookies to store information about how you use the Project Application and Funding Service website, such as the pages you visit.
+      text_2: We use cookies to store information about how you use the Project Application and Funding Service website.
       cookie_settings:
         subheading: Cookie settings
         text_1: We use 2 types of cookie. You can choose which cookies you're happy for us to use.
@@ -44,37 +43,37 @@ en:
         text_1: We use Google Analytics to measure how you use the website so we can improve it based on user needs. We do not allow Google to use or share the data about how you use this site.
         text_2: 'Google Analytics sets cookies that store anonymised information about:'
         list_item_1: how you got to the site
-        list_item_2: the pages you visit on WEX and government digital services, and how long you spend on each page
+        list_item_2: the pages you visit on the Project Application and Funding Service, and how long you spend on each page
         list_item_3: what you click on while you're visiting the site
       essential_cookies:
         subheading: Strictly necessary cookies (session)
-        text_1: These essential cookies do things like remember your progress through a form (for example a licence application).
+        text_1: These essential cookies do things like remember your progress through a form.
         text_2: They will always be on.
       cookies_we_use:
+        subheading: All the cookies we use
         name: Name
         purpose: Purpose
         expires: Expires
         ga:
           name: _ga
-          purpose: Used to identify referring sites, visitors and sessions
+          purpose: &purpose This helps us count how many people visit the service by tracking if you've visited before
           expires: 2 years
         gid:
           name: _gid
-          purpose: Tells us how visitors use the service, where they came from and the pages visited
-          expires: 24 hours
-        registrations_session:
-          name: _waste-exemptions-front-office_session
-          purpose: Used for session management and authentication
+          purpose: *purpose
+          expires: 1 day
+        _pafs_session:
+          name: _pafs_session
+          purpose: Allows you to log in and manage your account
           expires: When you close your browser
         cookies_policy:
           name: cookies_policy
-          purpose: Saves your cookie consent settings
+          purpose: Lets us know what your cookies preferences are
           expires: 1 year
         cookies_preferences_set:
           name: cookies_preferences_set
-          purpose: Tells us that you have seen our cookie message
+          purpose: Lets us know whether you've already set your cookies preferences
           expires: 1 year
       change_your_cookie_settings:
         subheading: Change your cookie settings
         text_1: You can <a href="%{edit_path}">change your cookie settings</a> at any time
-
