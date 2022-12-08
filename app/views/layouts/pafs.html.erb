@@ -4,6 +4,8 @@
   <!--[if IE 7]><%= stylesheet_link_tag "application-ie7" %><![endif]-->
   <!--[if IE 8]><%= stylesheet_link_tag "application-ie8" %><![endif]-->
   <meta name="format-detection" content="telephone=no" />
+
+  <%= render partial: "shared/google_tagmanager" if ENV['GOOGLE_TAGMANAGER_ID'].present? %>
 <% end %>
 
 <% content_for :page_title, title %>
