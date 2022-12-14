@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 8d46b458434bb8c1e20386e5c498f029d7b6a03c
+  revision: e285bc6ffac4d3aac8dbfbba9960b9a586dea281
   branch: main
   specs:
     pafs_core (0.0.2)
@@ -116,13 +116,13 @@ GEM
     async-pool (0.3.10)
       async (>= 1.25)
     aws-eventstream (1.2.0)
-    aws-partitions (1.671.0)
-    aws-sdk-core (3.168.3)
+    aws-partitions (1.676.0)
+    aws-sdk-core (3.168.4)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.5)
       jmespath (~> 1, >= 1.6.1)
-    aws-sdk-kms (1.60.0)
+    aws-sdk-kms (1.61.0)
       aws-sdk-core (~> 3, >= 3.165.0)
       aws-sigv4 (~> 1.1)
     aws-sdk-s3 (1.117.2)
@@ -167,7 +167,7 @@ GEM
       activerecord (>= 5.a)
       database_cleaner-core (~> 2.0.0)
     database_cleaner-core (2.0.1)
-    date (3.3.0)
+    date (3.3.1)
     defra_ruby_alert (2.1.1)
       airbrake
     defra_ruby_style (0.3.0)
@@ -199,7 +199,7 @@ GEM
       railties (>= 5.0.0)
     faker (3.0.0)
       i18n (>= 1.8.11, < 2)
-    faraday (2.7.1)
+    faraday (2.7.2)
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-http-cache (2.4.0)
