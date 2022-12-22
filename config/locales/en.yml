@@ -43,7 +43,7 @@ en:
       beta: BETA
       feedback: This is a new service – your %{link} will help us to improve it.
       feedback_link: feedback
-      feedback_url: https://www.gov.uk/done/waste-carrier-or-broker-registration
+      feedback_url: https://www.smartsurvey.co.uk/s/PAFSGDS/
       support_text: 'Environment Agency (England) helpline: 03708 506 506'
   pages:
     start:
