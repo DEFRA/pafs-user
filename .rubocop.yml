@@ -6,6 +6,13 @@ require:
   - rubocop-rake
   - rubocop-rspec
 
+RSpec/DescribeClass:
+  Exclude:
+    - spec/features/*
+    - spec/features/projects/*
+    - spec/lib/tasks/*
+    - spec/requests/response_headers_spec.rb
+
 # TODO Resolve these legacy Rubocop offenses
 Capybara/SpecificMatcher:
   Enabled: false
