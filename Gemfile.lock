@@ -519,6 +519,7 @@ DEPENDENCIES
   net-imap
   net-pop
   net-smtp
+  nokogiri (~> 1.14.0)
   pafs_core!
   passenger (~> 5.1)
   pg
