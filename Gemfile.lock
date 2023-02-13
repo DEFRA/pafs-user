@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 6b6b6e937d60e68b12352e7c97fcb48bdcc4cc43
+  revision: b2f76386066a443d750053aabadd062b991de63b
   branch: main
   specs:
     pafs_core (0.0.2)
@@ -220,7 +220,7 @@ GEM
       octokit (~> 4.6)
       rainbow (>= 2.2.1)
       rake (>= 10.0)
-    globalid (1.0.1)
+    globalid (1.1.0)
       activesupport (>= 5.0)
     govuk_design_system_formbuilder (3.3.0)
       actionview (>= 6.1)
@@ -263,7 +263,7 @@ GEM
     loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    mail (2.8.0.1)
+    mail (2.8.1)
       mini_mime (>= 0.1.1)
       net-imap
       net-pop
@@ -286,7 +286,7 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.14.0)
+    nokogiri (1.14.1)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     octokit (4.25.0)
@@ -465,7 +465,7 @@ GEM
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
-    tzinfo (2.0.5)
+    tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
@@ -485,7 +485,7 @@ GEM
       chronic (>= 0.6.3)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.6)
+    zeitwerk (2.6.7)
 
 PLATFORMS
   ruby
