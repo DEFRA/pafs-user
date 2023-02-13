@@ -35,6 +35,8 @@ gem "net-imap"
 gem "net-pop"
 gem "net-smtp"
 
+gem "nokogiri", "1.14.0"
+
 # active job backend
 gem "sucker_punch", "~> 2.0"
 
