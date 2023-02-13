@@ -286,7 +286,7 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.14.1)
+    nokogiri (1.14.0)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     octokit (4.25.0)
@@ -519,7 +519,7 @@ DEPENDENCIES
   net-imap
   net-pop
   net-smtp
-  nokogiri (~> 1.14.0)
+  nokogiri (= 1.14.0)
   pafs_core!
   passenger (~> 5.1)
   pg
