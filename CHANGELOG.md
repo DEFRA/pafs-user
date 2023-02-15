@@ -1,5 +1,99 @@
 # Changelog
 
+## [Unreleased](https://github.com/defra/pafs-user/tree/HEAD)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.5.0...HEAD)
+
+**Merged pull requests:**
+
+- Area import and renaming [\#423](https://github.com/DEFRA/pafs-user/pull/423) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump engine version and pin CI ubuntu version [\#416](https://github.com/DEFRA/pafs-user/pull/416) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump globalid from 1.0.0 to 1.0.1 [\#412](https://github.com/DEFRA/pafs-user/pull/412) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rack from 2.2.4 to 2.2.6.2 [\#411](https://github.com/DEFRA/pafs-user/pull/411) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump sdoc from 2.5.0 to 2.6.0 [\#410](https://github.com/DEFRA/pafs-user/pull/410) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pry from 0.14.1 to 0.14.2 [\#408](https://github.com/DEFRA/pafs-user/pull/408) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump spring from 4.1.0 to 4.1.1 [\#407](https://github.com/DEFRA/pafs-user/pull/407) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump devise\_invitable from 2.0.6 to 2.0.7 [\#406](https://github.com/DEFRA/pafs-user/pull/406) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump ruby-prof from 1.4.4 to 1.4.5 [\#404](https://github.com/DEFRA/pafs-user/pull/404) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump faker from 3.0.0 to 3.1.0 [\#403](https://github.com/DEFRA/pafs-user/pull/403) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump net-imap from 0.3.2 to 0.3.4 [\#402](https://github.com/DEFRA/pafs-user/pull/402) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump simplecov from 0.21.2 to 0.22.0 [\#400](https://github.com/DEFRA/pafs-user/pull/400) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.5.0](https://github.com/defra/pafs-user/tree/v1.5.0) (2022-12-22)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.4.0...v1.5.0)
+
+**Merged pull requests:**
+
+- Banner feedback link update [\#398](https://github.com/DEFRA/pafs-user/pull/398) ([timstone](https://github.com/timstone))
+- Fix uglifier / ES6 issue [\#395](https://github.com/DEFRA/pafs-user/pull/395) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump pafs\_core from `8d46b45` to `dd95417` [\#393](https://github.com/DEFRA/pafs-user/pull/393) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rails-html-sanitizer from 1.4.3 to 1.4.4 [\#388](https://github.com/DEFRA/pafs-user/pull/388) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump loofah from 2.19.0 to 2.19.1 [\#386](https://github.com/DEFRA/pafs-user/pull/386) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump net-imap from 0.3.1 to 0.3.2 [\#385](https://github.com/DEFRA/pafs-user/pull/385) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump nokogiri from 1.13.9 to 1.13.10 [\#383](https://github.com/DEFRA/pafs-user/pull/383) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Load google analytics [\#382](https://github.com/DEFRA/pafs-user/pull/382) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump pafs\_core from `fc17136` to `8d46b45` [\#381](https://github.com/DEFRA/pafs-user/pull/381) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Cookies logic and content [\#380](https://github.com/DEFRA/pafs-user/pull/380) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Format edit password form [\#379](https://github.com/DEFRA/pafs-user/pull/379) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump pafs\_core from `ea8fc90` to `fc17136` [\#378](https://github.com/DEFRA/pafs-user/pull/378) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `fe5f0a0` to `ea8fc90` [\#377](https://github.com/DEFRA/pafs-user/pull/377) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `e85b33b` to `fe5f0a0` [\#376](https://github.com/DEFRA/pafs-user/pull/376) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `b903da3` to `e85b33b` [\#375](https://github.com/DEFRA/pafs-user/pull/375) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump stackprof from 0.2.22 to 0.2.23 [\#374](https://github.com/DEFRA/pafs-user/pull/374) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Layout fixes [\#373](https://github.com/DEFRA/pafs-user/pull/373) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Use updated core form helpers [\#372](https://github.com/DEFRA/pafs-user/pull/372) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump pafs\_core from `da9659c` to `7ef6778` [\#370](https://github.com/DEFRA/pafs-user/pull/370) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump engine version [\#369](https://github.com/DEFRA/pafs-user/pull/369) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- GOVUK FormBuilder fixes [\#368](https://github.com/DEFRA/pafs-user/pull/368) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- GOVUK form builder [\#366](https://github.com/DEFRA/pafs-user/pull/366) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Update accessibility statement [\#362](https://github.com/DEFRA/pafs-user/pull/362) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump pafs\_core from `c708cc5` to `2115a33` [\#361](https://github.com/DEFRA/pafs-user/pull/361) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `b0b351a` to `c708cc5` [\#360](https://github.com/DEFRA/pafs-user/pull/360) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Page titles [\#358](https://github.com/DEFRA/pafs-user/pull/358) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Fix typo [\#353](https://github.com/DEFRA/pafs-user/pull/353) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Fix development team reference [\#352](https://github.com/DEFRA/pafs-user/pull/352) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Add accessibility statement [\#351](https://github.com/DEFRA/pafs-user/pull/351) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump pafs\_core from `e7f77c8` to `4e28f84` [\#350](https://github.com/DEFRA/pafs-user/pull/350) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core version [\#349](https://github.com/DEFRA/pafs-user/pull/349) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Add missing gems [\#348](https://github.com/DEFRA/pafs-user/pull/348) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- JS runtime and gem version fix [\#347](https://github.com/DEFRA/pafs-user/pull/347) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Use sass-embedded [\#339](https://github.com/DEFRA/pafs-user/pull/339) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Fix js runtime [\#338](https://github.com/DEFRA/pafs-user/pull/338) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump rspec-rails from 5.1.2 to 6.0.1 [\#337](https://github.com/DEFRA/pafs-user/pull/337) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Upgrade to ruby3 [\#336](https://github.com/DEFRA/pafs-user/pull/336) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Use standard areas for test users [\#333](https://github.com/DEFRA/pafs-user/pull/333) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Rename seeds env var [\#332](https://github.com/DEFRA/pafs-user/pull/332) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Seed users [\#331](https://github.com/DEFRA/pafs-user/pull/331) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- CI updates [\#322](https://github.com/DEFRA/pafs-user/pull/322) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump stackprof from 0.2.21 to 0.2.22 [\#321](https://github.com/DEFRA/pafs-user/pull/321) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.4.0](https://github.com/defra/pafs-user/tree/v1.4.0) (2022-09-26)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.3.3...v1.4.0)
+
+**Merged pull requests:**
+
+- Merge develop into main [\#317](https://github.com/DEFRA/pafs-user/pull/317) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump pafs\_core version [\#314](https://github.com/DEFRA/pafs-user/pull/314) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump spring from 4.0.0 to 4.1.0 [\#312](https://github.com/DEFRA/pafs-user/pull/312) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump stackprof from 0.2.19 to 0.2.21 [\#300](https://github.com/DEFRA/pafs-user/pull/300) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Feature/ruby 2030 update rma name [\#298](https://github.com/DEFRA/pafs-user/pull/298) ([kennyevil](https://github.com/kennyevil))
+- Chore/bump pafs core content update [\#295](https://github.com/DEFRA/pafs-user/pull/295) ([kennyevil](https://github.com/kennyevil))
+- Bump climate\_control from 1.1.1 to 1.2.0 [\#282](https://github.com/DEFRA/pafs-user/pull/282) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Merge main into development [\#272](https://github.com/DEFRA/pafs-user/pull/272) ([kennyevil](https://github.com/kennyevil))
+
+## [v1.3.3](https://github.com/defra/pafs-user/tree/v1.3.3) (2022-09-02)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.3.2...v1.3.3)
+
+**Merged pull requests:**
+
+- update pafs\_core [\#304](https://github.com/DEFRA/pafs-user/pull/304) ([kennyevil](https://github.com/kennyevil))
+- Add changelog generator and update changelog [\#278](https://github.com/DEFRA/pafs-user/pull/278) ([kennyevil](https://github.com/kennyevil))
+- bump pafs\_core [\#277](https://github.com/DEFRA/pafs-user/pull/277) ([kennyevil](https://github.com/kennyevil))
+- Bump pafs\_core from `5b936e2` to `9c626a3` [\#275](https://github.com/DEFRA/pafs-user/pull/275) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v1.3.2](https://github.com/defra/pafs-user/tree/v1.3.2) (2022-06-16)
 
 [Full Changelog](https://github.com/defra/pafs-user/compare/v1.3.1...v1.3.2)
