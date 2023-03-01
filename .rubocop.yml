@@ -2,6 +2,7 @@ inherit_gem:
   defra_ruby_style:
     - default.yml
 require:
+  - rubocop-capybara
   - rubocop-rails
   - rubocop-rake
   - rubocop-rspec
