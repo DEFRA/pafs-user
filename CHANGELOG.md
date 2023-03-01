@@ -1,11 +1,12 @@
 # Changelog
 
-## [Unreleased](https://github.com/defra/pafs-user/tree/HEAD)
+## [v1.5.1](https://github.com/defra/pafs-user/tree/v1.5.1) (2023-02-15)
 
-[Full Changelog](https://github.com/defra/pafs-user/compare/v1.5.0...HEAD)
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.5.0...v1.5.1)
 
 **Merged pull requests:**
 
+- Version 1.5.1 [\#425](https://github.com/DEFRA/pafs-user/pull/425) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
 - Area import and renaming [\#423](https://github.com/DEFRA/pafs-user/pull/423) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
 - Bump engine version and pin CI ubuntu version [\#416](https://github.com/DEFRA/pafs-user/pull/416) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
 - Bump globalid from 1.0.0 to 1.0.1 [\#412](https://github.com/DEFRA/pafs-user/pull/412) ([dependabot[bot]](https://github.com/apps/dependabot))
