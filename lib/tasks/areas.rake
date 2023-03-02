@@ -33,7 +33,7 @@ namespace :areas do
       new_name = row[2]
       PafsCore::ChangeProjectAreaService.new(project_number).run(new_name)
     rescue StandardError => e
-      puts "Error renaming project #{project_number}: #{e}"
+      puts "Error changing area for project #{project_number}: #{e}"
     end
   end
 end
