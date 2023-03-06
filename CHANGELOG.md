@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.5.2](https://github.com/defra/pafs-user/tree/v1.5.2) (2023-03-01)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.5.1...v1.5.2)
+
+**Merged pull requests:**
+
+- Version 1.5.2 [\#433](https://github.com/DEFRA/pafs-user/pull/433) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- RUBY-2338 RMA rename and lrma type update [\#427](https://github.com/DEFRA/pafs-user/pull/427) ([timstone](https://github.com/timstone))
+
 ## [v1.5.1](https://github.com/defra/pafs-user/tree/v1.5.1) (2023-02-15)
 
 [Full Changelog](https://github.com/defra/pafs-user/compare/v1.5.0...v1.5.1)
