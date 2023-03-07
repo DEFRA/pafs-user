@@ -30,7 +30,7 @@
       "password_confirmation": "Secret123",
       "admin" : true,
       "areas": [
-        { "name": "Bristol City Council", "type": "RMA" }
+        { "name": "PSO West of England", "type": "PSO Area" }
       ]
     },
     {
@@ -41,7 +41,7 @@
       "password_confirmation": "Secret123",
       "admin" : true,
       "areas": [
-        { "name": "Bristol City Council", "type": "RMA" }
+        { "name": "Wessex", "type": "EA Area" }
       ]
     },
     {
