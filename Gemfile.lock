@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: fd31245ca93b2137fb7cd6cea9906fd42e85af8b
+  revision: 4e719c1d9c39ec1c928900e2206f81ced7557efe
   branch: main
   specs:
     pafs_core (0.0.2)
@@ -116,7 +116,7 @@ GEM
     async-pool (0.3.10)
       async (>= 1.25)
     aws-eventstream (1.2.0)
-    aws-partitions (1.724.0)
+    aws-partitions (1.725.0)
     aws-sdk-core (3.170.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
