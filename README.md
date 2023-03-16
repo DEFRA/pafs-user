@@ -30,7 +30,7 @@ Clone the repository, copying the project into a working directory:
 We use "git flow" to manage development and features branches.
 To initialise git flow for the project, you need to run:
 
-    git checkout -t origin/master
+    git checkout -t origin/main
     git flow init # choose the defaults
     git checkout develop
 
@@ -65,8 +65,7 @@ Duplicate ```./dotenv.example``` and rename the copy as ```./.env```. Open it an
 There are several databases per environment, therefore, ensure you run the following:
 
     bundle exec rake db:create:all
-    bundle exec rake pafs_core:install:migrations
-    bundle exec rake db:migrate
+    bundle exec rake db:schema:load
     bundle config local.pafs_core /path/to/local/pafs_core
     bundle
     
