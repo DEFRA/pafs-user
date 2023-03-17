@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 4e719c1d9c39ec1c928900e2206f81ced7557efe
+  revision: 0a2bea25d50e79b9acf84b7c77348c75bb6578a6
   branch: main
   specs:
     pafs_core (0.0.2)
@@ -116,7 +116,7 @@ GEM
     async-pool (0.3.10)
       async (>= 1.25)
     aws-eventstream (1.2.0)
-    aws-partitions (1.725.0)
+    aws-partitions (1.729.0)
     aws-sdk-core (3.170.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
@@ -315,10 +315,10 @@ GEM
       stringio
     public_suffix (5.0.0)
     racc (1.6.2)
-    rack (2.2.6.3)
-    rack-cors (2.0.0)
+    rack (2.2.6.4)
+    rack-cors (2.0.1)
       rack (>= 2.0.0)
-    rack-test (2.0.2)
+    rack-test (2.1.0)
       rack (>= 1.3)
     rails (6.1.7)
       actioncable (= 6.1.7)
