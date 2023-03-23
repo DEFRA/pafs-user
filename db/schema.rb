@@ -2,15 +2,15 @@
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
 #
-# This file is the source Rails uses to define your schema when running `rails
-# db:schema:load`. When creating a new database, `rails db:schema:load` tends to
+# This file is the source Rails uses to define your schema when running `bin/rails
+# db:schema:load`. When creating a new database, `bin/rails db:schema:load` tends to
 # be faster and is potentially less error prone than running all of your
 # migrations from scratch. Old migrations may fail to apply correctly if those
 # migrations use external dependencies or application code.
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_19_120343) do
+ActiveRecord::Schema.define(version: 2023_03_20_164238) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
@@ -329,6 +329,8 @@ ActiveRecord::Schema.define(version: 2022_07_19_120343) do
     t.boolean "create_habitat_watercourse"
     t.float "kilometres_of_watercourse_enhanced_or_created_single"
     t.boolean "no_properties_affected_by_flooding_2040", default: false, null: false
+    t.integer "complete_outline_business_case_month"
+    t.integer "complete_outline_business_case_year"
     t.index ["reference_number", "version"], name: "index_pafs_core_projects_on_reference_number_and_version", unique: true
     t.index ["slug"], name: "index_pafs_core_projects_on_slug", unique: true
     t.index ["submitted_to_pol"], name: "index_pafs_core_projects_on_submitted_to_pol"
