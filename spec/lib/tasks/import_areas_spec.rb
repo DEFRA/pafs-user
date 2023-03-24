@@ -4,7 +4,7 @@ require "rails_helper"
 
 RSpec.describe "areas", type: :rake do
 
-  include_context "rake"
+  include_context "when running rake"
 
   describe "areas:import_additional_areas", type: :rake do
 
@@ -17,10 +17,13 @@ RSpec.describe "areas", type: :rake do
       allow(importer).to receive(:import_additional_areas)
     end
 
+    it "calls the importer" do
+      areas_task.invoke("foo.csv")
+      expect(importer).to have_received(:import_additional_areas)
+    end
+
     it "runs without error" do
       expect { areas_task.invoke("foo.csv") }.not_to raise_error
-
-      expect(importer).to have_received(:import_additional_areas)
     end
   end
 

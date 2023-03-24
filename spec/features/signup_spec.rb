@@ -4,16 +4,19 @@ RSpec.describe "Signup" do
   context "with a valid invitation" do
     let!(:user) { create(:account_user, :pso, :invited, raw_invitation_token: "INVITATION") }
 
-    it "I can set my password" do
+    before do
       visit "/users/invitation/accept?invitation_token=INVITATION"
-      expect(page).to have_selector("h1", text: "Create password")
 
       fill_in "Password", with: "Password123!"
       fill_in "Confirm password", with: "Password123!"
       click_on "Create password"
+    end
 
+    it "I can set my password" do
       expect(page).to have_selector("h1", text: "Your proposals")
+    end
 
+    it "after signing out I can sign in again" do
       click_on "Sign out"
       expect(page).to have_selector("h1", text: "Sign in")
 

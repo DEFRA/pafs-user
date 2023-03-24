@@ -7,13 +7,13 @@ class AccountRequestMailer < ApplicationMailer
     prevent_tracking
     @email = account_request.email
     @name = account_request.full_name
-    mail(to: @email, subject: "Account requested - FCERM project funding")
+    mail(to: @email, subject: I18n.t("account_created"))
   end
 
   def new_account_request(account_request)
     prevent_tracking
     @account_request = account_request
-    mail(to: I18n.t("global.support_email"), subject: "Account requested")
+    mail(to: I18n.t("global.support_email"), subject: I18n.t("account_requested"))
   end
 
   def account_created_email(user)
@@ -26,6 +26,6 @@ class AccountRequestMailer < ApplicationMailer
     @invitation_link = accept_user_invitation_url(
       invitation_token: user.raw_invitation_token
     )
-    mail(to: user.email, subject: "Account created - FCERM project funding")
+    mail(to: user.email, subject: I18n.t("account_created"))
   end
 end
