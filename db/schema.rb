@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_20_164238) do
+ActiveRecord::Schema.define(version: 2023_03_27_153152) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
@@ -158,6 +158,13 @@ ActiveRecord::Schema.define(version: 2023_03_20_164238) do
     t.bigint "growth_funding"
     t.bigint "not_yet_identified"
     t.bigint "total", default: 0, null: false
+    t.bigint "asset_replacement_allowance"
+    t.bigint "environment_statutory_funding"
+    t.bigint "frequently_flooded_communities"
+    t.bigint "other_additional_grant_in_aid"
+    t.bigint "other_government_department"
+    t.bigint "recovery"
+    t.bigint "summer_economic_fund"
   end
 
   create_table "pafs_core_program_upload_failures", force: :cascade do |t|
@@ -331,6 +338,13 @@ ActiveRecord::Schema.define(version: 2023_03_20_164238) do
     t.boolean "no_properties_affected_by_flooding_2040", default: false, null: false
     t.integer "complete_outline_business_case_month"
     t.integer "complete_outline_business_case_year"
+    t.boolean "asset_replacement_allowance", default: false
+    t.boolean "environment_statutory_funding", default: false
+    t.boolean "frequently_flooded_communities", default: false
+    t.boolean "other_additional_grant_in_aid", default: false
+    t.boolean "other_government_department", default: false
+    t.boolean "recovery", default: false
+    t.boolean "summer_economic_fund", default: false
     t.index ["reference_number", "version"], name: "index_pafs_core_projects_on_reference_number_and_version", unique: true
     t.index ["slug"], name: "index_pafs_core_projects_on_slug", unique: true
     t.index ["submitted_to_pol"], name: "index_pafs_core_projects_on_submitted_to_pol"
