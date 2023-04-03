@@ -70,7 +70,7 @@ There are several databases per environment, therefore, ensure you run the follo
     bundle
     
 
-    OLD bundle exec rake db:migrate db:seed
+    OLD bundle exec rake db:migrate areas:import db:seed
 
 #### Start the service _(local)_
 
