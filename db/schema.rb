@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_27_153152) do
+ActiveRecord::Schema.define(version: 2023_03_30_133724) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
@@ -155,7 +155,6 @@ ActiveRecord::Schema.define(version: 2023_03_27_153152) do
     t.bigint "public_contributions"
     t.bigint "private_contributions"
     t.bigint "other_ea_contributions"
-    t.bigint "growth_funding"
     t.bigint "not_yet_identified"
     t.bigint "total", default: 0, null: false
     t.bigint "asset_replacement_allowance"
