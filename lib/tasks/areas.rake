@@ -29,11 +29,12 @@ namespace :areas do
     projects.shift
 
     projects.each do |row|
-      project_number = row[0]
-      new_name = row[2]
-      PafsCore::ChangeProjectAreaService.new(project_number).run(new_name)
+      project = PafsCore::Project.find_by(reference_number: row[0])
+      new_area = PafsCore::Area.find_by(name: row[2])
+      PafsCore::ChangeProjectAreaService.new(project).run(new_area)
     rescue StandardError => e
-      puts "Error changing area for project #{project_number}: #{e}"
+      puts "Error changing area for project #{row[0]}: #{e}"
+      raise e if Rails.env.test?
     end
   end
 end
