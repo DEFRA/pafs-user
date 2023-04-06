@@ -46,9 +46,12 @@ RSpec.describe "areas", type: :rake do
       create(:rma_area, name: "Cumberland Council")
       create(:rma_area, name: "Westmorland and Furness Council")
 
-      create(:project, reference_number: "NWC501E/000A/042A", areas: [a1])
-      create(:project, reference_number: "NWC501E/000A/570A", areas: [a2])
-      create(:project, reference_number: "NWC501E/000A/614A", areas: [a3])
+      project1 = create(:project, reference_number: "NWC501E/000A/042A")
+      create(:area_project, area: a1, project: project1, owner: true)
+      project2 = create(:project, reference_number: "NWC501E/000A/570A")
+      create(:area_project, area: a2, project: project2, owner: true)
+      project3 = create(:project, reference_number: "NWC501E/000A/614A")
+      create(:area_project, area: a3, project: project3, owner: true)
     end
 
     it "runs without error" do
