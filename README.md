@@ -69,9 +69,6 @@ There are several databases per environment, therefore, ensure you run the follo
     bundle config local.pafs_core /path/to/local/pafs_core
     bundle
     
-
-    OLD bundle exec rake db:migrate areas:import db:seed
-
 #### Start the service _(local)_
 
 To start the service locally simply run:

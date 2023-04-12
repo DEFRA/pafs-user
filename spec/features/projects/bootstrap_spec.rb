@@ -3,29 +3,11 @@
 RSpec.describe "Creating a project" do
   context "without PSO_CANNOT_CREATE_PROJECTS set" do
     context "with an rma user" do
-      let(:user) { create(:account_user, :rma) }
-
-      it "lets me bootstrap a project" do
-        login_as(user)
-        bootstrap_a_new_proposal(
-          type: "DEF",
-          name: "A new project",
-          year: Time.zone.now.year + 2
-        )
-      end
+      it_behaves_like "bootstrap a new proposal", :rma
     end
 
     context "with a pso user" do
-      let(:user) { create(:account_user, :pso) }
-
-      it "lets me bootstrap a project" do
-        login_as(user)
-        bootstrap_a_new_proposal(
-          type: "DEF",
-          name: "A new project",
-          year: Time.zone.now.year + 2
-        )
-      end
+      it_behaves_like "bootstrap a new proposal", :pso
     end
   end
 
@@ -37,25 +19,19 @@ RSpec.describe "Creating a project" do
     end
 
     context "with an rma user" do
-      let(:user) { create(:account_user, :rma) }
-
-      it "lets me bootstrap a project" do
-        login_as(user)
-        bootstrap_a_new_proposal(
-          type: "DEF",
-          name: "A new project",
-          year: Time.zone.now.year + 2
-        )
-      end
+      it_behaves_like "bootstrap a new proposal", :rma
     end
 
     context "with a pso user" do
       let(:user) { create(:account_user, :pso) }
 
-      it "doesn't let me bootstrap a project" do
-        login_as(user)
+      before { login_as(user) }
 
+      it "doesn't let me bootstrap a project" do
         expect(page).not_to have_text("Create a new proposal")
+      end
+
+      it "provides a link to create an EA-led proposal" do
         expect(page).to have_text("To create a new EA-Led proposal please go to")
       end
     end
