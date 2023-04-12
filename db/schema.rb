@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_30_133724) do
+ActiveRecord::Schema.define(version: 2023_04_05_162510) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
@@ -164,34 +164,6 @@ ActiveRecord::Schema.define(version: 2023_03_30_133724) do
     t.bigint "other_government_department"
     t.bigint "recovery"
     t.bigint "summer_economic_fund"
-  end
-
-  create_table "pafs_core_program_upload_failures", force: :cascade do |t|
-    t.integer "program_upload_item_id"
-    t.string "field_name", null: false
-    t.string "messages", null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.index ["program_upload_item_id"], name: "idx_program_upload_failures"
-  end
-
-  create_table "pafs_core_program_upload_items", force: :cascade do |t|
-    t.integer "program_upload_id"
-    t.string "reference_number", null: false
-    t.boolean "imported", null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.index ["program_upload_id"], name: "idx_program_upload_items"
-  end
-
-  create_table "pafs_core_program_uploads", force: :cascade do |t|
-    t.string "filename", null: false
-    t.integer "number_of_records", null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string "status", default: "new"
-    t.boolean "reset_consented_flag", default: false, null: false
-    t.index ["status"], name: "pafs_core_upload_status"
   end
 
   create_table "pafs_core_projects", force: :cascade do |t|

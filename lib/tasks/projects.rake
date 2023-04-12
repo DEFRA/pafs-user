@@ -93,8 +93,6 @@ namespace :projects do
       PafsCore::CoastalErosionProtectionOutcome,
       PafsCore::FloodProtectionOutcome,
       PafsCore::FundingValue,
-      PafsCore::ProgramUploadFailure,
-      PafsCore::ProgramUpload,
       PafsCore::ReferenceCounter,
       PafsCore::State
     ]
