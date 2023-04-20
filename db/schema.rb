@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_05_162510) do
+ActiveRecord::Schema.define(version: 2023_04_12_142838) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
@@ -194,8 +194,8 @@ ActiveRecord::Schema.define(version: 2023_04_05_162510) do
     t.boolean "growth_funding"
     t.boolean "not_yet_identified"
     t.boolean "could_start_early"
-    t.integer "earliest_start_month"
-    t.integer "earliest_start_year"
+    t.integer "earliest_with_gia_month"
+    t.integer "earliest_with_gia_year"
     t.boolean "fluvial_flooding"
     t.boolean "tidal_flooding"
     t.boolean "groundwater_flooding"
@@ -316,6 +316,8 @@ ActiveRecord::Schema.define(version: 2023_04_05_162510) do
     t.boolean "other_government_department", default: false
     t.boolean "recovery", default: false
     t.boolean "summer_economic_fund", default: false
+    t.integer "earliest_start_month"
+    t.integer "earliest_start_year"
     t.index ["reference_number", "version"], name: "index_pafs_core_projects_on_reference_number_and_version", unique: true
     t.index ["slug"], name: "index_pafs_core_projects_on_slug", unique: true
     t.index ["submitted_to_pol"], name: "index_pafs_core_projects_on_submitted_to_pol"
