@@ -1,5 +1,16 @@
 # Changelog
 
+## [v1.5.3](https://github.com/defra/pafs-user/tree/v1.5.3) (2023-03-06)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.5.2...v1.5.3)
+
+**Merged pull requests:**
+
+- Version 1.5.3 [\#439](https://github.com/DEFRA/pafs-user/pull/439) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Removing additional header for Cumbria RMA changes [\#437](https://github.com/DEFRA/pafs-user/pull/437) ([timstone](https://github.com/timstone))
+- Feature/change rmas task [\#435](https://github.com/DEFRA/pafs-user/pull/435) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Change RMAs task [\#434](https://github.com/DEFRA/pafs-user/pull/434) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+
 ## [v1.5.2](https://github.com/defra/pafs-user/tree/v1.5.2) (2023-03-01)
 
 [Full Changelog](https://github.com/defra/pafs-user/compare/v1.5.1...v1.5.2)
