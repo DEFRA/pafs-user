@@ -36,6 +36,9 @@ gem "net-smtp"
 
 gem "nokogiri"
 
+# Pin psych version to avoid GitHub CI failures on v5+: https://github.com/ruby/setup-ruby/issues/409
+gem "psych", "~> 4"
+
 # active job backend
 gem "sucker_punch"
 
