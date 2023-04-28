@@ -34,10 +34,8 @@ gem "net-imap"
 gem "net-pop"
 gem "net-smtp"
 
-gem "nokogiri"
-
-# Pin psych version to avoid GitHub CI failures on v5+: https://github.com/ruby/setup-ruby/issues/409
-gem "psych", "~> 4"
+# Pin nokogiri version to avoid GitHub CI failures on v5+: https://github.com/ruby/setup-ruby/issues/409
+gem "nokogiri", "~> 1.14.1"
 
 # active job backend
 gem "sucker_punch"

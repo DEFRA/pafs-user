@@ -522,12 +522,11 @@ DEPENDENCIES
   net-imap
   net-pop
   net-smtp
-  nokogiri
+  nokogiri (~> 1.14.1)
   pafs_core!
   passenger
   pg
   pry
-  psych (~> 4)
   rake
   rbtrace
   rspec-rails
