@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-ruby "3.1.2"
+ruby "3.2.2"
 
 gem "coffee-rails"
 gem "rake"
@@ -33,9 +33,6 @@ gem "dibble", "~> 0.1",
 gem "net-imap"
 gem "net-pop"
 gem "net-smtp"
-
-# Pin nokogiri version to avoid GitHub CI failures on v5+: https://github.com/ruby/setup-ruby/issues/409
-gem "nokogiri", "~> 1.14.1"
 
 # active job backend
 gem "sucker_punch"
