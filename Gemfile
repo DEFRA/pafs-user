@@ -1,10 +1,9 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-ruby "3.1.2"
+ruby "3.2.2"
 
 gem "coffee-rails"
-gem "rails", "6.1.7"
 gem "rake"
 gem "sass-rails", "~> 5.1"
 gem "uglifier"
@@ -35,14 +34,12 @@ gem "net-imap"
 gem "net-pop"
 gem "net-smtp"
 
-gem "nokogiri", "1.14.0"
-
 # active job backend
-gem "sucker_punch", "~> 2.0"
+gem "sucker_punch"
 
 # static pages
 gem "high_voltage"
-gem "passenger", "~> 5.1", require: false
+gem "passenger", require: false
 gem "whenever", require: false
 
 # shared PAFS code
@@ -58,7 +55,7 @@ gem "github_changelog_generator", require: false
 
 group :development, :test do
   gem "byebug"
-  gem "defra_ruby_style", "~> 0.3"
+  gem "defra_ruby_style"
   gem "pry"
   gem "rspec-rails"
   gem "rubocop"
