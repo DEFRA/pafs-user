@@ -41,7 +41,7 @@ for more information about our branching strategy.
 
 #### Local system dependencies
 
-* [Ruby 3.1.2](https://www.ruby-lang.org) (e.g. via [RVM](https://rvm.io) or [Rbenv](https://github.com/sstephenson/rbenv/blob/master/README.md))
+* [Ruby 3.2.2](https://www.ruby-lang.org) (e.g. via [RVM](https://rvm.io) or [Rbenv](https://github.com/sstephenson/rbenv/blob/master/README.md))
 * [Postgresql](http://www.postgresql.org/download)
 * [Phantomjs](https://github.com/teampoltergeist/poltergeist#installing-phantomjs) (test specs)
 

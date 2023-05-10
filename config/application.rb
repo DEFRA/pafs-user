@@ -20,7 +20,6 @@ require "sprockets/railtie"
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-
 module Pafs
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
@@ -30,6 +29,9 @@ module Pafs
 
     # load decorators
     config.to_prepare do
+      # Exclude these from autoloading as we are loading them manually:
+      Rails.autoloaders.main.ignore(Rails.root.join("app/decorators"))
+
       Rails.root.glob("app/decorators/**/*_decorator*.rb").each do |c|
         require_dependency(c)
       end
