@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-::AccountRequestsController.class_eval do # rubocop:disable Style/RedundantConstantBase
+AccountRequestsController.class_eval do
   helper ApplicationHelper
   layout ->(_) { "pafs" }
 end
