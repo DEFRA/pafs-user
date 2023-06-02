@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.6.4](https://github.com/defra/pafs-user/tree/v1.6.4) (2023-04-26)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.6.3...v1.6.4)
+
+**Merged pull requests:**
+
+- Chore/add owning rm as [\#504](https://github.com/DEFRA/pafs-user/pull/504) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+
 ## [v1.6.3](https://github.com/defra/pafs-user/tree/v1.6.3) (2023-04-21)
 
 [Full Changelog](https://github.com/defra/pafs-user/compare/v1.5.3...v1.6.3)
