@@ -1,5 +1,21 @@
 # Changelog
 
+## [v1.6.5](https://github.com/defra/pafs-user/tree/v1.6.5) (2023-05-31)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.6.4...v1.6.5)
+
+**Merged pull requests:**
+
+- Bump pafs\_core from `dc8cee6` to `3f375e3` [\#523](https://github.com/DEFRA/pafs-user/pull/523) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `5e921e4` to `dc8cee6` [\#521](https://github.com/DEFRA/pafs-user/pull/521) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Chore/accessibility statement [\#517](https://github.com/DEFRA/pafs-user/pull/517) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Fix/autoload [\#515](https://github.com/DEFRA/pafs-user/pull/515) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump pg from 1.4.6 to 1.5.3 [\#510](https://github.com/DEFRA/pafs-user/pull/510) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Upgrade to Rails 7 [\#509](https://github.com/DEFRA/pafs-user/pull/509) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump pafs\_core from `aa8ea77` to `5bba967` [\#508](https://github.com/DEFRA/pafs-user/pull/508) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump devise\_invitable from 2.0.7 to 2.0.8 [\#507](https://github.com/DEFRA/pafs-user/pull/507) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Version 1.6.4 [\#505](https://github.com/DEFRA/pafs-user/pull/505) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+
 ## [v1.6.4](https://github.com/defra/pafs-user/tree/v1.6.4) (2023-04-26)
 
 [Full Changelog](https://github.com/defra/pafs-user/compare/v1.6.3...v1.6.4)
