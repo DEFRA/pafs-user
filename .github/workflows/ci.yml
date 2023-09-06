@@ -44,14 +44,14 @@ jobs:
           RAILS_ENV=test bundle exec rake db:schema:load --trace --trace
 
       # This includes an extra run step. The sonarcloud analysis will be run in a docker container with the current
-      # folder mounted as `/github/workspace`. The problem is when the .resultset.json file is generated it will
+      # folder mounted as `/github/workspace`. The problem is when the coverage.json file is generated it will
       # reference the code in the current folder. So to enable sonarcloud to matchup code coverage with the files we use
-      # sed to update the references in .resultset.json
+      # sed to update the references in coverage.json
       # https://community.sonarsource.com/t/code-coverage-doesnt-work-with-github-action/16747/6
       - name: Run tests
         run: |
           bundle exec rspec
-          sed -i 's/\/home\/runner\/work\/pafs-admin\/pafs-admin\//\/github\/workspace\//g' coverage/.resultset.json
+          sed -i 's/\/home\/runner\/work\/pafs-user\/pafs-user\//\/github\/workspace\//g' coverage/coverage.json
         env:
           POL_FAILURE_NOTIFICATION_EMAIL: foo
 
