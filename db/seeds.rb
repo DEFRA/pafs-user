@@ -12,6 +12,11 @@ def create_user(first_name, last_name, email, password, admin)
 end
 
 # rubocop:disable Rails/Output
+def seed_areas
+  areas_csv = Rails.root.join("lib/fixtures/areas/areas.csv")
+  PafsCore::AreaImporter.new.full_import(areas_csv)
+end
+
 def seed_users
   seeds = JSON.parse(Rails.root.join("db/seeds/users.json").read)
   users = seeds["users"]
@@ -41,6 +46,7 @@ end
 # rubocop:enable Rails/Output
 
 # Only seed if not running in production or we specifically require it, eg. for Heroku
+seed_areas if !Rails.env.production? || ENV["ALLOW_SEED"]
 seed_users if !Rails.env.production? || ENV["ALLOW_SEED"]
 
 PafsCore::ReferenceCounter.seed_counters

@@ -39,6 +39,7 @@ RSpec.describe "projects" do
     after do
       # delete all projects after the test
       PafsCore::Project.delete_all
+      PafsCore::Area.delete_all
     end
 
     it "deletes all projects" do
