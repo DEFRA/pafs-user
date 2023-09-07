@@ -10,8 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_12_142838) do
-
+ActiveRecord::Schema[7.0].define(version: 2023_06_20_214333) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
   enable_extension "hstore"
@@ -111,6 +110,9 @@ ActiveRecord::Schema.define(version: 2023_04_12_142838) do
     t.integer "households_protected_from_loss_in_next_20_years"
     t.integer "households_protected_from_loss_in_20_percent_most_deprived"
     t.integer "non_residential_properties"
+    t.index ["financial_year"], name: "cep_outcomes_on_financial_year"
+    t.index ["project_id", "financial_year"], name: "cep_outcomes_on_project_id_and_financial_year"
+    t.index ["project_id"], name: "cep_outcomes_on_project_id"
   end
 
   create_table "pafs_core_flood_protection2040_outcomes", force: :cascade do |t|
@@ -130,6 +132,9 @@ ActiveRecord::Schema.define(version: 2023_04_12_142838) do
     t.integer "households_protected_from_loss_in_20_percent_most_deprived"
     t.integer "households_protected_through_plp_measures"
     t.integer "non_residential_properties"
+    t.index ["financial_year"], name: "fp_outcomes_on_financial_year"
+    t.index ["project_id", "financial_year"], name: "fp_outcomes_on_project_id_and_financial_year"
+    t.index ["project_id"], name: "fp_outcomes_on_project_id"
   end
 
   create_table "pafs_core_funding_contributors", id: :serial, force: :cascade do |t|
@@ -164,6 +169,9 @@ ActiveRecord::Schema.define(version: 2023_04_12_142838) do
     t.bigint "other_government_department"
     t.bigint "recovery"
     t.bigint "summer_economic_fund"
+    t.index ["financial_year"], name: "index_pafs_core_funding_values_on_financial_year"
+    t.index ["project_id", "financial_year"], name: "funding_values_on_project_id_and_financial_year"
+    t.index ["project_id"], name: "index_pafs_core_funding_values_on_project_id"
   end
 
   create_table "pafs_core_projects", force: :cascade do |t|

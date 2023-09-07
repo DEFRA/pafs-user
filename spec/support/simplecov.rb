@@ -1,6 +1,12 @@
 # frozen_string_literal: true
 
 require "simplecov"
+require "simplecov_json_formatter"
+
+SimpleCov.formatters = [
+  SimpleCov::Formatter::HTMLFormatter,
+  SimpleCov::Formatter::JSONFormatter
+]
 
 # We start it with the rails param to ensure it includes coverage for all code
 # started by the rails app, and not just the files touched by our unit tests.

@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 825cc8bb0ff5bff6376b2ebc081d9d25f19ce8cf
+  revision: 08e52544da4a40907f882d884942727acd93036d
   branch: main
   specs:
     pafs_core (0.0.2)
@@ -124,7 +124,7 @@ GEM
     async-pool (0.4.0)
       async (>= 1.25)
     aws-eventstream (1.2.0)
-    aws-partitions (1.809.0)
+    aws-partitions (1.817.0)
     aws-sdk-core (3.181.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
@@ -133,7 +133,7 @@ GEM
     aws-sdk-kms (1.71.0)
       aws-sdk-core (~> 3, >= 3.177.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.133.0)
+    aws-sdk-s3 (1.134.0)
       aws-sdk-core (~> 3, >= 3.181.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.6)
@@ -231,8 +231,8 @@ GEM
       octokit (~> 4.6)
       rainbow (>= 2.2.1)
       rake (>= 10.0)
-    globalid (1.1.0)
-      activesupport (>= 5.0)
+    globalid (1.2.1)
+      activesupport (>= 6.1)
     govuk_design_system_formbuilder (3.3.0)
       actionview (>= 6.1)
       activemodel (>= 6.1)
@@ -314,7 +314,7 @@ GEM
     passenger (6.0.18)
       rack
       rake (>= 0.8.1)
-    pg (1.5.3)
+    pg (1.5.4)
     protocol-hpack (1.4.2)
     protocol-http (0.24.7)
     protocol-http1 (0.15.1)
@@ -488,7 +488,7 @@ GEM
     unicode-display_width (2.4.2)
     warden (1.2.9)
       rack (>= 2.0.9)
-    web-console (4.2.0)
+    web-console (4.2.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
