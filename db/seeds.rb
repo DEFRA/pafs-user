@@ -46,7 +46,7 @@ end
 # rubocop:enable Rails/Output
 
 # Only seed if not running in production or we specifically require it, eg. for Heroku
-seed_areas if !Rails.env.production? || ENV["ALLOW_SEED"]
+seed_areas if (!Rails.env.production? || ENV.fetch("ALLOW_SEED", nil)) && PafsCore::Area.count.zero?
 seed_users if !Rails.env.production? || ENV["ALLOW_SEED"]
 
 PafsCore::ReferenceCounter.seed_counters
