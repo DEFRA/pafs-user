@@ -15,48 +15,48 @@ Hertfordshire and North London,England,EA Area,
 Solent and South Downs,England,EA Area,
 Kent South London and East Sussex,England,EA Area,
 EA Test Area,England,EA Area,
-PSO Cumbria,Cumbria and Lancashire,PSO Area,
-PSO Lancashire,Cumbria and Lancashire,PSO Area,
-PSO East Devon and Cornwall,Devon Cornwall and the Isles of Scilly,PSO Area,
-PSO West Devon and Cornwall,Devon Cornwall and the Isles of Scilly,PSO Area,
-PSO Cambridge and Bedfordshire,East Anglia,PSO Area,
-PSO Coastal Essex Suffolk and Norfolk,East Anglia,PSO Area,
-PSO Essex,East Anglia,PSO Area,
-PSO Norfolk and Suffolk,East Anglia,PSO Area,
-PSO Derbyshire and Leicestershire,East Midlands,PSO Area,
-PSO Nottinghamshire and Tidal Trent,East Midlands,PSO Area,
-PSO Cheshire and Merseyside,Greater Manchester Merseyside and Cheshire,PSO Area,
-PSO Greater Manchester,Greater Manchester Merseyside and Cheshire,PSO Area,
-PSO London East,Hertfordshire and North London,PSO Area,
-PSO London West,Hertfordshire and North London,PSO Area,
-PSO Luton Hertfordshire and Essex,Hertfordshire and North London,PSO Area,
-PSO East Kent,Kent South London and East Sussex,PSO Area,
-PSO South East London and North Kent,Kent South London and East Sussex,PSO Area,
-PSO South West London and Mole,Kent South London and East Sussex,PSO Area,
-PSO West Kent,Kent South London and East Sussex,PSO Area,
-PSO Coastal Lincolnshire and Northamptonshire,Lincolnshire and Northamptonshire,PSO Area,
-PSO Lincolnshire,Lincolnshire and Northamptonshire,PSO Area,
-PSO Welland and Nene,Lincolnshire and Northamptonshire,PSO Area,
-PSO Durham and Tees Valley,North East,PSO Area,
-PSO Tyne and Wear and Northumberland,North East,PSO Area,
-PSO East Sussex,Solent and South Downs,PSO Area,
-PSO Hampshire and Isle of Wight,Solent and South Downs,PSO Area,
-PSO West Sussex,Solent and South Downs,PSO Area,
-PSO Berkshire and Buckinghamshire,Thames,PSO Area,
-PSO Oxfordshire,Thames,PSO Area,
-PSO Surrey,Thames,PSO Area,
-PSO Dorset and Wiltshire,Wessex,PSO Area,
-PSO Somerset,Wessex,PSO Area,
-PSO West of England,Wessex,PSO Area,
-PSO Herefordshire and Gloucestershire,West Midlands,PSO Area,
-PSO Shropshire Worcestershire Telford and Wrekin,West Midlands,PSO Area,
-PSO Staffordshire and the Black Country,West Midlands,PSO Area,
-PSO Warwickshire Birmingham Solihull and Coventry,West Midlands,PSO Area,
-PSO East Yorkshire,Yorkshire,PSO Area,
-PSO North Yorkshire,Yorkshire,PSO Area,
-PSO South Yorkshire,Yorkshire,PSO Area,
-PSO West Yorkshire,Yorkshire,PSO Area,
-PSO Test Area,EA Test Area,PSO Area,
+PSO Cumbria,Cumbria and Lancashire,PSO Area,NW
+PSO Lancashire,Cumbria and Lancashire,PSO Area,NW
+PSO East Devon and Cornwall,Devon Cornwall and the Isles of Scilly,PSO Area,SW
+PSO West Devon and Cornwall,Devon Cornwall and the Isles of Scilly,PSO Area,SW
+PSO Cambridge and Bedfordshire,East Anglia,PSO Area,AC
+PSO Coastal Essex Suffolk and Norfolk,East Anglia,PSO Area,AE
+PSO Essex,East Anglia,PSO Area,AE
+PSO Norfolk and Suffolk,East Anglia,PSO Area,AE
+PSO Derbyshire and Leicestershire,East Midlands,PSO Area,TR
+PSO Nottinghamshire and Tidal Trent,East Midlands,PSO Area,TR
+PSO Cheshire and Merseyside,Greater Manchester Merseyside and Cheshire,PSO Area,NW
+PSO Greater Manchester,Greater Manchester Merseyside and Cheshire,PSO Area,NW
+PSO London East,Hertfordshire and North London,PSO Area,TH
+PSO London West,Hertfordshire and North London,PSO Area,TH
+PSO Luton Hertfordshire and Essex,Hertfordshire and North London,PSO Area,TH
+PSO East Kent,Kent South London and East Sussex,PSO Area,SO
+PSO South East London and North Kent,Kent South London and East Sussex,PSO Area,TH
+PSO South West London and Mole,Kent South London and East Sussex,PSO Area,TH
+PSO West Kent,Kent South London and East Sussex,PSO Area,SO
+PSO Coastal Lincolnshire and Northamptonshire,Lincolnshire and Northamptonshire,PSO Area,AN
+PSO Lincolnshire,Lincolnshire and Northamptonshire,PSO Area,AN
+PSO Welland and Nene,Lincolnshire and Northamptonshire,PSO Area,AN
+PSO Durham and Tees Valley,North East,PSO Area,NO
+PSO Tyne and Wear and Northumberland,North East,PSO Area,NO
+PSO East Sussex,Solent and South Downs,PSO Area,SO
+PSO Hampshire and Isle of Wight,Solent and South Downs,PSO Area,SO
+PSO West Sussex,Solent and South Downs,PSO Area,SO
+PSO Berkshire and Buckinghamshire,Thames,PSO Area,TH
+PSO Oxfordshire,Thames,PSO Area,TH
+PSO Surrey,Thames,PSO Area,TH
+PSO Dorset and Wiltshire,Wessex,PSO Area,WX
+PSO Somerset,Wessex,PSO Area,WX
+PSO West of England,Wessex,PSO Area,WX
+PSO Herefordshire and Gloucestershire,West Midlands,PSO Area,SN
+PSO Shropshire Worcestershire Telford and Wrekin,West Midlands,PSO Area,SN
+PSO Staffordshire and the Black Country,West Midlands,PSO Area,TR
+PSO Warwickshire Birmingham Solihull and Coventry,West Midlands,PSO Area,SN
+PSO East Yorkshire,Yorkshire,PSO Area,YO
+PSO North Yorkshire,Yorkshire,PSO Area,YO
+PSO South Yorkshire,Yorkshire,PSO Area,YO
+PSO West Yorkshire,Yorkshire,PSO Area,YO
+PSO Test Area,EA Test Area,PSO Area,NW
 Adur and Worthing Councils,PSO West Sussex,RMA,LA
 Adur District Council,PSO West Sussex,RMA,LA
 Ainsty (2008) IDB,PSO North Yorkshire,RMA,IDB

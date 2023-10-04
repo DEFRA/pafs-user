@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_20_214333) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_02_152826) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
   enable_extension "hstore"
@@ -73,6 +73,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_20_214333) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "sub_type"
+    t.string "identifier"
+    t.date "end_date"
     t.index ["name"], name: "index_pafs_core_areas_on_name"
   end
 
