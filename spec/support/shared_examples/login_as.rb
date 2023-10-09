@@ -8,14 +8,14 @@ RSpec.shared_examples "login as" do |user_type, password|
   before { visit "/" }
 
   it "has a sign in header" do
-    expect(page).to have_selector("h1", text: "Sign in")
+    expect(page).to have_css("h1", text: "Sign in")
   end
 
   it "signs in successfully" do
     fill_in "Email address", with: user.email
     fill_in "Password", with: password
-    click_on "Sign in"
+    click_button "Sign in"
 
-    expect(page).to have_selector("h1", text: "Your proposals")
+    expect(page).to have_css("h1", text: "Your proposals")
   end
 end

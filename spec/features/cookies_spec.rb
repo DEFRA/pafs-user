@@ -14,11 +14,11 @@ RSpec.describe "Cookies banner and pages" do
     before { visit "/" }
 
     it "displays the cookies banner" do
-      expect(page).to have_selector(".govuk-cookie-banner")
+      expect(page).to have_css(".govuk-cookie-banner")
     end
 
     context "when I click on the 'View cookies' link" do
-      before { click_on "View cookies" }
+      before { click_link "View cookies" }
 
       it "displays the cookies page" do
         expect(page).to have_content "Cookies on Project Application and Funding Service"
@@ -26,7 +26,7 @@ RSpec.describe "Cookies banner and pages" do
     end
 
     context "when I click the 'Accept analytics cookies' button" do
-      before { click_on "Accept analytics cookies" }
+      before { click_button "Accept analytics cookies" }
 
       it "sets the cookies_policy cookie to 'Accepted'" do
         expect(current_cookies["cookies_policy"]).to eq "analytics_accepted"
@@ -40,7 +40,7 @@ RSpec.describe "Cookies banner and pages" do
     end
 
     context "when I click the 'Reject analytics' cookies button" do
-      before { click_on "Reject analytics cookies" }
+      before { click_button "Reject analytics cookies" }
 
       it "sets the cookies_policy cookie to 'Rejected'" do
         expect(current_cookies["cookies_policy"]).to eq "analytics_rejected"

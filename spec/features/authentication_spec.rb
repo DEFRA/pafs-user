@@ -9,9 +9,9 @@ RSpec.describe "Authentication" do
 
       fill_in "Email address", with: user.email
       fill_in "Password", with: "invalid"
-      click_on "Sign in"
+      click_button "Sign in"
 
-      expect(page).to have_selector("h1", text: "Sign in")
+      expect(page).to have_css("h1", text: "Sign in")
     end
   end
 
@@ -23,9 +23,9 @@ RSpec.describe "Authentication" do
 
       fill_in "Email address", with: "invalid@example.com"
       fill_in "Password", with: "Secr3tP@ssw0rd"
-      click_on "Sign in"
+      click_button "Sign in"
 
-      expect(page).to have_selector("h1", text: "Sign in")
+      expect(page).to have_css("h1", text: "Sign in")
     end
   end
 
