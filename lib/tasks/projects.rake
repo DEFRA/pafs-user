@@ -98,7 +98,7 @@ namespace :projects do
     ]
 
     # Gather projects
-    PafsCore::Project.all.each do |project|
+    PafsCore::Project.find_each do |project|
       storage_path = project.storage_path
 
       # Delete generated reports

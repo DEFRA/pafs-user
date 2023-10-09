@@ -9,16 +9,16 @@ RSpec.describe "Signup" do
 
       fill_in "Password", with: "Password123!"
       fill_in "Confirm password", with: "Password123!"
-      click_on "Create password"
+      click_button "Create password"
     end
 
     it "I can set my password" do
-      expect(page).to have_selector("h1", text: "Your proposals")
+      expect(page).to have_css("h1", text: "Your proposals")
     end
 
     it "after signing out I can sign in again" do
-      click_on "Sign out"
-      expect(page).to have_selector("h1", text: "Sign in")
+      click_link "Sign out"
+      expect(page).to have_css("h1", text: "Sign in")
 
       login_as(user, password: "Password123!")
     end
@@ -27,7 +27,7 @@ RSpec.describe "Signup" do
   context "with an invalid invitation" do
     it "I am sent to the sign in screen" do
       visit "/users/invitation/accept?invitation_token=INVALID"
-      expect(page).to have_selector("h1", text: "Sign in")
+      expect(page).to have_css("h1", text: "Sign in")
     end
   end
 end
