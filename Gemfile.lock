@@ -307,7 +307,7 @@ GEM
     msgpack (1.7.1)
     multi_json (1.15.0)
     mutex_m (0.1.2)
-    net-imap (0.4.0)
+    net-imap (0.4.1)
       date
       net-protocol
     net-pop (0.1.2)
