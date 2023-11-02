@@ -1,14 +1,13 @@
-[![CI](https://github.com/DEFRA/pafs-user/actions/workflows/ci.yml/badge.svg)]((https://github.com/DEFRA/pafs-user/actions/workflows/ci.yml))
-
 # Project Application and Funding Service
 
-The Project Application and Funding Service (PAFS) is used by regional management authorities to apply for funding for flood and coastal risk management projects.
+[![CI](https://github.com/DEFRA/pafs-user/actions/workflows/ci.yml/badge.svg)]((https://github.com/DEFRA/pafs-user/actions/workflows/ci.yml))
 
-This service is not currently released but is intended to replace the existing method soon. The key difference is that it will have been developed in accordance with the [Digital by Default service standard](https://www.gov.uk/service-manual/digital-by-default), putting user needs first and delivered iteratively.
+The Project Application and Funding Service (PAFS) is used by regional management authorities to apply for funding for flood and coastal risk management projects.
 
 The application sends emails using the Send-grid e-mail service.
 
 ## PAFS Documentation
+
 For a full breakdown of the PAFS documentation, technical and non technical please click the [link](https://aimspd.sharepoint.com/sites/pwa_dev/AIMS%20Project%20Delivery%20Collaboration/_layouts/15/guestaccess.aspx?docid=08fcc88cb3f7c45b48a274bf0ea4132f5&authkey=AWuSgciHOQlICM9DP0JtdRA)
 
 ## Development Environment
@@ -52,13 +51,12 @@ Run the following to download the app dependencies ([rubygems](https://www.ruby-
     cd <pafs-project-directory>
     gem install bundler
     bundle install
-    
+
 #### .env configuration file
 
 The project uses the [dotenv](https://github.com/bkeepers/dotenv) gem which allows enviroment variables to be loaded from a ```.env``` configuration file in the project root.
 
 Duplicate ```./dotenv.example``` and rename the copy as ```./.env```. Open it and update SECRET_KEY_BASE and settings for database, email etc. - Secret Key base can be anything
-    
 
 #### Databases _(local)_
 
@@ -68,14 +66,14 @@ There are several databases per environment, therefore, ensure you run the follo
     bundle exec rake db:schema:load
     bundle config local.pafs_core /path/to/local/pafs_core
     bundle
-    
+
 #### Start the service _(local)_
 
 To start the service locally simply run:
 
     bundle exec rails server
 
-You can then access the web site at http://localhost:3000
+You can then access the web site at <http://localhost:3000>
 
 #### Intercepting email in development
 
@@ -132,21 +130,30 @@ To execute the unit tests simply enter:
 As this point we have no acceptance tests but when we do they can be executed using:
 
     cucumber
-    
+
 ### Production debugging
 
 #### Rails console
+
 To launch a rails console on a deployed server, the environment variables might need to be loaded from a different directory
 
 For example:
 `. ../../.exportedenv && RAILS_ENV=production bundle exec rails console`
 
 #### Logging
+
 Currently (15 Jun 2021), no logs are written to the `production.log`. This should be fixed.
 
 #### File upload errors
+
 When the file upload fails, the user sees a 'cookies' error. This might come from an `InvalidAuthenticityToken`, which might also come from a Clam AV error.
-It's worth checking that the Clam AV service is running: https://github.com/franckverrot/clamav-client#ping--boolean
+It's worth checking that the Clam AV service is running: <https://github.com/franckverrot/clamav-client#ping--boolean>
+
+## End of year maintenance routine
+
+A maintenance routine needs to be run each April at the start of the new financial year to remove all previous year’s data for return to ‘draft’ & ‘archived’ projects. PMs are expected to re-profile their ‘funding’ & ‘risks and properties benefitting’ requirements to current and future years. It will remove all years before current financial year.
+
+The rake task to run is `pafs:remove_previous_years[20000]` where `20000` is the number of records to process.
 
 ## Contributing to this project
 
@@ -158,7 +165,7 @@ All contributions should be submitted via a pull request.
 
 THIS INFORMATION IS LICENSED UNDER THE CONDITIONS OF THE OPEN GOVERNMENT LICENCE found at:
 
-http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3
+<http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3>
 
 The following attribution statement MUST be cited in your products and applications when using this information.
 
