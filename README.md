@@ -153,7 +153,7 @@ It's worth checking that the Clam AV service is running: <https://github.com/fra
 
 A maintenance routine needs to be run each April at the start of the new financial year to remove all previous year’s data for return to ‘draft’ & ‘archived’ projects. PMs are expected to re-profile their ‘funding’ & ‘risks and properties benefitting’ requirements to current and future years. It will remove all years before current financial year.
 
-The rake task to run is `pafs:remove_previous_years[20000]` where `20000` is the number of records to process.
+The rake task to run is `pafs:remove_previous_years[max_records]` where `max_records` is the number of records to process e.g. `pafs:remove_previous_years[10000]`.
 
 ## Contributing to this project
 
