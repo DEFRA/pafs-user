@@ -213,7 +213,7 @@ GEM
     dotenv-rails (2.8.1)
       dotenv (= 2.8.1)
       railties (>= 3.2)
-    drb (2.1.1)
+    drb (2.2.0)
       ruby2_keywords
     erubi (1.12.0)
     execjs (2.8.1)
@@ -309,7 +309,7 @@ GEM
     minitest (5.20.0)
     msgpack (1.7.1)
     multi_json (1.15.0)
-    mutex_m (0.1.2)
+    mutex_m (0.2.0)
     net-imap (0.4.4)
       date
       net-protocol
@@ -445,10 +445,11 @@ GEM
       rubocop (~> 1.41)
     rubocop-factory_bot (2.24.0)
       rubocop (~> 1.33)
-    rubocop-rails (2.21.2)
+    rubocop-rails (2.22.2)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.33.0, < 2.0)
+      rubocop-ast (>= 1.30.0, < 2.0)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
     rubocop-rspec (2.25.0)
