@@ -1,5 +1,52 @@
 # Changelog
 
+## [Unreleased](https://github.com/defra/pafs-user/tree/HEAD)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.6.6...HEAD)
+
+**Merged pull requests:**
+
+- Bump net-imap from 0.4.1 to 0.4.4 [\#599](https://github.com/DEFRA/pafs-user/pull/599) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump faker from 3.2.1 to 3.2.2 [\#598](https://github.com/DEFRA/pafs-user/pull/598) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Updated readme to document maintenance routine [\#597](https://github.com/DEFRA/pafs-user/pull/597) ([timstone](https://github.com/timstone))
+- Bump defra\_ruby\_style from 0.3.0 to 0.4.0 [\#595](https://github.com/DEFRA/pafs-user/pull/595) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump devise\_invitable from 2.0.8 to 2.0.9 [\#594](https://github.com/DEFRA/pafs-user/pull/594) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-rspec from 2.24.1 to 2.25.0 [\#592](https://github.com/DEFRA/pafs-user/pull/592) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rake from 13.0.6 to 13.1.0 [\#591](https://github.com/DEFRA/pafs-user/pull/591) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop from 1.57.0 to 1.57.2 [\#590](https://github.com/DEFRA/pafs-user/pull/590) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `d182563` to `6247d19` [\#587](https://github.com/DEFRA/pafs-user/pull/587) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump devise from 4.9.2 to 4.9.3 [\#586](https://github.com/DEFRA/pafs-user/pull/586) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop from 1.56.4 to 1.57.0 [\#585](https://github.com/DEFRA/pafs-user/pull/585) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump net-imap from 0.4.0 to 0.4.1 [\#584](https://github.com/DEFRA/pafs-user/pull/584) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Remove redundant legacy\_connection\_handling setting [\#583](https://github.com/DEFRA/pafs-user/pull/583) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- RUBY-2729: adjusting fixture data as sub\_type is now mandatory field for pso areas [\#579](https://github.com/DEFRA/pafs-user/pull/579) ([brujeo](https://github.com/brujeo))
+- Bump net-smtp from 0.3.3 to 0.4.0 [\#571](https://github.com/DEFRA/pafs-user/pull/571) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-factory\_bot from 2.23.1 to 2.24.0 [\#570](https://github.com/DEFRA/pafs-user/pull/570) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Adjusting seed task [\#569](https://github.com/DEFRA/pafs-user/pull/569) ([brujeo](https://github.com/brujeo))
+- Bump pafs\_core from `08e5254` to `5795b82` [\#567](https://github.com/DEFRA/pafs-user/pull/567) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop from 1.56.2 to 1.56.3 [\#566](https://github.com/DEFRA/pafs-user/pull/566) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-rspec from 2.23.2 to 2.24.0 [\#564](https://github.com/DEFRA/pafs-user/pull/564) ([dependabot[bot]](https://github.com/apps/dependabot))
+- updating dependencies [\#562](https://github.com/DEFRA/pafs-user/pull/562) ([brujeo](https://github.com/brujeo))
+- Bump rubocop from 1.56.0 to 1.56.2 [\#559](https://github.com/DEFRA/pafs-user/pull/559) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `b5e5ce0` to `825cc8b` [\#556](https://github.com/DEFRA/pafs-user/pull/556) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump engine version [\#552](https://github.com/DEFRA/pafs-user/pull/552) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump rubocop-rspec from 2.22.0 to 2.23.2 [\#550](https://github.com/DEFRA/pafs-user/pull/550) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop from 1.52.1 to 1.56.0 [\#549](https://github.com/DEFRA/pafs-user/pull/549) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump protocol-http1 from 0.15.0 to 0.15.1 [\#547](https://github.com/DEFRA/pafs-user/pull/547) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump net-imap from 0.3.6 to 0.3.7 [\#544](https://github.com/DEFRA/pafs-user/pull/544) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump jquery-rails from 4.5.1 to 4.6.0 [\#535](https://github.com/DEFRA/pafs-user/pull/535) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.6.6](https://github.com/defra/pafs-user/tree/v1.6.6) (2023-07-13)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.6.5...v1.6.6)
+
+**Merged pull requests:**
+
+- Release/v1.6.6 [\#541](https://github.com/DEFRA/pafs-user/pull/541) ([brujeo](https://github.com/brujeo))
+- Bump pafs\_core from `eff5a38` to `1e8109b` [\#540](https://github.com/DEFRA/pafs-user/pull/540) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Updating dependencies [\#533](https://github.com/DEFRA/pafs-user/pull/533) ([brujeo](https://github.com/brujeo))
+- Update CHANGELOG [\#525](https://github.com/DEFRA/pafs-user/pull/525) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+
 ## [v1.6.5](https://github.com/defra/pafs-user/tree/v1.6.5) (2023-05-31)
 
 [Full Changelog](https://github.com/defra/pafs-user/compare/v1.6.4...v1.6.5)
