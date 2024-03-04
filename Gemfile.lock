@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: ec1b30f5f7531eb0835156f98200010d81fa471b
+  revision: da888811d10552465615b07a401fb1c6f9145c6b
   branch: main
   specs:
     pafs_core (0.0.2)
@@ -352,7 +352,7 @@ GEM
     public_suffix (5.0.4)
     racc (1.7.3)
     rack (2.2.8.1)
-    rack-cors (2.0.1)
+    rack-cors (2.0.2)
       rack (>= 2.0.0)
     rack-session (1.0.2)
       rack (< 3)
