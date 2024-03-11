@@ -2,10 +2,26 @@
 
 ## [Unreleased](https://github.com/defra/pafs-user/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/pafs-user/compare/v1.7.0...HEAD)
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.7.1...HEAD)
 
 **Merged pull requests:**
 
+- Bump pafs\_core from `72be31d` to `574da0f` [\#661](https://github.com/DEFRA/pafs-user/pull/661) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `4d7d049` to `72be31d` [\#660](https://github.com/DEFRA/pafs-user/pull/660) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `da88881` to `4d7d049` [\#658](https://github.com/DEFRA/pafs-user/pull/658) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump defra\_ruby\_template from 3.15.0 to 3.15.1 [\#657](https://github.com/DEFRA/pafs-user/pull/657) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `ec1b30f` to `da88881` [\#656](https://github.com/DEFRA/pafs-user/pull/656) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pg from 1.5.4 to 1.5.6 [\#652](https://github.com/DEFRA/pafs-user/pull/652) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump dotenv-rails from 3.0.2 to 3.1.0 [\#649](https://github.com/DEFRA/pafs-user/pull/649) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump letter\_opener from 1.8.1 to 1.9.0 [\#646](https://github.com/DEFRA/pafs-user/pull/646) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.7.1](https://github.com/defra/pafs-user/tree/v1.7.1) (2024-03-04)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.7.0...v1.7.1)
+
+**Merged pull requests:**
+
+- Release/v1.7.1 [\#655](https://github.com/DEFRA/pafs-user/pull/655) ([brujeo](https://github.com/brujeo))
 - Bump pafs\_core from `fcb9c96` to `62286e6` [\#647](https://github.com/DEFRA/pafs-user/pull/647) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `3217703` to `62286e6` [\#644](https://github.com/DEFRA/pafs-user/pull/644) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump net-smtp from 0.4.0 to 0.4.0.1 [\#643](https://github.com/DEFRA/pafs-user/pull/643) ([dependabot[bot]](https://github.com/apps/dependabot))
