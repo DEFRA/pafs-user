@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: f7d61b2f6a8b3db3ed3ee765ddcbe63e770e525a
+  revision: e71d709c127ed16cde4e16aeaa80902dff14f939
   branch: main
   specs:
     pafs_core (0.0.2)
@@ -133,7 +133,7 @@ GEM
     async-pool (0.4.0)
       async (>= 1.25)
     aws-eventstream (1.3.0)
-    aws-partitions (1.899.0)
+    aws-partitions (1.900.0)
     aws-sdk-core (3.191.4)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
@@ -403,7 +403,7 @@ GEM
     rdoc (6.6.3.1)
       psych (>= 4.0.0)
     regexp_parser (2.9.0)
-    reline (0.4.3)
+    reline (0.5.0)
       io-console (~> 0.5)
     responders (3.1.1)
       actionpack (>= 5.2)
