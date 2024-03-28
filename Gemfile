@@ -45,7 +45,7 @@ gem "whenever", require: false
 # shared PAFS code
 gem "pafs_core",
     git: "https://github.com/DEFRA/pafs_core",
-    branch: "main"
+    branch: "feature/RUBY-2881-pa-fs-bau-bo-add-new-columns-to-fcrm-1-report"
 
 # GOV.UK styling
 gem "defra_ruby_template"
