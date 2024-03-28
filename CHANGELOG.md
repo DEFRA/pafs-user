@@ -2,10 +2,23 @@
 
 ## [Unreleased](https://github.com/defra/pafs-user/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/pafs-user/compare/v1.7.1...HEAD)
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.7.2...HEAD)
 
 **Merged pull requests:**
 
+- Bump pafs\_core from `f7d61b2` to `e71d709` [\#671](https://github.com/DEFRA/pafs-user/pull/671) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `574da0f` to `f7d61b2` [\#668](https://github.com/DEFRA/pafs-user/pull/668) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rspec-rails from 6.1.1 to 6.1.2 [\#667](https://github.com/DEFRA/pafs-user/pull/667) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump shoulda-matchers from 6.1.0 to 6.2.0 [\#666](https://github.com/DEFRA/pafs-user/pull/666) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop from 1.60.2 to 1.62.1 [\#663](https://github.com/DEFRA/pafs-user/pull/663) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.7.2](https://github.com/defra/pafs-user/tree/v1.7.2) (2024-03-11)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.7.1...v1.7.2)
+
+**Merged pull requests:**
+
+- Update CHANGELOG [\#662](https://github.com/DEFRA/pafs-user/pull/662) ([brujeo](https://github.com/brujeo))
 - Bump pafs\_core from `72be31d` to `574da0f` [\#661](https://github.com/DEFRA/pafs-user/pull/661) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `4d7d049` to `72be31d` [\#660](https://github.com/DEFRA/pafs-user/pull/660) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `da88881` to `4d7d049` [\#658](https://github.com/DEFRA/pafs-user/pull/658) ([dependabot[bot]](https://github.com/apps/dependabot))
