@@ -28,7 +28,7 @@ RSpec.describe "Creating a project" do
       before { login_as(user) }
 
       it "doesn't let me bootstrap a project" do
-        expect(page).not_to have_text("Create a new proposal")
+        expect(page).to have_no_text("Create a new proposal")
       end
 
       it "provides a link to create an EA-led proposal" do

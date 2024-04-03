@@ -9,7 +9,7 @@ RSpec.describe "Authentication" do
 
       fill_in "Email address", with: user.email
       fill_in "Password", with: "invalid"
-      click_button "Sign in"
+      click_on "Sign in"
 
       expect(page).to have_css("h1", text: "Sign in")
     end
@@ -23,7 +23,7 @@ RSpec.describe "Authentication" do
 
       fill_in "Email address", with: "invalid@example.com"
       fill_in "Password", with: "Secr3tP@ssw0rd"
-      click_button "Sign in"
+      click_on "Sign in"
 
       expect(page).to have_css("h1", text: "Sign in")
     end
