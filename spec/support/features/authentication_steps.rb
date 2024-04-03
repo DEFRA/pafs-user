@@ -9,7 +9,7 @@ module Features
 
       fill_in "Email address", with: user.email
       fill_in "Password", with: password
-      click_button "Sign in"
+      click_on "Sign in"
 
       expect(page).to have_css("h1", text: "Your proposals")
     end
