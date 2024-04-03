@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_02_152826) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_27_113556) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
   enable_extension "hstore"
@@ -328,9 +328,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_02_152826) do
     t.boolean "summer_economic_fund", default: false
     t.integer "earliest_start_month"
     t.integer "earliest_start_year"
+    t.string "updated_by_type"
+    t.bigint "updated_by_id"
     t.index ["reference_number", "version"], name: "index_pafs_core_projects_on_reference_number_and_version", unique: true
     t.index ["slug"], name: "index_pafs_core_projects_on_slug", unique: true
     t.index ["submitted_to_pol"], name: "index_pafs_core_projects_on_submitted_to_pol"
+    t.index ["updated_by_type", "updated_by_id"], name: "index_pafs_core_projects_on_updated_by"
   end
 
   create_table "pafs_core_reference_counters", force: :cascade do |t|
