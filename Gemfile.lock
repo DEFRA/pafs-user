@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 23d4d48d95de2771e7c8e55f89db75d42b368679
-  branch: feature/RUBY-2881-pa-fs-bau-bo-add-new-columns-to-fcrm-1-report
+  revision: b3f00bc3fd81b2fff28bbf07d1282e1210ec6a21
+  branch: main
   specs:
     pafs_core (0.0.2)
       aws-sdk-s3 (~> 1.67)
@@ -133,8 +133,8 @@ GEM
     async-pool (0.4.0)
       async (>= 1.25)
     aws-eventstream (1.3.0)
-    aws-partitions (1.902.0)
-    aws-sdk-core (3.191.5)
+    aws-partitions (1.906.0)
+    aws-sdk-core (3.191.6)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.8)
@@ -142,7 +142,7 @@ GEM
     aws-sdk-kms (1.78.0)
       aws-sdk-core (~> 3, >= 3.191.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.146.0)
+    aws-sdk-s3 (1.146.1)
       aws-sdk-core (~> 3, >= 3.191.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.8)
