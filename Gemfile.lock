@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: b3f00bc3fd81b2fff28bbf07d1282e1210ec6a21
+  revision: 25c2b85e63c69f6ecd7a9cc0cb7bd579ff86970e
   branch: main
   specs:
     pafs_core (0.0.2)
@@ -133,17 +133,17 @@ GEM
     async-pool (0.4.0)
       async (>= 1.25)
     aws-eventstream (1.3.0)
-    aws-partitions (1.906.0)
-    aws-sdk-core (3.191.6)
+    aws-partitions (1.916.0)
+    aws-sdk-core (3.192.1)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.8)
       jmespath (~> 1, >= 1.6.1)
-    aws-sdk-kms (1.78.0)
+    aws-sdk-kms (1.79.0)
       aws-sdk-core (~> 3, >= 3.191.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.146.1)
-      aws-sdk-core (~> 3, >= 3.191.0)
+    aws-sdk-s3 (1.147.0)
+      aws-sdk-core (~> 3, >= 3.192.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.8)
     aws-sigv4 (1.8.0)
@@ -305,7 +305,7 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.5)
+    mini_portile2 (2.8.6)
     minitest (5.22.3)
     msgpack (1.7.2)
     multi_json (1.15.0)
@@ -322,7 +322,7 @@ GEM
     net-smtp (0.5.0)
       net-protocol
     nio4r (2.7.1)
-    nokogiri (1.16.3)
+    nokogiri (1.16.4)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     octokit (4.25.1)
@@ -404,7 +404,7 @@ GEM
     rdoc (6.6.3.1)
       psych (>= 4.0.0)
     regexp_parser (2.9.0)
-    reline (0.5.0)
+    reline (0.5.2)
       io-console (~> 0.5)
     responders (3.1.1)
       actionpack (>= 5.2)
@@ -460,7 +460,7 @@ GEM
       rubocop-factory_bot (~> 2.22)
     ruby-prof (1.7.0)
     ruby-progressbar (1.13.0)
-    rubyXL (3.4.26)
+    rubyXL (3.4.27)
       nokogiri (>= 1.10.8)
       rubyzip (>= 1.3.0)
     rubyzip (2.3.2)
