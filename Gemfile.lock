@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/tonyheadford/dibble
-  revision: 06fe3d0811b6f601607b2b9aa61f6c3f8b4965a1
+  revision: a8cdd1a38b0040a62ec67f150bb2b8bfe5ed9bdc
   branch: develop
   specs:
     dibble (0.1.0)
