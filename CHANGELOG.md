@@ -2,10 +2,28 @@
 
 ## [Unreleased](https://github.com/defra/pafs-user/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/pafs-user/compare/v1.7.2...HEAD)
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.7.3...HEAD)
 
 **Merged pull requests:**
 
+- Bump pafs\_core from `25c2b85` to `8c8adc6` [\#691](https://github.com/DEFRA/pafs-user/pull/691) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump devise from 4.9.3 to 4.9.4 [\#690](https://github.com/DEFRA/pafs-user/pull/690) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump faraday-retry from 2.2.0 to 2.2.1 [\#689](https://github.com/DEFRA/pafs-user/pull/689) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `b3f00bc` to `25c2b85` [\#688](https://github.com/DEFRA/pafs-user/pull/688) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump spring from 4.1.3 to 4.2.0 [\#687](https://github.com/DEFRA/pafs-user/pull/687) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop from 1.62.1 to 1.63.2 [\#686](https://github.com/DEFRA/pafs-user/pull/686) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rake from 13.1.0 to 13.2.1 [\#683](https://github.com/DEFRA/pafs-user/pull/683) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Feature/ruby 2881 pa fs bau bo add new columns to fcrm 1 report [\#679](https://github.com/DEFRA/pafs-user/pull/679) ([brujeo](https://github.com/brujeo))
+- Bump faker from 3.2.3 to 3.3.1 [\#678](https://github.com/DEFRA/pafs-user/pull/678) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump letter\_opener from 1.9.0 to 1.10.0 [\#676](https://github.com/DEFRA/pafs-user/pull/676) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.7.3](https://github.com/defra/pafs-user/tree/v1.7.3) (2024-03-28)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.7.2...v1.7.3)
+
+**Merged pull requests:**
+
+- Release/v1.7.3 [\#674](https://github.com/DEFRA/pafs-user/pull/674) ([brujeo](https://github.com/brujeo))
 - Bump pafs\_core from `f7d61b2` to `e71d709` [\#671](https://github.com/DEFRA/pafs-user/pull/671) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `574da0f` to `f7d61b2` [\#668](https://github.com/DEFRA/pafs-user/pull/668) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump rspec-rails from 6.1.1 to 6.1.2 [\#667](https://github.com/DEFRA/pafs-user/pull/667) ([dependabot[bot]](https://github.com/apps/dependabot))
