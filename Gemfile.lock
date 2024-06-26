@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 8c8adc6a4c1c064936db05e7e17fbd80d3d5b72c
+  revision: d3b877e548ef9243c920f3b20ce696ba9a1998ee
   branch: main
   specs:
     pafs_core (0.0.2)
@@ -133,17 +133,17 @@ GEM
     async-pool (0.4.0)
       async (>= 1.25)
     aws-eventstream (1.3.0)
-    aws-partitions (1.916.0)
-    aws-sdk-core (3.192.1)
+    aws-partitions (1.947.0)
+    aws-sdk-core (3.199.0)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.8)
       jmespath (~> 1, >= 1.6.1)
-    aws-sdk-kms (1.79.0)
-      aws-sdk-core (~> 3, >= 3.191.0)
+    aws-sdk-kms (1.87.0)
+      aws-sdk-core (~> 3, >= 3.199.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.147.0)
-      aws-sdk-core (~> 3, >= 3.192.0)
+    aws-sdk-s3 (1.154.0)
+      aws-sdk-core (~> 3, >= 3.199.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.8)
     aws-sigv4 (1.8.0)
@@ -226,7 +226,7 @@ GEM
       railties (>= 5.0.0)
     faker (3.3.1)
       i18n (>= 1.8.11, < 2)
-    faraday (2.9.0)
+    faraday (2.9.2)
       faraday-net_http (>= 2.0, < 3.2)
     faraday-http-cache (2.5.1)
       faraday (>= 0.8)
@@ -323,7 +323,7 @@ GEM
       timeout
     net-smtp (0.5.0)
       net-protocol
-    nio4r (2.7.1)
+    nio4r (2.7.3)
     nokogiri (1.16.6)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
