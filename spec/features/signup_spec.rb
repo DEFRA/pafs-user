@@ -9,7 +9,7 @@ RSpec.describe "Signup" do
 
       fill_in "Password", with: "Password123!"
       fill_in "Confirm password", with: "Password123!"
-      click_button "Create password"
+      click_on "Create password"
     end
 
     it "I can set my password" do
@@ -17,7 +17,7 @@ RSpec.describe "Signup" do
     end
 
     it "after signing out I can sign in again" do
-      click_link "Sign out"
+      click_on "Sign out"
       expect(page).to have_css("h1", text: "Sign in")
 
       login_as(user, password: "Password123!")

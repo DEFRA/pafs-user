@@ -12,18 +12,18 @@ RSpec.shared_examples "bootstrap a new proposal" do |user_type|
     login_as(user)
 
     visit "/"
-    click_link "Create a new proposal"
+    click_on "Create a new proposal"
 
     fill_in "project-name-step-name-field", with: name
-    click_button "Save and continue"
+    click_on "Save and continue"
 
     choose "project-type-step-project-type-#{proposal_type}-field"
-    click_button "Save and continue"
+    click_on "Save and continue"
 
     expect(page).to have_css("legend", text: "In what financial year will the project stop spending funds?")
 
     choose "April #{year} to March #{year + 1}"
-    click_button "Save and continue"
+    click_on "Save and continue"
   end
   # rubocop:enable RSpec/ExampleLength
 end
