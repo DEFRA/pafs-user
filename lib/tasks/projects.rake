@@ -78,7 +78,7 @@ namespace :projects do
   desc "Set service into a known state"
   task delete_all: :environment do
     user = nil
-    storage ||= if Rails.env.development? || Rails.env.test?
+    storage ||= if Rails.env.local?
                   PafsCore::DevelopmentFileStorageService.new user
                 else
                   PafsCore::FileStorageService.new user
