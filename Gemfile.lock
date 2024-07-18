@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 647a1078fa701157f97ea6f0c78a565e5ce7f5d1
+  revision: b1dbf67605ac216dc20b1df8ff12928f51a2a6ee
   branch: main
   specs:
     pafs_core (0.0.2)
@@ -133,19 +133,19 @@ GEM
     async-pool (0.4.0)
       async (>= 1.25)
     aws-eventstream (1.3.0)
-    aws-partitions (1.947.0)
-    aws-sdk-core (3.199.0)
+    aws-partitions (1.956.0)
+    aws-sdk-core (3.201.1)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.8)
       jmespath (~> 1, >= 1.6.1)
-    aws-sdk-kms (1.87.0)
-      aws-sdk-core (~> 3, >= 3.199.0)
-      aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.154.0)
-      aws-sdk-core (~> 3, >= 3.199.0)
+    aws-sdk-kms (1.88.0)
+      aws-sdk-core (~> 3, >= 3.201.0)
+      aws-sigv4 (~> 1.5)
+    aws-sdk-s3 (1.156.0)
+      aws-sdk-core (~> 3, >= 3.201.0)
       aws-sdk-kms (~> 1)
-      aws-sigv4 (~> 1.8)
+      aws-sigv4 (~> 1.5)
     aws-sigv4 (1.8.0)
       aws-eventstream (~> 1, >= 1.0.2)
     base64 (0.2.0)
@@ -226,8 +226,9 @@ GEM
       railties (>= 5.0.0)
     faker (3.4.2)
       i18n (>= 1.8.11, < 2)
-    faraday (2.9.2)
+    faraday (2.10.0)
       faraday-net_http (>= 2.0, < 3.2)
+      logger
     faraday-http-cache (2.5.1)
       faraday (>= 0.8)
     faraday-net_http (3.1.0)
@@ -262,7 +263,7 @@ GEM
       concurrent-ruby (~> 1.0)
     io-console (0.7.2)
     io-event (1.5.1)
-    irb (1.13.2)
+    irb (1.14.0)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     jbuilder (2.12.0)
@@ -295,6 +296,7 @@ GEM
       childprocess (~> 5.0)
     letter_opener (1.10.0)
       launchy (>= 2.2, < 4)
+    logger (1.6.0)
     loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
