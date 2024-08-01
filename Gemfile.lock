@@ -338,9 +338,10 @@ GEM
     parser (3.3.4.0)
       ast (~> 2.4.1)
       racc
-    passenger (6.0.22)
-      rack
-      rake (>= 0.8.1)
+    passenger (6.0.23)
+      rack (>= 1.6.13)
+      rackup
+      rake (>= 12.3.3)
     pg (1.5.6)
     protocol-hpack (1.4.3)
     protocol-http (0.26.1)
