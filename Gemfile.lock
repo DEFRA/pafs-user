@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 8091f16e974eb34796a5525cfb32eaa1283a9317
+  revision: d790f27a1dfa396e8167f49d2f03e33a5839a474
   branch: main
   specs:
     pafs_core (0.0.2)
@@ -8,7 +8,7 @@ GIT
       bstard
       clamav-client
       defra_ruby_alert (~> 2.2)
-      defra_ruby_template (~> 3)
+      defra_ruby_template (~> 5.0)
       faraday
       faraday-retry
       govuk_design_system_formbuilder (~> 3)
@@ -133,20 +133,20 @@ GEM
     async-pool (0.4.0)
       async (>= 1.25)
     aws-eventstream (1.3.0)
-    aws-partitions (1.956.0)
-    aws-sdk-core (3.201.1)
+    aws-partitions (1.968.0)
+    aws-sdk-core (3.202.0)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
-      aws-sigv4 (~> 1.8)
+      aws-sigv4 (~> 1.9)
       jmespath (~> 1, >= 1.6.1)
     aws-sdk-kms (1.88.0)
       aws-sdk-core (~> 3, >= 3.201.0)
       aws-sigv4 (~> 1.5)
-    aws-sdk-s3 (1.156.0)
+    aws-sdk-s3 (1.159.0)
       aws-sdk-core (~> 3, >= 3.201.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.5)
-    aws-sigv4 (1.8.0)
+    aws-sigv4 (1.9.1)
       aws-eventstream (~> 1, >= 1.0.2)
     base64 (0.2.0)
     bcrypt (3.1.20)
@@ -198,7 +198,7 @@ GEM
       rubocop-factory_bot
       rubocop-rake
       rubocop-rspec
-    defra_ruby_template (3.15.1)
+    defra_ruby_template (5.4.1)
     devise (4.9.4)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -488,7 +488,7 @@ GEM
       faraday (>= 0.17.3, < 3)
     sdoc (2.6.1)
       rdoc (>= 5.0)
-    secure_headers (6.5.0)
+    secure_headers (6.7.0)
     shoulda-matchers (6.4.0)
       activesupport (>= 5.2.0)
     simplecov (0.22.0)
