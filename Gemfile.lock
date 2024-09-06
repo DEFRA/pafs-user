@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 6e93e313c2d8912e72b668784eee42063292099f
+  revision: 627d8d80fc75a88e8b5d0560cd52cce5115f88aa
   branch: main
   specs:
     pafs_core (0.0.2)
@@ -404,7 +404,7 @@ GEM
     rdoc (6.7.0)
       psych (>= 4.0.0)
     regexp_parser (2.9.2)
-    reline (0.5.9)
+    reline (0.5.10)
       io-console (~> 0.5)
     responders (3.1.1)
       actionpack (>= 5.2)
