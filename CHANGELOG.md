@@ -2,10 +2,56 @@
 
 ## [Unreleased](https://github.com/defra/pafs-user/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/pafs-user/compare/v1.7.3...HEAD)
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.7.4...HEAD)
 
 **Merged pull requests:**
 
+- Bump pafs\_core from `673169d` to `56f2593` [\#764](https://github.com/DEFRA/pafs-user/pull/764) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `627d8d8` to `673169d` [\#760](https://github.com/DEFRA/pafs-user/pull/760) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `6e93e31` to `627d8d8` [\#755](https://github.com/DEFRA/pafs-user/pull/755) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `e6ecc1f` to `6e93e31` [\#754](https://github.com/DEFRA/pafs-user/pull/754) ([dependabot[bot]](https://github.com/apps/dependabot))
+- \[RUBY-3142\] Update Gemfile.lock dependencies [\#749](https://github.com/DEFRA/pafs-user/pull/749) ([brujeo](https://github.com/brujeo))
+- Update Gemfile.lock dependencies [\#745](https://github.com/DEFRA/pafs-user/pull/745) ([jjromeo](https://github.com/jjromeo))
+- Bump net-imap from 0.4.14 to 0.4.15 [\#744](https://github.com/DEFRA/pafs-user/pull/744) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rexml from 3.3.4 to 3.3.6 [\#740](https://github.com/DEFRA/pafs-user/pull/740) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump shoulda-matchers from 6.2.0 to 6.4.0 [\#738](https://github.com/DEFRA/pafs-user/pull/738) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rspec-rails from 6.1.3 to 6.1.4 [\#737](https://github.com/DEFRA/pafs-user/pull/737) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop from 1.65.0 to 1.65.1 [\#733](https://github.com/DEFRA/pafs-user/pull/733) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump passenger from 6.0.22 to 6.0.23 [\#730](https://github.com/DEFRA/pafs-user/pull/730) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pg from 1.5.6 to 1.5.7 [\#729](https://github.com/DEFRA/pafs-user/pull/729) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `b1dbf67` to `8091f16` [\#728](https://github.com/DEFRA/pafs-user/pull/728) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `647a107` to `b1dbf67` [\#727](https://github.com/DEFRA/pafs-user/pull/727) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump faker from 3.4.1 to 3.4.2 [\#726](https://github.com/DEFRA/pafs-user/pull/726) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop from 1.64.1 to 1.65.0 [\#724](https://github.com/DEFRA/pafs-user/pull/724) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-rails from 2.25.0 to 2.25.1 [\#721](https://github.com/DEFRA/pafs-user/pull/721) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-rails from 2.24.1 to 2.25.0 [\#720](https://github.com/DEFRA/pafs-user/pull/720) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump high\_voltage from 3.1.2 to 4.0.0 [\#719](https://github.com/DEFRA/pafs-user/pull/719) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `8c8adc6` to `647a107` [\#718](https://github.com/DEFRA/pafs-user/pull/718) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump faker from 3.3.1 to 3.4.1 [\#716](https://github.com/DEFRA/pafs-user/pull/716) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump net-imap from 0.4.10 to 0.4.14 [\#715](https://github.com/DEFRA/pafs-user/pull/715) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-factory\_bot from 2.25.1 to 2.26.1 [\#714](https://github.com/DEFRA/pafs-user/pull/714) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump passenger from 6.0.20 to 6.0.22 [\#713](https://github.com/DEFRA/pafs-user/pull/713) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rspec-rails from 6.1.2 to 6.1.3 [\#712](https://github.com/DEFRA/pafs-user/pull/712) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actiontext from 7.1.3.2 to 7.1.3.4 [\#708](https://github.com/DEFRA/pafs-user/pull/708) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop from 1.63.2 to 1.64.1 [\#705](https://github.com/DEFRA/pafs-user/pull/705) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rexml from 3.2.6 to 3.2.8 [\#703](https://github.com/DEFRA/pafs-user/pull/703) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump nokogiri from 1.16.4 to 1.16.5 [\#702](https://github.com/DEFRA/pafs-user/pull/702) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump dotenv-rails from 3.1.0 to 3.1.2 [\#699](https://github.com/DEFRA/pafs-user/pull/699) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump jbuilder from 2.11.5 to 2.12.0 [\#696](https://github.com/DEFRA/pafs-user/pull/696) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump dibble from `06fe3d0` to `a8cdd1a` [\#694](https://github.com/DEFRA/pafs-user/pull/694) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump spring from 4.2.0 to 4.2.1 [\#693](https://github.com/DEFRA/pafs-user/pull/693) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump factory\_bot\_rails from 6.2.0 to 6.4.3 [\#623](https://github.com/DEFRA/pafs-user/pull/623) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rbtrace from 0.4.14 to 0.5.1 [\#620](https://github.com/DEFRA/pafs-user/pull/620) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump benchmark-ips from 2.12.0 to 2.13.0 [\#618](https://github.com/DEFRA/pafs-user/pull/618) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump sucker\_punch from 3.1.0 to 3.2.0 [\#615](https://github.com/DEFRA/pafs-user/pull/615) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.7.4](https://github.com/defra/pafs-user/tree/v1.7.4) (2024-05-08)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.7.3...v1.7.4)
+
+**Merged pull requests:**
+
+- Update CHANGELOG [\#700](https://github.com/DEFRA/pafs-user/pull/700) ([brujeo](https://github.com/brujeo))
 - Bump pafs\_core from `25c2b85` to `8c8adc6` [\#691](https://github.com/DEFRA/pafs-user/pull/691) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump devise from 4.9.3 to 4.9.4 [\#690](https://github.com/DEFRA/pafs-user/pull/690) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump faraday-retry from 2.2.0 to 2.2.1 [\#689](https://github.com/DEFRA/pafs-user/pull/689) ([dependabot[bot]](https://github.com/apps/dependabot))
@@ -92,7 +138,7 @@
 - Bump devise from 4.9.2 to 4.9.3 [\#586](https://github.com/DEFRA/pafs-user/pull/586) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump rubocop from 1.56.4 to 1.57.0 [\#585](https://github.com/DEFRA/pafs-user/pull/585) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump net-imap from 0.4.0 to 0.4.1 [\#584](https://github.com/DEFRA/pafs-user/pull/584) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Remove redundant legacy\_connection\_handling setting [\#583](https://github.com/DEFRA/pafs-user/pull/583) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Remove redundant legacy\_connection\_handling setting [\#583](https://github.com/DEFRA/pafs-user/pull/583) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - RUBY-2729: adjusting fixture data as sub\_type is now mandatory field for pso areas [\#579](https://github.com/DEFRA/pafs-user/pull/579) ([brujeo](https://github.com/brujeo))
 - Bump net-smtp from 0.3.3 to 0.4.0 [\#571](https://github.com/DEFRA/pafs-user/pull/571) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump rubocop-factory\_bot from 2.23.1 to 2.24.0 [\#570](https://github.com/DEFRA/pafs-user/pull/570) ([dependabot[bot]](https://github.com/apps/dependabot))
@@ -103,7 +149,7 @@
 - updating dependencies [\#562](https://github.com/DEFRA/pafs-user/pull/562) ([brujeo](https://github.com/brujeo))
 - Bump rubocop from 1.56.0 to 1.56.2 [\#559](https://github.com/DEFRA/pafs-user/pull/559) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `b5e5ce0` to `825cc8b` [\#556](https://github.com/DEFRA/pafs-user/pull/556) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Bump engine version [\#552](https://github.com/DEFRA/pafs-user/pull/552) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump engine version [\#552](https://github.com/DEFRA/pafs-user/pull/552) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump rubocop-rspec from 2.22.0 to 2.23.2 [\#550](https://github.com/DEFRA/pafs-user/pull/550) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump rubocop from 1.52.1 to 1.56.0 [\#549](https://github.com/DEFRA/pafs-user/pull/549) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump protocol-http1 from 0.15.0 to 0.15.1 [\#547](https://github.com/DEFRA/pafs-user/pull/547) ([dependabot[bot]](https://github.com/apps/dependabot))
@@ -119,7 +165,7 @@
 - Release/v1.6.6 [\#541](https://github.com/DEFRA/pafs-user/pull/541) ([brujeo](https://github.com/brujeo))
 - Bump pafs\_core from `eff5a38` to `1e8109b` [\#540](https://github.com/DEFRA/pafs-user/pull/540) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Updating dependencies [\#533](https://github.com/DEFRA/pafs-user/pull/533) ([brujeo](https://github.com/brujeo))
-- Update CHANGELOG [\#525](https://github.com/DEFRA/pafs-user/pull/525) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Update CHANGELOG [\#525](https://github.com/DEFRA/pafs-user/pull/525) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 
 ## [v1.6.5](https://github.com/defra/pafs-user/tree/v1.6.5) (2023-05-31)
 
@@ -129,13 +175,13 @@
 
 - Bump pafs\_core from `dc8cee6` to `3f375e3` [\#523](https://github.com/DEFRA/pafs-user/pull/523) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `5e921e4` to `dc8cee6` [\#521](https://github.com/DEFRA/pafs-user/pull/521) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Chore/accessibility statement [\#517](https://github.com/DEFRA/pafs-user/pull/517) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- Fix/autoload [\#515](https://github.com/DEFRA/pafs-user/pull/515) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Chore/accessibility statement [\#517](https://github.com/DEFRA/pafs-user/pull/517) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Fix/autoload [\#515](https://github.com/DEFRA/pafs-user/pull/515) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump pg from 1.4.6 to 1.5.3 [\#510](https://github.com/DEFRA/pafs-user/pull/510) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Upgrade to Rails 7 [\#509](https://github.com/DEFRA/pafs-user/pull/509) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Upgrade to Rails 7 [\#509](https://github.com/DEFRA/pafs-user/pull/509) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump pafs\_core from `aa8ea77` to `5bba967` [\#508](https://github.com/DEFRA/pafs-user/pull/508) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump devise\_invitable from 2.0.7 to 2.0.8 [\#507](https://github.com/DEFRA/pafs-user/pull/507) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Version 1.6.4 [\#505](https://github.com/DEFRA/pafs-user/pull/505) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Version 1.6.4 [\#505](https://github.com/DEFRA/pafs-user/pull/505) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 
 ## [v1.6.4](https://github.com/defra/pafs-user/tree/v1.6.4) (2023-04-26)
 
@@ -143,7 +189,7 @@
 
 **Merged pull requests:**
 
-- Chore/add owning rm as [\#504](https://github.com/DEFRA/pafs-user/pull/504) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Chore/add owning rm as [\#504](https://github.com/DEFRA/pafs-user/pull/504) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 
 ## [v1.6.3](https://github.com/defra/pafs-user/tree/v1.6.3) (2023-04-21)
 
@@ -151,9 +197,9 @@
 
 **Merged pull requests:**
 
-- Version 1.6.3 [\#502](https://github.com/DEFRA/pafs-user/pull/502) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Version 1.6.3 [\#502](https://github.com/DEFRA/pafs-user/pull/502) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump pafs\_core from `89dcf45` to `2bb55d0` [\#501](https://github.com/DEFRA/pafs-user/pull/501) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Update defra\_ruby\_alert gem version [\#500](https://github.com/DEFRA/pafs-user/pull/500) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Update defra\_ruby\_alert gem version [\#500](https://github.com/DEFRA/pafs-user/pull/500) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump pafs\_core from `6cf8ad7` to `89dcf45` [\#499](https://github.com/DEFRA/pafs-user/pull/499) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `69612b0` to `6cf8ad7` [\#491](https://github.com/DEFRA/pafs-user/pull/491) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `8035991` to `69612b0` [\#489](https://github.com/DEFRA/pafs-user/pull/489) ([dependabot[bot]](https://github.com/apps/dependabot))
@@ -164,14 +210,14 @@
 - Bump stackprof from 0.2.24 to 0.2.25 [\#482](https://github.com/DEFRA/pafs-user/pull/482) ([dependabot[bot]](https://github.com/apps/dependabot))
 - RUBY-2442 RMA updates [\#481](https://github.com/DEFRA/pafs-user/pull/481) ([timstone](https://github.com/timstone))
 - Remove program upload related code [\#480](https://github.com/DEFRA/pafs-user/pull/480) ([jjromeo](https://github.com/jjromeo))
-- Update change\_areas rake task to align with updated core service [\#478](https://github.com/DEFRA/pafs-user/pull/478) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Update change\_areas rake task to align with updated core service [\#478](https://github.com/DEFRA/pafs-user/pull/478) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump pafs\_core from `d1c6504` to `b0ede19` [\#477](https://github.com/DEFRA/pafs-user/pull/477) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `2c9a398` to `d1c6504` [\#475](https://github.com/DEFRA/pafs-user/pull/475) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump capybara from 3.38.0 to 3.39.0 [\#473](https://github.com/DEFRA/pafs-user/pull/473) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `69ed189` to `2c9a398` [\#471](https://github.com/DEFRA/pafs-user/pull/471) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `6ef325c` to `69ed189` [\#470](https://github.com/DEFRA/pafs-user/pull/470) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `3efff63` to `6ef325c` [\#468](https://github.com/DEFRA/pafs-user/pull/468) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Refactor viewing\_spec and remove rubocop exclusions [\#465](https://github.com/DEFRA/pafs-user/pull/465) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Refactor viewing\_spec and remove rubocop exclusions [\#465](https://github.com/DEFRA/pafs-user/pull/465) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump pafs\_core from `006fc9c` to `3efff63` [\#464](https://github.com/DEFRA/pafs-user/pull/464) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Specify to run areas:import task before db:seed [\#463](https://github.com/DEFRA/pafs-user/pull/463) ([endofunky](https://github.com/endofunky))
 - Bump pafs\_core from `f0c7ba8` to `006fc9c` [\#462](https://github.com/DEFRA/pafs-user/pull/462) ([dependabot[bot]](https://github.com/apps/dependabot))
@@ -184,7 +230,7 @@
 - Bump pafs\_core from `7654ae1` to `fd31245` [\#450](https://github.com/DEFRA/pafs-user/pull/450) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `de5ee8d` to `7654ae1` [\#449](https://github.com/DEFRA/pafs-user/pull/449) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `9b2bb33` to `de5ee8d` [\#448](https://github.com/DEFRA/pafs-user/pull/448) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Drop rails\_12factor [\#447](https://github.com/DEFRA/pafs-user/pull/447) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Drop rails\_12factor [\#447](https://github.com/DEFRA/pafs-user/pull/447) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump benchmark-ips from 2.11.0 to 2.12.0 [\#446](https://github.com/DEFRA/pafs-user/pull/446) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Updated areas data [\#445](https://github.com/DEFRA/pafs-user/pull/445) ([timstone](https://github.com/timstone))
 - Updating test user seed area types [\#444](https://github.com/DEFRA/pafs-user/pull/444) ([timstone](https://github.com/timstone))
@@ -200,10 +246,10 @@
 
 **Merged pull requests:**
 
-- Version 1.5.3 [\#439](https://github.com/DEFRA/pafs-user/pull/439) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Version 1.5.3 [\#439](https://github.com/DEFRA/pafs-user/pull/439) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Removing additional header for Cumbria RMA changes [\#437](https://github.com/DEFRA/pafs-user/pull/437) ([timstone](https://github.com/timstone))
-- Feature/change rmas task [\#435](https://github.com/DEFRA/pafs-user/pull/435) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- Change RMAs task [\#434](https://github.com/DEFRA/pafs-user/pull/434) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Feature/change rmas task [\#435](https://github.com/DEFRA/pafs-user/pull/435) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Change RMAs task [\#434](https://github.com/DEFRA/pafs-user/pull/434) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 
 ## [v1.5.2](https://github.com/defra/pafs-user/tree/v1.5.2) (2023-03-01)
 
@@ -211,7 +257,7 @@
 
 **Merged pull requests:**
 
-- Version 1.5.2 [\#433](https://github.com/DEFRA/pafs-user/pull/433) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Version 1.5.2 [\#433](https://github.com/DEFRA/pafs-user/pull/433) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - RUBY-2338 RMA rename and lrma type update [\#427](https://github.com/DEFRA/pafs-user/pull/427) ([timstone](https://github.com/timstone))
 
 ## [v1.5.1](https://github.com/defra/pafs-user/tree/v1.5.1) (2023-02-15)
@@ -220,9 +266,9 @@
 
 **Merged pull requests:**
 
-- Version 1.5.1 [\#425](https://github.com/DEFRA/pafs-user/pull/425) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- Area import and renaming [\#423](https://github.com/DEFRA/pafs-user/pull/423) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- Bump engine version and pin CI ubuntu version [\#416](https://github.com/DEFRA/pafs-user/pull/416) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Version 1.5.1 [\#425](https://github.com/DEFRA/pafs-user/pull/425) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Area import and renaming [\#423](https://github.com/DEFRA/pafs-user/pull/423) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Bump engine version and pin CI ubuntu version [\#416](https://github.com/DEFRA/pafs-user/pull/416) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump globalid from 1.0.0 to 1.0.1 [\#412](https://github.com/DEFRA/pafs-user/pull/412) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump rack from 2.2.4 to 2.2.6.2 [\#411](https://github.com/DEFRA/pafs-user/pull/411) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump sdoc from 2.5.0 to 2.6.0 [\#410](https://github.com/DEFRA/pafs-user/pull/410) ([dependabot[bot]](https://github.com/apps/dependabot))
@@ -241,46 +287,46 @@
 **Merged pull requests:**
 
 - Banner feedback link update [\#398](https://github.com/DEFRA/pafs-user/pull/398) ([timstone](https://github.com/timstone))
-- Fix uglifier / ES6 issue [\#395](https://github.com/DEFRA/pafs-user/pull/395) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Fix uglifier / ES6 issue [\#395](https://github.com/DEFRA/pafs-user/pull/395) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump pafs\_core from `8d46b45` to `dd95417` [\#393](https://github.com/DEFRA/pafs-user/pull/393) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump rails-html-sanitizer from 1.4.3 to 1.4.4 [\#388](https://github.com/DEFRA/pafs-user/pull/388) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump loofah from 2.19.0 to 2.19.1 [\#386](https://github.com/DEFRA/pafs-user/pull/386) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump net-imap from 0.3.1 to 0.3.2 [\#385](https://github.com/DEFRA/pafs-user/pull/385) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump nokogiri from 1.13.9 to 1.13.10 [\#383](https://github.com/DEFRA/pafs-user/pull/383) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Load google analytics [\#382](https://github.com/DEFRA/pafs-user/pull/382) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Load google analytics [\#382](https://github.com/DEFRA/pafs-user/pull/382) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump pafs\_core from `fc17136` to `8d46b45` [\#381](https://github.com/DEFRA/pafs-user/pull/381) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Cookies logic and content [\#380](https://github.com/DEFRA/pafs-user/pull/380) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- Format edit password form [\#379](https://github.com/DEFRA/pafs-user/pull/379) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Cookies logic and content [\#380](https://github.com/DEFRA/pafs-user/pull/380) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Format edit password form [\#379](https://github.com/DEFRA/pafs-user/pull/379) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump pafs\_core from `ea8fc90` to `fc17136` [\#378](https://github.com/DEFRA/pafs-user/pull/378) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `fe5f0a0` to `ea8fc90` [\#377](https://github.com/DEFRA/pafs-user/pull/377) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `e85b33b` to `fe5f0a0` [\#376](https://github.com/DEFRA/pafs-user/pull/376) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `b903da3` to `e85b33b` [\#375](https://github.com/DEFRA/pafs-user/pull/375) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump stackprof from 0.2.22 to 0.2.23 [\#374](https://github.com/DEFRA/pafs-user/pull/374) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Layout fixes [\#373](https://github.com/DEFRA/pafs-user/pull/373) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- Use updated core form helpers [\#372](https://github.com/DEFRA/pafs-user/pull/372) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Layout fixes [\#373](https://github.com/DEFRA/pafs-user/pull/373) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Use updated core form helpers [\#372](https://github.com/DEFRA/pafs-user/pull/372) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump pafs\_core from `da9659c` to `7ef6778` [\#370](https://github.com/DEFRA/pafs-user/pull/370) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Bump engine version [\#369](https://github.com/DEFRA/pafs-user/pull/369) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- GOVUK FormBuilder fixes [\#368](https://github.com/DEFRA/pafs-user/pull/368) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- GOVUK form builder [\#366](https://github.com/DEFRA/pafs-user/pull/366) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- Update accessibility statement [\#362](https://github.com/DEFRA/pafs-user/pull/362) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump engine version [\#369](https://github.com/DEFRA/pafs-user/pull/369) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- GOVUK FormBuilder fixes [\#368](https://github.com/DEFRA/pafs-user/pull/368) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- GOVUK form builder [\#366](https://github.com/DEFRA/pafs-user/pull/366) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Update accessibility statement [\#362](https://github.com/DEFRA/pafs-user/pull/362) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump pafs\_core from `c708cc5` to `2115a33` [\#361](https://github.com/DEFRA/pafs-user/pull/361) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `b0b351a` to `c708cc5` [\#360](https://github.com/DEFRA/pafs-user/pull/360) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Page titles [\#358](https://github.com/DEFRA/pafs-user/pull/358) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- Fix typo [\#353](https://github.com/DEFRA/pafs-user/pull/353) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- Fix development team reference [\#352](https://github.com/DEFRA/pafs-user/pull/352) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- Add accessibility statement [\#351](https://github.com/DEFRA/pafs-user/pull/351) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Page titles [\#358](https://github.com/DEFRA/pafs-user/pull/358) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Fix typo [\#353](https://github.com/DEFRA/pafs-user/pull/353) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Fix development team reference [\#352](https://github.com/DEFRA/pafs-user/pull/352) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Add accessibility statement [\#351](https://github.com/DEFRA/pafs-user/pull/351) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump pafs\_core from `e7f77c8` to `4e28f84` [\#350](https://github.com/DEFRA/pafs-user/pull/350) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Bump pafs\_core version [\#349](https://github.com/DEFRA/pafs-user/pull/349) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- Add missing gems [\#348](https://github.com/DEFRA/pafs-user/pull/348) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- JS runtime and gem version fix [\#347](https://github.com/DEFRA/pafs-user/pull/347) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- Use sass-embedded [\#339](https://github.com/DEFRA/pafs-user/pull/339) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- Fix js runtime [\#338](https://github.com/DEFRA/pafs-user/pull/338) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump pafs\_core version [\#349](https://github.com/DEFRA/pafs-user/pull/349) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Add missing gems [\#348](https://github.com/DEFRA/pafs-user/pull/348) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- JS runtime and gem version fix [\#347](https://github.com/DEFRA/pafs-user/pull/347) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Use sass-embedded [\#339](https://github.com/DEFRA/pafs-user/pull/339) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Fix js runtime [\#338](https://github.com/DEFRA/pafs-user/pull/338) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump rspec-rails from 5.1.2 to 6.0.1 [\#337](https://github.com/DEFRA/pafs-user/pull/337) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Upgrade to ruby3 [\#336](https://github.com/DEFRA/pafs-user/pull/336) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- Use standard areas for test users [\#333](https://github.com/DEFRA/pafs-user/pull/333) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- Rename seeds env var [\#332](https://github.com/DEFRA/pafs-user/pull/332) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- Seed users [\#331](https://github.com/DEFRA/pafs-user/pull/331) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- CI updates [\#322](https://github.com/DEFRA/pafs-user/pull/322) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Upgrade to ruby3 [\#336](https://github.com/DEFRA/pafs-user/pull/336) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Use standard areas for test users [\#333](https://github.com/DEFRA/pafs-user/pull/333) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Rename seeds env var [\#332](https://github.com/DEFRA/pafs-user/pull/332) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Seed users [\#331](https://github.com/DEFRA/pafs-user/pull/331) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- CI updates [\#322](https://github.com/DEFRA/pafs-user/pull/322) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump stackprof from 0.2.21 to 0.2.22 [\#321](https://github.com/DEFRA/pafs-user/pull/321) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v1.4.0](https://github.com/defra/pafs-user/tree/v1.4.0) (2022-09-26)
@@ -289,8 +335,8 @@
 
 **Merged pull requests:**
 
-- Merge develop into main [\#317](https://github.com/DEFRA/pafs-user/pull/317) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
-- Bump pafs\_core version [\#314](https://github.com/DEFRA/pafs-user/pull/314) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Merge develop into main [\#317](https://github.com/DEFRA/pafs-user/pull/317) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Bump pafs\_core version [\#314](https://github.com/DEFRA/pafs-user/pull/314) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump spring from 4.0.0 to 4.1.0 [\#312](https://github.com/DEFRA/pafs-user/pull/312) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump stackprof from 0.2.19 to 0.2.21 [\#300](https://github.com/DEFRA/pafs-user/pull/300) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Feature/ruby 2030 update rma name [\#298](https://github.com/DEFRA/pafs-user/pull/298) ([kennyevil](https://github.com/kennyevil))
