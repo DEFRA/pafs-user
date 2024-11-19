@@ -338,7 +338,7 @@ GEM
       rack (>= 1.6.13)
       rackup
       rake (>= 12.3.3)
-    pg (1.5.7)
+    pg (1.5.9)
     protocol-hpack (1.4.3)
     protocol-http (0.26.1)
     protocol-http1 (0.18.0)
