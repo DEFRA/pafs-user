@@ -28,7 +28,6 @@ module ApplicationHelper
   def show_return_to_overview?
     ((controller_name == "projects" && action_name != "index" && action_name != "show") ||
       (controller_name == "downloads" && action_name == "index")) &&
-      defined?(:project) &&
       !@project.nil?
   end
 end
