@@ -59,10 +59,12 @@ group :development, :test do
   gem "pry"
   gem "rspec-rails"
   gem "rubocop"
+  gem "rubocop-capybara"
   gem "rubocop-factory_bot"
   gem "rubocop-rails"
   gem "rubocop-rake"
   gem "rubocop-rspec"
+  gem "rubocop-rspec_rails"
   gem "webrick"
 end
 
