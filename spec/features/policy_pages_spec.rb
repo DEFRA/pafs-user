@@ -7,13 +7,19 @@ RSpec.describe "Policy Page Traversal" do
     it "I cannot see the navigation bar when I visit cookies policy page" do
       visit "/cookies"
 
-      expect(page).to have_no_css("user-bar")
+      aggregate_failures do
+        expect(page).to have_css("h1", text: "Cookies on Project Application and Funding Service")
+        expect(page).to have_no_css("user-bar")
+      end
     end
 
     it "I cannot see the navigation bar when I visit privacy policy page" do
       visit "pages/privacy_notice"
 
-      expect(page).to have_no_css("user-bar")
+      aggregate_failures do
+        expect(page).to have_css("h1", text: "Project Application and Funding Service Privacy Notice")
+        expect(page).to have_no_css("user-bar")
+      end
     end
   end
 end
