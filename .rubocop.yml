@@ -3,13 +3,15 @@ inherit_from: .rubocop_todo.yml
 inherit_gem:
   defra_ruby_style:
     - default.yml
-require:
+
+plugins:
   - rubocop-capybara
   - rubocop-factory_bot
   - rubocop-rails
   - rubocop-rake
   - rubocop-rspec
   - rubocop-rspec_rails
+
 
 RSpec/DescribeClass:
   Exclude:
