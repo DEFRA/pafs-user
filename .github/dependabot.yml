@@ -7,7 +7,7 @@ updates:
   open-pull-requests-limit: 10
   versioning-strategy: lockfile-only
   # Dependabot is currently failing to pull gems hosted outside of RubyGems
-  # So we need to iggnore these gems for now so that dependabot does proceed with updating the other gems
+  # So we need to ignore these gems for now so that dependabot does proceed with updating the other gems
   ignore:
   - dependency-name: "dibble"
   - dependency-name: "pafs_core"
