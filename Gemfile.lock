@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 1368e4c2592504c4d9386f42a95c1e0d0b57db35
+  revision: bc44d5b15ba6a4ef53dfafa68e51e8ebbaa4e782
   branch: main
   specs:
-    pafs_core (0.0.2)
+    pafs_core (1.0.1)
       aws-sdk-s3
       bstard
       clamav-client
@@ -130,23 +130,23 @@ GEM
       faraday
     async-pool (0.10.3)
       async (>= 1.25)
-    aws-eventstream (1.3.2)
-    aws-partitions (1.1084.0)
-    aws-sdk-core (3.222.1)
+    aws-eventstream (1.4.0)
+    aws-partitions (1.1116.0)
+    aws-sdk-core (3.225.2)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.992.0)
       aws-sigv4 (~> 1.9)
       base64
       jmespath (~> 1, >= 1.6.1)
       logger
-    aws-sdk-kms (1.99.0)
-      aws-sdk-core (~> 3, >= 3.216.0)
+    aws-sdk-kms (1.105.0)
+      aws-sdk-core (~> 3, >= 3.225.0)
       aws-sigv4 (~> 1.5)
-    aws-sdk-s3 (1.183.0)
-      aws-sdk-core (~> 3, >= 3.216.0)
+    aws-sdk-s3 (1.189.1)
+      aws-sdk-core (~> 3, >= 3.225.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.5)
-    aws-sigv4 (1.11.0)
+    aws-sigv4 (1.12.1)
       aws-eventstream (~> 1, >= 1.0.2)
     base64 (0.2.0)
     bcrypt (3.1.20)
@@ -556,7 +556,7 @@ GEM
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
     webrick (1.9.1)
-    websocket-driver (0.7.7)
+    websocket-driver (0.8.0)
       base64
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
