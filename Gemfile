@@ -48,7 +48,9 @@ gem "pafs_core",
     branch: "main"
 
 # GOV.UK styling
-gem "defra_ruby_template"
+gem "defra_ruby_template",
+    git: "https://github.com/DEFRA/defra-ruby-template",
+    branch: "feature/RUBY_3809_govuk-frontend_upgrade"
 gem "govuk_design_system_formbuilder"
 
 gem "github_changelog_generator", require: false

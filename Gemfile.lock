@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/DEFRA/defra-ruby-template
+  revision: ab1a2af57622e031dc580f779e8e8275eff16dcc
+  branch: feature/RUBY_3809_govuk-frontend_upgrade
+  specs:
+    defra_ruby_template (5.10.2)
+
+GIT
   remote: https://github.com/DEFRA/pafs_core
   revision: dfc779a09bef45df1c1caf72547e515508daba9d
   branch: main
@@ -200,7 +207,6 @@ GEM
       rubocop-factory_bot
       rubocop-rake
       rubocop-rspec
-    defra_ruby_template (5.4.1)
     devise (4.9.4)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -580,7 +586,7 @@ DEPENDENCIES
   coffee-rails
   database_cleaner
   defra_ruby_style
-  defra_ruby_template
+  defra_ruby_template!
   devise
   devise-security
   devise_invitable
