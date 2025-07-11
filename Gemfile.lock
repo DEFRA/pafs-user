@@ -200,7 +200,7 @@ GEM
       rubocop-factory_bot
       rubocop-rake
       rubocop-rspec
-    defra_ruby_template (5.4.1)
+    defra_ruby_template (5.11.0)
     devise (4.9.4)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
