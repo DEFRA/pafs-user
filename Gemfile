@@ -45,7 +45,7 @@ gem "whenever", require: false
 # shared PAFS code
 gem "pafs_core",
     git: "https://github.com/DEFRA/pafs_core",
-    branch: "main"
+    branch: "feature/RUBY-3800-pafs-carbon-net-zero"
 
 # GOV.UK styling
 gem "defra_ruby_template"
