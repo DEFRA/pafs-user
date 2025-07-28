@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_07_02_180640) do
+ActiveRecord::Schema[7.2].define(version: 2025_07_23_122034) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
   enable_extension "hstore"
@@ -333,7 +333,7 @@ ActiveRecord::Schema[7.2].define(version: 2025_07_02_180640) do
     t.integer "pending_earliest_start_month"
     t.integer "pending_earliest_start_year"
     t.integer "pending_financial_year"
-    t.boolean "date_change_requires_confirmation", default: false, null: false
+    t.boolean "date_change_requires_confirmation"
     t.index ["name"], name: "index_pafs_core_projects_on_name", unique: true
     t.index ["reference_number", "version"], name: "index_pafs_core_projects_on_reference_number_and_version", unique: true
     t.index ["slug"], name: "index_pafs_core_projects_on_slug", unique: true
