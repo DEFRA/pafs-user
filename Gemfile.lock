@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: f0408574599805c50c3dbd74602c394d67f6b491
-  branch: main
+  revision: 3cba793ef0e16f34379f409c23a78771e87f784b
+  branch: RUBY-3889-pafs-changes-to-earliest-start-date-and-last-financial-year
   specs:
     pafs_core (1.0.1)
       aws-sdk-s3
@@ -131,7 +131,7 @@ GEM
     async-pool (0.10.3)
       async (>= 1.25)
     aws-eventstream (1.4.0)
-    aws-partitions (1.1133.0)
+    aws-partitions (1.1136.0)
     aws-sdk-core (3.227.0)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.992.0)
@@ -139,7 +139,7 @@ GEM
       base64
       jmespath (~> 1, >= 1.6.1)
       logger
-    aws-sdk-kms (1.107.0)
+    aws-sdk-kms (1.108.0)
       aws-sdk-core (~> 3, >= 3.227.0)
       aws-sigv4 (~> 1.5)
     aws-sdk-s3 (1.194.0)
