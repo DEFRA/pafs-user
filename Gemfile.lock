@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: c4f401c2ce74eee072d38899656a99b52b058603
+  revision: ab9ebf1df2d927b9ee843a0372648b3ef443a616
   branch: feature/RUBY-3800-pafs-carbon-net-zero
   specs:
     pafs_core (1.0.1)
@@ -131,7 +131,7 @@ GEM
     async-pool (0.10.3)
       async (>= 1.25)
     aws-eventstream (1.4.0)
-    aws-partitions (1.1134.0)
+    aws-partitions (1.1136.0)
     aws-sdk-core (3.227.0)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.992.0)
@@ -139,7 +139,7 @@ GEM
       base64
       jmespath (~> 1, >= 1.6.1)
       logger
-    aws-sdk-kms (1.107.0)
+    aws-sdk-kms (1.108.0)
       aws-sdk-core (~> 3, >= 3.227.0)
       aws-sigv4 (~> 1.5)
     aws-sdk-s3 (1.194.0)
@@ -229,7 +229,7 @@ GEM
       railties (>= 6.1.0)
     faker (3.5.2)
       i18n (>= 1.8.11, < 2)
-    faraday (2.13.3)
+    faraday (2.13.4)
       faraday-net_http (>= 2.0, < 3.5)
       json
       logger
@@ -286,7 +286,7 @@ GEM
     jquery-turbolinks (2.1.0)
       railties (>= 3.1.0)
       turbolinks
-    json (2.13.1)
+    json (2.13.2)
     kaminari (1.2.2)
       activesupport (>= 4.1.0)
       kaminari-actionview (= 1.2.2)
