@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 38632dffefb543eccc73a14a79110a6fd47b537a
+  revision: 93f3542f1faf666f0388c71b7b6c33d6711ec8d8
   branch: feature/RUBY-3800-pafs-carbon-net-zero
   specs:
     pafs_core (1.0.1)
