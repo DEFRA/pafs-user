@@ -2,10 +2,41 @@
 
 ## [Unreleased](https://github.com/defra/pafs-user/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/pafs-user/compare/v1.7.5...HEAD)
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.7.6...HEAD)
 
 **Merged pull requests:**
 
+- Bump pafs\_core from `bef2be0` to `44b60e0` [\#891](https://github.com/DEFRA/pafs-user/pull/891) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `6dc95d2` to `bef2be0` [\#889](https://github.com/DEFRA/pafs-user/pull/889) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `09e5b09` to `6dc95d2` [\#888](https://github.com/DEFRA/pafs-user/pull/888) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `0e10e90` to `09e5b09` [\#884](https://github.com/DEFRA/pafs-user/pull/884) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `f040857` to `0e10e90` [\#882](https://github.com/DEFRA/pafs-user/pull/882) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump engine and other gem versions plus lint fixes [\#880](https://github.com/DEFRA/pafs-user/pull/880) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- \[RUBY-3893\] Update defra\_ruby\_template gem from 5.4.1 to 5.11.0 in Gemfile.lock [\#876](https://github.com/DEFRA/pafs-user/pull/876) ([jjromeo](https://github.com/jjromeo))
+- Bump pafs\_core from `f4c876a` to `fe84972` [\#874](https://github.com/DEFRA/pafs-user/pull/874) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump faker from 3.5.1 to 3.5.2 [\#873](https://github.com/DEFRA/pafs-user/pull/873) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Restoring dependabot settings so it can pull engine updates [\#872](https://github.com/DEFRA/pafs-user/pull/872) ([brujeo](https://github.com/brujeo))
+- Update pafs\_core gem revision in Gemfile.lock to latest commit [\#871](https://github.com/DEFRA/pafs-user/pull/871) ([jjromeo](https://github.com/jjromeo))
+- Update pafs\_core gem to revision ccd0d3f2e54ee7175c7be09167a2614e0e5c5532 in Gemfile.lock [\#869](https://github.com/DEFRA/pafs-user/pull/869) ([jjromeo](https://github.com/jjromeo))
+- Update pafs\_core to revision dfc779a [\#863](https://github.com/DEFRA/pafs-user/pull/863) ([jjromeo](https://github.com/jjromeo))
+- Bump factory\_bot\_rails from 6.4.4 to 6.5.0 [\#861](https://github.com/DEFRA/pafs-user/pull/861) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rbtrace from 0.5.1 to 0.5.2 [\#860](https://github.com/DEFRA/pafs-user/pull/860) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rake from 13.2.1 to 13.3.0 [\#859](https://github.com/DEFRA/pafs-user/pull/859) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump devise\_invitable from 2.0.10 to 2.0.11 [\#855](https://github.com/DEFRA/pafs-user/pull/855) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump ruby-prof from 1.7.1 to 1.7.2 [\#854](https://github.com/DEFRA/pafs-user/pull/854) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-rails from 2.31.0 to 2.32.0 [\#852](https://github.com/DEFRA/pafs-user/pull/852) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump net-imap from 0.5.6 to 0.5.8 [\#847](https://github.com/DEFRA/pafs-user/pull/847) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump nokogiri from 1.18.7 to 1.18.8 [\#843](https://github.com/DEFRA/pafs-user/pull/843) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-rspec from 3.5.0 to 3.6.0 [\#841](https://github.com/DEFRA/pafs-user/pull/841) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update Dependabot configuration [\#840](https://github.com/DEFRA/pafs-user/pull/840) ([brujeo](https://github.com/brujeo))
+
+## [v1.7.6](https://github.com/defra/pafs-user/tree/v1.7.6) (2025-04-11)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.7.5...v1.7.6)
+
+**Merged pull requests:**
+
+- Release/v1.7.6 [\#839](https://github.com/DEFRA/pafs-user/pull/839) ([brujeo](https://github.com/brujeo))
 - Bump net-imap from 0.5.4 to 0.5.5 [\#809](https://github.com/DEFRA/pafs-user/pull/809) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `cbb101c` to `afe13dc` [\#808](https://github.com/DEFRA/pafs-user/pull/808) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Chore/ruby 3511 rails 7 2 [\#807](https://github.com/DEFRA/pafs-user/pull/807) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
