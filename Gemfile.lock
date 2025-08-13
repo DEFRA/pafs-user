@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 387ede580aa84e9fa3e63ca8594441e7a9781585
+  revision: a02d8738fbe7933431bd9b1abbbccbc01a16811d
   branch: feature/RUBY-3800-pafs-carbon-net-zero
   specs:
     pafs_core (1.0.1)
@@ -131,7 +131,7 @@ GEM
     async-pool (0.10.3)
       async (>= 1.25)
     aws-eventstream (1.4.0)
-    aws-partitions (1.1143.0)
+    aws-partitions (1.1146.0)
     aws-sdk-core (3.229.0)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.992.0)
