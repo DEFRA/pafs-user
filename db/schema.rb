@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_07_23_122034) do
+ActiveRecord::Schema[7.2].define(version: 2025_08_26_103422) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
   enable_extension "hstore"
@@ -173,7 +173,6 @@ ActiveRecord::Schema[7.2].define(version: 2025_07_23_122034) do
     t.bigint "summer_economic_fund"
     t.index ["financial_year"], name: "index_pafs_core_funding_values_on_financial_year"
     t.index ["project_id", "financial_year"], name: "funding_values_on_project_id_and_financial_year"
-    t.index ["project_id"], name: "index_pafs_core_funding_values_on_project_id"
   end
 
   create_table "pafs_core_projects", force: :cascade do |t|
@@ -273,8 +272,8 @@ ActiveRecord::Schema[7.2].define(version: 2025_07_23_122034) do
     t.string "confidence_homes_better_protected"
     t.string "confidence_homes_by_gateway_four"
     t.string "confidence_secured_partnership_funding"
-    t.bigint "carbon_cost_build"
-    t.bigint "carbon_cost_operation"
+    t.decimal "carbon_cost_build", precision: 10, scale: 2
+    t.decimal "carbon_cost_operation", precision: 10, scale: 2
     t.boolean "natural_flood_risk_measures_included"
     t.boolean "river_restoration"
     t.boolean "floodplain_restoration"
@@ -330,10 +329,14 @@ ActiveRecord::Schema[7.2].define(version: 2025_07_23_122034) do
     t.integer "earliest_start_year"
     t.string "updated_by_type"
     t.bigint "updated_by_id"
+    t.decimal "carbon_cost_sequestered", precision: 10, scale: 2
+    t.decimal "carbon_cost_avoided", precision: 10, scale: 2
+    t.bigint "carbon_savings_net_economic_benefit"
     t.integer "pending_earliest_start_month"
     t.integer "pending_earliest_start_year"
     t.integer "pending_financial_year"
     t.boolean "date_change_requires_confirmation"
+    t.bigint "carbon_operational_cost_forecast"
     t.index ["name"], name: "index_pafs_core_projects_on_name", unique: true
     t.index ["reference_number", "version"], name: "index_pafs_core_projects_on_reference_number_and_version", unique: true
     t.index ["slug"], name: "index_pafs_core_projects_on_slug", unique: true
