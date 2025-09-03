@@ -2,8 +2,10 @@
 
 class PafsMailer < Devise::Mailer
   include PafsCore::Email
+
   helper PafsCore::EmailHelper
   include Devise::Controllers::UrlHelpers
+
   layout "mailer"
   default template_path: "devise/mailer"
 
