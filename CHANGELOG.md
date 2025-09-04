@@ -2,10 +2,65 @@
 
 ## [Unreleased](https://github.com/defra/pafs-user/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/pafs-user/compare/v1.7.6...HEAD)
+[Full Changelog](https://github.com/defra/pafs-user/compare/v2.7.6...HEAD)
+
+**Closed issues:**
+
+- CR:: User Requirements:: General:: Issues with new process being introduced [\#70](https://github.com/DEFRA/pafs-user/issues/70)
+- CR:: User Requirements:: General:: Used the word Scheme instead of Project [\#68](https://github.com/DEFRA/pafs-user/issues/68)
+- CR:: User Requirements:: Summary:: Submission Complete:: What happens next [\#67](https://github.com/DEFRA/pafs-user/issues/67)
+- CR:: User Requirements:: Summary:: Save and Print [\#66](https://github.com/DEFRA/pafs-user/issues/66)
+- CR:: User Requirements:: Calculator:: Completion of Calculator [\#65](https://github.com/DEFRA/pafs-user/issues/65)
+- CR:: User Requirements:: Calculator::  Should there be a solutionf or the Calculator [\#64](https://github.com/DEFRA/pafs-user/issues/64)
+- CR:: User Requirements:: Higher Priorities:: The meaning of the term 'higher priority'  [\#63](https://github.com/DEFRA/pafs-user/issues/63)
+- CR:: User Requirements:: Environment Issues:: What is the meaning of Environment Issues [\#62](https://github.com/DEFRA/pafs-user/issues/62)
+- CR:: User Requirements:: Catchment or Shoreline:: Two separate questions  [\#61](https://github.com/DEFRA/pafs-user/issues/61)
+- CR:: User Requirements:: Catchment or Shoreline::  Necessity of these questions [\#60](https://github.com/DEFRA/pafs-user/issues/60)
+- CR:: User Requirements:: Household Benefiting:: Define acronyms [\#56](https://github.com/DEFRA/pafs-user/issues/56)
+- CR:: User Requirements:: Classication:: Should Be Able To Select Multiple Answers [\#55](https://github.com/DEFRA/pafs-user/issues/55)
+- CR:: User Requirements:: Location:: Mapping not dislayed because of firewall [\#54](https://github.com/DEFRA/pafs-user/issues/54)
+- CR:: User Requirements:: Location:: Polygon [\#53](https://github.com/DEFRA/pafs-user/issues/53)
+- CR:: User Requirements:: Location:: Location Unclear [\#52](https://github.com/DEFRA/pafs-user/issues/52)
+- CR:: User Requirements:: Location:: Entering Grid Reference [\#51](https://github.com/DEFRA/pafs-user/issues/51)
+- CR:: User Requirements::Funding Sources:: Change the word 'expected' [\#47](https://github.com/DEFRA/pafs-user/issues/47)
+- CR:: User Requirements::Funding Sources:: What level to list contributors [\#46](https://github.com/DEFRA/pafs-user/issues/46)
+- CR:: User Requirements:: Key dates:: Entering Exact Dates [\#44](https://github.com/DEFRA/pafs-user/issues/44)
+- CR:: User Requirements:: Key dates:: Definition of gateways was not totally understood [\#43](https://github.com/DEFRA/pafs-user/issues/43)
+- CR:: User Requirements:: Financial Year:: Definition of End Date [\#42](https://github.com/DEFRA/pafs-user/issues/42)
+- CR:: User Requirements:: Reference Number:: What is reference used for [\#41](https://github.com/DEFRA/pafs-user/issues/41)
+- CR:: User Requirements:: Reference Number:: Confirm Ref No should be stored [\#39](https://github.com/DEFRA/pafs-user/issues/39)
+- CR:: User Requirements:: Sign In:: Unable to edit Project Proposal [\#37](https://github.com/DEFRA/pafs-user/issues/37)
+- CR:: User Requirements:: Sign In:: Employee Sign In [\#36](https://github.com/DEFRA/pafs-user/issues/36)
+- CR:: User Requirements:: Sign In:: How is an external consultant able to set up an account? [\#35](https://github.com/DEFRA/pafs-user/issues/35)
+- CR:: User Requirements:: Sign In:: Should not be able to save credentials [\#34](https://github.com/DEFRA/pafs-user/issues/34)
+- CR:: User Requirements:: Sign In:: Sign In Unclear [\#33](https://github.com/DEFRA/pafs-user/issues/33)
+- CR:: User Requirements:: Start Page:: Upfront List [\#32](https://github.com/DEFRA/pafs-user/issues/32)
+- CR:: User Requirements:: SubMission Complete:: Change Project Number Text [\#30](https://github.com/DEFRA/pafs-user/issues/30)
+- CR:: User Requirements:: Standard Protection:: Percentage Values Unclear [\#26](https://github.com/DEFRA/pafs-user/issues/26)
+- CR:: User Requirements:: Households Benefitting:: Help with your project outcomes link [\#25](https://github.com/DEFRA/pafs-user/issues/25)
+- CR:: USer Requirements:: Location:: Polygon [\#23](https://github.com/DEFRA/pafs-user/issues/23)
+- CR:: User Requirements:: Earliest Start:: Start date instead of completion date [\#21](https://github.com/DEFRA/pafs-user/issues/21)
+- CR:: User Requirements:: Funding Values:: Acronym Key [\#20](https://github.com/DEFRA/pafs-user/issues/20)
+- CR:: User Requirements:: Funding Values:: Horizontal Scrolling [\#19](https://github.com/DEFRA/pafs-user/issues/19)
+- CR:: User Requirements:: Funding Values:: Cash Costs is unclear [\#17](https://github.com/DEFRA/pafs-user/issues/17)
+- CR::User Requirements:: Type:: Options not clear [\#15](https://github.com/DEFRA/pafs-user/issues/15)
+- CR::User Requirements::6 or 7 year scheme::Proposed project require local levy [\#13](https://github.com/DEFRA/pafs-user/issues/13)
+- Phase 1 a:: Funding Sources:: Funding Values Missing Page Error [\#8](https://github.com/DEFRA/pafs-user/issues/8)
+- Phase 1 a:: Financial Year:: Key Dates page missing Error [\#7](https://github.com/DEFRA/pafs-user/issues/7)
+- Phase 1 a:: Project Type Page:: Sequence skips Project Type page [\#6](https://github.com/DEFRA/pafs-user/issues/6)
+- Phase 1 a::All Pages:: Title element not correctly formatted [\#5](https://github.com/DEFRA/pafs-user/issues/5)
 
 **Merged pull requests:**
 
+- Update pafs\_core version and other dependencies [\#905](https://github.com/DEFRA/pafs-user/pull/905) ([brujeo](https://github.com/brujeo))
+
+## [v2.7.6](https://github.com/defra/pafs-user/tree/v2.7.6) (2025-08-12)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.7.6...v2.7.6)
+
+**Merged pull requests:**
+
+- Update CHANGELOG [\#894](https://github.com/DEFRA/pafs-user/pull/894) ([jjromeo](https://github.com/jjromeo))
 - Bump pafs\_core from `bef2be0` to `44b60e0` [\#891](https://github.com/DEFRA/pafs-user/pull/891) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `6dc95d2` to `bef2be0` [\#889](https://github.com/DEFRA/pafs-user/pull/889) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `09e5b09` to `6dc95d2` [\#888](https://github.com/DEFRA/pafs-user/pull/888) ([dependabot[bot]](https://github.com/apps/dependabot))
