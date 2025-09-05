@@ -2,10 +2,19 @@
 
 ## [Unreleased](https://github.com/defra/pafs-user/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/pafs-user/compare/v1.7.6...HEAD)
+[Full Changelog](https://github.com/defra/pafs-user/compare/v2.7.6...HEAD)
 
 **Merged pull requests:**
 
+- Update pafs\_core version and other dependencies [\#905](https://github.com/DEFRA/pafs-user/pull/905) ([brujeo](https://github.com/brujeo))
+
+## [v2.7.6](https://github.com/defra/pafs-user/tree/v2.7.6) (2025-08-12)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v1.7.6...v2.7.6)
+
+**Merged pull requests:**
+
+- Update CHANGELOG [\#894](https://github.com/DEFRA/pafs-user/pull/894) ([jjromeo](https://github.com/jjromeo))
 - Bump pafs\_core from `bef2be0` to `44b60e0` [\#891](https://github.com/DEFRA/pafs-user/pull/891) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `6dc95d2` to `bef2be0` [\#889](https://github.com/DEFRA/pafs-user/pull/889) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `09e5b09` to `6dc95d2` [\#888](https://github.com/DEFRA/pafs-user/pull/888) ([dependabot[bot]](https://github.com/apps/dependabot))
