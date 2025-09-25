@@ -56,7 +56,7 @@ jobs:
           POL_FAILURE_NOTIFICATION_EMAIL: foo
 
       - name: Analyze with SonarCloud
-        uses: sonarsource/sonarcloud-github-action@master
+        uses: sonarsource/sonarqube-scan-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This is provided automatically by GitHub
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }} # This needs to be set in your repo; settings -> secrets
+          SONAR_TOKEN: ${{ secrets.RUBY_SONAR_TOKEN }} # This needs to be set in your repo; settings -> secrets
