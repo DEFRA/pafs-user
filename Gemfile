@@ -51,7 +51,7 @@ gem "pafs_core",
 gem "defra_ruby_template"
 gem "govuk_design_system_formbuilder"
 
-gem "github_changelog_generator", require: false
+gem "github_changelog_generator", "1.15.2", require: false
 
 group :development, :test do
   gem "byebug"
