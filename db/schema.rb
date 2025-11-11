@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_08_26_103422) do
+ActiveRecord::Schema[7.2].define(version: 2025_11_05_131014) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
   enable_extension "hstore"
@@ -337,6 +337,7 @@ ActiveRecord::Schema[7.2].define(version: 2025_08_26_103422) do
     t.integer "pending_financial_year"
     t.boolean "date_change_requires_confirmation"
     t.bigint "carbon_operational_cost_forecast"
+    t.string "carbon_values_hexdigest"
     t.index ["name"], name: "index_pafs_core_projects_on_name", unique: true
     t.index ["reference_number", "version"], name: "index_pafs_core_projects_on_reference_number_and_version", unique: true
     t.index ["slug"], name: "index_pafs_core_projects_on_slug", unique: true
