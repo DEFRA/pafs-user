@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 26efca0936ef2a918610f560973c7a3b61018658
+  revision: 35343763ed57908c26d467db249a668b90866ac3
   branch: main
   specs:
     pafs_core (1.0.1)
@@ -384,7 +384,7 @@ GEM
       msgpack (>= 0.4.3)
       optimist (>= 3.0.0)
     rbtree3 (0.7.1)
-    rdoc (6.15.1)
+    rdoc (6.16.0)
       erb
       psych (>= 4.0.0)
       tsort
