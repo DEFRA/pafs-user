@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/pafs_core
-  revision: 7f3d77d55de58464f29fb5ca4bafc11a97a7292b
+  revision: 26efca0936ef2a918610f560973c7a3b61018658
   branch: main
   specs:
     pafs_core (1.0.1)
@@ -163,7 +163,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.3.5)
-    connection_pool (2.5.4)
+    connection_pool (2.5.5)
     crass (1.0.6)
     database_cleaner (2.1.0)
       database_cleaner-active_record (>= 2, < 3)
