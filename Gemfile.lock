@@ -316,7 +316,7 @@ GEM
     parser (3.3.10.0)
       ast (~> 2.4.1)
       racc
-    passenger (6.1.0)
+    passenger (6.1.1)
       rack (>= 1.6.13)
       rackup (>= 1.0.1)
       rake (>= 12.3.3)
