@@ -497,7 +497,7 @@ GEM
       sprockets (>= 3.0.0)
     stackprof (0.2.27)
     stringio (3.1.9)
-    sucker_punch (3.2.0)
+    sucker_punch (3.3.0)
       concurrent-ruby (~> 1.0)
     thor (1.4.0)
     tilt (2.6.1)
