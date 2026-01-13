@@ -175,7 +175,7 @@ GEM
     defra_ruby_alert (2.2.1)
       airbrake
     defra_ruby_style (0.4.1)
-    defra_ruby_template (5.11.0)
+    defra_ruby_template (5.11.1)
     devise (4.9.4)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
