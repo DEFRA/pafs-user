@@ -9,7 +9,7 @@
 <div class="govuk-grid-row govuk-body">
   <div class="govuk-grid-column-two-thirds">
 
-    <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+    <section class="govuk-notification-banner" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
       <div class="govuk-notification-banner__header">
         <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
           <%= t("devise.sessions.new.fcerm_banner.title") %>
@@ -27,7 +27,7 @@
                 )) %>
         </p>
       </div>
-    </div>
+    </section>
 
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <%= render partial: "pafs_core/error_summary", locals: { f: f } %>
