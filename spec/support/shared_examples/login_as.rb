@@ -2,8 +2,7 @@
 
 RSpec.shared_examples "login as" do |user_type, password|
   let(:user) { create(:account_user, user_type) }
-
-  password ||= "Secr3tP@ssw0rd"
+  let(:login_password) { password || "Secr3tP@ssw0rd" }
 
   before { visit "/" }
 
@@ -13,7 +12,7 @@ RSpec.shared_examples "login as" do |user_type, password|
 
   it "signs in successfully" do
     fill_in "Email address", with: user.email
-    fill_in "Password", with: password
+    fill_in "Password", with: login_password
     click_on "Sign in"
 
     expect(page).to have_css("h1", text: "Your proposals")
