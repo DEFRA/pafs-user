@@ -4,7 +4,7 @@ require "rails_helper"
 
 RSpec.describe "Cookies" do
   describe "POST /fo/cookies/accept_analytics" do
-    it "accepts analytics cookies and redirects" do
+    it "accepts analytics cookies and redirects", :aggregate_failures do
       post accept_analytics_cookies_path
 
       expect(response).to redirect_to("/")
@@ -13,7 +13,7 @@ RSpec.describe "Cookies" do
   end
 
   describe "POST /fo/cookies/reject_analytics" do
-    it "rejects analytics cookies and redirects" do
+    it "rejects analytics cookies and redirects", :aggregate_failures do
       post reject_analytics_cookies_path
 
       expect(response).to redirect_to("/")
@@ -22,7 +22,7 @@ RSpec.describe "Cookies" do
   end
 
   describe "POST /fo/cookies/hide_this_message" do
-    it "records that cookie preferences have been set" do
+    it "records that cookie preferences have been set", :aggregate_failures do
       post hide_this_message_cookies_path
 
       expect(response).to redirect_to("/")
@@ -32,7 +32,7 @@ RSpec.describe "Cookies" do
 
   describe "PATCH /fo/cookies" do
     context "when accepting analytics" do
-      it "updates the cookies policy and preferences" do
+      it "updates the cookies policy and preferences", :aggregate_failures do
         patch cookies_path, params: { analytics: "accept" }
 
         expect(response).to redirect_to(edit_cookies_path(cookies_updated: true))
@@ -42,7 +42,7 @@ RSpec.describe "Cookies" do
     end
 
     context "when rejecting analytics" do
-      it "updates the cookies policy and preferences" do
+      it "updates the cookies policy and preferences", :aggregate_failures do
         patch cookies_path, params: { analytics: "reject" }
 
         expect(response).to redirect_to(edit_cookies_path(cookies_updated: true))
