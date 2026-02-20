@@ -9,6 +9,26 @@
 <div class="govuk-grid-row govuk-body">
   <div class="govuk-grid-column-two-thirds">
 
+    <section class="govuk-notification-banner" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+      <div class="govuk-notification-banner__header">
+        <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+          <%= t("devise.sessions.new.fcerm_banner.title") %>
+        </h2>
+      </div>
+      <div class="govuk-notification-banner__content">
+        <p class="govuk-notification-banner__heading">
+          <%= t("devise.sessions.new.fcerm_banner.message_html",
+                link: link_to(
+                  t("devise.sessions.new.fcerm_banner.link_text"),
+                  t("devise.sessions.new.fcerm_banner.link_url"),
+                  class: "govuk-notification-banner__link",
+                  target: "_blank",
+                  rel: "noopener noreferrer"
+                )) %>
+        </p>
+      </div>
+    </section>
+
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <%= render partial: "pafs_core/error_summary", locals: { f: f } %>
 
