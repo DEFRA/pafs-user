@@ -2,10 +2,120 @@
 
 ## [Unreleased](https://github.com/defra/pafs-user/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/pafs-user/compare/v2.7.6...HEAD)
+[Full Changelog](https://github.com/defra/pafs-user/compare/v2.9.1...HEAD)
 
 **Merged pull requests:**
 
+- Bump pafs\_core from `76e033f` to `4445178` [\#969](https://github.com/DEFRA/pafs-user/pull/969) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump faraday-retry from 2.3.2 to 2.4.0 [\#968](https://github.com/DEFRA/pafs-user/pull/968) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop from 1.82.0 to 1.82.1 [\#967](https://github.com/DEFRA/pafs-user/pull/967) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump passenger from 6.1.0 to 6.1.1 [\#966](https://github.com/DEFRA/pafs-user/pull/966) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump sucker\_punch from 3.2.0 to 3.3.0 [\#965](https://github.com/DEFRA/pafs-user/pull/965) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pg from 1.6.2 to 1.6.3 [\#963](https://github.com/DEFRA/pafs-user/pull/963) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pry from 0.15.2 to 0.16.0 [\#962](https://github.com/DEFRA/pafs-user/pull/962) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump aws-sdk-s3 from 1.206.0 to 1.208.0 [\#961](https://github.com/DEFRA/pafs-user/pull/961) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump net-imap from 0.5.12 to 0.6.2 [\#960](https://github.com/DEFRA/pafs-user/pull/960) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop from 1.81.7 to 1.82.0 [\#959](https://github.com/DEFRA/pafs-user/pull/959) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `3534376` to `76e033f` [\#958](https://github.com/DEFRA/pafs-user/pull/958) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump whenever from 1.0.0 to 1.1.1 [\#956](https://github.com/DEFRA/pafs-user/pull/956) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump dotenv-rails from 3.1.8 to 3.2.0 [\#955](https://github.com/DEFRA/pafs-user/pull/955) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rbtrace from 0.5.2 to 0.5.3 [\#954](https://github.com/DEFRA/pafs-user/pull/954) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump faker from 3.5.2 to 3.5.3 [\#953](https://github.com/DEFRA/pafs-user/pull/953) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump webrick from 1.9.1 to 1.9.2 [\#951](https://github.com/DEFRA/pafs-user/pull/951) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `26efca0` to `3534376` [\#950](https://github.com/DEFRA/pafs-user/pull/950) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `7f3d77d` to `26efca0` [\#949](https://github.com/DEFRA/pafs-user/pull/949) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `5073ba3` to `7f3d77d` [\#948](https://github.com/DEFRA/pafs-user/pull/948) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `295a83e` to `5073ba3` [\#945](https://github.com/DEFRA/pafs-user/pull/945) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `1a79060` to `295a83e` [\#943](https://github.com/DEFRA/pafs-user/pull/943) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-factory\_bot from 2.27.1 to 2.28.0 [\#941](https://github.com/DEFRA/pafs-user/pull/941) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-rspec\_rails from 2.31.0 to 2.32.0 [\#940](https://github.com/DEFRA/pafs-user/pull/940) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Chore/ruby 3855 migrate hexdigest [\#939](https://github.com/DEFRA/pafs-user/pull/939) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+
+## [v2.9.1](https://github.com/defra/pafs-user/tree/v2.9.1) (2025-10-30)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v2.8.1...v2.9.1)
+
+**Merged pull requests:**
+
+- Update CHANGELOG [\#934](https://github.com/DEFRA/pafs-user/pull/934) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Bump pafs\_core from `c784316` to `e180344` [\#933](https://github.com/DEFRA/pafs-user/pull/933) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v2.8.1](https://github.com/defra/pafs-user/tree/v2.8.1) (2025-10-27)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v2.8.0...v2.8.1)
+
+**Merged pull requests:**
+
+- Downgraded github\_changelog\_generator to working version 1.15.2 and updated CHANGELOG [\#930](https://github.com/DEFRA/pafs-user/pull/930) ([brujeo](https://github.com/brujeo))
+- Bump pafs\_core from `bce6624` to `c784316` [\#929](https://github.com/DEFRA/pafs-user/pull/929) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump high\_voltage from 4.0.0 to 5.0.0 [\#928](https://github.com/DEFRA/pafs-user/pull/928) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump jquery-rails from 4.6.0 to 4.6.1 [\#927](https://github.com/DEFRA/pafs-user/pull/927) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop from 1.80.2 to 1.81.6 [\#926](https://github.com/DEFRA/pafs-user/pull/926) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump sdoc from 2.6.2 to 2.6.5 [\#925](https://github.com/DEFRA/pafs-user/pull/925) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump net-imap from 0.5.10 to 0.5.12 [\#922](https://github.com/DEFRA/pafs-user/pull/922) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-rails from 2.33.3 to 2.33.4 [\#920](https://github.com/DEFRA/pafs-user/pull/920) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Gem updates + replaced deprecated github action with sonarsource/sonarqube-scan-action [\#917](https://github.com/DEFRA/pafs-user/pull/917) ([brujeo](https://github.com/brujeo))
+- Bump defra\_ruby\_style from 0.4.0 to 0.4.1 [\#915](https://github.com/DEFRA/pafs-user/pull/915) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump passenger from 6.0.27 to 6.1.0 [\#913](https://github.com/DEFRA/pafs-user/pull/913) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump factory\_bot\_rails from 6.5.0 to 6.5.1 [\#911](https://github.com/DEFRA/pafs-user/pull/911) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop from 1.80.1 to 1.80.2 [\#910](https://github.com/DEFRA/pafs-user/pull/910) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pg from 1.5.9 to 1.6.2 [\#908](https://github.com/DEFRA/pafs-user/pull/908) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-rspec from 3.6.0 to 3.7.0 [\#906](https://github.com/DEFRA/pafs-user/pull/906) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump faraday-retry from 2.3.1 to 2.3.2 [\#865](https://github.com/DEFRA/pafs-user/pull/865) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v2.8.0](https://github.com/defra/pafs-user/tree/v2.8.0) (2025-09-05)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v2.7.6...v2.8.0)
+
+**Closed issues:**
+
+- CR:: User Requirements:: General:: Issues with new process being introduced [\#70](https://github.com/DEFRA/pafs-user/issues/70)
+- CR:: User Requirements:: General:: Used the word Scheme instead of Project [\#68](https://github.com/DEFRA/pafs-user/issues/68)
+- CR:: User Requirements:: Summary:: Submission Complete:: What happens next [\#67](https://github.com/DEFRA/pafs-user/issues/67)
+- CR:: User Requirements:: Summary:: Save and Print [\#66](https://github.com/DEFRA/pafs-user/issues/66)
+- CR:: User Requirements:: Calculator:: Completion of Calculator [\#65](https://github.com/DEFRA/pafs-user/issues/65)
+- CR:: User Requirements:: Calculator::  Should there be a solutionf or the Calculator [\#64](https://github.com/DEFRA/pafs-user/issues/64)
+- CR:: User Requirements:: Higher Priorities:: The meaning of the term 'higher priority'  [\#63](https://github.com/DEFRA/pafs-user/issues/63)
+- CR:: User Requirements:: Environment Issues:: What is the meaning of Environment Issues [\#62](https://github.com/DEFRA/pafs-user/issues/62)
+- CR:: User Requirements:: Catchment or Shoreline:: Two separate questions  [\#61](https://github.com/DEFRA/pafs-user/issues/61)
+- CR:: User Requirements:: Catchment or Shoreline::  Necessity of these questions [\#60](https://github.com/DEFRA/pafs-user/issues/60)
+- CR:: User Requirements:: Household Benefiting:: Define acronyms [\#56](https://github.com/DEFRA/pafs-user/issues/56)
+- CR:: User Requirements:: Classication:: Should Be Able To Select Multiple Answers [\#55](https://github.com/DEFRA/pafs-user/issues/55)
+- CR:: User Requirements:: Location:: Mapping not dislayed because of firewall [\#54](https://github.com/DEFRA/pafs-user/issues/54)
+- CR:: User Requirements:: Location:: Polygon [\#53](https://github.com/DEFRA/pafs-user/issues/53)
+- CR:: User Requirements:: Location:: Location Unclear [\#52](https://github.com/DEFRA/pafs-user/issues/52)
+- CR:: User Requirements:: Location:: Entering Grid Reference [\#51](https://github.com/DEFRA/pafs-user/issues/51)
+- CR:: User Requirements::Funding Sources:: Change the word 'expected' [\#47](https://github.com/DEFRA/pafs-user/issues/47)
+- CR:: User Requirements::Funding Sources:: What level to list contributors [\#46](https://github.com/DEFRA/pafs-user/issues/46)
+- CR:: User Requirements:: Key dates:: Entering Exact Dates [\#44](https://github.com/DEFRA/pafs-user/issues/44)
+- CR:: User Requirements:: Key dates:: Definition of gateways was not totally understood [\#43](https://github.com/DEFRA/pafs-user/issues/43)
+- CR:: User Requirements:: Financial Year:: Definition of End Date [\#42](https://github.com/DEFRA/pafs-user/issues/42)
+- CR:: User Requirements:: Reference Number:: What is reference used for [\#41](https://github.com/DEFRA/pafs-user/issues/41)
+- CR:: User Requirements:: Reference Number:: Confirm Ref No should be stored [\#39](https://github.com/DEFRA/pafs-user/issues/39)
+- CR:: User Requirements:: Sign In:: Unable to edit Project Proposal [\#37](https://github.com/DEFRA/pafs-user/issues/37)
+- CR:: User Requirements:: Sign In:: Employee Sign In [\#36](https://github.com/DEFRA/pafs-user/issues/36)
+- CR:: User Requirements:: Sign In:: How is an external consultant able to set up an account? [\#35](https://github.com/DEFRA/pafs-user/issues/35)
+- CR:: User Requirements:: Sign In:: Should not be able to save credentials [\#34](https://github.com/DEFRA/pafs-user/issues/34)
+- CR:: User Requirements:: Sign In:: Sign In Unclear [\#33](https://github.com/DEFRA/pafs-user/issues/33)
+- CR:: User Requirements:: Start Page:: Upfront List [\#32](https://github.com/DEFRA/pafs-user/issues/32)
+- CR:: User Requirements:: SubMission Complete:: Change Project Number Text [\#30](https://github.com/DEFRA/pafs-user/issues/30)
+- CR:: User Requirements:: Standard Protection:: Percentage Values Unclear [\#26](https://github.com/DEFRA/pafs-user/issues/26)
+- CR:: User Requirements:: Households Benefitting:: Help with your project outcomes link [\#25](https://github.com/DEFRA/pafs-user/issues/25)
+- CR:: USer Requirements:: Location:: Polygon [\#23](https://github.com/DEFRA/pafs-user/issues/23)
+- CR:: User Requirements:: Earliest Start:: Start date instead of completion date [\#21](https://github.com/DEFRA/pafs-user/issues/21)
+- CR:: User Requirements:: Funding Values:: Acronym Key [\#20](https://github.com/DEFRA/pafs-user/issues/20)
+- CR:: User Requirements:: Funding Values:: Horizontal Scrolling [\#19](https://github.com/DEFRA/pafs-user/issues/19)
+- CR:: User Requirements:: Funding Values:: Cash Costs is unclear [\#17](https://github.com/DEFRA/pafs-user/issues/17)
+- CR::User Requirements:: Type:: Options not clear [\#15](https://github.com/DEFRA/pafs-user/issues/15)
+- CR::User Requirements::6 or 7 year scheme::Proposed project require local levy [\#13](https://github.com/DEFRA/pafs-user/issues/13)
+- Phase 1 a:: Funding Sources:: Funding Values Missing Page Error [\#8](https://github.com/DEFRA/pafs-user/issues/8)
+- Phase 1 a:: Financial Year:: Key Dates page missing Error [\#7](https://github.com/DEFRA/pafs-user/issues/7)
+- Phase 1 a:: Project Type Page:: Sequence skips Project Type page [\#6](https://github.com/DEFRA/pafs-user/issues/6)
+- Phase 1 a::All Pages:: Title element not correctly formatted [\#5](https://github.com/DEFRA/pafs-user/issues/5)
+
+**Merged pull requests:**
+
+- Update CHANGELOG [\#909](https://github.com/DEFRA/pafs-user/pull/909) ([brujeo](https://github.com/brujeo))
 - Update pafs\_core version and other dependencies [\#905](https://github.com/DEFRA/pafs-user/pull/905) ([brujeo](https://github.com/brujeo))
 
 ## [v2.7.6](https://github.com/defra/pafs-user/tree/v2.7.6) (2025-08-12)
@@ -159,6 +269,7 @@
 - Bump pg from 1.5.4 to 1.5.6 [\#652](https://github.com/DEFRA/pafs-user/pull/652) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump dotenv-rails from 3.0.2 to 3.1.0 [\#649](https://github.com/DEFRA/pafs-user/pull/649) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump letter\_opener from 1.8.1 to 1.9.0 [\#646](https://github.com/DEFRA/pafs-user/pull/646) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `3217703` to `62286e6` [\#644](https://github.com/DEFRA/pafs-user/pull/644) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v1.7.1](https://github.com/defra/pafs-user/tree/v1.7.1) (2024-03-04)
 
@@ -168,7 +279,6 @@
 
 - Release/v1.7.1 [\#655](https://github.com/DEFRA/pafs-user/pull/655) ([brujeo](https://github.com/brujeo))
 - Bump pafs\_core from `fcb9c96` to `62286e6` [\#647](https://github.com/DEFRA/pafs-user/pull/647) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Bump pafs\_core from `3217703` to `62286e6` [\#644](https://github.com/DEFRA/pafs-user/pull/644) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump net-smtp from 0.4.0 to 0.4.0.1 [\#643](https://github.com/DEFRA/pafs-user/pull/643) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `3217703` to `fcb9c96` [\#642](https://github.com/DEFRA/pafs-user/pull/642) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump ruby-prof from 1.6.3 to 1.7.0 [\#641](https://github.com/DEFRA/pafs-user/pull/641) ([dependabot[bot]](https://github.com/apps/dependabot))
@@ -396,6 +506,7 @@
 - Seed users [\#331](https://github.com/DEFRA/pafs-user/pull/331) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - CI updates [\#322](https://github.com/DEFRA/pafs-user/pull/322) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump stackprof from 0.2.21 to 0.2.22 [\#321](https://github.com/DEFRA/pafs-user/pull/321) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Merge develop into main [\#317](https://github.com/DEFRA/pafs-user/pull/317) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 
 ## [v1.4.0](https://github.com/defra/pafs-user/tree/v1.4.0) (2022-09-26)
 
@@ -403,7 +514,6 @@
 
 **Merged pull requests:**
 
-- Merge develop into main [\#317](https://github.com/DEFRA/pafs-user/pull/317) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump pafs\_core version [\#314](https://github.com/DEFRA/pafs-user/pull/314) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump spring from 4.0.0 to 4.1.0 [\#312](https://github.com/DEFRA/pafs-user/pull/312) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump stackprof from 0.2.19 to 0.2.21 [\#300](https://github.com/DEFRA/pafs-user/pull/300) ([dependabot[bot]](https://github.com/apps/dependabot))
@@ -621,12 +731,6 @@
 - Feature/summary [\#76](https://github.com/DEFRA/pafs-user/pull/76) ([tonyheadford](https://github.com/tonyheadford))
 - updated start page [\#75](https://github.com/DEFRA/pafs-user/pull/75) ([kennyevil](https://github.com/kennyevil))
 - Mapping [\#74](https://github.com/DEFRA/pafs-user/pull/74) ([kennyevil](https://github.com/kennyevil))
-- Add area seed task [\#73](https://github.com/DEFRA/pafs-user/pull/73) ([kennyevil](https://github.com/kennyevil))
-- fixed user invitation task [\#72](https://github.com/DEFRA/pafs-user/pull/72) ([kennyevil](https://github.com/kennyevil))
-- Add user accounts [\#71](https://github.com/DEFRA/pafs-user/pull/71) ([kennyevil](https://github.com/kennyevil))
-- Add invitable [\#3](https://github.com/DEFRA/pafs-user/pull/3) ([kennyevil](https://github.com/kennyevil))
-- Capify [\#2](https://github.com/DEFRA/pafs-user/pull/2) ([kennyevil](https://github.com/kennyevil))
-- updated gitignore [\#1](https://github.com/DEFRA/pafs-user/pull/1) ([kennyevil](https://github.com/kennyevil))
 
 
 
