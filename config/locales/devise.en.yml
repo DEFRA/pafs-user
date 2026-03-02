@@ -61,9 +61,9 @@ en:
       new:
         fcerm_banner:
           title: Important
-          message_html: "The new %{link} will start in April 2026. Processes are currently under review - do not submit a project proposal at this time."
-          link_text: FCERM funding policy
-          link_url: "https://www.gov.uk/government/consultations/flood-and-coastal-erosion-funding-reform/outcome/flood-and-coastal-erosion-risk-management-funding-policy"
+          message_html: "The new FCERM funding policy will start in April 2026. Please see the %{link} before submitting any new proposals. (link opens in a new tab or window)"
+          link_text: funding policy guidance
+          link_url: "https://www.gov.uk/government/publications/flood-and-coastal-erosion-risk-management-funding-policy-guidance"
     unlocks:
       send_instructions: "You will receive an email with instructions for how to unlock your account in a few minutes."
       send_paranoid_instructions: "If your account exists, you will receive an email with instructions for how to unlock it in a few minutes."
