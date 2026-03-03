@@ -2,10 +2,20 @@
 
 ## [Unreleased](https://github.com/defra/pafs-user/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/pafs-user/compare/v2.9.1...HEAD)
+[Full Changelog](https://github.com/defra/pafs-user/compare/v2.9.2...HEAD)
+
+**Implemented enhancements:**
+
+- \[RUBY-4183\] Update message\_html to clarify link behavior in FCERM banner [\#987](https://github.com/DEFRA/pafs-user/pull/987) ([jjromeo](https://github.com/jjromeo))
+- \[RUBY-4183\] Add FCERM funding policy notification banner to login page [\#984](https://github.com/DEFRA/pafs-user/pull/984) ([jjromeo](https://github.com/jjromeo))
+
+## [v2.9.2](https://github.com/defra/pafs-user/tree/v2.9.2) (2026-01-20)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v2.9.1...v2.9.2)
 
 **Merged pull requests:**
 
+- Update CHANGELOG [\#975](https://github.com/DEFRA/pafs-user/pull/975) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump pafs\_core from `76e033f` to `4445178` [\#969](https://github.com/DEFRA/pafs-user/pull/969) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump faraday-retry from 2.3.2 to 2.4.0 [\#968](https://github.com/DEFRA/pafs-user/pull/968) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump rubocop from 1.82.0 to 1.82.1 [\#967](https://github.com/DEFRA/pafs-user/pull/967) ([dependabot[bot]](https://github.com/apps/dependabot))
@@ -269,7 +279,6 @@
 - Bump pg from 1.5.4 to 1.5.6 [\#652](https://github.com/DEFRA/pafs-user/pull/652) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump dotenv-rails from 3.0.2 to 3.1.0 [\#649](https://github.com/DEFRA/pafs-user/pull/649) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump letter\_opener from 1.8.1 to 1.9.0 [\#646](https://github.com/DEFRA/pafs-user/pull/646) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Bump pafs\_core from `3217703` to `62286e6` [\#644](https://github.com/DEFRA/pafs-user/pull/644) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v1.7.1](https://github.com/defra/pafs-user/tree/v1.7.1) (2024-03-04)
 
@@ -279,6 +288,7 @@
 
 - Release/v1.7.1 [\#655](https://github.com/DEFRA/pafs-user/pull/655) ([brujeo](https://github.com/brujeo))
 - Bump pafs\_core from `fcb9c96` to `62286e6` [\#647](https://github.com/DEFRA/pafs-user/pull/647) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump pafs\_core from `3217703` to `62286e6` [\#644](https://github.com/DEFRA/pafs-user/pull/644) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump net-smtp from 0.4.0 to 0.4.0.1 [\#643](https://github.com/DEFRA/pafs-user/pull/643) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `3217703` to `fcb9c96` [\#642](https://github.com/DEFRA/pafs-user/pull/642) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump ruby-prof from 1.6.3 to 1.7.0 [\#641](https://github.com/DEFRA/pafs-user/pull/641) ([dependabot[bot]](https://github.com/apps/dependabot))
@@ -332,7 +342,6 @@
 - Bump rubocop from 1.52.1 to 1.56.0 [\#549](https://github.com/DEFRA/pafs-user/pull/549) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump protocol-http1 from 0.15.0 to 0.15.1 [\#547](https://github.com/DEFRA/pafs-user/pull/547) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump net-imap from 0.3.6 to 0.3.7 [\#544](https://github.com/DEFRA/pafs-user/pull/544) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Bump jquery-rails from 4.5.1 to 4.6.0 [\#535](https://github.com/DEFRA/pafs-user/pull/535) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v1.6.6](https://github.com/defra/pafs-user/tree/v1.6.6) (2023-07-13)
 
@@ -351,6 +360,7 @@
 
 **Merged pull requests:**
 
+- Bump jquery-rails from 4.5.1 to 4.6.0 [\#535](https://github.com/DEFRA/pafs-user/pull/535) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `dc8cee6` to `3f375e3` [\#523](https://github.com/DEFRA/pafs-user/pull/523) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `5e921e4` to `dc8cee6` [\#521](https://github.com/DEFRA/pafs-user/pull/521) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Chore/accessibility statement [\#517](https://github.com/DEFRA/pafs-user/pull/517) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
@@ -506,7 +516,6 @@
 - Seed users [\#331](https://github.com/DEFRA/pafs-user/pull/331) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - CI updates [\#322](https://github.com/DEFRA/pafs-user/pull/322) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump stackprof from 0.2.21 to 0.2.22 [\#321](https://github.com/DEFRA/pafs-user/pull/321) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Merge develop into main [\#317](https://github.com/DEFRA/pafs-user/pull/317) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 
 ## [v1.4.0](https://github.com/defra/pafs-user/tree/v1.4.0) (2022-09-26)
 
@@ -514,6 +523,7 @@
 
 **Merged pull requests:**
 
+- Merge develop into main [\#317](https://github.com/DEFRA/pafs-user/pull/317) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump pafs\_core version [\#314](https://github.com/DEFRA/pafs-user/pull/314) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump spring from 4.0.0 to 4.1.0 [\#312](https://github.com/DEFRA/pafs-user/pull/312) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump stackprof from 0.2.19 to 0.2.21 [\#300](https://github.com/DEFRA/pafs-user/pull/300) ([dependabot[bot]](https://github.com/apps/dependabot))
