@@ -134,7 +134,7 @@ GEM
     bcrypt (3.1.21)
     benchmark (0.5.0)
     benchmark-ips (2.14.0)
-    bigdecimal (4.0.1)
+    bigdecimal (4.1.0)
     bindex (0.8.1)
     bstard (0.2.4)
     builder (3.3.0)
@@ -256,7 +256,7 @@ GEM
       railties (>= 3.1.0)
       turbolinks
     json (2.18.1)
-    json-schema (6.1.0)
+    json-schema (6.2.0)
       addressable (~> 2.8)
       bigdecimal (>= 3.1, < 5)
     kaminari (1.2.2)
@@ -291,7 +291,7 @@ GEM
       net-smtp
     marcel (1.1.0)
     matrix (0.4.3)
-    mcp (0.8.0)
+    mcp (0.9.2)
       json-schema (>= 4.1)
     method_source (1.1.0)
     mini_mime (1.1.5)
