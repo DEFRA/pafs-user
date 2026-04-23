@@ -2,12 +2,25 @@
 
 ## [Unreleased](https://github.com/defra/pafs-user/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/pafs-user/compare/v2.9.2...HEAD)
+[Full Changelog](https://github.com/defra/pafs-user/compare/v2.10.0...HEAD)
+
+**Merged pull requests:**
+
+- Bump gem dependencies  [\#1006](https://github.com/DEFRA/pafs-user/pull/1006) ([brujeo](https://github.com/brujeo))
+- Bump pafs\_core from `97931d0` to `979b33c` [\#991](https://github.com/DEFRA/pafs-user/pull/991) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v2.10.0](https://github.com/defra/pafs-user/tree/v2.10.0) (2026-03-03)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v2.9.2...v2.10.0)
 
 **Implemented enhancements:**
 
 - \[RUBY-4183\] Update message\_html to clarify link behavior in FCERM banner [\#987](https://github.com/DEFRA/pafs-user/pull/987) ([jjromeo](https://github.com/jjromeo))
 - \[RUBY-4183\] Add FCERM funding policy notification banner to login page [\#984](https://github.com/DEFRA/pafs-user/pull/984) ([jjromeo](https://github.com/jjromeo))
+
+**Merged pull requests:**
+
+- Release v2.10.0 [\#990](https://github.com/DEFRA/pafs-user/pull/990) ([jjromeo](https://github.com/jjromeo))
 
 ## [v2.9.2](https://github.com/defra/pafs-user/tree/v2.9.2) (2026-01-20)
 
@@ -342,6 +355,7 @@
 - Bump rubocop from 1.52.1 to 1.56.0 [\#549](https://github.com/DEFRA/pafs-user/pull/549) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump protocol-http1 from 0.15.0 to 0.15.1 [\#547](https://github.com/DEFRA/pafs-user/pull/547) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump net-imap from 0.3.6 to 0.3.7 [\#544](https://github.com/DEFRA/pafs-user/pull/544) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump jquery-rails from 4.5.1 to 4.6.0 [\#535](https://github.com/DEFRA/pafs-user/pull/535) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v1.6.6](https://github.com/defra/pafs-user/tree/v1.6.6) (2023-07-13)
 
@@ -360,7 +374,6 @@
 
 **Merged pull requests:**
 
-- Bump jquery-rails from 4.5.1 to 4.6.0 [\#535](https://github.com/DEFRA/pafs-user/pull/535) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `dc8cee6` to `3f375e3` [\#523](https://github.com/DEFRA/pafs-user/pull/523) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `5e921e4` to `dc8cee6` [\#521](https://github.com/DEFRA/pafs-user/pull/521) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Chore/accessibility statement [\#517](https://github.com/DEFRA/pafs-user/pull/517) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
