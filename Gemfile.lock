@@ -177,7 +177,7 @@ GEM
       airbrake
     defra_ruby_style (0.4.1)
     defra_ruby_template (5.11.1)
-    devise (5.0.3)
+    devise (5.0.4)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 7.0)
@@ -305,7 +305,7 @@ GEM
     net-smtp (0.5.1)
       net-protocol
     nio4r (2.7.5)
-    nokogiri (1.19.2-x86_64-linux-gnu)
+    nokogiri (1.19.3-x86_64-linux-gnu)
       racc (~> 1.4)
     octokit (4.25.1)
       faraday (>= 1, < 3)
