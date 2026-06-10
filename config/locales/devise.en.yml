@@ -61,7 +61,7 @@ en:
       new:
         maintenance_banner:
           title: Important
-          message_html: "PAFS will be unavailable from Friday 26th June to Monday 29th June while an essential upgrade is carried out. Service will resume on Tuesday 30th June."
+          message_html: "PAFS will be unavailable from %{start_at} to %{end_at} while an essential upgrade is carried out. Service will resume on %{resume_at}."
         fcerm_banner:
           title: Important
           message_html: "The new FCERM funding policy will start in April 2026. Please see the %{link} before submitting any new proposals. (link opens in a new tab or window)"
