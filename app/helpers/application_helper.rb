@@ -25,6 +25,15 @@ module ApplicationHelper
     resource.errors.delete(:password_confirmation)
   end
 
+  def maintenance_banner_message
+    t(
+      "devise.sessions.new.maintenance_banner.message_html",
+      start_at: ENV.fetch("PAFS_MAINTENANCE_STARTS_AT", "noon on Thursday 25th June"),
+      end_at: ENV.fetch("PAFS_MAINTENANCE_ENDS_AT", "Tuesday 30th June"),
+      resume_at: ENV.fetch("PAFS_SERVICE_RESUMES_AT", "Wednesday 1st July")
+    )
+  end
+
   def show_return_to_overview?
     ((controller_name == "projects" && action_name != "index" && action_name != "show") ||
       (controller_name == "downloads" && action_name == "index")) &&
