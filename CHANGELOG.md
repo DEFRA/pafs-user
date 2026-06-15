@@ -2,11 +2,25 @@
 
 ## [Unreleased](https://github.com/defra/pafs-user/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/pafs-user/compare/v2.10.0...HEAD)
+[Full Changelog](https://github.com/defra/pafs-user/compare/v2.10.1...HEAD)
+
+**Implemented enhancements:**
+
+- \[RUBY-4309\] Update maintenance banner copy [\#1022](https://github.com/DEFRA/pafs-user/pull/1022) ([jjromeo](https://github.com/jjromeo))
+- \[RUBY-4309\] Update front office notification banner [\#1020](https://github.com/DEFRA/pafs-user/pull/1020) ([jjromeo](https://github.com/jjromeo))
+
+## [v2.10.1](https://github.com/defra/pafs-user/tree/v2.10.1) (2026-04-23)
+
+[Full Changelog](https://github.com/defra/pafs-user/compare/v2.10.0...v2.10.1)
 
 **Merged pull requests:**
 
+- Bump pafs\_core from `c22b7a7` to `213a224` [\#1008](https://github.com/DEFRA/pafs-user/pull/1008) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Release/v2.10.1 [\#1007](https://github.com/DEFRA/pafs-user/pull/1007) ([brujeo](https://github.com/brujeo))
 - Bump gem dependencies  [\#1006](https://github.com/DEFRA/pafs-user/pull/1006) ([brujeo](https://github.com/brujeo))
+- Bump activesupport from 7.2.3 to 7.2.3.1 [\#1002](https://github.com/DEFRA/pafs-user/pull/1002) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actionview from 7.2.3 to 7.2.3.1 [\#1001](https://github.com/DEFRA/pafs-user/pull/1001) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump activestorage from 7.2.3 to 7.2.3.1 [\#1000](https://github.com/DEFRA/pafs-user/pull/1000) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `97931d0` to `979b33c` [\#991](https://github.com/DEFRA/pafs-user/pull/991) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v2.10.0](https://github.com/defra/pafs-user/tree/v2.10.0) (2026-03-03)
@@ -171,6 +185,7 @@
 - Bump nokogiri from 1.18.7 to 1.18.8 [\#843](https://github.com/DEFRA/pafs-user/pull/843) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump rubocop-rspec from 3.5.0 to 3.6.0 [\#841](https://github.com/DEFRA/pafs-user/pull/841) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Update Dependabot configuration [\#840](https://github.com/DEFRA/pafs-user/pull/840) ([brujeo](https://github.com/brujeo))
+- Release/v1.7.6 [\#839](https://github.com/DEFRA/pafs-user/pull/839) ([brujeo](https://github.com/brujeo))
 
 ## [v1.7.6](https://github.com/defra/pafs-user/tree/v1.7.6) (2025-04-11)
 
@@ -178,7 +193,6 @@
 
 **Merged pull requests:**
 
-- Release/v1.7.6 [\#839](https://github.com/DEFRA/pafs-user/pull/839) ([brujeo](https://github.com/brujeo))
 - Bump net-imap from 0.5.4 to 0.5.5 [\#809](https://github.com/DEFRA/pafs-user/pull/809) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pafs\_core from `cbb101c` to `afe13dc` [\#808](https://github.com/DEFRA/pafs-user/pull/808) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Chore/ruby 3511 rails 7 2 [\#807](https://github.com/DEFRA/pafs-user/pull/807) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
@@ -657,7 +671,6 @@
 - Fix area programme generation [\#133](https://github.com/DEFRA/pafs-user/pull/133) ([tonyheadford](https://github.com/tonyheadford))
 - Added decorator for multi-project downloads controller \(PM-297\) [\#132](https://github.com/DEFRA/pafs-user/pull/132) ([tonyheadford](https://github.com/tonyheadford))
 - Removed start page and now root to dashboard [\#131](https://github.com/DEFRA/pafs-user/pull/131) ([tonyheadford](https://github.com/tonyheadford))
-- Disallowed all in robots.txt [\#130](https://github.com/DEFRA/pafs-user/pull/130) ([tonyheadford](https://github.com/tonyheadford))
 - Removed GiA and Local levy pages in pafs\_core [\#129](https://github.com/DEFRA/pafs-user/pull/129) ([tonyheadford](https://github.com/tonyheadford))
 - Remove turbolinks from project to fix rdo btn select issue [\#123](https://github.com/DEFRA/pafs-user/pull/123) ([Cruikshanks](https://github.com/Cruikshanks))
 
@@ -667,6 +680,7 @@
 
 **Merged pull requests:**
 
+- Disallowed all in robots.txt [\#130](https://github.com/DEFRA/pafs-user/pull/130) ([tonyheadford](https://github.com/tonyheadford))
 - Updated pafs\_core for programme rename fix [\#128](https://github.com/DEFRA/pafs-user/pull/128) ([tonyheadford](https://github.com/tonyheadford))
 - Updated pafs\_core for typo [\#127](https://github.com/DEFRA/pafs-user/pull/127) ([tonyheadford](https://github.com/tonyheadford))
 - Updated pafs\_core [\#126](https://github.com/DEFRA/pafs-user/pull/126) ([tonyheadford](https://github.com/tonyheadford))
