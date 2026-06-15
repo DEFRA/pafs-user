@@ -11,7 +11,7 @@
 
 **Security fixes:**
 
-- Bump devise, devise\_invitable, faraday, jbuilder, net-imap, and nokogiri dependencies.
+- Bump gem dependencies, including devise, devise\_invitable, faraday, jbuilder, net-imap, and nokogiri.
 
 ## [v2.10.1](https://github.com/defra/pafs-user/tree/v2.10.1) (2026-04-23)
 
