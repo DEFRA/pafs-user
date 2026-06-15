@@ -9,6 +9,10 @@
 - \[RUBY-4309\] Update maintenance banner copy [\#1022](https://github.com/DEFRA/pafs-user/pull/1022) ([jjromeo](https://github.com/jjromeo))
 - \[RUBY-4309\] Update front office notification banner [\#1020](https://github.com/DEFRA/pafs-user/pull/1020) ([jjromeo](https://github.com/jjromeo))
 
+**Security fixes:**
+
+- Bump devise, devise\_invitable, faraday, jbuilder, net-imap, and nokogiri dependencies.
+
 ## [v2.10.1](https://github.com/defra/pafs-user/tree/v2.10.1) (2026-04-23)
 
 [Full Changelog](https://github.com/defra/pafs-user/compare/v2.10.0...v2.10.1)
