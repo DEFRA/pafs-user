@@ -21,7 +21,7 @@ RSpec.describe "Cookies banner and pages" do
       before { click_on "View cookies" }
 
       it "displays the cookies page" do
-        expect(page).to have_content "Cookies on Project Application and Funding Service"
+        expect(page).to have_text "Cookies on Project Application and Funding Service"
       end
     end
 
@@ -33,7 +33,7 @@ RSpec.describe "Cookies banner and pages" do
       end
 
       it "displays the Analytics cookies accepted content" do
-        expect(page).to have_content "You’ve accepted analytics cookies"
+        expect(page).to have_text "You’ve accepted analytics cookies"
       end
 
       it_behaves_like "links to edit cookies page"
@@ -47,7 +47,7 @@ RSpec.describe "Cookies banner and pages" do
       end
 
       it "displays the 'Analytics cookies rejected' page" do
-        expect(page).to have_content "You’ve rejected analytics cookies"
+        expect(page).to have_text "You’ve rejected analytics cookies"
       end
 
       it_behaves_like "links to edit cookies page"
@@ -57,11 +57,11 @@ RSpec.describe "Cookies banner and pages" do
       before { visit cookies_path }
 
       it "displays the cookies page" do
-        expect(page).to have_content "Cookies on Project Application and Funding Service"
+        expect(page).to have_text "Cookies on Project Application and Funding Service"
       end
 
       it "describes the 'cookies_policy' cookie" do
-        expect(page).to have_content "cookies_policy"
+        expect(page).to have_text "cookies_policy"
       end
 
       it_behaves_like "links to edit cookies page"
@@ -71,7 +71,7 @@ RSpec.describe "Cookies banner and pages" do
       before { visit edit_cookies_path }
 
       it "displays the analytics cookies option" do
-        expect(page).to have_content "Use cookies that measure my website use"
+        expect(page).to have_text "Use cookies that measure my website use"
       end
     end
   end
